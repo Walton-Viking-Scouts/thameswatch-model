@@ -96,6 +96,10 @@ EA_STATIONS = {
         "burstow_rain", "Burstow rain (Mole catchment)", "-", "rainfall",
         "8864da31-6c81-4cb1-bde9-d4ca73423222",
         "8864da31-6c81-4cb1-bde9-d4ca73423222-rainfall-t-86400-mm-qualified"),
+    "reading_rain": EAStation(
+        "reading_rain", "Reading University rain (Thames upstream)", "-", "rainfall",
+        "0a37c7cf-0c60-4024-a5ef-b9c6c7c14600",
+        "0a37c7cf-0c60-4024-a5ef-b9c6c7c14600-rainfall-t-86400-mm-qualified"),
 }
 
 # CSV filenames for the flow stations the model loads (traffic_light_model_v3.FLOW_FILES).
@@ -110,6 +114,7 @@ RAIN_CSV = {
     "hogsmill_rain": "hogsmill_rain.csv",
     "cranleigh_rain": "cranleigh_rain.csv",
     "burstow_rain": "burstow_rain.csv",
+    "reading_rain": "reading_rain.csv",
 }
 
 
@@ -168,6 +173,28 @@ SITES = {
 
 # ThamesWatch API locationName -> canonical model site name
 SITE_BY_THAMESWATCH_LOCATION = {s.thameswatch_location: name for name, s in SITES.items()}
+
+
+# --- Upstream catchments (for the upstream-watch display) --------------------
+# Each catchment: a headwater rain gauge, and the flow station where that
+# catchment's water reaches our stretch. Headwater rain takes ~1-3 days to
+# arrive — this is a display/early-warning view, not a model input (the model
+# already reads the upstream signal from flow).
+
+CATCHMENTS = {
+    "Wey": {
+        "rain_station": "cranleigh_rain", "flow_station": "wey",
+        "joins": "the Thames at Weybridge, above Walton",
+    },
+    "Mole": {
+        "rain_station": "burstow_rain", "flow_station": "mole",
+        "joins": "the Thames at East Molesey, above Kingston",
+    },
+    "Thames": {
+        "rain_station": "reading_rain", "flow_station": "reading",
+        "joins": "the stretch from upstream (Reading and beyond)",
+    },
+}
 
 
 # --- Geographic bounds (Chertsey to Teddington, OS easting/northing) ---------
