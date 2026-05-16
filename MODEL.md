@@ -190,19 +190,26 @@ redundancy:
 | Upstream rain → runoff or an unmonitored spill, no CSO | Tributary flow surge | Caught as the water reaches our stretch |
 | Rain on our own stretch | Local rain gauge (Hogsmill) | The heavy-rain rules (4-9) |
 
-Measuring upstream rainfall would sit in the gap between the first two rows and add
-nothing to either:
+The local rain gauge is itself a **primary trigger** — the heavy-rain rules fire on
+rainfall directly, before any rise shows in flow. For rain on our own stretch, rainfall
+*is* the early signal, and the model already uses it (the Walton 3 September case in §7:
+15mm/48h, no CSO, RED from the rain rule).
+
+Measuring *upstream* rainfall, though, would sit in the gap between the first two rows
+and add little:
 
 - Against the **CSO feed** it would buy only ~1 hour of lead — negligible against the
   1–3 days the contamination then takes to travel downstream — and it is *less*
   informative. Rainfall alone cannot tell you whether an overflow actually tripped, and
   that distinction is the whole game: runoff alone raises E. coli 10–100×, a CSO raises
   it 100–10,000×. The discharge feed answers it directly; rainfall leaves you guessing.
-- Against the **flow surge** it is simply earlier-but-blind: the surge catches the
-  no-CSO case when the contamination actually arrives, which is what matters.
+- Against the **flow surge** it would help in only one narrow case — heavy upstream
+  rain that trips *no* monitored overflow — where it would lead the surge by 1–3 days.
+  That case is rare, and the flow surge still catches it on arrival; it is recorded as
+  an accepted limitation in §9.
 
-This is the complete rationale for the input set: three signals because three signals
-partition the problem exactly — not from a preference for keeping things small.
+Three signals therefore cover the problem well for the current use case — the one
+residual gap is rare and non-critical.
 
 ---
 
@@ -287,6 +294,11 @@ caught the day it begins.
   yet available the most recent reading is used and a staleness warning is recorded.
 - **Same-day rain is not used.** `rain_48h`/`dry_days` use *prior* days only; rain
   falling on the morning of an afternoon prediction is not yet in the model inputs.
+- **Heavy upstream rain that trips no monitored overflow** is caught only when the
+  contaminated water reaches our stretch (the flow surge), not 1-3 days earlier when the
+  rain falls upstream. Upstream rainfall measurement would close this, but the case is
+  rare — the 40+ catchment overflows trip easily — so it is an accepted limitation, not
+  worth a rainfall-monitoring network for the current use case.
 - **Calibration drift.** The model's thresholds are fixed; as new test data accrues the
   dataset must be refreshed and the model re-validated (see §11).
 - **Sparse data at some sites.** Chertsey, Teddington and Ditton's Bend have relatively
