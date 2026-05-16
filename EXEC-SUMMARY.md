@@ -80,6 +80,8 @@ The trouble with once-a-day figures: a daily average can't be calculated until t
 
 **A real example — the River Mole, February 2026.** Rain fell across the Mole catchment on 13 February. The river began climbing on the 15th and surged on the 16th, more than doubling — from around 9 to over 20 cubic metres per second. Reading the river every 15 minutes, the system flagged **AMBER for the Kingston and Teddington sites on the 16th — the day the surge happened**. Working from once-a-day averages, the same warning would not have appeared until around the **18th**. That is two full days of earlier warning, on exactly the signal that predicts contamination arriving from upstream.
 
+**And the warning proved real.** The next water-quality test at a site fed by the Mole came three days later — Ditton's Bend, 19 February — and it came back at **2,930 E. coli per 100ml: dangerously contaminated, nearly six times the safe limit**. The surge the system flagged on the 16th was sewage genuinely on its way downstream. (By the following week it had eased back.)
+
 **Notice what the system did not need.** To catch that surge it never measured a single raindrop in the Mole catchment — and it did not have to. A river's flow *is* nature's rain gauge for its whole catchment: every shower, across hundreds of square kilometres, eventually arrives as water passing the flow station. The river has already added it all up. Trying instead to log rainfall at the dozens of separate gauges scattered across the Wey and Mole catchments — and then model how each one drains downhill — would be far more to build and maintain, for a worse answer. This is why the system stays deliberately lean: **one rain gauge** for rain falling on our own stretch, plus **each tributary's flow** to capture everything happening upstream. We do not need a sprawling rainfall-monitoring network, because the rivers themselves do that measuring for us, for free.
 
 This is live now: a developing surge on the Wey or Mole flags AMBER the day it begins, not two days later.
@@ -139,6 +141,8 @@ We combined three freely available public datasets:
 - **Thames Water data** — real-time sewage overflow status from 14 monitored outfalls
 
 All data is free and publicly available. The system runs as a small automated job twice a day — no special software, no laptop, and no manual data-gathering.
+
+For the complete technical detail — every input, every decision rule, the full validation results, and the model's known limitations — see the model reference document (`MODEL.md`).
 
 We compared our approach against a £5 million government-funded AI project (River Deep Mountain AI) that uses 65 data features and machine learning. Our simple 6-input model matches their accuracy on our stretch — because we include sewage overflow data, which they don't.
 

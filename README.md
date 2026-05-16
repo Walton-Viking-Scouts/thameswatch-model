@@ -34,7 +34,9 @@ _Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames risi
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
 
-The full analysis, methodology, and findings are in **[EXEC-SUMMARY.md](EXEC-SUMMARY.md)**.
+A plain-language overview is in **[EXEC-SUMMARY.md](EXEC-SUMMARY.md)**; the complete
+technical reference — inputs, decision rules, validation results, assumptions and
+limitations — is in **[MODEL.md](MODEL.md)**.
 
 ## How predictions work
 
