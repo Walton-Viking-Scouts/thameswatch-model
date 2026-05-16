@@ -11,6 +11,27 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 - 🟠 **AMBER** — borderline. Test the water with an R-Card first; if you can't test, don't go.
 - 🟢 **GREEN** — go with confidence. Safe ~95% of the time.
 
+<!-- PREDICTION:START -->
+## Current water-safety status
+
+Assessment for **2026-05-16** — updated 2026-05-16T12:21:31Z (model v3).
+
+| | Site | Status | Guidance |
+|---|---|---|---|
+| 🟠 | **Walton Wharf** | AMBER | Borderline — test the water with an R-Card first. |
+| 🟠 | **Chertsey** | AMBER | Borderline — test the water with an R-Card first. |
+| 🟠 | **Kingston Albany Reach** | AMBER | Borderline — test the water with an R-Card first. |
+| 🟠 | **Kingston HMT** | AMBER | Borderline — test the water with an R-Card first. |
+| 🟠 | **Ditton's Bend** | AMBER | Borderline — test the water with an R-Card first. |
+| 🟠 | **Teddington** | AMBER | Borderline — test the water with an R-Card first. |
+
+**0 🟢 GREEN · 6 🟠 AMBER · 0 🔴 RED**
+
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames rising._
+
+_Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
+<!-- PREDICTION:END -->
+
 The full analysis, methodology, and findings are in **[EXEC-SUMMARY.md](EXEC-SUMMARY.md)**.
 
 ## How predictions work
@@ -92,9 +113,10 @@ and early afternoon UK time, so an afternoon check catches rain or CSO that land
 during the day). Each run:
 
 1. Checks out the repo and installs `requests`.
-2. Runs `python3 predict.py --json prediction.json` — refreshing the flow/rain CSVs
-   and fetching live CSO data.
-3. Commits the updated `prediction.json` and `data/` CSVs back to the repo.
+2. Runs `python3 predict.py --json prediction.json --readme README.md` — refreshing the
+   flow/rain CSVs, fetching live CSO data, writing the JSON artifact, and splicing the
+   live status block into this README.
+3. Commits the updated `prediction.json`, `README.md` and `data/` CSVs back to the repo.
 
 No secrets or API keys are needed — every data source is public. The workflow can
 also be triggered manually from the Actions tab (`workflow_dispatch`).

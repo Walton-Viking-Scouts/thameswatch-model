@@ -26,6 +26,17 @@ from tw.snapshot import build_snapshot, build_upstream_watch
 SCHEMA_VERSION = 1
 MODEL_VERSION = "v3"
 
+LEVEL_ICON = {"GREEN": "🟢", "AMBER": "🟠", "RED": "🔴"}
+LEVEL_GUIDANCE = {
+    "GREEN": "Good to go — standard hygiene precautions.",
+    "AMBER": "Borderline — test the water with an R-Card first.",
+    "RED": "Do not go on the water.",
+}
+
+# The workflow splices the live status into the README between these markers.
+README_START = "<!-- PREDICTION:START -->"
+README_END = "<!-- PREDICTION:END -->"
+
 
 def check_today(site=None, date=None, topup=True):
     """Build a snapshot, run the model per site, return a structured result dict."""
@@ -105,12 +116,58 @@ def render_text(result):
     return "\n".join(lines)
 
 
+def render_markdown(result):
+    """Render a result dict as a friendly markdown status block for the README."""
+    lines = [
+        "## Current water-safety status",
+        "",
+        f"Assessment for **{result['assessment_date']}** — "
+        f"updated {result['generated_at']} (model {result['model_version']}).",
+        "",
+        "| | Site | Status | Guidance |",
+        "|---|---|---|---|",
+    ]
+    for s in result["sites"]:
+        icon = LEVEL_ICON.get(s["level"], "")
+        guidance = LEVEL_GUIDANCE.get(s["level"], "")
+        lines.append(f"| {icon} | **{s['site']}** | {s['level']} | {guidance} |")
+    su = result["summary"]
+    lines += [
+        "",
+        f"**{su.get('GREEN', 0)} 🟢 GREEN · {su.get('AMBER', 0)} 🟠 AMBER · "
+        f"{su.get('RED', 0)} 🔴 RED**",
+    ]
+    uw = result.get("upstream_watch")
+    if uw:
+        bits = [f"{c['catchment']} {c['status']}" for c in uw["catchments"]]
+        lines += ["", f"_Upstream watch (tributary flow, last 24h): "
+                       f"{' · '.join(bits)}._"]
+    lines += ["", "_Full reasoning and data quality in "
+                   "[`prediction.json`](prediction.json); methodology in "
+                   "[`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._"]
+    return "\n".join(lines)
+
+
+def update_readme(path, result):
+    """Splice the live status block into the README between the marker comments."""
+    with open(path) as f:
+        text = f.read()
+    if README_START not in text or README_END not in text:
+        raise SystemExit(f"{path} is missing the {README_START} / {README_END} markers")
+    head = text[:text.index(README_START) + len(README_START)]
+    tail = text[text.index(README_END):]
+    with open(path, "w") as f:
+        f.write(f"{head}\n{render_markdown(result)}\n{tail}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="ThamesWatch water-safety prediction.")
     parser.add_argument("--site", help="assess a single site (default: all)")
     parser.add_argument("--date", help="ISO assessment date (default: today)")
     parser.add_argument("--json", dest="json_out",
                         help="write JSON to a path, or '-' for stdout")
+    parser.add_argument("--readme", dest="readme_out",
+                        help="splice the live status into a README markdown file")
     parser.add_argument("--no-topup", action="store_true",
                         help="skip refreshing the flow/rain CSVs")
     args = parser.parse_args()
@@ -124,6 +181,9 @@ def main():
         with open(args.json_out, "w") as f:
             json.dump(result, f, indent=2)
         print(f"Wrote {args.json_out}")
+    if args.readme_out:
+        update_readme(args.readme_out, result)
+        print(f"Updated {args.readme_out}")
     print(render_text(result))
 
 

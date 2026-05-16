@@ -24,13 +24,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run prediction
-        run: python3 predict.py --json prediction.json
+        run: python3 predict.py --json prediction.json --readme README.md
 
-      - name: Commit updated prediction and data
+      - name: Commit updated prediction, README and data
         run: |
           git config user.name "thameswatch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add prediction.json data/
+          git add prediction.json README.md data/
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
