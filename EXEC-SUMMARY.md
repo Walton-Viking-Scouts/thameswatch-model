@@ -4,7 +4,7 @@
 
 We've built a system that checks weather, sewage, and river conditions and tells you whether it's safe to go on the water — **before you get there**. It uses a simple traffic light: RED (don't go), AMBER (test the water first), GREEN (go with confidence).
 
-We tested it against 207 real water quality results from ThamesWatch. When it says GREEN, the water was safe **94% of the time**. When it says RED, the water was unsafe **81% of the time**. It has never given a GREEN when the water was dangerously contaminated.
+We tested it against 229 real water quality results from ThamesWatch. When it says GREEN, the water was safe **95% of the time**. When it says RED, the water was unsafe **79% of the time**. It has never given a GREEN when the water was dangerously contaminated.
 
 ---
 
@@ -82,7 +82,7 @@ In dry summers, the Wey and Mole make up **over 40% of all the water flowing pas
 
 | Signal | What to do |
 |---|---|
-| **RED** | Do not go on the water. No exceptions. The water is unsafe 81% of the time in these conditions. |
+| **RED** | Do not go on the water. No exceptions. The water is unsafe 79% of the time in these conditions. |
 | **AMBER** | Test the water with an R-Card before the activity. If you can't test, don't go. |
 | **GREEN** | Go with confidence at Walton, Chertsey, or Kingston HMT. Standard hygiene precautions apply. |
 
@@ -94,7 +94,7 @@ For Kingston Albany Reach and Teddington: the system will never say GREEN becaus
 
 ### This season
 
-1. **Check conditions before every session.** We're working on a simple phone alert that does this automatically — checking rainfall, sewage overflows, and river flow, then texting leaders with a RED/AMBER/GREEN.
+1. **Check conditions before every session.** This is now automated. A prediction pipeline runs twice a day — checking rainfall, sewage overflows, and river flow — and publishes a RED/AMBER/GREEN for every site as a machine-readable file (`prediction.json`). A simple leader-facing alert (a web page or text) can be built on top of it as a next step.
 
 2. **Carry R-Card test kits for AMBER days.** The traffic light tells you when conditions are uncertain. A quick test on the day resolves it.
 
@@ -114,7 +114,7 @@ For Kingston Albany Reach and Teddington: the system will never say GREEN becaus
 
 We combined three freely available public datasets:
 
-- **ThamesWatch water quality results** — 207 E. coli tests from our 10 monitoring sites (the only source of actual bacteria data on this stretch — the Environment Agency doesn't test for E. coli here)
+- **ThamesWatch water quality results** — 229 E. coli tests from our monitoring sites (the only source of actual bacteria data on this stretch — the Environment Agency doesn't test for E. coli here)
 - **Environment Agency data** — rainfall from 6 gauges across the catchment, river flow from 5 stations (Walton, Wey, Mole, Staines, Reading)
 - **Thames Water data** — real-time sewage overflow status from 14 monitored outfalls
 
@@ -124,5 +124,5 @@ We compared our approach against a £5 million government-funded AI project (Riv
 
 ---
 
-*Prepared March 2026.*
-*Based on analysis of 207 water quality test results, 600 days of river flow data, and 14 sewage overflow monitoring points.*
+*Prepared March 2026; updated May 2026 with a refreshed dataset and an automated prediction pipeline.*
+*Based on analysis of 229 water quality test results, 800+ days of river flow data, and 14 sewage overflow monitoring points.*
