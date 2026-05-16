@@ -10,7 +10,7 @@ We tested it against 229 real water quality results from ThamesWatch. When it sa
 
 ## Why This Matters
 
-E. coli testing takes 24-48 hours in a lab. That's no use when you need to decide this morning whether to put boats on the water. Our system gives an answer in seconds by checking conditions that predict whether the water is contaminated — primarily **sewage discharges** and **rainfall**.
+E. coli testing takes 24-48 hours in a lab. That's no use when you need to decide this morning whether to put boats on the water. Our system gives an answer in seconds by checking conditions that predict whether the water is contaminated — primarily **sewage discharges** and **rainfall**. It now runs automatically twice a day on live data, so a current RED/AMBER/GREEN for every site is always ready.
 
 ---
 
@@ -44,7 +44,7 @@ This is one of the most important findings. The water quality at our different t
 
 ### Our safest sites
 
-**Walton Wharf** — our home base. Safe 89% of the time when conditions look good. The main risk comes from the River Wey, which joins the Thames just upstream at Weybridge and carries sewage from Guildford, Cranleigh, and Woking.
+**Walton Wharf** — our home base. Safe 93% of the time when conditions look good. The main risk comes from the River Wey, which joins the Thames just upstream at Weybridge and carries sewage from Guildford, Cranleigh, and Woking.
 
 **Chertsey** and **Kingston Half Mile Tree** — consistently clean. Kingston HMT is safe 100% of the time when conditions look good, because it sits just upstream of the Hogsmill sewage works outfall.
 
@@ -68,9 +68,27 @@ In dry summers, the Wey and Mole make up **over 40% of all the water flowing pas
 
 ---
 
+## Watching the Rivers in Real Time
+
+The system now runs by itself. Twice a day — morning and early afternoon — it automatically gathers the latest rainfall, river flow, and sewage-discharge data and publishes a fresh RED/AMBER/GREEN for every site. Nobody has to collect anything by hand.
+
+It also reads the rivers and rain gauges **every 15 minutes**, rather than relying on once-a-day figures — and for upstream rain, that matters a great deal.
+
+Rain that falls on the Wey or Mole headwaters, 20-50 km away, never reaches our stretch as rain. The only warning we get is the tributary rising as that water runs down to us over the following one to three days. A rising river is our early signal for contamination that hasn't arrived yet.
+
+The trouble with once-a-day figures: a daily average can't be calculated until the day is over, and is then published one to three days later. A surge could build for two days before the old approach noticed it.
+
+**A real example — the River Mole, February 2026.** Rain fell across the Mole catchment on 13 February. The river began climbing on the 15th and surged on the 16th, more than doubling — from around 9 to over 20 cubic metres per second. Reading the river every 15 minutes, the system flagged **AMBER for the Kingston and Teddington sites on the 16th — the day the surge happened**. Working from once-a-day averages, the same warning would not have appeared until around the **18th**. That is two full days of earlier warning, on exactly the signal that predicts contamination arriving from upstream.
+
+This is live now: a developing surge on the Wey or Mole flags AMBER the day it begins, not two days later.
+
+---
+
 ## How to Use This
 
-### Before any water activity, check three things:
+The system does the checking for you and publishes a verdict twice a day. The three signals below are what it weighs — useful for understanding a result, or as a manual sense-check.
+
+### The three signals behind every verdict
 
 1. **Has it rained in the last 48 hours?** More than 10mm = RED, don't go. Any rain today = RED.
 
@@ -118,11 +136,11 @@ We combined three freely available public datasets:
 - **Environment Agency data** — rainfall from 6 gauges across the catchment, river flow from 5 stations (Walton, Wey, Mole, Staines, Reading)
 - **Thames Water data** — real-time sewage overflow status from 14 monitored outfalls
 
-All data is free and publicly available. The model runs on a laptop with no special software.
+All data is free and publicly available. The system runs as a small automated job twice a day — no special software, no laptop, and no manual data-gathering.
 
 We compared our approach against a £5 million government-funded AI project (River Deep Mountain AI) that uses 65 data features and machine learning. Our simple 6-input model matches their accuracy on our stretch — because we include sewage overflow data, which they don't.
 
 ---
 
-*Prepared March 2026; updated May 2026 with a refreshed dataset and an automated prediction pipeline.*
+*Prepared March 2026; updated May 2026 — refreshed dataset, automated twice-daily pipeline, and real-time (15-minute) river and rainfall data.*
 *Based on analysis of 229 water quality test results, 800+ days of river flow data, and 14 sewage overflow monitoring points.*
