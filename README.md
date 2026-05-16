@@ -14,18 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-05-16** — updated 2026-05-16T12:25:18Z (model v3).
+Assessment for **2026-05-16** — updated 2026-05-16T12:38:40Z (model v3).
 
-| | Site | Status | Guidance |
+| | Site | Status | Why this colour |
 |---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | Borderline — test the water with an R-Card first. |
-| 🟠 | **Chertsey** | AMBER | Borderline — test the water with an R-Card first. |
-| 🟠 | **Kingston Albany Reach** | AMBER | Borderline — test the water with an R-Card first. |
-| 🟠 | **Kingston HMT** | AMBER | Borderline — test the water with an R-Card first. |
-| 🟠 | **Ditton's Bend** | AMBER | Borderline — test the water with an R-Card first. |
-| 🟠 | **Teddington** | AMBER | Borderline — test the water with an R-Card first. |
+| 🟠 | **Walton Wharf** | AMBER | 2 dry day(s) — 76% safe but recent rain, consider testing |
+| 🟠 | **Chertsey** | AMBER | 2 dry day(s) — 76% safe but recent rain, consider testing |
+| 🟠 | **Kingston Albany Reach** | AMBER | 2 dry day(s) — 76% safe but recent rain, consider testing |
+| 🟠 | **Kingston HMT** | AMBER | 2 dry day(s) — 76% safe but recent rain, consider testing |
+| 🟠 | **Ditton's Bend** | AMBER | 2 dry day(s) — 76% safe but recent rain, consider testing |
+| 🟠 | **Teddington** | AMBER | 2 dry day(s) — 76% safe but recent rain, consider testing |
 
 **0 🟢 GREEN · 6 🟠 AMBER · 0 🔴 RED**
+
+_🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢 good to go_
 
 _Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames rising._
 

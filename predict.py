@@ -27,11 +27,8 @@ SCHEMA_VERSION = 1
 MODEL_VERSION = "v3"
 
 LEVEL_ICON = {"GREEN": "🟢", "AMBER": "🟠", "RED": "🔴"}
-LEVEL_GUIDANCE = {
-    "GREEN": "Good to go — standard hygiene precautions.",
-    "AMBER": "Borderline — test the water with an R-Card first.",
-    "RED": "Do not go on the water.",
-}
+LEVEL_LEGEND = ("🔴 do not go on the water · 🟠 test the water with an R-Card first · "
+                "🟢 good to go")
 
 # The workflow splices the live status into the README between these markers.
 README_START = "<!-- PREDICTION:START -->"
@@ -124,18 +121,19 @@ def render_markdown(result):
         f"Assessment for **{result['assessment_date']}** — "
         f"updated {result['generated_at']} (model {result['model_version']}).",
         "",
-        "| | Site | Status | Guidance |",
+        "| | Site | Status | Why this colour |",
         "|---|---|---|---|",
     ]
     for s in result["sites"]:
         icon = LEVEL_ICON.get(s["level"], "")
-        guidance = LEVEL_GUIDANCE.get(s["level"], "")
-        lines.append(f"| {icon} | **{s['site']}** | {s['level']} | {guidance} |")
+        lines.append(f"| {icon} | **{s['site']}** | {s['level']} | {s['explanation']} |")
     su = result["summary"]
     lines += [
         "",
         f"**{su.get('GREEN', 0)} 🟢 GREEN · {su.get('AMBER', 0)} 🟠 AMBER · "
         f"{su.get('RED', 0)} 🔴 RED**",
+        "",
+        f"_{LEVEL_LEGEND}_",
     ]
     uw = result.get("upstream_watch")
     if uw:
