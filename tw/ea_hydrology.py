@@ -85,6 +85,55 @@ def fetch_rainfall_15min_daily(measure_id, since=None, limit=5000):
     return {d: round(v, 2) for d, v in daily.items()}
 
 
+def fetch_15min_flow(station_key, limit=220):
+    """Recent 15-minute instantaneous flow — list of (dateTime, value), newest first.
+
+    limit=220 readings ≈ 55 hours, enough to compare 'now' against ~24h ago. Used
+    for surge detection on the live path, where the daily-mean series lags 1-3 days.
+    """
+    station = EA_STATIONS[station_key]
+    m15 = station.measure_id.replace("flow-m-86400", "flow-i-900")
+    url = f"{EA_HYDROLOGY_ROOT}/id/measures/{m15}/readings.json"
+    r = _get(url, {"_limit": limit, "_sort": "-dateTime"})
+    out = []
+    for item in r.json().get("items", []):
+        dt = item.get("dateTime")
+        v = item.get("value")
+        if dt and v is not None:
+            out.append((dt, float(v)))
+    return out
+
+
+def recent_flow_surge(station_key, threshold=1.3):
+    """Detect a sharp rise in river flow from the 15-minute series.
+
+    Compares the mean of the last ~2h of flow against a ~2h window centred ~24h
+    earlier — the same >30% / 24h test the model uses, but on data current to ~1h
+    instead of the 1-3-day-stale daily series. Returns
+    (rising: bool, recent_m3s: float|None, prior_m3s: float|None).
+    """
+    def _parse(dt):
+        return datetime.fromisoformat(dt.replace("Z", "+00:00")).replace(tzinfo=None)
+
+    readings = fetch_15min_flow(station_key)
+    if len(readings) < 20:
+        return False, None, None
+
+    newest = _parse(readings[0][0])
+    target = newest - timedelta(hours=24)
+    recent = [v for dt, v in readings
+              if (newest - _parse(dt)).total_seconds() <= 2 * 3600]
+    prior = [v for dt, v in readings
+             if abs((_parse(dt) - target).total_seconds()) <= 3600]
+    if not recent or not prior:
+        return False, None, None
+
+    recent_m = sum(recent) / len(recent)
+    prior_m = sum(prior) / len(prior)
+    rising = prior_m > 0 and recent_m > prior_m * threshold
+    return rising, round(recent_m, 3), round(prior_m, 3)
+
+
 def search_stations(search=None, observed_property=None, lat=None, long=None,
                     dist=None, limit=20):
     """Search the EA station catalogue — used to rediscover missing station GUIDs."""

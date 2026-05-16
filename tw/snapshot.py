@@ -115,6 +115,22 @@ def build_snapshot(date=None, topup=True):
     # today's flow has not yet published (EA daily data lags 1-3 days).
     upstream_ctx = get_upstream_context(flow_data_date or date)
 
+    # Tributary-surge detection on the live path uses the 15-minute flow series.
+    # The daily-mean series the model reads lags 1-3 days, which would miss a Wey
+    # or Mole surge developing today (the case where upstream-catchment rain that
+    # misses the Hogsmill gauge only reaches the model through flow). Absolute flow
+    # thresholds stay on daily-mean (calibrated); only the rising signal upgrades.
+    upstream_ctx["surge_source"] = "daily"
+    if is_today:
+        for river in ("wey", "mole"):
+            try:
+                rising, recent, _prior = ea_hydrology.recent_flow_surge(river)
+                upstream_ctx[f"{river}_rising"] = rising
+                upstream_ctx[f"{river}_flow_15min"] = recent
+                upstream_ctx["surge_source"] = "15min-live"
+            except Exception as exc:  # noqa: BLE001 — never abort a prediction
+                shared_warnings.append(f"15-min {river} surge check failed: {exc}")
+
     # --- CSO (shared — global state; assess_safety filters per site) ---
     periods = thames_water.fetch_all_discharge_periods(now=end_of_day)
     active_48, _ = thames_water.was_cso_active(periods, check_dt, 48)
@@ -156,3 +172,68 @@ def build_snapshot(date=None, topup=True):
             warnings=warnings,
         )
     return snapshots
+
+
+# Headwater rain takes roughly this long to reach our stretch (Phase 2 hydrology
+# research: local urban runoff 6-18h, headwater rainfall 2-4 days).
+HEADWATER_LAG = "1-3 days"
+
+
+def build_upstream_watch(date=None):
+    """Catchment-level early-warning view — rain falling in the headwater catchments
+    and the tributary-flow response. Reads the CSVs that build_snapshot tops up.
+
+    This is a *display* feature: it surfaces what the model already reads implicitly
+    through flow. It is not a model input.
+    """
+    today = datetime.now(timezone.utc).date().isoformat()
+    date = date or today
+    d0 = datetime.strptime(date, "%Y-%m-%d")
+
+    catchments = []
+    for name, c in config.CATCHMENTS.items():
+        rain = _load_value_csv(data_file(config.RAIN_CSV[c["rain_station"]]))
+        flow = _load_value_csv(data_file(config.FLOW_CSV[c["flow_station"]]))
+
+        # Rain over the last 5 days — wide enough to catch headwater rain still
+        # in transit (it arrives 1-3 days behind).
+        recent, rain_5d = [], 0.0
+        for i in range(5):
+            dd = (d0 - timedelta(days=i)).strftime("%Y-%m-%d")
+            if dd in rain:
+                recent.append({"date": dd, "mm": rain[dd]})
+                rain_5d += rain[dd]
+
+        # Flow now vs ~3 days earlier — is the catchment's water arriving?
+        flow_date, flow_val = _most_recent(flow, date)
+        change_pct = None
+        if flow_date:
+            prior = (datetime.strptime(flow_date, "%Y-%m-%d")
+                     - timedelta(days=3)).strftime("%Y-%m-%d")
+            _, prior_val = _most_recent(flow, prior)
+            if prior_val:
+                change_pct = round((flow_val / prior_val - 1) * 100)
+
+        status = "steady"
+        if change_pct is not None:
+            if change_pct >= 30:
+                status = "surge"        # crosses the model's tributary-surge threshold
+            elif change_pct >= 10:
+                status = "rising"
+            elif change_pct <= -10:
+                status = "falling"
+
+        catchments.append({
+            "catchment": name,
+            "joins": c["joins"],
+            "rain_gauge": config.EA_STATIONS[c["rain_station"]].name,
+            "rain_5d_mm": round(rain_5d, 1),
+            "rain_recent": list(reversed(recent)),
+            "flow_station": config.EA_STATIONS[c["flow_station"]].name,
+            "flow_m3s": flow_val,
+            "flow_date": flow_date,
+            "flow_change_pct": change_pct,
+            "status": status,
+        })
+
+    return {"date": date, "headwater_lag": HEADWATER_LAG, "catchments": catchments}
