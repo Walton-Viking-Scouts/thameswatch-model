@@ -80,6 +80,8 @@ The trouble with once-a-day figures: a daily average can't be calculated until t
 
 **A real example — the River Mole, February 2026.** Rain fell across the Mole catchment on 13 February. The river began climbing on the 15th and surged on the 16th, more than doubling — from around 9 to over 20 cubic metres per second. Reading the river every 15 minutes, the system flagged **AMBER for the Kingston and Teddington sites on the 16th — the day the surge happened**. Working from once-a-day averages, the same warning would not have appeared until around the **18th**. That is two full days of earlier warning, on exactly the signal that predicts contamination arriving from upstream.
 
+**Notice what the system did not need.** To catch that surge it never measured a single raindrop in the Mole catchment — and it did not have to. A river's flow *is* nature's rain gauge for its whole catchment: every shower, across hundreds of square kilometres, eventually arrives as water passing the flow station. The river has already added it all up. Trying instead to log rainfall at the dozens of separate gauges scattered across the Wey and Mole catchments — and then model how each one drains downhill — would be far more to build and maintain, for a worse answer. This is why the system stays deliberately lean: **one rain gauge** for rain falling on our own stretch, plus **each tributary's flow** to capture everything happening upstream. We do not need a sprawling rainfall-monitoring network, because the rivers themselves do that measuring for us, for free.
+
 This is live now: a developing surge on the Wey or Mole flags AMBER the day it begins, not two days later.
 
 ---
@@ -133,7 +135,7 @@ For Kingston Albany Reach and Teddington: the system will never say GREEN becaus
 We combined three freely available public datasets:
 
 - **ThamesWatch water quality results** — 229 E. coli tests from our monitoring sites (the only source of actual bacteria data on this stretch — the Environment Agency doesn't test for E. coli here)
-- **Environment Agency data** — rainfall from 6 gauges across the catchment, river flow from 5 stations (Walton, Wey, Mole, Staines, Reading)
+- **Environment Agency data** — local rainfall, and river flow from 5 stations (Walton, Wey, Mole, Staines, Reading), which between them capture rain falling anywhere upstream
 - **Thames Water data** — real-time sewage overflow status from 14 monitored outfalls
 
 All data is free and publicly available. The system runs as a small automated job twice a day — no special software, no laptop, and no manual data-gathering.
