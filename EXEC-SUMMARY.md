@@ -70,21 +70,17 @@ In dry summers, the Wey and Mole make up **over 40% of all the water flowing pas
 
 ## Watching the Rivers in Real Time
 
-The system now runs by itself. Twice a day — morning and early afternoon — it automatically gathers the latest rainfall, river flow, and sewage-discharge data and publishes a fresh RED/AMBER/GREEN for every site. Nobody has to collect anything by hand.
+The system now runs by itself. Twice a day — morning and early afternoon — it automatically gathers the latest rainfall, river-flow and sewage-discharge data and publishes a fresh RED/AMBER/GREEN for every site. Nobody has to collect anything by hand.
 
-It also reads the rivers and rain gauges **every 15 minutes**, rather than relying on once-a-day figures — and for upstream rain, that matters a great deal.
+That continuous watch matters, because the water can change completely between tests. ThamesWatch testing is roughly weekly — and a week is ample time for conditions to swing from safe to dangerous.
 
-Rain that falls on the Wey or Mole headwaters, 20-50 km away, never reaches our stretch as rain. The only warning we get is the tributary rising as that water runs down to us over the following one to three days. A rising river is our early signal for contamination that hasn't arrived yet.
+**A real example — Walton Wharf, late summer 2025.** On 27 August the water at Walton Wharf tested at just **62** E. coli per 100ml — pristine, comfortably safe, after a fortnight of dry weather. A clear GREEN day. The next test was a week later, on 3 September: it came back at **10,000 — twenty times the safe limit, catastrophically contaminated**.
 
-The trouble with once-a-day figures: a daily average can't be calculated until the day is over, and is then published one to three days later. A surge could build for two days before the old approach noticed it.
+For that whole week the weekly test told us nothing. The rivers did. Heavy rain arrived at the start of September — 15mm in 48 hours — and the Wey, the tributary joining just above Walton, nearly doubled, climbing from 3 to 6 cubic metres per second. Reading rain and river flow twice a day, the system would have turned Walton from GREEN to RED as those conditions arrived — in real time, before the 3 September lab sample had even been processed.
 
-**A real example — the River Mole, February 2026.** Rain fell across the Mole catchment on 13 February. The river began climbing on the 15th and surged on the 16th, more than doubling — from around 9 to over 20 cubic metres per second. Reading the river every 15 minutes, the system flagged **AMBER for the Kingston and Teddington sites on the 16th — the day the surge happened**. Working from once-a-day averages, the same warning would not have appeared until around the **18th**. That is two full days of earlier warning, on exactly the signal that predicts contamination arriving from upstream.
+Two things stand out. First, **no storm overflow discharged anywhere on the Wey** — the Thames Water overflow map showed all-clear throughout. This was rain washing bacteria straight off the land, not a monitored sewage spill; a leader checking only the overflow map would have seen nothing wrong. Second, the weekly test left a **seven-day blind window** — anyone relying on it spent that week believing the water was still a pristine 62. Only watching the weather and the rivers continuously catches a swing like this.
 
-**And the warning proved real.** The next water-quality test at a site fed by the Mole came three days later — Ditton's Bend, 19 February — and it came back at **2,930 E. coli per 100ml: dangerously contaminated, nearly six times the safe limit**. The surge the system flagged on the 16th was sewage genuinely on its way downstream. (By the following week it had eased back.)
-
-**Notice what the system did not need.** To catch that surge it never measured a single raindrop in the Mole catchment — and it did not have to. A river's flow *is* nature's rain gauge for its whole catchment: every shower, across hundreds of square kilometres, eventually arrives as water passing the flow station. The river has already added it all up. Trying instead to log rainfall at the dozens of separate gauges scattered across the Wey and Mole catchments — and then model how each one drains downhill — would be far more to build and maintain, for a worse answer. This is why the system stays deliberately lean: **one rain gauge** for rain falling on our own stretch, plus **each tributary's flow** to capture everything happening upstream. We do not need a sprawling rainfall-monitoring network, because the rivers themselves do that measuring for us, for free.
-
-This is live now: a developing surge on the Wey or Mole flags AMBER the day it begins, not two days later.
+**Why we watch flow, not a network of rain gauges.** Rain that falls on the Wey or Mole headwaters — 20 to 50 km upstream — never falls on our stretch at all. We could try to log rainfall at the dozens of gauges scattered across those catchments and model how each one drains downhill. We don't need to. A river's flow *is* nature's rain gauge for its whole catchment: every shower, across hundreds of square kilometres, eventually arrives as water passing the flow station — the river has already added it all up. So the system stays deliberately lean: one rain gauge for rain on our own stretch, plus each tributary's flow to capture everything happening upstream.
 
 ---
 
