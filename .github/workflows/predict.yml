@@ -1,0 +1,39 @@
+name: predict
+
+# Twice daily — morning and early afternoon (UK). Cron is UTC.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+    - cron: "0 12 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run prediction
+        run: python3 predict.py --json prediction.json
+
+      - name: Commit updated prediction and data
+        run: |
+          git config user.name "thameswatch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add prediction.json data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Prediction update $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

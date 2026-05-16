@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-16T08:19:46Z",
+  "assessment_date": "2026-05-16",
+  "model_version": "v3",
+  "sites": [
+    {
+      "site": "Walton Wharf",
+      "level": "AMBER",
+      "confidence": 24,
+      "explanation": "2 dry day(s) \u2014 76% safe but recent rain, consider testing",
+      "inputs": {
+        "rain_48h": 0.0,
+        "rain_7d": 6.05,
+        "dry_days": 2,
+        "season": "spring",
+        "flow_m3s": 28.373,
+        "cso_active_48h": false,
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "",
+        "upstream_ctx": {
+          "walton_flow": 28.373,
+          "wey_flow": 6.374,
+          "mole_flow": 2.437,
+          "wey_pct": 22.465019560850102,
+          "mole_pct": 8.589151658266662,
+          "wey_rising": false,
+          "mole_rising": false
+        }
+      },
+      "data_quality": {
+        "rain_station": "hogsmill_rain",
+        "flow_data_date": "2026-05-14",
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
+      }
+    },
+    {
+      "site": "Chertsey",
+      "level": "AMBER",
+      "confidence": 24,
+      "explanation": "2 dry day(s) \u2014 76% safe but recent rain, consider testing",
+      "inputs": {
+        "rain_48h": 0.0,
+        "rain_7d": 6.05,
+        "dry_days": 2,
+        "season": "spring",
+        "flow_m3s": 28.373,
+        "cso_active_48h": false,
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "",
+        "upstream_ctx": {
+          "walton_flow": 28.373,
+          "wey_flow": 6.374,
+          "mole_flow": 2.437,
+          "wey_pct": 22.465019560850102,
+          "mole_pct": 8.589151658266662,
+          "wey_rising": false,
+          "mole_rising": false
+        }
+      },
+      "data_quality": {
+        "rain_station": "hogsmill_rain",
+        "flow_data_date": "2026-05-14",
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
+      }
+    },
+    {
+      "site": "Kingston Albany Reach",
+      "level": "AMBER",
+      "confidence": 24,
+      "explanation": "2 dry day(s) \u2014 76% safe but recent rain, consider testing",
+      "inputs": {
+        "rain_48h": 0.0,
+        "rain_7d": 6.05,
+        "dry_days": 2,
+        "season": "spring",
+        "flow_m3s": 28.373,
+        "cso_active_48h": false,
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "",
+        "upstream_ctx": {
+          "walton_flow": 28.373,
+          "wey_flow": 6.374,
+          "mole_flow": 2.437,
+          "wey_pct": 22.465019560850102,
+          "mole_pct": 8.589151658266662,
+          "wey_rising": false,
+          "mole_rising": false
+        }
+      },
+      "data_quality": {
+        "rain_station": "hogsmill_rain",
+        "flow_data_date": "2026-05-14",
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
+      }
+    },
+    {
+      "site": "Kingston HMT",
+      "level": "AMBER",
+      "confidence": 24,
+      "explanation": "2 dry day(s) \u2014 76% safe but recent rain, consider testing",
+      "inputs": {
+        "rain_48h": 0.0,
+        "rain_7d": 6.05,
+        "dry_days": 2,
+        "season": "spring",
+        "flow_m3s": 28.373,
+        "cso_active_48h": false,
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "",
+        "upstream_ctx": {
+          "walton_flow": 28.373,
+          "wey_flow": 6.374,
+          "mole_flow": 2.437,
+          "wey_pct": 22.465019560850102,
+          "mole_pct": 8.589151658266662,
+          "wey_rising": false,
+          "mole_rising": false
+        }
+      },
+      "data_quality": {
+        "rain_station": "hogsmill_rain",
+        "flow_data_date": "2026-05-14",
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
+      }
+    },
+    {
+      "site": "Ditton's Bend",
+      "level": "AMBER",
+      "confidence": 24,
+      "explanation": "2 dry day(s) \u2014 76% safe but recent rain, consider testing",
+      "inputs": {
+        "rain_48h": 0.0,
+        "rain_7d": 6.05,
+        "dry_days": 2,
+        "season": "spring",
+        "flow_m3s": 28.373,
+        "cso_active_48h": false,
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "",
+        "upstream_ctx": {
+          "walton_flow": 28.373,
+          "wey_flow": 6.374,
+          "mole_flow": 2.437,
+          "wey_pct": 22.465019560850102,
+          "mole_pct": 8.589151658266662,
+          "wey_rising": false,
+          "mole_rising": false
+        }
+      },
+      "data_quality": {
+        "rain_station": "hogsmill_rain",
+        "flow_data_date": "2026-05-14",
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
+      }
+    },
+    {
+      "site": "Teddington",
+      "level": "AMBER",
+      "confidence": 24,
+      "explanation": "2 dry day(s) \u2014 76% safe but recent rain, consider testing",
+      "inputs": {
+        "rain_48h": 0.0,
+        "rain_7d": 6.05,
+        "dry_days": 2,
+        "season": "spring",
+        "flow_m3s": 28.373,
+        "cso_active_48h": false,
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "",
+        "upstream_ctx": {
+          "walton_flow": 28.373,
+          "wey_flow": 6.374,
+          "mole_flow": 2.437,
+          "wey_pct": 22.465019560850102,
+          "mole_pct": 8.589151658266662,
+          "wey_rising": false,
+          "mole_rising": false
+        }
+      },
+      "data_quality": {
+        "rain_station": "hogsmill_rain",
+        "flow_data_date": "2026-05-14",
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "GREEN": 0,
+    "AMBER": 6,
+    "RED": 0
+  }
+}

@@ -1,0 +1,277 @@
+testLocationId,locationName,stationId,latitude,longitude,testDate,ec,ecDescription,ei,eiDescription,testType,flowRate,waterTemperature,rainfall24h,rainfall3d,rainfall7d,reference,testResultId
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-06-10,460,Excellent,98,Excellent,Laboratory,45.4,,2.8,3.2,5.4,,081cf423-e028-ef11-913f-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-06-27,73,Excellent,49,Excellent,Laboratory,32.4,,0.0,0.0,1.3,,803ad05d-8637-ef11-9140-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-07-02,92,Excellent,35,Excellent,Laboratory,25.1,,0.3,0.3,0.3,,1eea368f-273a-ef11-9140-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-07-08,6200,Poor,520,Poor,Laboratory,58.0,,6.8,28.7,37.7,,c7aed717-2f40-ef11-9140-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-07-10,2300,Poor,200,Sufficient,Laboratory,57.5,,5.5,25.3,55.7,,bb530a9f-2f40-ef11-9140-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-07-12,170,Excellent,67,Excellent,Laboratory,36.1,,0.1,5.7,55.8,,0c187c60-7043-ef11-9141-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-07-24,140,Excellent,46,Excellent,Laboratory,30.74,,1.7,5.8,6.1,,798e0f9f-974d-ef11-9141-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-09-06,700,Sufficient,570,Poor,Laboratory,22.44,,6.8,10.7,12.4,,3de71689-b772-ef11-9142-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2024-09-18,120,Excellent,41,Excellent,Laboratory,18.4,,0.0,1.0,1.6,,1f21c5a2-777b-ef11-9143-801844dec051
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2025-09-16,165,Excellent,,N/A,R-Card,10.19,,0.0,2.8,21.3,,b69594ce-7d83-421b-115c-08ddf5f44548
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2025-09-18,170,Excellent,,N/A,R-Card,10.62,,0.4,1.0,11.0,,c5c6cb73-5e5e-48c6-e90c-08ddf82332ce
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2025-12-15,500,Sufficient,,N/A,R-Card,95.58,8.0,0.0,0.0,12.2,,56446413-f776-4e6e-1227-08de3c93d56a
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2025-12-19,2600,Poor,,N/A,R-Card,142.17,7.0,15.0,23.0,24.0,,6dab8750-0f09-43ce-a956-08de3fa539b1
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2026-01-14,3000,Poor,,N/A,R-Card,129.12,6.0,6.5,15.6,43.9,,2ef0f47e-fefa-476e-66d8-08de54427078
+b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.38674,-0.47055,2026-04-09,100,Excellent,,N/A,R-Card,50.6,11.0,0.0,0.0,0.1,,5bd6e5dc-6ab0-46cb-2a50-08de96da9b46
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-10-16,300,Excellent,,N/A,R-Card,13.13,13.0,0.0,0.1,0.5,,6d71a068-9e24-40ae-9822-08de0d5412f6
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-10-22,1100,Poor,,N/A,R-Card,22.4,16.0,0.4,8.5,9.1,,c8e4ea1f-6d4c-4fa4-2164-08de12329e61
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-10-30,766,Sufficient,,N/A,R-Card,10.76,11.0,2.4,3.4,19.2,,da88aa9a-4507-42b1-4ece-08de187a63d5
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-11-07,200,Excellent,,N/A,R-Card,16.97,12.0,0.0,4.0,21.0,,d7cd4616-3a2e-4471-5ee5-08de1ee03dba
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-11-14,700,Sufficient,,N/A,R-Card,26.49,12.0,11.3,13.4,21.0,,fbe551a8-77de-4444-0b1f-08de2442fc7f
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-11-20,1000,Poor,,N/A,R-Card,68.81,8.0,0.0,5.8,23.9,,bb4b5d5e-c0f5-4295-5018-08de291e9531
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-11-28,500,Sufficient,,N/A,R-Card,37.71,7.0,0.1,2.1,18.1,,7d68a6e8-13c7-4cae-8e20-08de2f69336b
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-12-05,4300,Poor,,N/A,R-Card,92.63,7.0,3.6,5.3,19.0,,997b513e-738e-4680-ddd1-08de34a1489b
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-12-10,2130,Poor,,N/A,R-Card,125.27,8.0,1.0,10.8,29.3,,511c8362-d825-4601-1676-08de3898a0ad
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-12-19,12530,Poor,,N/A,R-Card,172.76,9.0,13.1,20.5,23.5,,d27ec0f7-5448-4a54-a958-08de3fa539b1
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2025-12-26,970,Poor,,N/A,R-Card,139.67,6.0,0.0,0.0,7.0,,5f58e42d-215e-4642-b53b-08de452d21b5
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-01-06,770,Sufficient,,N/A,R-Card,63.54,2.0,0.2,0.2,3.1,,dd9d079b-a9c4-47d7-aaf6-08de4e090001
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-01-14,3200,Poor,,N/A,R-Card,150.01,6.0,4.8,17.6,40.4,,1c1b4ce5-8df9-4e5e-66d9-08de54427078
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-01-29,2430,Poor,,N/A,R-Card,244.78,6.0,0.1,15.9,24.2,,af146fc7-1b06-461c-2681-08de603c9e03
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-02-19,2930,Poor,,N/A,R-Card,266.58,,8.3,8.4,22.5,,fd1d012e-be79-4bd6-a173-08de737af9ee
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-02-26,530,Sufficient,,N/A,R-Card,201.13,,0.0,0.0,4.0,,9c77fa01-3ccc-4916-2c6d-08de75f700ab
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-03-13,330,Excellent,,N/A,R-Card,117.19,9.0,0.0,2.6,11.3,,853e1b2e-511b-42bf-1d66-08de81ce93c7
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-03-27,470,Excellent,,N/A,R-Card,68.59,9.0,0.0,0.0,1.6,,c2e602c7-8672-4769-052c-08de8d1d3273
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-04-11,30,Excellent,,N/A,R-Card,51.94,11.0,0.1,0.1,0.3,,9a15fb0d-e363-40b7-0e97-08de9bd98e2b
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-04-20,370,Excellent,,N/A,R-Card,40.65,14.0,0.0,0.3,2.0,,482217d0-8d50-4cf6-79dd-08de9fc70d44
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-05-04,30,Excellent,,N/A,Laboratory,28.07,16.0,0.0,0.0,3.3,,c4d0e294-f3f3-42ec-acf5-08deab423323
+80fece7b-c570-47f8-a79f-e90f09ebafcf,Hampton Court Bridge (upstream of),3400TH,51.403986,-0.34455,2026-03-09,667,Sufficient,0,Excellent,R-Card,121.25,,0.0,6.9,7.0,,6fa2b60f-5781-4158-cedb-08de989704d0
+80fece7b-c570-47f8-a79f-e90f09ebafcf,Hampton Court Bridge (upstream of),3400TH,51.403986,-0.34455,2026-03-16,700,Sufficient,0,Excellent,R-Card,133.55,,4.1,4.3,4.3,,69a01616-3c61-4f48-cedc-08de989704d0
+80fece7b-c570-47f8-a79f-e90f09ebafcf,Hampton Court Bridge (upstream of),3400TH,51.403986,-0.34455,2026-03-23,633,Sufficient,0,Excellent,Laboratory,81.22,9.0,0.0,0.0,0.3,,9e7ceb8b-3fa2-4dfd-cedd-08de989704d0
+80fece7b-c570-47f8-a79f-e90f09ebafcf,Hampton Court Bridge (upstream of),3400TH,51.403986,-0.34455,2026-04-27,833,Sufficient,,N/A,R-Card,,10.0,0.0,0.0,0.0,,914a830e-8c5c-49af-222d-08deaf137a3d
+80fece7b-c570-47f8-a79f-e90f09ebafcf,Hampton Court Bridge (upstream of),3400TH,51.403986,-0.34455,2026-05-04,705,Sufficient,,N/A,R-Card,,12.9,0.0,0.0,0.1,,15baa314-b45c-4a37-222e-08deaf137a3d
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-04-15,460,Excellent,120,Excellent,Laboratory,109.15,,0.0,0.0,5.2,,b7f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-04-15,1300,Poor,350,Poor,Laboratory,109.15,,0.0,0.0,5.2,,b8f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-04-15,1300,Poor,160,Excellent,Laboratory,109.15,,0.0,0.0,5.2,,b9f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-04-30,1900,Poor,300,Sufficient,Laboratory,185.33,,0.4,23.8,30.4,,baf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-05-08,1300,Poor,700,Poor,Laboratory,147.69,,0.6,11.6,26.2,,bbf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-05-10,450,Excellent,79,Excellent,Laboratory,103.08,,0.0,0.6,23.7,,bcf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-05-13,300,Excellent,87,Excellent,Laboratory,71.29,,0.0,0.0,11.2,,bdf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-05-17,520,Sufficient,71,Excellent,Laboratory,76.35,,1.9,9.2,9.5,,bef393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-05-21,140,Excellent,25,Excellent,Laboratory,59.9,,0.0,5.1,14.6,,bff393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-05-24,2000,Poor,114,Excellent,Laboratory,106.01,,0.0,16.1,21.5,,c0f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-05-28,2400,Poor,160,Excellent,Laboratory,79.33,,1.0,5.8,21.9,,c1f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-05-30,240,Excellent,102,Excellent,Laboratory,71.87,,0.2,4.6,9.4,,c2f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-06-03,430,Excellent,64,Excellent,Laboratory,51.21,,0.0,1.5,16.7,,c3f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-06-06,380,Excellent,106,Excellent,Laboratory,48.61,,0.0,1.7,13.8,,c4f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-06-12,180,Excellent,62,Excellent,Laboratory,54.63,,0.9,8.6,9.7,,c5f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-06-13,720,Sufficient,123,Excellent,Laboratory,43.89,,1.1,9.7,10.8,,c6f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-06-17,260,Excellent,51,Excellent,Laboratory,43.48,,0.2,6.1,17.8,,c7f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-06-20,1600,Poor,230,Sufficient,Laboratory,31.23,,0.0,0.1,8.2,,c8f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-06-24,160,Excellent,34,Excellent,Laboratory,27.42,,0.0,1.8,1.9,,c9f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-06-27,280,Excellent,95,Excellent,Laboratory,26.05,,0.0,0.0,1.8,,caf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-01,110,Excellent,2,Excellent,Laboratory,15.19,,0.0,0.0,0.0,,cbf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-04,550,Sufficient,142,Excellent,Laboratory,18.77,,1.0,1.1,1.1,,ccf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-09,910,Poor,,N/A,Laboratory,47.3,,8.0,25.4,49.5,,cdf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-11,1400,Poor,410,Poor,Laboratory,58.67,,0.7,15.9,56.3,,cef393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-15,290,Excellent,54,Excellent,Laboratory,30.12,,0.2,1.4,17.4,,cff393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-18,3900,Poor,430,Poor,Laboratory,48.62,,0.1,9.8,11.3,,d0f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-22,200,Excellent,28,Excellent,Laboratory,30.24,,0.1,0.2,10.0,,d1f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-25,560,Sufficient,156,Excellent,Laboratory,26.31,,0.9,5.8,6.0,,d2f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-07-31,230,Excellent,65,Excellent,Laboratory,22.56,,0.0,0.0,3.7,,d3f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-08-05,150,Excellent,40,Excellent,Laboratory,23.52,,0.1,1.3,3.7,,d4f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-08-06,1200,Poor,124,Excellent,Laboratory,25.3,,0.0,0.9,3.7,,d5f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-08-14,2900,Poor,430,Poor,Laboratory,23.44,,0.0,0.1,0.2,,d6f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-08-16,2500,Poor,540,Poor,Laboratory,23.77,,0.2,2.6,2.7,,d7f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-08-23,950,Poor,530,Poor,Laboratory,15.83,,2.5,3.3,8.2,,d8f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-08-27,850,Sufficient,150,Excellent,Laboratory,23.96,,0.0,10.7,15.8,,d9f393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-08-30,1300,Poor,127,Excellent,Laboratory,22.75,,0.0,0.0,12.5,,daf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2024-09-07,4100,Poor,1550,Poor,Laboratory,47.63,,6.9,15.5,20.1,,dbf393bf-5619-f011-b418-0050568e7300
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-04-11,210,Excellent,124,Excellent,Laboratory,43.97,,0.0,0.0,0.0,,079ab3b7-1033-43f7-520e-08ddaa4a6f89
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-05-12,350,Excellent,,N/A,Laboratory,29.44,,3.6,3.9,4.5,,da5c4f81-26b5-467b-520d-08ddaa4a6f89
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-05-13,37,Excellent,4,Excellent,Laboratory,34.12,,3.5,3.9,3.9,,986865f1-d538-46fd-b19d-08ddab1914e6
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-05-22,100,Excellent,100,Excellent,Laboratory,17.91,,3.0,4.1,4.1,,1fa82575-6462-4716-b19f-08ddab1914e6
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-05-30,8,Excellent,6,Excellent,Laboratory,17.66,,0.6,8.1,15.9,,54cd05ff-0504-4774-b1a1-08ddab1914e6
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-06-09,430,Excellent,64,Excellent,Laboratory,25.83,,0.0,16.9,35.4,,b1967975-5949-41f0-520c-08ddaa4a6f89
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-06-11,100,Excellent,39,Excellent,Laboratory,16.82,,0.3,0.3,26.6,,dff9f8f8-e482-45c4-b19b-08ddab1914e6
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-06-18,,N/A,400,Poor,Laboratory,10.2,,0.0,0.0,5.2,,c0f515d1-5847-4637-3eae-08ddb1556a83
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-06-18,84,Excellent,,N/A,Laboratory,10.2,,0.0,0.0,5.2,,d861927d-262c-4f86-3eaf-08ddb1556a83
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-07-01,220,Excellent,,N/A,Laboratory,7.91,,0.1,0.1,6.6,,c47b2392-e405-4862-16fc-08ddba65a45a
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-07-01,,N/A,47,Excellent,Laboratory,7.91,,0.1,0.1,6.6,,d27cb42a-2be1-48c9-3500-08ddbb1cabc4
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-07-07,,N/A,2000,Poor,Laboratory,11.55,,10.3,19.7,22.2,,38d75a93-85f8-4d35-04f3-08ddbfd2cb30
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-07-07,10000,Poor,,N/A,Laboratory,11.36,,10.3,19.7,22.2,,ef2d7510-7243-4f07-92c5-08ddbf2496eb
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-07-09,430,Excellent,,N/A,Laboratory,10.14,,0.2,11.1,22.9,,b900f71f-5a94-47e2-ed2f-08ddc09bbde5
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-07-09,,N/A,74,Excellent,Laboratory,10.14,,0.2,11.1,22.9,,5114872f-84eb-4083-ebc8-08ddc1d7d621
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-07-09,83,Excellent,19,Excellent,Laboratory,11.05,,0.0,19.0,22.7,,355cd142-c9d8-4d5c-7538-08ddc30ed269
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-07-24,100,Excellent,43,Excellent,Laboratory,8.04,,1.7,3.4,27.1,,9c099a84-bcf7-48f1-3093-08ddcdb87817
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-08-07,100,Excellent,63,Excellent,Laboratory,5.57,,0.0,0.9,24.0,,3f09cea9-6fb9-4731-3752-08ddd8d68401
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2025-08-15,100,Excellent,100,Excellent,Laboratory,8.93,,0.2,0.5,1.0,,ccfe591c-88c7-4508-ad7e-08dddf09ad00
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2026-04-24,310,Excellent,26,Excellent,Laboratory,,,0.0,0.0,0.0,,ffaebeea-b6be-4a85-4a35-08dea419c4ab
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2026-05-01,86,Excellent,27,Excellent,Laboratory,,,0.0,0.0,8.7,,f6522ab4-f764-427d-b5a5-08dea9fe1114
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2026-05-08,770,Sufficient,28,Excellent,Laboratory,,,0.0,0.0,3.2,,7a9bad19-6450-4519-222c-08deaf137a3d
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-04-15,650,Sufficient,120,Excellent,Laboratory,109.15,,0.0,0.0,5.2,,55dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-04-30,1100,Poor,410,Poor,Laboratory,185.33,,0.4,23.8,30.4,,56dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-05-13,390,Excellent,64,Excellent,Laboratory,71.29,,0.0,0.0,11.2,,57dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-05-21,93,Excellent,22,Excellent,Laboratory,59.9,,0.0,5.1,14.6,,58dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-05-28,500,Sufficient,170,Excellent,Laboratory,79.33,,1.0,5.8,21.9,,59dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-06-03,160,Excellent,54,Excellent,Laboratory,51.21,,0.0,1.5,16.7,,5adda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-06-12,300,Excellent,61,Excellent,Laboratory,54.63,,0.9,8.6,9.7,,5bdda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-06-17,240,Excellent,31,Excellent,Laboratory,43.48,,0.2,6.1,17.8,,5cdda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-06-24,210,Excellent,32,Excellent,Laboratory,27.42,,0.0,1.8,1.9,,5ddda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-07-01,220,Excellent,50,Excellent,Laboratory,15.19,,0.0,0.0,0.0,,5edda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-07-09,480,Excellent,,N/A,Laboratory,47.3,,8.0,25.4,49.5,,5fdda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-07-15,180,Excellent,39,Excellent,Laboratory,30.12,,0.2,1.4,17.4,,60dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-07-22,170,Excellent,23,Excellent,Laboratory,30.24,,0.1,0.2,10.0,,61dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-08-05,88,Excellent,25,Excellent,Laboratory,23.52,,0.1,1.3,3.7,,62dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-08-27,360,Excellent,180,Excellent,Laboratory,23.96,,0.0,10.7,15.8,,63dda430-5619-f011-b418-0050568e7300
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-05-13,52,Excellent,5,Excellent,Laboratory,34.12,,3.5,3.9,3.9,,8c2b67cf-0ff5-47c8-b19c-08ddab1914e6
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-05-22,68,Excellent,25,Excellent,Laboratory,17.91,,3.0,4.1,4.1,,25b1de67-59ba-4e4c-b19e-08ddab1914e6
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-05-30,9,Excellent,1,Excellent,Laboratory,17.66,,0.6,8.1,15.9,,cb16881f-f00d-42b7-b1a0-08ddab1914e6
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-06-11,100,Excellent,34,Excellent,Laboratory,16.82,,0.3,0.3,26.6,,7567df69-2242-4de4-b19a-08ddab1914e6
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-07-09,31,Excellent,11,Excellent,Laboratory,10.76,,0.2,11.1,22.9,,2bdc6514-2f7f-4b5f-7539-08ddc30ed269
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-07-16,460,Excellent,79,Excellent,Laboratory,12.93,,0.0,1.6,1.8,,e57f6111-fe0c-4d47-0853-08ddc5deeda9
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-07-24,100,Excellent,6,Excellent,Laboratory,7.07,,2.1,3.5,27.1,,90f58761-75c5-458f-3092-08ddcdb87817
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-08-07,100,Excellent,48,Excellent,Laboratory,5.57,,0.0,0.9,24.0,,f6baa613-37bd-489d-3751-08ddd8d68401
+655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2025-08-15,100,Excellent,72,Excellent,Laboratory,6.59,,0.1,0.5,1.0,,f2cab249-f1bd-4e6d-ad7f-08dddf09ad00
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-06-03,250,Excellent,62,Excellent,Laboratory,48.3,,0.0,1.3,16.7,,754cbee8-3526-ef11-913f-801844dec051
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-06-10,80,Excellent,50,Excellent,Laboratory,48.7,,7.4,8.1,10.2,,45c4f6c4-f92b-ef11-9140-801844dec051
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-06-17,360,Excellent,97,Excellent,Laboratory,41.8,,0.2,5.9,17.8,,33090e86-ad2f-ef11-9140-801844dec051
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-06-24,320,Excellent,65,Excellent,Laboratory,28.4,,0.0,1.8,1.9,,4eb065ee-cd36-ef11-9140-801844dec051
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-07-01,570,Sufficient,910,Poor,Laboratory,18.26,,0.0,0.0,0.0,,bc7dc9f2-f13e-ef11-9140-801844dec051
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-07-15,210,Excellent,162,Excellent,Laboratory,33.0,,0.2,1.4,17.4,,9deb36fe-fe47-ef11-9141-801844dec051
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-07-23,600,Sufficient,96,Excellent,Laboratory,29.7,,3.9,4.6,5.8,,7cd8e66e-ea4c-ef11-9141-801844dec051
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-07-29,220,Excellent,330,Poor,Laboratory,22.61,,0.0,0.0,8.6,,10ad8a8a-3154-ef11-9141-801844dec051
+37f2b84b-3526-ef11-913f-801844dec051,Molesey (Sadlers Ride),3100TH,51.41118,-0.35863,2024-08-05,71,Excellent,72,Excellent,Laboratory,24.91,,0.0,0.9,3.7,,6830f00a-6856-ef11-9141-801844dec051
+9393be9d-55db-4ab5-bbcb-dc3dccfa437f,River Mole (Behind football club),3280TH,51.292084,-0.330594,2026-03-13,3133,Poor,,N/A,Laboratory,11.1,,9.4,13.4,16.4,,b4c382dd-eb90-4954-7321-08de8bf455fe
+9393be9d-55db-4ab5-bbcb-dc3dccfa437f,River Mole (Behind football club),3280TH,51.292084,-0.330594,2026-03-18,600,Sufficient,,N/A,Laboratory,5.03,,0.0,4.0,14.7,,17f75bfd-b588-4449-7320-08de8bf455fe
+9393be9d-55db-4ab5-bbcb-dc3dccfa437f,River Mole (Behind football club),3280TH,51.292084,-0.330594,2026-03-25,166,Excellent,,N/A,R-Card,3.79,,0.0,0.0,0.0,,811d4ba8-43d0-4103-731f-08de8bf455fe
+9393be9d-55db-4ab5-bbcb-dc3dccfa437f,River Mole (Behind football club),3280TH,51.292084,-0.330594,2026-04-15,233,Excellent,,N/A,R-Card,2.58,,0.0,0.0,0.0,,935a5e26-8866-48d9-0e98-08de9bd98e2b
+9393be9d-55db-4ab5-bbcb-dc3dccfa437f,River Mole (Behind football club),3280TH,51.292084,-0.330594,2026-04-22,266,Excellent,,N/A,R-Card,2.29,,0.0,0.0,1.6,,fe906fca-8e72-4df6-667a-08dead1c03ab
+9393be9d-55db-4ab5-bbcb-dc3dccfa437f,River Mole (Behind football club),3280TH,51.292084,-0.330594,2026-04-29,133,Excellent,,N/A,R-Card,2.01,,0.0,0.0,0.0,,6f2be100-967d-4c4e-667b-08dead1c03ab
+9393be9d-55db-4ab5-bbcb-dc3dccfa437f,River Mole (Behind football club),3280TH,51.292084,-0.330594,2026-05-06,133,Excellent,,N/A,R-Card,1.99,,0.0,0.0,3.9,,c29aa23f-a3c5-427e-667c-08dead1c03ab
+9393be9d-55db-4ab5-bbcb-dc3dccfa437f,River Mole (Behind football club),3280TH,51.292084,-0.330594,2026-05-13,233,Excellent,,N/A,R-Card,1.94,,0.0,1.0,1.0,,b3092cd3-de9a-4a87-a99d-08deb276f61e
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2024-03-19,910,Poor,110,Excellent,Laboratory,192.45,,0.6,8.8,22.6,,0e7b2706-7343-ef11-9141-801844dec051
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2024-05-20,190,Excellent,25,Excellent,Laboratory,62.62,,0.2,5.2,14.9,,c06b753b-7343-ef11-9141-801844dec051
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2024-06-24,67,Excellent,37,Excellent,Laboratory,27.12,,0.0,1.8,1.9,,62131d4a-7343-ef11-9141-801844dec051
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2024-07-08,250,Excellent,90,Excellent,Laboratory,95.73,,9.6,31.5,41.5,,b28cb256-7343-ef11-9141-801844dec051
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2024-07-17,1700,Poor,210,Sufficient,Laboratory,52.33,,0.7,9.8,12.0,,c006dd48-f448-ef11-9141-801844dec051
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2024-08-19,200,Excellent,86,Excellent,Laboratory,19.61,,0.0,0.0,3.9,,91a0dced-df6e-ef11-9142-801844dec051
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2025-07-02,190,Excellent,10,Excellent,Laboratory,5.68,,0.0,0.1,3.7,,a4c31a9a-cf9c-4b10-7537-08ddc30ed269
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2025-07-10,1000,Poor,130,Excellent,Laboratory,7.53,,0.2,0.9,20.5,,2775d11c-87ee-4074-66a5-08ddc448ae14
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2025-07-16,1000,Poor,10,Excellent,Laboratory,4.16,,0.1,1.6,1.8,,8bc4051d-fb9c-4218-a88f-08ddcc020ee2
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2025-07-20,1000,Poor,1000,Poor,Laboratory,14.46,,4.5,22.1,24.3,,ac44c912-9d43-4841-a891-08ddcc020ee2
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2025-08-07,530,Sufficient,160,Excellent,Laboratory,4.31,,0.0,0.9,24.0,,1f2aa1e3-bcab-4173-a625-08dddfeb3096
+407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2025-07-29,2900,Poor,,N/A,R-Card,13.21,,3.2,3.2,5.3,,c3d2b36e-6b41-46d7-5047-08ddcfaac905
+407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2025-08-01,1800,Poor,,N/A,Laboratory,14.58,,1.6,13.1,16.5,,420666a5-aa55-4f76-6cbf-08ddd2bfbc46
+407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2025-08-07,200,Excellent,,N/A,R-Card,12.87,,0.0,0.0,14.6,,7a738951-ab33-4379-c1b0-08ddd64fabbb
+407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2025-08-12,200,Excellent,,N/A,Laboratory,10.06,,1.3,1.4,1.4,,518d2d32-400e-4bf6-8755-08ddda98c8c5
+407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2026-04-14,300,Excellent,,N/A,Laboratory,50.08,12.0,0.0,4.9,5.2,,7aa66fad-3762-4d4f-0e96-08de9bd98e2b
+407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2026-05-14,500,Sufficient,,N/A,R-Card,30.6,,0.0,0.2,1.1,,db6616e6-5df8-4936-a99e-08deb276f61e
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-05-21,780,Sufficient,68,Excellent,Laboratory,47.1,,0.1,4.6,15.8,EUUKCA-00333868,8143b54d-671a-ef11-802c-b42e99b7dc64
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-05-27,250,Excellent,71,Excellent,Laboratory,71.4,,1.3,4.4,19.2,EUUKCA-00336196,63535c15-ee20-ef11-913f-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-06-04,430,Excellent,154,Excellent,Laboratory,50.7,,0.1,0.1,12.2,EUUKCA-00338799,59749ddc-f724-ef11-913f-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-06-10,340,Excellent,90,Excellent,Laboratory,39.4,,2.9,3.1,5.0,,65d3bef4-df28-ef11-913f-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-06-13,200,Excellent,78,Excellent,Laboratory,42.2,,0.7,5.5,9.2,EUUKCA-00343159,77eda8d4-812c-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-06-17,420,Excellent,114,Excellent,Laboratory,41.8,,0.2,3.8,15.2,EUUKCA-00344298,c989ae35-ad2f-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-06-20,140,Excellent,760,Poor,Laboratory,30.3,,0.0,0.2,7.0,,399a30f1-2b35-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-06-24,480,Excellent,92,Excellent,Laboratory,28.4,,0.0,1.4,1.6,,8854259e-2b35-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-06-27,400,Excellent,87,Excellent,Laboratory,28.1,,0.0,0.0,1.4,,78c85035-8637-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-01,150,Excellent,56,Excellent,Laboratory,18.0,,0.0,0.0,0.0,,1afa8932-273a-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-04,280,Excellent,68,Excellent,Laboratory,18.0,,0.0,1.2,1.2,,1dbe7183-a03c-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-08,4300,Poor,400,Poor,Laboratory,49.7,,6.9,33.3,40.0,,4819bf84-2f40-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-09,510,Sufficient,102,Excellent,Laboratory,54.1,,8.5,20.3,48.3,,5184ea8f-3040-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-10,500,Sufficient,440,Poor,Laboratory,54.2,,5.9,21.3,54.0,,98670349-2f40-ef11-9140-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-11,480,Excellent,440,Poor,Laboratory,46.5,,0.1,14.8,53.6,,e7874a17-f942-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-15,390,Excellent,107,Excellent,Laboratory,33.0,,0.2,2.2,17.2,,b9dd6b11-1c45-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-18,870,Sufficient,148,Excellent,Laboratory,35.7,,0.0,7.7,10.1,,23f56cb1-fe47-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-22,2100,Poor,92,Excellent,Laboratory,30.4,,0.0,0.2,7.9,,5c40e25d-5b4a-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-25,240,Excellent,103,Excellent,Laboratory,25.0,,1.1,5.7,5.9,,469cf710-ea4c-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-07-29,370,Excellent,86,Excellent,Laboratory,22.6,,0.0,0.0,7.6,,c872dfa8-3b50-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-08-01,270,Excellent,38,Excellent,Laboratory,24.75,,0.2,0.5,2.5,,1683065a-d955-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-08-05,280,Excellent,92,Excellent,Laboratory,25.22,,0.0,1.1,7.3,,40d8186e-d955-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-08-08,320,Excellent,,N/A,Laboratory,25.9,,0.0,1.9,8.8,,1be167f8-0058-ef11-9141-801844dec051
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-08-15,220,Excellent,68,Excellent,Laboratory,26.38,,0.9,3.0,3.0,,e899e97a-4607-43e2-2ae1-08dcc0ec1008
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-08-19,280,Excellent,76,Excellent,Laboratory,23.28,,0.0,0.0,4.3,,d3ca67f6-c065-40b0-221a-08dcc363cb26
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-08-27,2400,Poor,250,Sufficient,Laboratory,20.58,,0.0,4.0,15.9,,42f15490-cfa6-45fe-427a-08dcca919653
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-08-29,230,Excellent,57,Excellent,Laboratory,24.1,,0.0,0.0,15.3,,461ef666-abf7-4edd-427b-08dcca919653
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-09-02,2300,Poor,290,Sufficient,Laboratory,21.25,,0.0,0.0,0.0,,8fc70cfc-82ae-4149-feb6-08dccd1231a4
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-09-06,3100,Poor,820,Poor,Laboratory,32.73,,9.7,13.4,16.4,,a2598448-bd7c-45e7-704d-08dccf59c4f8
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-09-09,1700,Poor,470,Poor,Laboratory,39.77,,1.6,8.9,24.2,,694e48d0-fc22-4196-e252-08dcd29fbe7a
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-09-12,430,Excellent,152,Excellent,Laboratory,23.01,,0.3,2.1,22.0,,2dabcd44-3b95-40e6-4fb9-08dcd4ecce42
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-09-17,380,Excellent,60,Excellent,Laboratory,19.94,,0.0,1.7,5.1,,b47a4903-6091-4d1b-163f-08dcd99d1e31
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-09-20,790,Sufficient,110,Excellent,Laboratory,13.88,,0.9,0.9,2.6,,28cb7106-1d83-4a04-d73a-08dcdb2a01c2
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-09-23,7100,Poor,2000,Poor,Laboratory,66.64,,23.7,39.0,39.0,,634850c3-c72c-4c0c-d2db-08dcdd91ceb8
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-09-25,3300,Poor,,N/A,Laboratory,146.07,,3.2,55.6,70.9,,16823f2c-427c-440c-19a4-08dce069b7ad
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-10-01,1100,Poor,440,Poor,Laboratory,184.92,,0.8,13.3,49.7,,3b81fb47-a994-413f-1f60-08dce37eac01
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-10-15,4200,Poor,640,Poor,Laboratory,133.31,,2.8,19.7,25.8,,7a6b8f6f-c38c-4903-a50c-08dcee804dd0
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-10-22,3600,Poor,610,Poor,Laboratory,124.74,,1.4,7.5,28.8,,8b5a2199-c7f6-4b9b-4bc3-08dcf41343d2
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-10-28,470,Excellent,91,Excellent,Laboratory,92.77,,0.4,1.2,5.3,,8bd518d9-fad0-473f-b7bd-08dcf985764a
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-11-12,2600,Poor,99,Excellent,Laboratory,53.89,,0.0,0.2,0.2,,f7165dbf-afa3-4aca-5636-08dd065532f1
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-11-20,2200,Poor,1020,Poor,Laboratory,103.82,,3.0,24.1,25.4,,8a0b3d93-373e-4c02-9ede-08dd0c6ad234
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-11-27,3000,Poor,1080,Poor,Laboratory,230.35,,14.7,23.0,41.0,,41eb5238-a940-42d1-95d8-08dd1159f4a9
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2024-12-31,410,Excellent,0,Excellent,Laboratory,81.36,,0.0,0.0,0.1,,3a55557d-1ea3-4559-f685-08dd2b0f1bfc
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-01-14,1400,Poor,510,Poor,Laboratory,141.42,,0.0,0.0,3.4,,1ef1cf03-f40d-4d4e-bd25-08dd35a160b9
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-02-05,840,Sufficient,320,Sufficient,Laboratory,170.04,,0.0,0.0,5.7,,1a4d7986-4315-4be8-87bc-08dd48e86fe6
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-02-11,2300,Poor,450,Poor,Laboratory,188.1,,2.1,5.1,10.6,,2842a1a9-133c-4d74-e2cc-08dd4f4093ac
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-02-14,1033,Poor,0,Excellent,Laboratory,157.38,,0.1,0.5,11.1,,f6027dd9-fbdd-43e9-d244-08dd4dde1968
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-02-19,420,Excellent,340,Poor,Laboratory,112.39,,0.0,0.0,2.6,,df61a08e-0f0c-4bbc-71b2-08dd518783a3
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-02-27,4800,Poor,990,Poor,Laboratory,225.87,,7.0,10.7,42.3,,cdac3583-9fb7-4576-fc62-08dd57d661de
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-03-05,500,Sufficient,92,Excellent,Laboratory,96.64,,0.0,0.0,7.0,,688a1615-2a6c-49a0-8b67-08dd5c88cc53
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-03-19,200,Excellent,,N/A,R-Card,72.61,8.0,0.0,0.5,3.5,,8b2426b0-8ae6-4b3c-4fc0-08dd7e501d49
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-03-19,350,Excellent,90,Excellent,Laboratory,72.61,,0.0,0.5,3.5,,2e3d81b0-850a-4504-4fc1-08dd7e501d49
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-04-01,270,Excellent,39,Excellent,Laboratory,59.67,,0.0,0.0,0.7,,07958234-2c51-4492-2c85-08dd71fd9756
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-04-08,600,Sufficient,49,Excellent,Laboratory,47.67,10.0,0.0,0.0,1.0,,d8727962-f65c-49ac-3dea-08dd773802dc
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-04-16,330,Excellent,,N/A,R-Card,52.76,11.0,3.6,9.2,9.6,,458006b5-1010-43c8-e730-08dd7db6a5a1
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-04-22,130,Excellent,,N/A,R-Card,40.57,11.0,0.0,1.9,10.8,,c413ceac-5d39-41c9-d6fb-08dd8286b0a0
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-04-29,100,Excellent,,N/A,R-Card,34.13,12.0,0.0,0.0,7.7,,e8327419-911d-478f-d388-08dd8ae15cf2
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-05-03,1200,Poor,,N/A,Laboratory,38.59,13.0,1.8,1.8,1.8,,cbda6d5d-055e-4cf9-d389-08dd8ae15cf2
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-05-08,100,Excellent,,N/A,R-Card,26.96,13.0,0.0,0.0,2.1,,09fe3d32-4ea7-41a7-4651-08dd8f188f8a
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-05-15,130,Excellent,,N/A,R-Card,27.75,14.0,0.0,0.4,2.9,,5372a2dc-6b7d-4335-134e-08dd948ba971
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-05-20,100,Excellent,,N/A,R-Card,24.6,16.0,0.0,0.1,0.1,,9b15e80b-b5f8-4823-c258-08dd9952f68f
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-05-27,47,Excellent,34,Excellent,Laboratory,23.2,,2.0,11.8,18.9,,50ad3f50-2bd5-4b0c-fc57-08dda200353b
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-05-27,130,Excellent,,N/A,R-Card,23.3,,2.0,11.8,18.9,,e0e592f3-8d93-4b1e-fc58-08dda200353b
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-06-03,78,Excellent,26,Excellent,Laboratory,16.6,,0.0,0.0,8.0,,e8b8018d-b49f-4da2-167a-08dda9b17a85
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-06-03,230,Excellent,,N/A,R-Card,16.6,,0.0,0.0,8.0,,e2d5be0d-60aa-4a88-56fc-08dda35b88b4
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-06-05,300,Excellent,,N/A,R-Card,20.0,15.5,8.4,10.9,12.1,,d36c3f6d-71cd-4ca6-7cd9-08dda53c1e11
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-06-12,160,Excellent,,N/A,R-Card,20.39,,0.1,0.4,26.4,,1fdc6554-d8ee-437c-520b-08ddaa4a6f89
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-06-12,340,Excellent,61,Excellent,Laboratory,20.39,,0.1,0.4,26.4,,631b75fd-28ff-405a-c6dd-08ddb563295f
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-06-26,160,Excellent,,N/A,R-Card,15.52,,0.0,1.0,2.1,,68a61a44-8ed6-4618-c6de-08ddb563295f
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-06-26,120,Excellent,47,Excellent,Laboratory,15.52,,0.0,1.0,2.1,,0a8a79ae-a3c7-4151-906b-08ddbbede97b
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-03,35,Excellent,,N/A,R-Card,8.46,,0.0,0.6,4.7,,db359870-bfb3-4c15-906c-08ddbbede97b
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-10,500,Sufficient,,N/A,R-Card,12.84,,0.2,3.0,19.5,,e10e5ae1-e023-4992-04f4-08ddbfd2cb30
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-10,230,Excellent,102,Excellent,Laboratory,12.84,,0.2,3.0,19.5,,08828294-a3dd-4c0c-5b8c-08ddc2b91498
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-17,300,Excellent,,N/A,R-Card,13.77,,0.0,1.9,1.9,,a19e0c28-d94f-4578-0852-08ddc5deeda9
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-17,590,Sufficient,39,Excellent,Laboratory,13.77,,0.0,1.9,1.9,,fe17f411-662f-467a-b833-08ddc8aa988e
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-24,160,Excellent,,N/A,R-Card,11.7,,1.4,2.6,32.2,,27b8f3bc-05c7-416c-a892-08ddcc020ee2
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-24,270,Excellent,170,Excellent,Laboratory,11.7,,1.4,2.6,32.2,,f5548a88-9817-454d-6a42-08ddce79706f
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-31,260,Excellent,,N/A,Laboratory,12.48,,1.3,4.5,5.6,,8a7f26c1-7e90-4562-b4b0-08ddd0d1c85e
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-07-31,260,Excellent,63,Excellent,Laboratory,12.48,,1.3,4.5,5.6,,5beac5b0-7cce-446c-7f42-08ddd3c0b7a1
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-08-07,100,Excellent,,N/A,R-Card,10.74,,0.0,1.2,14.6,,c940066d-4fe8-4660-c1af-08ddd64fabbb
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-08-14,400,Excellent,,N/A,R-Card,11.55,,0.0,1.4,1.4,,dae3cbe5-12c7-404a-d30a-08dddbc8f58d
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-08-21,333,Excellent,,N/A,R-Card,10.61,,0.0,0.4,0.5,,c69d2881-ccd4-45cb-741f-08dde142b7bb
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-08-21,170,Excellent,81,Excellent,Laboratory,10.74,,0.0,0.4,0.5,,da60e2ce-e0a5-468e-f8ac-08dde57e9bfe
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-08-27,160,Excellent,,N/A,R-Card,11.6,,0.1,0.1,0.3,,57222e31-0a6a-4bef-a113-08dde613d23b
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-08-27,62,Excellent,101,Excellent,Laboratory,11.6,,0.1,0.1,0.3,,b9527c0f-59b0-4aab-f9b7-08dde92b5154
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-09-03,10000,Poor,,N/A,Laboratory,18.79,,16.2,22.3,52.7,,0c4f2653-9b38-4518-0621-08ddf071f64b
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-09-15,1700,Poor,,N/A,R-Card,14.98,,1.5,3.7,16.3,,927ba3df-111f-4abb-115a-08ddf5f44548
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-09-16,1100,Poor,,N/A,R-Card,10.55,,0.0,3.1,16.3,,059422b3-a2cf-4001-115b-08ddf5f44548
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-09-17,470,Excellent,,N/A,R-Card,14.41,,0.8,2.3,17.0,,f5e1f8d7-cf26-4909-feeb-08ddf6e6ad32
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-09-18,435,Excellent,,N/A,R-Card,15.03,,0.5,2.0,8.0,,17642697-282b-4fed-feec-08ddf6e6ad32
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-09-18,360,Excellent,110,Excellent,Laboratory,15.03,,0.5,2.0,8.0,,2a504b64-6d0f-46fb-c64e-08ddf9d93509
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-09-25,310,Excellent,112,Excellent,Laboratory,11.33,,0.0,0.0,0.3,,d345a87c-ca81-4720-40de-08de00384377
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-10-07,300,Excellent,,N/A,R-Card,11.9,13.0,0.0,0.1,13.7,,b27bd9af-d751-46f6-a74a-08de06480ea6
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-10-14,650,Sufficient,,N/A,R-Card,12.66,12.0,0.2,0.2,0.5,,8d23be37-f1fc-4ce8-accc-08de0bc7ce80
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-10-16,900,Poor,,N/A,R-Card,12.03,12.0,0.0,0.2,0.2,,e36eb5d5-99d3-492f-9821-08de0d5412f6
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-10-21,3500,Poor,,N/A,R-Card,21.16,11.0,1.4,9.4,9.4,,17a2ca00-3547-415c-3d60-08de1141d05d
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-10-28,850,Sufficient,,N/A,Laboratory,13.38,11.0,0.0,0.9,26.3,,dc8ee74f-1c3a-4b3e-1e08-08de16c57783
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-11-04,650,Sufficient,,N/A,Laboratory,15.98,9.0,0.0,9.5,24.5,,99bb4681-cd86-4257-41a4-08de1c46500c
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-11-11,530,Sufficient,,N/A,Laboratory,17.24,10.0,3.6,7.4,12.9,,7dd2635a-d057-4191-49ab-08de21c27b98
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-11-18,1600,Poor,95,Excellent,Laboratory,74.69,9.0,0.0,0.3,27.9,,5c7a1071-7356-4d54-672c-08de2c0acaaa
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-11-18,1930,Poor,,N/A,R-Card,73.95,9.0,0.0,0.3,27.9,,73112613-a06c-46c4-c54a-08de27472643
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-11-25,1430,Poor,,N/A,R-Card,68.16,4.5,0.2,19.0,21.9,,1b15b99a-37c6-422a-9599-08de2cc9222b
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-12-05,1300,Poor,,N/A,R-Card,93.57,5.5,4.0,6.5,20.5,,9116a3ed-7e2c-482c-ddcf-08de34a1489b
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-12-10,1660,Poor,,N/A,R-Card,124.87,8.0,1.0,13.2,28.2,,41445f22-b239-4842-1675-08de3898a0ad
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-12-16,300,Excellent,,N/A,R-Card,87.91,7.0,1.5,1.5,9.7,,3b07ab76-5349-4752-1228-08de3c93d56a
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2025-12-19,5400,Poor,,N/A,R-Card,163.8,6.0,13.5,20.3,21.4,,da7027ac-a121-4eb7-a957-08de3fa539b1
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-01-08,800,Sufficient,,N/A,R-Card,61.1,2.3,0.6,10.6,12.2,,6f2335a9-c858-469c-31f2-08de4f5cbeb4
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-01-15,3100,Poor,,N/A,R-Card,146.08,5.5,11.5,26.3,49.2,,12e6b8c1-6a48-48a1-66da-08de54427078
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-01-23,3700,Poor,,N/A,R-Card,218.44,6.0,4.9,22.7,32.1,,97ada09a-9c69-48ce-a4a6-08de5b681154
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-03-05,400,Excellent,,N/A,R-Card,141.36,9.0,0.0,0.0,8.7,,936a6c38-bf48-4595-46bf-08de7b5d0d8c
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-03-12,300,Excellent,,N/A,R-Card,105.02,8.0,0.0,0.1,9.9,,7a254777-31aa-4e10-7270-08de80dfa066
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-03-19,300,Excellent,,N/A,R-Card,97.87,9.0,0.0,0.1,16.6,,561cf61a-8fcf-415d-d1bc-08de865b541f
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-03-26,160,Excellent,,N/A,R-Card,73.74,7.0,0.0,1.6,1.6,,643bc192-3cd8-4a41-731e-08de8bf455fe
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-04-03,300,Excellent,,N/A,R-Card,60.7,10.0,0.0,0.0,2.2,,af06fb33-99c0-4122-9923-08de9260257a
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-04-09,170,Excellent,,N/A,Laboratory,51.8,12.0,0.0,0.0,0.1,,e36a75eb-8bc6-484c-2a51-08de96da9b46
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-04-11,360,Excellent,,N/A,R-Card,55.19,,0.0,0.0,0.2,,40ea65b0-cf01-475c-cede-08de989704d0
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-04-22,300,Excellent,,N/A,R-Card,40.21,,0.0,0.0,0.8,,7d7dcb80-50c0-44e8-352e-08dea16eb355
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-04-29,70,Excellent,,N/A,R-Card,41.26,,0.0,0.0,0.0,,19dbe9d7-76cf-4820-f83a-08dea77f7521

@@ -1,0 +1,30 @@
+[
+  {
+    "locationName": "Portsmouth Road, Uxbridge Road",
+    "permitNumber": "TEMP.2843",
+    "locationGridRef": "TQ17676801",
+    "x": 517670,
+    "y": 168010,
+    "receivingWaterCourse": "River Thames",
+    "alertStatus": "Not discharging",
+    "statusChanged": "2025-10-31T20:58:00",
+    "alertPast48Hours": false,
+    "mostRecentDischargeAlertStart": "2025-10-31T19:32:00",
+    "mostRecentDischargeAlertStop": "2025-10-31T20:58:00",
+    "uniqueId": "TWL00140"
+  },
+  {
+    "locationName": "Kingston Main",
+    "permitNumber": "TEMP.1273",
+    "locationGridRef": "TQ178696",
+    "x": 517800,
+    "y": 169600,
+    "receivingWaterCourse": "River Thames",
+    "alertStatus": "Not discharging",
+    "statusChanged": "2024-05-17T14:30:00",
+    "alertPast48Hours": false,
+    "mostRecentDischargeAlertStart": "2023-12-11T11:00:00",
+    "mostRecentDischargeAlertStop": "2023-12-11T11:30:00",
+    "uniqueId": "TWL00258"
+  }
+]
