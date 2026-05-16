@@ -161,6 +161,49 @@ tributary arriving. Flow rules are disabled where the data does not support them
 - **The model does not forecast weather.** It assesses conditions that have already
   happened. It is current-state, not predictive of future rain.
 
+### Why the input set is exactly three signals — and not upstream rainfall
+
+The model takes rainfall from one local gauge, flow from the rivers, and discharge
+status from the CSO feed. A natural question is whether it should also measure rainfall
+across the upstream catchments. It should not — and the reason is timing.
+
+For an upstream rain event the signals become available in a fixed order:
+
+```
+upstream rain  →  CSO trips (minutes–1h)  →  flow surge reaches our stretch (~12–18h later)
+```
+
+A storm overflow trips on rainfall *intensity* — a short, sharp burst overwhelms the
+sewer within minutes. River flow rises from runoff *integrated across the whole
+catchment*, which builds far more slowly. This is observed, not assumed: in the
+February 2026 Mole event the Esher, Leatherhead and Cobham overflows began discharging
+around midday on 15 February while the Mole was still *falling* (8.7 m³/s); the river
+did not surge until roughly 12–18 hours later. **The discharge leads the flow surge** —
+flow is a lagging, corroborating signal, not a precursor to a discharge.
+
+So each contamination pathway already has the right detector, with no gap and no
+redundancy:
+
+| Contamination pathway | Detector | Timeliness |
+|---|---|---|
+| Upstream rain trips a monitored overflow | CSO discharge feed | Real-time — fires within ~1h of the rain |
+| Upstream rain → runoff or an unmonitored spill, no CSO | Tributary flow surge | Caught as the water reaches our stretch |
+| Rain on our own stretch | Local rain gauge (Hogsmill) | The heavy-rain rules (4-9) |
+
+Measuring upstream rainfall would sit in the gap between the first two rows and add
+nothing to either:
+
+- Against the **CSO feed** it would buy only ~1 hour of lead — negligible against the
+  1–3 days the contamination then takes to travel downstream — and it is *less*
+  informative. Rainfall alone cannot tell you whether an overflow actually tripped, and
+  that distinction is the whole game: runoff alone raises E. coli 10–100×, a CSO raises
+  it 100–10,000×. The discharge feed answers it directly; rainfall leaves you guessing.
+- Against the **flow surge** it is simply earlier-but-blind: the surge catches the
+  no-CSO case when the contamination actually arrives, which is what matters.
+
+This is the complete rationale for the input set: three signals because three signals
+partition the problem exactly — not from a preference for keeping things small.
+
 ---
 
 ## 7. Backtesting and validation
