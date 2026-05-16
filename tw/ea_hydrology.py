@@ -1,13 +1,17 @@
-"""Environment Agency Hydrology API client — daily river flow and rainfall.
+"""Environment Agency Hydrology API client — river flow and rainfall.
 
-Public API at environment.data.gov.uk/hydrology, no authentication. Flow and rain
-share one readings endpoint, differing only in measure id. Daily series are the
-measures whose id contains '-86400-' (86400 seconds = 1 day).
+Public API at environment.data.gov.uk/hydrology, no authentication.
+
+Two cadences per gauge: a daily series (id contains '-86400-') and a 15-minute
+series ('-900-'). The daily series lags 1-3 days; the 15-minute series updates
+within ~1 hour. Flow uses the daily mean; rainfall uses the 15-minute series
+aggregated to daily totals so predictions run on current rain, not stale data.
 """
 
 import csv
 import os
 import time
+from datetime import datetime, timedelta
 
 import requests
 
@@ -59,6 +63,28 @@ def fetch_station_readings(station_key, since=None):
     return fetch_readings(station.measure_id, since=since)
 
 
+def fetch_rainfall_15min_daily(measure_id, since=None, limit=5000):
+    """Fetch the 15-minute rainfall series and aggregate it to daily totals.
+
+    The 15-minute series updates within ~1 hour — unlike the daily series, which
+    lags 1-3 days. Returns {date_str: mm}. The most recent day is a running total
+    (partial — it firms up as the day progresses and on the next fetch).
+    """
+    m15 = measure_id.replace("-86400-", "-900-")
+    params = {"_limit": limit, "_sort": "-dateTime"}
+    if since:
+        params["mineq-date"] = since
+    url = f"{EA_HYDROLOGY_ROOT}/id/measures/{m15}/readings.json"
+    r = _get(url, params)
+    daily = {}
+    for item in r.json().get("items", []):
+        d = (item.get("dateTime") or "")[:10]
+        v = item.get("value")
+        if d and v is not None:
+            daily[d] = daily.get(d, 0.0) + float(v)
+    return {d: round(v, 2) for d, v in daily.items()}
+
+
 def search_stations(search=None, observed_property=None, lat=None, long=None,
                     dist=None, limit=20):
     """Search the EA station catalogue — used to rediscover missing station GUIDs."""
@@ -103,10 +129,11 @@ def _read_csv_dates(csv_path):
 
 
 def topup_csv(station_key, csv_path):
-    """Incrementally append new daily readings to a station's CSV.
+    """Incrementally update a station's daily CSV with the latest readings.
 
-    If the file exists, fetches only readings newer than its last date. If not,
-    fetches full history. Returns the number of rows appended.
+    Rainfall uses the 15-minute series aggregated to daily totals and re-fetches a
+    trailing window so recently-partial days firm up. Flow uses the daily-mean
+    series. Returns the number of rows added or changed.
     """
     station = EA_STATIONS[station_key]
     header = _VALUE_HEADER[station.kind]
@@ -114,18 +141,28 @@ def topup_csv(station_key, csv_path):
     existing = _read_csv_dates(csv_path) if os.path.exists(csv_path) else {}
     last_date = max(existing) if existing else None
 
-    readings = fetch_station_readings(station_key, since=last_date)
-    new = {d: v for d, v in readings.items() if d not in existing}
-    if not new:
+    if station.kind == "rainfall":
+        # Re-fetch from 5 days before the CSV's last date — recent days may have
+        # been partial when last written; the 15-minute series firms them up.
+        since = None
+        if last_date:
+            since = (datetime.strptime(last_date, "%Y-%m-%d")
+                     - timedelta(days=5)).strftime("%Y-%m-%d")
+        fetched = fetch_rainfall_15min_daily(station.measure_id, since=since)
+    else:
+        fetched = fetch_station_readings(station_key, since=last_date)
+
+    changed = [d for d, v in fetched.items()
+               if d not in existing or float(existing[d]) != v]
+    if not changed:
         return 0
 
     merged = dict(existing)
-    for d, v in new.items():
-        merged[d] = v
+    merged.update(fetched)   # fetched values overwrite — rain days firm up over time
 
     with open(csv_path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["date", header])
         for d in sorted(merged):
             writer.writerow([d, merged[d]])
-    return len(new)
+    return len(changed)
