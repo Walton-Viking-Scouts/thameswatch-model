@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-16T11:26:41Z",
+  "generated_at": "2026-05-16T11:48:58Z",
   "assessment_date": "2026-05-16",
   "model_version": "v3",
   "sites": [
@@ -253,10 +253,11 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 6.374,
-        "flow_date": "2026-05-14",
-        "flow_change_pct": 14,
-        "status": "rising"
+        "flow_m3s": 7.253,
+        "flow_change_pct": -3,
+        "flow_window": "24h",
+        "flow_source": "15min",
+        "status": "flat"
       },
       {
         "catchment": "Mole",
@@ -286,10 +287,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.437,
-        "flow_date": "2026-05-14",
-        "flow_change_pct": 22,
-        "status": "rising"
+        "flow_m3s": 2.659,
+        "flow_change_pct": -3,
+        "flow_window": "24h",
+        "flow_source": "15min",
+        "status": "flat"
       },
       {
         "catchment": "Thames",
@@ -319,10 +321,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 13.724,
-        "flow_date": "2026-05-14",
-        "flow_change_pct": 3,
-        "status": "steady"
+        "flow_m3s": 23.201,
+        "flow_change_pct": 12,
+        "flow_window": "24h",
+        "flow_source": "15min",
+        "status": "rising"
       }
     ]
   },

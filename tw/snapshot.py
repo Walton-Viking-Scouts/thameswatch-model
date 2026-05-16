@@ -179,21 +179,37 @@ def build_snapshot(date=None, topup=True):
 HEADWATER_LAG = "1-3 days"
 
 
+def _flow_status(change_pct):
+    """Label a 24h flow change: surge / rising / flat / easing."""
+    if change_pct is None:
+        return "unknown"
+    if change_pct >= 30:        # crosses the model's tributary-surge threshold
+        return "surge"
+    if change_pct >= 10:
+        return "rising"
+    if change_pct <= -10:
+        return "easing"
+    return "flat"
+
+
 def build_upstream_watch(date=None):
     """Catchment-level early-warning view — rain falling in the headwater catchments
-    and the tributary-flow response. Reads the CSVs that build_snapshot tops up.
+    and each tributary's flow trend over the last 24 hours.
 
-    This is a *display* feature: it surfaces what the model already reads implicitly
-    through flow. It is not a model input.
+    The flow trend uses the 15-minute series (last ~2h vs ~24h earlier) for a live
+    run — the same data the model's live surge detection uses, so the display and
+    the model agree. Back-dated runs fall back to daily-mean flow (latest vs one
+    day prior). This is a display feature; the surge that drives the model is
+    applied in build_snapshot.
     """
     today = datetime.now(timezone.utc).date().isoformat()
     date = date or today
+    is_today = date >= today
     d0 = datetime.strptime(date, "%Y-%m-%d")
 
     catchments = []
     for name, c in config.CATCHMENTS.items():
         rain = _load_value_csv(data_file(config.RAIN_CSV[c["rain_station"]]))
-        flow = _load_value_csv(data_file(config.FLOW_CSV[c["flow_station"]]))
 
         # Rain over the last 5 days — wide enough to catch headwater rain still
         # in transit (it arrives 1-3 days behind).
@@ -204,24 +220,28 @@ def build_upstream_watch(date=None):
                 recent.append({"date": dd, "mm": rain[dd]})
                 rain_5d += rain[dd]
 
-        # Flow now vs ~3 days earlier — is the catchment's water arriving?
-        flow_date, flow_val = _most_recent(flow, date)
-        change_pct = None
-        if flow_date:
-            prior = (datetime.strptime(flow_date, "%Y-%m-%d")
-                     - timedelta(days=3)).strftime("%Y-%m-%d")
-            _, prior_val = _most_recent(flow, prior)
-            if prior_val:
-                change_pct = round((flow_val / prior_val - 1) * 100)
+        # Flow trend over the last 24h.
+        flow_key = c["flow_station"]
+        flow_now = flow_prior = None
+        flow_source = "daily"
+        if is_today:
+            try:
+                _rising, flow_now, flow_prior = ea_hydrology.recent_flow_surge(flow_key)
+                flow_source = "15min"
+            except Exception:  # noqa: BLE001 — fall back to daily, never abort
+                flow_now = None
+        if flow_now is None:
+            flow = _load_value_csv(data_file(config.FLOW_CSV[flow_key]))
+            fdate, flow_now = _most_recent(flow, date)
+            if fdate:
+                prev = (datetime.strptime(fdate, "%Y-%m-%d")
+                        - timedelta(days=1)).strftime("%Y-%m-%d")
+                _, flow_prior = _most_recent(flow, prev)
+            flow_source = "daily"
 
-        status = "steady"
-        if change_pct is not None:
-            if change_pct >= 30:
-                status = "surge"        # crosses the model's tributary-surge threshold
-            elif change_pct >= 10:
-                status = "rising"
-            elif change_pct <= -10:
-                status = "falling"
+        change_pct = None
+        if flow_now is not None and flow_prior:
+            change_pct = round((flow_now / flow_prior - 1) * 100)
 
         catchments.append({
             "catchment": name,
@@ -229,11 +249,12 @@ def build_upstream_watch(date=None):
             "rain_gauge": config.EA_STATIONS[c["rain_station"]].name,
             "rain_5d_mm": round(rain_5d, 1),
             "rain_recent": list(reversed(recent)),
-            "flow_station": config.EA_STATIONS[c["flow_station"]].name,
-            "flow_m3s": flow_val,
-            "flow_date": flow_date,
+            "flow_station": config.EA_STATIONS[flow_key].name,
+            "flow_m3s": flow_now,
             "flow_change_pct": change_pct,
-            "status": status,
+            "flow_window": "24h",
+            "flow_source": flow_source,
+            "status": _flow_status(change_pct),
         })
 
     return {"date": date, "headwater_lag": HEADWATER_LAG, "catchments": catchments}

@@ -137,6 +137,14 @@ Each run commits `prediction.json` (versioned via `schema_version`). Its stable
   assessment date's flow isn't published yet the most recent reading is used and a
   warning records the lag.
 
+The JSON also carries an **`upstream_watch`** block — a catchment-level early-warning
+view (separate from the per-site verdicts): recent rainfall in the Wey, Mole, and Thames
+headwaters, and each tributary's flow trend over the last 24h (surge / rising / flat /
+easing). On a live run the flow trend comes from the 15-minute series — the same data
+the model's live surge detection uses, so the panel and the model agree. Headwater rain
+reaches the stretch ~1-3 days later, so a rising tributary flags conditions arriving
+before they show up locally.
+
 ## Maintaining the model
 
 The model is calibrated against `data/thameswatch_correlation_with_cso.csv` — real

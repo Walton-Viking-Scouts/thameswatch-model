@@ -21,7 +21,7 @@ import sys
 from datetime import datetime, timezone
 
 from traffic_light_model_v3 import assess_safety
-from tw.snapshot import build_snapshot
+from tw.snapshot import build_snapshot, build_upstream_watch
 
 SCHEMA_VERSION = 1
 MODEL_VERSION = "v3"
@@ -62,12 +62,14 @@ def check_today(site=None, date=None, topup=True):
             },
         })
 
+    resolved_date = next(iter(snaps.values())).date
     return {
         "schema_version": SCHEMA_VERSION,
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "assessment_date": next(iter(snaps.values())).date,
+        "assessment_date": resolved_date,
         "model_version": MODEL_VERSION,
         "sites": sites_out,
+        "upstream_watch": build_upstream_watch(resolved_date),
         "summary": summary,
     }
 
@@ -88,6 +90,18 @@ def render_text(result):
     su = result["summary"]
     lines.append(f"  {su.get('GREEN', 0)} GREEN   {su.get('AMBER', 0)} AMBER   "
                   f"{su.get('RED', 0)} RED")
+
+    uw = result.get("upstream_watch")
+    if uw:
+        lines.append("")
+        lines.append(f"Upstream watch — headwater rain (arrives ~{uw['headwater_lag']} "
+                      f"later) and each tributary's flow trend over the last 24h")
+        for c in uw["catchments"]:
+            pct = c["flow_change_pct"]
+            trend = f"{pct:+d}%/24h" if pct is not None else "?"
+            lines.append(f"  {c['catchment']:7s} {c['rain_5d_mm']:>5}mm/5d   "
+                          f"{c['flow_station']:22s} {c['flow_m3s'] or 0:>6.1f} m3/s  "
+                          f"{trend:>9s}  {c['status']}")
     return "\n".join(lines)
 
 
