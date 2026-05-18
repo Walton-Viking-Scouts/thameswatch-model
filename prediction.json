@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-18T07:43:07Z",
+  "generated_at": "2026-05-18T13:27:40Z",
   "assessment_date": "2026-05-18",
   "model_version": "v3",
   "sites": [
@@ -249,7 +249,7 @@
           },
           {
             "date": "2026-05-18",
-            "mm": 0.0
+            "mm": 0.01
           }
         ],
         "flow_station": "Wey at Weybridge",
