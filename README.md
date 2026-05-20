@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-05-19** — updated 2026-05-19T13:19:21Z (model v3).
+Assessment for **2026-05-20** — updated 2026-05-20T07:30:01Z (model v3).
 
 | | Site | Status | Why this colour |
 |---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | Dry conditions (5d), no CSO, spring — safe |
-| 🟢 | **Chertsey** | GREEN | Dry conditions (5d), no CSO, spring — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | Dry conditions (5d), no CSO, spring — safe |
-| 🟠 | **Ditton's Bend** | AMBER | Ditton's Bend has elevated baseline from continuous upstream effluent — test first |
-| 🟠 | **Teddington** | AMBER | Teddington has elevated baseline from continuous upstream effluent — test first |
+| 🔴 | **Walton Wharf** | RED | Rained today — only 35% safe even without CSO |
+| 🔴 | **Chertsey** | RED | Rained today — only 35% safe even without CSO |
+| 🔴 | **Kingston Albany Reach** | RED | Rained today — only 35% safe even without CSO |
+| 🔴 | **Kingston HMT** | RED | Rained today — only 35% safe even without CSO |
+| 🔴 | **Ditton's Bend** | RED | Rained today — only 35% safe even without CSO |
+| 🔴 | **Teddington** | RED | Rained today — only 35% safe even without CSO |
 
-**3 🟢 GREEN · 3 🟠 AMBER · 0 🔴 RED**
+**0 🟢 GREEN · 0 🟠 AMBER · 6 🔴 RED**
 
 _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢 good to go_
 
