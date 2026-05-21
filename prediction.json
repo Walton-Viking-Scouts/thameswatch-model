@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-21T07:34:05Z",
+  "generated_at": "2026-05-21T13:20:36Z",
   "assessment_date": "2026-05-21",
   "model_version": "v3",
   "sites": [
@@ -16,8 +16,8 @@
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_hours_48h": 0.8,
+        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(0.8h)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -52,8 +52,8 @@
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_hours_48h": 0.8,
+        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(0.8h)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -88,8 +88,8 @@
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_hours_48h": 0.8,
+        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(0.8h)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -124,8 +124,8 @@
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_hours_48h": 0.8,
+        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(0.8h)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -160,8 +160,8 @@
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_hours_48h": 0.8,
+        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(0.8h)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -196,8 +196,8 @@
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_hours_48h": 0.8,
+        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(0.8h)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -317,7 +317,7 @@
           },
           {
             "date": "2026-05-21",
-            "mm": 0.0
+            "mm": 0.01
           }
         ],
         "flow_station": "Thames at Reading",
