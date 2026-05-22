@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-22T07:30:00Z",
+  "generated_at": "2026-05-22T13:01:38Z",
   "assessment_date": "2026-05-22",
   "model_version": "v3",
   "sites": [
@@ -317,7 +317,7 @@
           },
           {
             "date": "2026-05-22",
-            "mm": 0.0
+            "mm": 0.01
           }
         ],
         "flow_station": "Thames at Reading",
