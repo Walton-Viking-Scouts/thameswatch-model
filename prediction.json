@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-23T07:08:40Z",
+  "generated_at": "2026-05-23T12:30:04Z",
   "assessment_date": "2026-05-23",
   "model_version": "v3",
   "sites": [
@@ -15,9 +15,9 @@
         "dry_days": 3,
         "season": "spring",
         "flow_m3s": 23.186,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -51,9 +51,9 @@
         "dry_days": 3,
         "season": "spring",
         "flow_m3s": 23.186,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -79,17 +79,17 @@
     {
       "site": "Kingston Albany Reach",
       "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Mole) \u2014 33-46% safe, consider testing",
+      "confidence": 55,
+      "explanation": "Kingston Albany Reach has elevated baseline from continuous upstream effluent \u2014 test first",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 4.43,
         "dry_days": 3,
         "season": "spring",
         "flow_m3s": 23.186,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -114,18 +114,18 @@
     },
     {
       "site": "Kingston HMT",
-      "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Mole) \u2014 33-46% safe, consider testing",
+      "level": "GREEN",
+      "confidence": 80,
+      "explanation": "Dry conditions (3d), no CSO, spring \u2014 safe",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 4.43,
         "dry_days": 3,
         "season": "spring",
         "flow_m3s": 23.186,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -151,17 +151,17 @@
     {
       "site": "Ditton's Bend",
       "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Mole) \u2014 33-46% safe, consider testing",
+      "confidence": 55,
+      "explanation": "Ditton's Bend has elevated baseline from continuous upstream effluent \u2014 test first",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 4.43,
         "dry_days": 3,
         "season": "spring",
         "flow_m3s": 23.186,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -187,17 +187,17 @@
     {
       "site": "Teddington",
       "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Mole) \u2014 33-46% safe, consider testing",
+      "confidence": 55,
+      "explanation": "Teddington has elevated baseline from continuous upstream effluent \u2014 test first",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 4.43,
         "dry_days": 3,
         "season": "spring",
         "flow_m3s": 23.186,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Cobham Bridge, Adj Cobham PS(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -330,8 +330,8 @@
     ]
   },
   "summary": {
-    "GREEN": 2,
-    "AMBER": 4,
+    "GREEN": 3,
+    "AMBER": 3,
     "RED": 0
   }
 }

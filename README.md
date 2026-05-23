@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-05-23** — updated 2026-05-23T07:08:40Z (model v3).
+Assessment for **2026-05-23** — updated 2026-05-23T12:30:04Z (model v3).
 
 | | Site | Status | Why this colour |
 |---|---|---|---|
 | 🟢 | **Walton Wharf** | GREEN | Dry conditions (3d), no CSO, spring — safe |
 | 🟢 | **Chertsey** | GREEN | Dry conditions (3d), no CSO, spring — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | CSO active upstream (Mole) — 33-46% safe, consider testing |
-| 🟠 | **Kingston HMT** | AMBER | CSO active upstream (Mole) — 33-46% safe, consider testing |
-| 🟠 | **Ditton's Bend** | AMBER | CSO active upstream (Mole) — 33-46% safe, consider testing |
-| 🟠 | **Teddington** | AMBER | CSO active upstream (Mole) — 33-46% safe, consider testing |
+| 🟠 | **Kingston Albany Reach** | AMBER | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
+| 🟢 | **Kingston HMT** | GREEN | Dry conditions (3d), no CSO, spring — safe |
+| 🟠 | **Ditton's Bend** | AMBER | Ditton's Bend has elevated baseline from continuous upstream effluent — test first |
+| 🟠 | **Teddington** | AMBER | Teddington has elevated baseline from continuous upstream effluent — test first |
 
-**2 🟢 GREEN · 4 🟠 AMBER · 0 🔴 RED**
+**3 🟢 GREEN · 3 🟠 AMBER · 0 🔴 RED**
 
 _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢 good to go_
 
