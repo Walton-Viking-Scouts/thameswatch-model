@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-25T13:21:01Z",
-  "assessment_date": "2026-05-25",
+  "generated_at": "2026-05-26T07:29:16Z",
+  "assessment_date": "2026-05-26",
   "model_version": "v3",
   "sites": [
     {
       "site": "Walton Wharf",
       "level": "GREEN",
-      "confidence": 80,
-      "explanation": "Dry conditions (5d), no CSO, spring \u2014 safe",
+      "confidence": 85,
+      "explanation": "Dry conditions (6d), no CSO, spring \u2014 safe",
       "inputs": {
         "rain_48h": 0.0,
-        "rain_7d": 2.7,
-        "dry_days": 5,
+        "rain_7d": 2.57,
+        "dry_days": 6,
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 13.5,
-        "cso_active_monitors": "Stoke Road, Cobham(13.5h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -34,26 +34,26 @@
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-05-19",
-        "data_lag_days": 6,
+        "data_lag_days": 7,
         "warnings": [
-          "flow data 6 day(s) behind assessment date"
+          "flow data 7 day(s) behind assessment date"
         ]
       }
     },
     {
       "site": "Chertsey",
       "level": "GREEN",
-      "confidence": 80,
-      "explanation": "Dry conditions (5d), no CSO, spring \u2014 safe",
+      "confidence": 85,
+      "explanation": "Dry conditions (6d), no CSO, spring \u2014 safe",
       "inputs": {
         "rain_48h": 0.0,
-        "rain_7d": 2.7,
-        "dry_days": 5,
+        "rain_7d": 2.57,
+        "dry_days": 6,
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 13.5,
-        "cso_active_monitors": "Stoke Road, Cobham(13.5h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -70,9 +70,9 @@
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-05-19",
-        "data_lag_days": 6,
+        "data_lag_days": 7,
         "warnings": [
-          "flow data 6 day(s) behind assessment date"
+          "flow data 7 day(s) behind assessment date"
         ]
       }
     },
@@ -83,13 +83,13 @@
       "explanation": "CSO active upstream (Mole) \u2014 33-46% safe, consider testing",
       "inputs": {
         "rain_48h": 0.0,
-        "rain_7d": 2.7,
-        "dry_days": 5,
+        "rain_7d": 2.57,
+        "dry_days": 6,
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 13.5,
-        "cso_active_monitors": "Stoke Road, Cobham(13.5h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -106,9 +106,9 @@
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-05-19",
-        "data_lag_days": 6,
+        "data_lag_days": 7,
         "warnings": [
-          "flow data 6 day(s) behind assessment date"
+          "flow data 7 day(s) behind assessment date"
         ]
       }
     },
@@ -119,13 +119,13 @@
       "explanation": "CSO active upstream (Mole) \u2014 33-46% safe, consider testing",
       "inputs": {
         "rain_48h": 0.0,
-        "rain_7d": 2.7,
-        "dry_days": 5,
+        "rain_7d": 2.57,
+        "dry_days": 6,
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 13.5,
-        "cso_active_monitors": "Stoke Road, Cobham(13.5h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -142,9 +142,9 @@
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-05-19",
-        "data_lag_days": 6,
+        "data_lag_days": 7,
         "warnings": [
-          "flow data 6 day(s) behind assessment date"
+          "flow data 7 day(s) behind assessment date"
         ]
       }
     },
@@ -155,13 +155,13 @@
       "explanation": "CSO active upstream (Mole) \u2014 33-46% safe, consider testing",
       "inputs": {
         "rain_48h": 0.0,
-        "rain_7d": 2.7,
-        "dry_days": 5,
+        "rain_7d": 2.57,
+        "dry_days": 6,
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 13.5,
-        "cso_active_monitors": "Stoke Road, Cobham(13.5h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -178,9 +178,9 @@
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-05-19",
-        "data_lag_days": 6,
+        "data_lag_days": 7,
         "warnings": [
-          "flow data 6 day(s) behind assessment date"
+          "flow data 7 day(s) behind assessment date"
         ]
       }
     },
@@ -191,13 +191,13 @@
       "explanation": "CSO active upstream (Mole) \u2014 33-46% safe, consider testing",
       "inputs": {
         "rain_48h": 0.0,
-        "rain_7d": 2.7,
-        "dry_days": 5,
+        "rain_7d": 2.57,
+        "dry_days": 6,
         "season": "spring",
         "flow_m3s": 23.186,
         "cso_active_48h": true,
-        "cso_hours_48h": 13.5,
-        "cso_active_monitors": "Stoke Road, Cobham(13.5h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.186,
           "wey_flow": 6.038,
@@ -214,15 +214,15 @@
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-05-19",
-        "data_lag_days": 6,
+        "data_lag_days": 7,
         "warnings": [
-          "flow data 6 day(s) behind assessment date"
+          "flow data 7 day(s) behind assessment date"
         ]
       }
     }
   ],
   "upstream_watch": {
-    "date": "2026-05-25",
+    "date": "2026-05-26",
     "headwater_lag": "1-3 days",
     "catchments": [
       {
@@ -231,10 +231,6 @@
         "rain_gauge": "Cranleigh rain (Wey catchment)",
         "rain_5d_mm": 0.0,
         "rain_recent": [
-          {
-            "date": "2026-05-21",
-            "mm": 0.0
-          },
           {
             "date": "2026-05-22",
             "mm": 0.0
@@ -250,6 +246,10 @@
           {
             "date": "2026-05-25",
             "mm": 0.0
+          },
+          {
+            "date": "2026-05-26",
+            "mm": 0.01
           }
         ],
         "flow_station": "Wey at Weybridge",
@@ -266,10 +266,6 @@
         "rain_5d_mm": 0.0,
         "rain_recent": [
           {
-            "date": "2026-05-21",
-            "mm": 0.0
-          },
-          {
             "date": "2026-05-22",
             "mm": 0.0
           },
@@ -283,6 +279,10 @@
           },
           {
             "date": "2026-05-25",
+            "mm": 0.0
+          },
+          {
+            "date": "2026-05-26",
             "mm": 0.0
           }
         ],
@@ -300,10 +300,6 @@
         "rain_5d_mm": 0.0,
         "rain_recent": [
           {
-            "date": "2026-05-21",
-            "mm": 0.01
-          },
-          {
             "date": "2026-05-22",
             "mm": 0.01
           },
@@ -317,6 +313,10 @@
           },
           {
             "date": "2026-05-25",
+            "mm": 0.0
+          },
+          {
+            "date": "2026-05-26",
             "mm": 0.0
           }
         ],
