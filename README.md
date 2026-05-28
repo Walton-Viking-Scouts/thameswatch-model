@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-05-27** — updated 2026-05-27T13:24:41Z (model v3).
+Assessment for **2026-05-28** — updated 2026-05-28T07:38:33Z (model v3).
 
 | | Site | Status | Why this colour |
 |---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | Dry conditions (7d), no CSO, spring — safe |
-| 🟢 | **Chertsey** | GREEN | Dry conditions (7d), no CSO, spring — safe |
+| 🟢 | **Walton Wharf** | GREEN | Dry conditions (8d), no CSO, spring — safe |
+| 🟢 | **Chertsey** | GREEN | Dry conditions (8d), no CSO, spring — safe |
 | 🟠 | **Kingston Albany Reach** | AMBER | CSO active upstream (Mole) — 33-46% safe, consider testing |
 | 🟠 | **Kingston HMT** | AMBER | CSO active upstream (Mole) — 33-46% safe, consider testing |
 | 🟠 | **Ditton's Bend** | AMBER | CSO active upstream (Mole) — 33-46% safe, consider testing |
