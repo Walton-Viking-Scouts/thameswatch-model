@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-28T07:38:33Z",
+  "generated_at": "2026-05-28T13:27:56Z",
   "assessment_date": "2026-05-28",
   "model_version": "v3",
   "sites": [
@@ -16,8 +16,8 @@
         "season": "spring",
         "flow_m3s": 23.931,
         "cso_active_48h": true,
-        "cso_hours_48h": 3.8,
-        "cso_active_monitors": "Stoke Road, Cobham(3.8h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.931,
           "wey_flow": 5.144,
@@ -52,8 +52,8 @@
         "season": "spring",
         "flow_m3s": 23.931,
         "cso_active_48h": true,
-        "cso_hours_48h": 3.8,
-        "cso_active_monitors": "Stoke Road, Cobham(3.8h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.931,
           "wey_flow": 5.144,
@@ -88,8 +88,8 @@
         "season": "spring",
         "flow_m3s": 23.931,
         "cso_active_48h": true,
-        "cso_hours_48h": 3.8,
-        "cso_active_monitors": "Stoke Road, Cobham(3.8h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.931,
           "wey_flow": 5.144,
@@ -124,8 +124,8 @@
         "season": "spring",
         "flow_m3s": 23.931,
         "cso_active_48h": true,
-        "cso_hours_48h": 3.8,
-        "cso_active_monitors": "Stoke Road, Cobham(3.8h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.931,
           "wey_flow": 5.144,
@@ -160,8 +160,8 @@
         "season": "spring",
         "flow_m3s": 23.931,
         "cso_active_48h": true,
-        "cso_hours_48h": 3.8,
-        "cso_active_monitors": "Stoke Road, Cobham(3.8h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.931,
           "wey_flow": 5.144,
@@ -196,8 +196,8 @@
         "season": "spring",
         "flow_m3s": 23.931,
         "cso_active_48h": true,
-        "cso_hours_48h": 3.8,
-        "cso_active_monitors": "Stoke Road, Cobham(3.8h)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Stoke Road, Cobham(live)",
         "upstream_ctx": {
           "walton_flow": 23.931,
           "wey_flow": 5.144,
