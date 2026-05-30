@@ -14,14 +14,14 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-05-29** — updated 2026-05-29T13:19:07Z (model v3).
+Assessment for **2026-05-30** — updated 2026-05-30T07:14:22Z (model v3).
 
 | | Site | Status | Why this colour |
 |---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | Dry conditions (9d), no CSO, spring — safe |
-| 🟢 | **Chertsey** | GREEN | Dry conditions (9d), no CSO, spring — safe |
+| 🟢 | **Walton Wharf** | GREEN | Dry conditions (10d), no CSO, spring — safe |
+| 🟢 | **Chertsey** | GREEN | Dry conditions (10d), no CSO, spring — safe |
 | 🟠 | **Kingston Albany Reach** | AMBER | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | Dry conditions (9d), no CSO, spring — safe |
+| 🟢 | **Kingston HMT** | GREEN | Dry conditions (10d), no CSO, spring — safe |
 | 🟠 | **Ditton's Bend** | AMBER | Ditton's Bend has elevated baseline from continuous upstream effluent — test first |
 | 🟠 | **Teddington** | AMBER | Teddington has elevated baseline from continuous upstream effluent — test first |
 
