@@ -14,16 +14,16 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-05-30** — updated 2026-05-30T12:35:41Z (model v3).
+Assessment for **2026-05-31** — updated 2026-05-31T07:32:25Z (model v3).
 
 | | Site | Status | Why this colour |
 |---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | Dry conditions (10d), no CSO, spring — safe |
-| 🟢 | **Chertsey** | GREEN | Dry conditions (10d), no CSO, spring — safe |
+| 🟢 | **Walton Wharf** | GREEN | Dry conditions (11d), no CSO, spring — safe |
+| 🟢 | **Chertsey** | GREEN | Dry conditions (11d), no CSO, spring — safe |
 | 🟠 | **Kingston Albany Reach** | AMBER | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | Dry conditions (10d), no CSO, spring — safe |
-| 🟠 | **Ditton's Bend** | AMBER | Ditton's Bend has elevated baseline from continuous upstream effluent — test first |
-| 🟠 | **Teddington** | AMBER | Teddington has elevated baseline from continuous upstream effluent — test first |
+| 🟢 | **Kingston HMT** | GREEN | Dry conditions (11d), no CSO, spring — safe |
+| 🟠 | **Ditton's Bend** | AMBER | Low flow (19 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first |
+| 🟠 | **Teddington** | AMBER | Low flow (19 m3/s) at Teddington — insufficient dilution below 20 m3/s, test first |
 
 **3 🟢 GREEN · 3 🟠 AMBER · 0 🔴 RED**
 
