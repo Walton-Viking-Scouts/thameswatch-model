@@ -125,10 +125,22 @@ predict. Rule 19 enforces their AMBER floor.
 
 ### Site-relevant CSO filtering
 
-A site only considers overflows that are physically upstream of it. Walton and Chertsey
-are above the Mole confluence, so they ignore Mole overflows; the Kingston, Teddington
-and Ditton's Bend sites consider Wey, Mole and Thames overflows. This prevents a
-downstream overflow from wrongly penalising an upstream site.
+A site only considers overflows that are physically upstream of it, so a downstream
+overflow never wrongly penalises an upstream site. The monitor set is 16: the 14 along
+the Chertsey–Teddington stretch, plus a `ThamesUpstream` system — storm overflows on the
+Thames mainstem *above* Chertsey, which sit above the whole stretch and so are relevant
+to every site. By geography:
+
+- **Chertsey** is above *both* the Mole and the Wey confluences (the Wey joins downstream
+  at Weybridge), so it considers only the `ThamesUpstream` overflows — these are its one
+  valid CSO predictor. (Before this was corrected, Chertsey was wrongly keyed to the Wey.)
+- **Walton** is below the Wey confluence but above the Mole, so it considers Wey +
+  `ThamesUpstream`, and ignores the Mole.
+- **Kingston, Teddington and Ditton's Bend** are below both confluences and consider Wey,
+  Mole, Thames and `ThamesUpstream`.
+
+The `ThamesUpstream` system is the two monitors nearest Chertsey (Windsor ~5 km, Little
+Marlow ~17 km). Three farther overflows were discovered but excluded — see §9.
 
 ### Site-specific flow rules
 
@@ -223,11 +235,11 @@ conditions on its date. Run `python3 traffic_light_model_v3.py --validate`.
 
 | Verdict | n | Safe (≤500) | Unsafe (>500) | Dangerous (>2000) |
 |---|---|---|---|---|
-| 🟢 GREEN | 60 | **95%** | 5% | **0%** |
-| 🟠 AMBER | 89 | 72% | 28% | 7% |
-| 🔴 RED | 80 | 21% | **79%** | 36% |
+| 🟢 GREEN | 56 | **96%** | 4% | **0%** |
+| 🟠 AMBER | 87 | 74% | 26% | 6% |
+| 🔴 RED | 86 | 23% | **77%** | 35% |
 
-The headline safety metric — **GREEN but actually unsafe — is 5% (3 of 60), and GREEN
+The headline safety metric — **GREEN but actually unsafe — is 4% (2 of 56), and GREEN
 has never once been issued for dangerously contaminated water (0%)**.
 
 ### Per-site GREEN performance
@@ -235,14 +247,14 @@ has never once been issued for dangerously contaminated water (0%)**.
 | Site | GREEN predictions | Safe |
 |---|---|---|
 | Chertsey | 5 | 100% |
-| Kingston HMT | 11 | 100% |
-| Walton Wharf | 44 | 93% |
+| Kingston HMT | 10 | 100% |
+| Walton Wharf | 41 | 95% |
 | Kingston Albany Reach / Teddington / Ditton's Bend | 0 | (tier 3 — never GREEN) |
 
 ### Versus the previous model
 
-v3 (site-specific) versus v2.1 (generic): false-safe GREEN predictions fell from **15%
-to 5%**, and dangerous-in-GREEN from 1% to 0% — by moving 25+ borderline cases out of
+The current model versus v2.1 (generic): false-safe GREEN predictions fell from **13%
+to 4%**, and dangerous-in-GREEN from 1% to 0% — by moving 40+ borderline cases out of
 GREEN into AMBER.
 
 ### Versus a £5M benchmark
@@ -284,9 +296,16 @@ caught the day it begins.
 
 ## 9. Limitations and known gaps
 
-- **Three irreducible false GREENs** at Walton: contamination from waterfowl, boat
-  traffic, or steady-state treated effluent concentrated at low flow — none predictable
-  from weather, flow or CSO data. This is the floor on GREEN accuracy.
+- **Two irreducible false GREENs** at Walton (2024-05-21, EC 780; 2025-04-08, EC 600):
+  no overflow active on any relevant system and no rain trigger — contamination from
+  waterfowl, boat traffic, or steady-state treated effluent concentrated at low flow,
+  none predictable from weather, flow or CSO data. This is the floor on GREEN accuracy.
+- **Far-upstream Thames overflows add no signal.** Five storm overflows were found on the
+  Thames above Chertsey; only the two nearest (Windsor ~5 km, Little Marlow ~17 km) are
+  used. In the ablation (`experiment_upstream_weighting.py`) the three farther ones
+  (Reading, Henley, Hambleden — 26–32 km up, beyond ~1–2 days of *E. coli* die-off and
+  dilution) caught zero extra unsafe-in-GREEN days while removing seven safe days from
+  GREEN — pure false-conservatism, so they are excluded.
 - **Tier-3 sites are never GREEN.** Kingston Albany Reach, Teddington and Ditton's Bend
   always require an on-the-day test. The model cannot certify them safe.
 - **Flow daily-mean lags.** Absolute flow thresholds (Teddington/Ditton's) run on
@@ -315,7 +334,8 @@ caught the day it begins.
 | v1 | Rainfall + dry-days correlation | First traffic light |
 | v2 | Added Thames Water CSO discharge data | CSO found to be the strongest predictor |
 | v2.1 | Multi-river CSO early-out rule | Wey+Mole simultaneous = 0% safe |
-| v3 | Site tiers, site-relevant CSO, real flow data, CSO count, 7-day rain | False-safe 16%→6% |
+| v3 | Site tiers, site-relevant CSO, real flow data, CSO count, 7-day rain | False-safe 16%→5% |
+| v3.1 | `ThamesUpstream` system (2 nearest Thames-above-Chertsey overflows); Chertsey re-keyed Wey→`ThamesUpstream` | False-safe 5%→4%; Chertsey gains a valid CSO predictor |
 
 **Dead ends** (tried and rejected — do not revisit without new evidence):
 
@@ -326,7 +346,9 @@ caught the day it begins.
   flow brings more contamination.
 - *Per-catchment rain gauges* — built, re-validated, slightly worse than one central
   gauge (see §6).
-- *Upstream Thames CSO signals* — investigated; add nothing beyond local indicators.
+- *Far-upstream Thames CSO signals* (Reading/Henley/Hambleden, 26–32 km up) — add nothing
+  beyond local indicators and only shrink GREEN; excluded. The two *nearest* upstream
+  overflows (Windsor, Little Marlow) do help and are kept — see §6 and §9.
 - *Teddington level × 400 as a flow proxy* — replaced with real EA flow data.
 
 ---

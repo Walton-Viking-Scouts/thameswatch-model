@@ -9,11 +9,15 @@ Changes from v2.1:
   - Site-relevant CSO filtering: Walton only sees Wey CSOs, Kingston sees Wey+Mole+Hogsmill
   - Separate GREEN thresholds per site based on historical false-positive rates
 
-Geographic model:
-    Chertsey ─── WALTON ─── Wey confluence ─── Mole confluence ─── KINGSTON ─── TEDDINGTON
-                    ↑                              ↑                    ↑
-              Wey CSOs                       Esher STW           Hogsmill STW
-         (Ripley, Weybridge)              + Mole CSOs         (continuous effluent)
+Geographic model (downstream order, river flows W->E):
+    Chertsey ─── Wey confluence ─── WALTON ─── Mole confluence ─── KINGSTON ─── TEDDINGTON
+                      ↑                             ↑                   ↑
+                 Wey CSOs                  Esher STW + Mole CSOs   Hogsmill STW
+              (Ripley, Weybridge)          (join BELOW Walton)    (continuous effluent)
+
+    So Walton sees the Wey (upstream) + Thames-upstream CSOs, but NOT the Mole, which
+    joins downstream at Molesey. Chertsey is above the Wey confluence, so it sees only
+    the Thames-upstream CSOs.
 
 Flow impact by site (from actual Walton 3100TH data):
   - Teddington: strong predictor. <15 m3/s = 25% safe (RED). <20 = AMBER.
@@ -38,12 +42,13 @@ from collections import defaultdict
 # === SITE PROFILES ===
 
 # Which CSO river systems affect each site (based on geography)
-# "ThamesUpstream" = storm overflows on the Thames mainstem above Chertsey (discovered by
-# fetch_upstream_cso.py). They sit above the entire stretch, so they are relevant to every
-# site. Until that discovery has run the system is never detected (no monitors carry the
-# tag), so adding it here is inert.
+# "ThamesUpstream" = storm overflows on the Thames mainstem above Chertsey (config.py,
+# discovered by fetch_upstream_cso.py). They sit above the entire stretch, so they are
+# relevant to every site.
 SITE_CSO_RELEVANCE = {
-    "Chertsey": ["Wey", "ThamesUpstream"],  # actually upstream of the Wey — ThamesUpstream is the true predictor
+    # Chertsey is ABOVE the Wey confluence (the Wey joins downstream at Weybridge), so a
+    # Wey discharge cannot reach it — ThamesUpstream is its only valid CSO predictor.
+    "Chertsey": ["ThamesUpstream"],
     "Walton Wharf": ["Wey", "ThamesUpstream"],  # Wey joins at Weybridge, just above Walton
     "Ditton's Bend": ["Wey", "Mole", "ThamesUpstream"],  # downstream of both confluences
     "Kingston Albany Reach": ["Wey", "Mole", "Thames", "ThamesUpstream"],  # gets everything + Hogsmill STW
@@ -89,26 +94,18 @@ SITE_FLOW_CONFIG = {
 # === CSO SYSTEM CLASSIFICATION ===
 
 def count_active_river_systems(cso_active_monitors_str):
-    """Classify active CSO monitors into river systems."""
+    """Classify active CSO monitors into river systems.
+
+    Detection is driven directly by the config.CSO_MONITORS registry (single source of
+    truth): each active monitor named in the string contributes its river_system. This
+    keeps every system — Wey/Mole/Thames/Minor and ThamesUpstream — detected the same way,
+    with no parallel keyword table to drift out of sync with config.
+    """
     if not cso_active_monitors_str:
         return 0, []
 
-    systems = set()
-    if any(name in cso_active_monitors_str for name in ["Ripley", "Weybridge", "Woking"]):
-        systems.add("Wey")
-    if any(name in cso_active_monitors_str for name in ["Esher", "Cobham", "Stoke Road", "Leatherhead", "River Lane"]):
-        systems.add("Mole")
-    if any(name in cso_active_monitors_str for name in ["Kingston", "Portsmouth", "Amyand", "Old Palace"]):
-        systems.add("Thames")
-    if any(name in cso_active_monitors_str for name in ["Commonside", "Dartnell"]):
-        systems.add("Minor")
-
-    # Upstream-of-Chertsey Thames monitors are discovered at runtime (config), so match
-    # by their exact names rather than hard-coded keywords. Empty set => no-op.
-    from tw.config import UPSTREAM_THAMES_NAMES
-    if any(name and name in cso_active_monitors_str for name in UPSTREAM_THAMES_NAMES):
-        systems.add("ThamesUpstream")
-
+    from tw.config import CSO_MONITORS
+    systems = {m.river_system for m in CSO_MONITORS if m.name in cso_active_monitors_str}
     return len(systems), sorted(systems)
 
 
