@@ -8,6 +8,9 @@ Kept as a Python module (not JSON/YAML): config is developer-edited only, needs
 structured records with derived helpers, and fails fast on typos.
 """
 
+import csv
+import os
+
 from dataclasses import dataclass
 
 # --- API roots ---
@@ -138,6 +141,39 @@ CSO_MONITORS = [
     CSOMonitor("Portsmouth Road, Uxbridge Road", "Thames"),
     CSOMonitor("Kingston Main", "Thames"),
 ]
+
+# --- Upstream-of-Chertsey Thames CSO monitors (discovered, not hard-coded) ---
+# These storm overflows sit on the Thames mainstem *above* Chertsey — above the whole
+# monitored stretch — so they are the geographically-correct CSO predictor for Chertsey
+# (whose hard-coded relevance was previously the Wey, which actually joins downstream).
+# Their exact Thames Water locationNames are only knowable from the live EDM
+# /discharge/status feed, so fetch_upstream_cso.py discovers them by geography and caches
+# the list here. Until that script has run the CSV is absent and the model is unchanged:
+# UPSTREAM_THAMES_MONITORS is empty, so ThamesUpstream is never detected or filtered.
+UPSTREAM_CSO_CSV = "cso_upstream_chertsey.csv"
+
+
+def _load_upstream_thames_monitors():
+    """Discovered upstream-of-Chertsey Thames monitors as CSOMonitor records.
+
+    Returns [] when the discovery CSV is absent (the default), leaving the model
+    identical to before the feature was added.
+    """
+    from tw.paths import data_file  # local import — avoids a load-time tw.paths dependency
+    path = data_file(UPSTREAM_CSO_CSV)
+    monitors = []
+    if os.path.exists(path):
+        with open(path, newline="") as f:
+            for row in csv.DictReader(f):
+                name = (row.get("locationName") or "").strip()
+                if name:
+                    monitors.append(CSOMonitor(name, "ThamesUpstream"))
+    return monitors
+
+
+UPSTREAM_THAMES_MONITORS = _load_upstream_thames_monitors()
+CSO_MONITORS = CSO_MONITORS + UPSTREAM_THAMES_MONITORS
+UPSTREAM_THAMES_NAMES = [m.name for m in UPSTREAM_THAMES_MONITORS]
 
 CSO_MONITOR_NAMES = [m.name for m in CSO_MONITORS]
 

@@ -38,15 +38,19 @@ from collections import defaultdict
 # === SITE PROFILES ===
 
 # Which CSO river systems affect each site (based on geography)
+# "ThamesUpstream" = storm overflows on the Thames mainstem above Chertsey (discovered by
+# fetch_upstream_cso.py). They sit above the entire stretch, so they are relevant to every
+# site. Until that discovery has run the system is never detected (no monitors carry the
+# tag), so adding it here is inert.
 SITE_CSO_RELEVANCE = {
-    "Chertsey": ["Wey"],  # upstream of Wey confluence too, but Wey is closest major tributary
-    "Walton Wharf": ["Wey"],  # Wey joins at Weybridge, just above Walton
-    "Ditton's Bend": ["Wey", "Mole"],  # downstream of both confluences
-    "Kingston Albany Reach": ["Wey", "Mole", "Thames"],  # gets everything + Hogsmill STW
-    "Kingston HMT": ["Wey", "Mole"],  # upstream of Hogsmill — explains why it's cleaner
-    "West Molesey": ["Wey", "Mole"],
-    "Hampton Court Bridge": ["Wey", "Mole", "Thames"],
-    "Teddington": ["Wey", "Mole", "Thames", "Minor"],  # gets absolutely everything
+    "Chertsey": ["Wey", "ThamesUpstream"],  # actually upstream of the Wey — ThamesUpstream is the true predictor
+    "Walton Wharf": ["Wey", "ThamesUpstream"],  # Wey joins at Weybridge, just above Walton
+    "Ditton's Bend": ["Wey", "Mole", "ThamesUpstream"],  # downstream of both confluences
+    "Kingston Albany Reach": ["Wey", "Mole", "Thames", "ThamesUpstream"],  # gets everything + Hogsmill STW
+    "Kingston HMT": ["Wey", "Mole", "ThamesUpstream"],  # upstream of Hogsmill — explains why it's cleaner
+    "West Molesey": ["Wey", "Mole", "ThamesUpstream"],
+    "Hampton Court Bridge": ["Wey", "Mole", "Thames", "ThamesUpstream"],
+    "Teddington": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],  # gets absolutely everything
 }
 
 # Site risk tier based on historical GREEN performance
@@ -98,6 +102,12 @@ def count_active_river_systems(cso_active_monitors_str):
         systems.add("Thames")
     if any(name in cso_active_monitors_str for name in ["Commonside", "Dartnell"]):
         systems.add("Minor")
+
+    # Upstream-of-Chertsey Thames monitors are discovered at runtime (config), so match
+    # by their exact names rather than hard-coded keywords. Empty set => no-op.
+    from tw.config import UPSTREAM_THAMES_NAMES
+    if any(name and name in cso_active_monitors_str for name in UPSTREAM_THAMES_NAMES):
+        systems.add("ThamesUpstream")
 
     return len(systems), sorted(systems)
 
