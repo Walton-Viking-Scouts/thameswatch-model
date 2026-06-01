@@ -4,7 +4,7 @@
 
 We've built a system that checks weather, sewage, and river conditions and tells you whether it's safe to go on the water — **before you get there**. It uses a simple traffic light: RED (don't go), AMBER (test the water first), GREEN (go with confidence).
 
-We tested it against 229 real water quality results from ThamesWatch. When it says GREEN, the water was safe **95% of the time**. When it says RED, the water was unsafe **79% of the time**. It has never given a GREEN when the water was dangerously contaminated.
+We tested it against 229 real water quality results from ThamesWatch. When it says GREEN, the water was safe **96% of the time**. When it says RED, the water was unsafe **77% of the time**. It has never given a GREEN when the water was dangerously contaminated.
 
 ---
 
@@ -18,7 +18,7 @@ E. coli testing takes 24-48 hours in a lab. That's no use when you need to decid
 
 ### Sewage overflows are the biggest factor
 
-When it rains heavily, the sewer system overflows and raw sewage is pumped into the rivers that feed the Thames. Thames Water monitors 14 overflow points near our stretch. When sewage is being discharged upstream:
+When it rains heavily, the sewer system overflows and raw sewage is pumped into the rivers that feed the Thames. Thames Water monitors 16 overflow points near our stretch (14 along it, plus the two closest on the Thames above Chertsey). When sewage is being discharged upstream:
 
 - E. coli levels are **3.4 times higher** than normal
 - When overflows are active on both the River Wey and River Mole simultaneously, the water has been **unsafe in every single case** we tested (34 out of 34)
@@ -44,7 +44,7 @@ This is one of the most important findings. The water quality at our different t
 
 ### Our safest sites
 
-**Walton Wharf** — our home base. Safe 93% of the time when conditions look good. The main risk comes from the River Wey, which joins the Thames just upstream at Weybridge and carries sewage from Guildford, Cranleigh, and Woking.
+**Walton Wharf** — our home base. Safe 95% of the time when conditions look good. The main risk comes from the River Wey, which joins the Thames just upstream at Weybridge and carries sewage from Guildford, Cranleigh, and Woking.
 
 **Chertsey** and **Kingston Half Mile Tree** — consistently clean. Kingston HMT is safe 100% of the time when conditions look good, because it sits just upstream of the Hogsmill sewage works outfall.
 
@@ -134,7 +134,7 @@ We combined three freely available public datasets:
 
 - **ThamesWatch water quality results** — 229 E. coli tests from our monitoring sites (the only source of actual bacteria data on this stretch — the Environment Agency doesn't test for E. coli here)
 - **Environment Agency data** — local rainfall, and river flow from 5 stations (Walton, Wey, Mole, Staines, Reading), which between them capture rain falling anywhere upstream
-- **Thames Water data** — real-time sewage overflow status from 14 monitored outfalls
+- **Thames Water data** — real-time sewage overflow status from 16 monitored outfalls
 
 All data is free and publicly available. The system runs as a small automated job twice a day — no special software, no laptop, and no manual data-gathering.
 
@@ -145,4 +145,4 @@ We compared our approach against a £5 million government-funded AI project (Riv
 ---
 
 *Prepared March 2026; updated May 2026 — refreshed dataset, automated twice-daily pipeline, and real-time (15-minute) river and rainfall data.*
-*Based on analysis of 229 water quality test results, 800+ days of river flow data, and 14 sewage overflow monitoring points.*
+*Based on analysis of 229 water quality test results, 800+ days of river flow data, and 16 sewage overflow monitoring points.*

@@ -8,9 +8,6 @@ Kept as a Python module (not JSON/YAML): config is developer-edited only, needs
 structured records with derived helpers, and fails fast on typos.
 """
 
-import csv
-import os
-
 from dataclasses import dataclass
 
 # --- API roots ---
@@ -45,10 +42,18 @@ class EAStation:
 
 @dataclass(frozen=True)
 class CSOMonitor:
-    """A Thames Water EDM (storm overflow) monitor near our stretch."""
+    """A Thames Water EDM (storm overflow) monitor near our stretch.
+
+    easting/northing are the monitor's OS grid coordinates from the EDM
+    /discharge/status feed — recorded as provenance (the geography each monitor's
+    river_system classification rests on) and to support distance reasoning, e.g.
+    the upstream-of-Chertsey near/far cut.
+    """
 
     name: str                   # exact Thames Water locationName
-    river_system: str           # "Wey" | "Mole" | "Thames" | "Minor"
+    river_system: str           # "Wey" | "Mole" | "Thames" | "Minor" | "ThamesUpstream"
+    easting: int                # OS grid easting (from EDM /discharge/status)
+    northing: int               # OS grid northing
 
 
 @dataclass(frozen=True)
@@ -122,60 +127,45 @@ RAIN_CSV = {
 
 
 # --- Thames Water CSO monitors ----------------------------------------------
-# 14 monitors in the Chertsey-Teddington catchment. river_system classification
-# matches traffic_light_model_v3.count_active_river_systems().
-
+# 16 monitors. Coordinates and river_system are discovered from the EDM
+# /discharge/status feed (archive/fetch_cso_outfalls.py for the in-stretch set;
+# fetch_upstream_cso.py for the upstream-of-Chertsey set) and then frozen here — the
+# same discover-once-then-hard-code pattern as the EAStation GUIDs above. river_system
+# classification drives traffic_light_model_v3.count_active_river_systems(), which reads
+# this list directly (single source of truth — no parallel keyword table in the model).
+#
+# In-stretch monitors (Chertsey -> Teddington), east of the Chertsey test site (~505000):
 CSO_MONITORS = [
-    CSOMonitor("Woking", "Wey"),
-    CSOMonitor("Ripley", "Wey"),
-    CSOMonitor("Weybridge", "Wey"),
-    CSOMonitor("Dartnell Park, Byfleet", "Minor"),
-    CSOMonitor("Commonside", "Minor"),
-    CSOMonitor("Cobham Bridge, Adj Cobham PS", "Mole"),
-    CSOMonitor("Stoke Road, Cobham", "Mole"),
-    CSOMonitor("Esher", "Mole"),
-    CSOMonitor("Leatherhead", "Mole"),
-    CSOMonitor("River Lane", "Mole"),
-    CSOMonitor("Amyand Park Road, Twickenham", "Thames"),
-    CSOMonitor("Old Palace Lane", "Thames"),
-    CSOMonitor("Portsmouth Road, Uxbridge Road", "Thames"),
-    CSOMonitor("Kingston Main", "Thames"),
+    CSOMonitor("Woking", "Wey", 503270, 157520),
+    CSOMonitor("Ripley", "Wey", 504490, 157320),
+    CSOMonitor("Weybridge", "Wey", 506770, 163140),
+    CSOMonitor("Dartnell Park, Byfleet", "Minor", 505600, 162100),
+    CSOMonitor("Commonside", "Minor", 513300, 156200),
+    CSOMonitor("Cobham Bridge, Adj Cobham PS", "Mole", 509890, 160760),
+    CSOMonitor("Stoke Road, Cobham", "Mole", 511280, 159810),
+    CSOMonitor("Esher", "Mole", 513030, 165980),
+    CSOMonitor("Leatherhead", "Mole", 514690, 158030),
+    CSOMonitor("River Lane", "Mole", 514700, 157100),
+    CSOMonitor("Amyand Park Road, Twickenham", "Thames", 516700, 173300),
+    CSOMonitor("Old Palace Lane", "Thames", 517308, 174821),
+    CSOMonitor("Portsmouth Road, Uxbridge Road", "Thames", 517670, 168010),
+    CSOMonitor("Kingston Main", "Thames", 517800, 169600),
+
+    # Upstream-of-Chertsey Thames mainstem overflows. These sit ABOVE the whole monitored
+    # stretch, so they are the geographically-correct CSO predictor for Chertsey (whose
+    # relevance was previously the Wey, which actually joins downstream at Weybridge).
+    # Discovered by fetch_upstream_cso.py; only the two CLOSEST to Chertsey are kept.
+    # An ablation (experiment_upstream_weighting.py) showed the three farther monitors
+    # (Reading 472800, Friday St Henley 476300, Hambleden 478600 — 26-32 km up, beyond
+    # ~1-2 days of E. coli die-off and dilution) caught zero extra unsafe days while
+    # removing 7 safe days from GREEN, i.e. pure false-conservatism. Windsor (~5 km) and
+    # Little Marlow (~17 km) capture the full upstream-CSO signal on their own.
+    CSOMonitor("Little Marlow", "ThamesUpstream", 487710, 186960),
+    CSOMonitor("Windsor", "ThamesUpstream", 499700, 175000),
 ]
 
-# --- Upstream-of-Chertsey Thames CSO monitors (discovered, not hard-coded) ---
-# These storm overflows sit on the Thames mainstem *above* Chertsey — above the whole
-# monitored stretch — so they are the geographically-correct CSO predictor for Chertsey
-# (whose hard-coded relevance was previously the Wey, which actually joins downstream).
-# Their exact Thames Water locationNames are only knowable from the live EDM
-# /discharge/status feed, so fetch_upstream_cso.py discovers them by geography and caches
-# the list here. Until that script has run the CSV is absent and the model is unchanged:
-# UPSTREAM_THAMES_MONITORS is empty, so ThamesUpstream is never detected or filtered.
-UPSTREAM_CSO_CSV = "cso_upstream_chertsey.csv"
-
-
-def _load_upstream_thames_monitors():
-    """Discovered upstream-of-Chertsey Thames monitors as CSOMonitor records.
-
-    Returns [] when the discovery CSV is absent (the default), leaving the model
-    identical to before the feature was added.
-    """
-    from tw.paths import data_file  # local import — avoids a load-time tw.paths dependency
-    path = data_file(UPSTREAM_CSO_CSV)
-    monitors = []
-    if os.path.exists(path):
-        with open(path, newline="") as f:
-            for row in csv.DictReader(f):
-                name = (row.get("locationName") or "").strip()
-                if name:
-                    monitors.append(CSOMonitor(name, "ThamesUpstream"))
-    return monitors
-
-
-UPSTREAM_THAMES_MONITORS = _load_upstream_thames_monitors()
-CSO_MONITORS = CSO_MONITORS + UPSTREAM_THAMES_MONITORS
-UPSTREAM_THAMES_NAMES = [m.name for m in UPSTREAM_THAMES_MONITORS]
-
 CSO_MONITOR_NAMES = [m.name for m in CSO_MONITORS]
+UPSTREAM_THAMES_NAMES = [m.name for m in CSO_MONITORS if m.river_system == "ThamesUpstream"]
 
 
 # --- Test sites --------------------------------------------------------------

@@ -1,0 +1,6 @@
+locationName,permitNumber,receivingWaterCourse,x,y,alertStatus,statusChanged,mostRecentDischargeAlertStart,mostRecentDischargeAlertStop,alertPast48Hours
+"Reading, Caversham",TEMP.1769,River Thames,472800,174500,Not discharging,2026-02-23T14:58:00,2024-02-01T12:34:00,2024-02-01T12:40:00,False
+"Friday Street, Henley",TEMP.1003,River Thames,476300,182700,Not discharging,2026-03-13T01:24:00,2026-03-13T00:52:00,2026-03-13T01:24:00,False
+Hambleden,CAWM.0192,River Thames,478600,184800,Not discharging,2026-02-16T12:15:00,2026-02-16T10:45:00,2026-02-16T12:15:00,False
+Little Marlow,CNTD.0058,River Thames,487710,186960,Not discharging,2026-02-16T02:06:00,2026-02-15T23:12:00,2026-02-16T02:06:00,False
+Windsor,TEMP.3014,River Thames,499700,175000,Not discharging,2026-03-13T23:54:00,2026-03-13T23:34:00,2026-03-13T23:54:00,False

@@ -9,7 +9,7 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 
 - 🔴 **RED** — do not go on the water. Unsafe ~80% of the time in these conditions.
 - 🟠 **AMBER** — borderline. Test the water with an R-Card first; if you can't test, don't go.
-- 🟢 **GREEN** — go with confidence. Safe ~95% of the time.
+- 🟢 **GREEN** — go with confidence. Safe ~96% of the time.
 
 <!-- PREDICTION:START -->
 ## Current water-safety status
@@ -189,17 +189,26 @@ Re-validate after adding data: GREEN should stay ~95% safe with 0% dangerous.
 ### Upstream-of-Chertsey Thames CSOs
 
 The CSO network historically began at Chertsey (the top of the stretch), so Chertsey had
-no upstream storm-overflow predictor — its relevance was set to the Wey, which actually
-joins downstream at Weybridge. To add the Thames-mainstem overflows above Chertsey:
+no upstream storm-overflow predictor — its relevance was the Wey, which actually joins
+downstream at Weybridge and so cannot reach it. The Thames-mainstem overflows *above*
+Chertsey are its only valid CSO predictor, and Chertsey's relevance is now
+`ThamesUpstream` alone (the Wey was dropped).
+
+These monitors are hard-coded in `tw/config.py` as `ThamesUpstream` `CSOMonitor` records —
+the same discover-once-then-freeze pattern as the in-stretch monitors and the EA station
+GUIDs. `fetch_upstream_cso.py` is the discovery tool, not a runtime dependency:
 
 ```bash
-python3 fetch_upstream_cso.py                  # discover them by geography -> data/cso_upstream_chertsey.csv
-python3 rebuild_cso.py                          # re-enrich all historical CSO columns with the expanded set
-python3 traffic_light_model_v3.py --validate    # review the before/after impact
+python3 fetch_upstream_cso.py                   # discover -> print paste-ready records + data/ provenance CSV
+# paste the NEAR records into tw/config.py CSO_MONITORS, then:
+python3 rebuild_cso.py                           # re-enrich all historical CSO columns with the new set
+python3 traffic_light_model_v3.py --validate     # review the impact
 ```
 
-`tw/config.py` loads `data/cso_upstream_chertsey.csv` at import and tags each monitor as a
-`ThamesUpstream` system relevant to every site. Until that CSV exists the feature is inert
-and the model is unchanged. Note `ThamesUpstream` is a distinct river system, so the
-multi-river RED rule can now trip on Wey + ThamesUpstream at Chertsey/Walton — review the
-GREEN-availability trade-off in the validation output before relying on it.
+**Only the two monitors closest to Chertsey are kept** (Windsor ~5 km, Little Marlow
+~17 km). An ablation (`experiment_upstream_weighting.py`) showed the three farther ones
+(Reading, Henley, Hambleden — 26–32 km up, beyond ~1–2 days of *E. coli* die-off and
+dilution) caught zero extra unsafe-in-GREEN days while removing 7 safe days from GREEN —
+pure false-conservatism. `ThamesUpstream` is a distinct river system, so the multi-river
+RED rule can trip on Wey + ThamesUpstream at Walton; the GREEN-availability trade-off is
+favourable (GREEN stays 96% safe, 0% dangerous).

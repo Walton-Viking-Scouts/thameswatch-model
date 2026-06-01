@@ -3,8 +3,9 @@
 
 Counterpart to rebuild_correlation.py (which rebuilds the rain_* columns). This re-computes
 the cso_* columns of *every* row in thameswatch_correlation_with_cso.csv against the full
-current monitor set (config.CSO_MONITOR_NAMES) — including any upstream-of-Chertsey Thames
-monitors discovered by fetch_upstream_cso.py.
+current monitor set (config.CSO_MONITOR_NAMES) — including the upstream-of-Chertsey Thames
+monitors hard-coded in tw.config (sourced via fetch_upstream_cso.py). Run this whenever the
+monitor set in tw.config.CSO_MONITORS changes.
 
 This is what lets a validation run "see" the new monitors in the historical record:
 refresh_correlation.py only enriches newly-appended rows and keeps existing rows verbatim,
@@ -44,9 +45,8 @@ def main():
               f"{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}.csv")
     shutil.copy(corr_path, backup)
 
-    n_up = len(UPSTREAM_THAMES_NAMES)
     print(f"CSO monitor set: {len(CSO_MONITOR_NAMES)} total "
-          f"({n_up} upstream-of-Chertsey){' — run fetch_upstream_cso.py first' if n_up == 0 else ''}")
+          f"({len(UPSTREAM_THAMES_NAMES)} upstream-of-Chertsey)")
     print("Fetching CSO discharge history...")
     periods = {name: build_discharge_periods(fetch_monitor_history(name))
                for name in CSO_MONITOR_NAMES}
