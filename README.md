@@ -52,13 +52,13 @@ public, no-authentication APIs:
 
 The model (`traffic_light_model_v3.py`) is **site-specific** — each of the six sites
 has its own pollution profile. It was validated against 229 real E. coli tests:
-GREEN is safe **95%** of the time (and has **never** been GREEN when the water was
+GREEN is safe **96%** of the time (and has **never** been GREEN when the water was
 dangerously contaminated); RED is correct ~80% of the time.
 
 Six sites, upstream → downstream:
 
 ```
-Chertsey ─ Walton Wharf ─ Wey confluence ─ Mole confluence ─ Kingston ─ Teddington
+Chertsey ─ Wey confluence ─ Walton Wharf ─ Mole confluence ─ Kingston ─ Teddington
 ```
 
 The biggest risk factors, in order: multiple rivers discharging sewage simultaneously,

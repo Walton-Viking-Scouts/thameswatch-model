@@ -16,6 +16,7 @@ Run where outbound network is available (fetches discharge history once, caches 
 """
 
 import csv
+import hashlib
 import json
 import os
 from datetime import datetime
@@ -45,20 +46,33 @@ NEAR2 = ["Little Marlow", "Windsor"]
 
 VARIANTS = {"none": [], "near2": NEAR2, "all5": UPSTREAM_ALL}
 
-CACHE = "/tmp/upstream_experiment_periods.json"
-
 
 def load_periods():
-    """{name: [(start,stop), ...]} for existing 14 + all 5 upstream, cached to /tmp."""
+    """{name: [(start,stop), ...]} for existing + all 5 upstream, cached to /tmp.
+
+    The cache path is keyed on the exact monitor set, so editing EXISTING_RECORDS or
+    UPSTREAM_RECORDS forces a re-fetch rather than silently reading a stale set (where a
+    new monitor would resolve to an empty history and bias the ablation toward "drop it").
+    """
     names = EXISTING + UPSTREAM_ALL
-    if os.path.exists(CACHE):
-        raw = json.load(open(CACHE))
+    key = hashlib.sha1(";".join(sorted(names)).encode()).hexdigest()[:12]
+    cache = f"/tmp/upstream_experiment_periods_{key}.json"
+    if os.path.exists(cache):
+        with open(cache) as f:
+            raw = json.load(f)
         return {n: [(datetime.fromisoformat(a), datetime.fromisoformat(b))
                     for a, b in raw.get(n, [])] for n in names}
     print(f"Fetching discharge history for {len(names)} monitors (one-time, cached)...")
-    periods = {n: build_discharge_periods(fetch_monitor_history(n)) for n in names}
-    json.dump({n: [(a.isoformat(), b.isoformat()) for a, b in p]
-               for n, p in periods.items()}, open(CACHE, "w"))
+    periods = {}
+    for n in names:
+        p = build_discharge_periods(fetch_monitor_history(n))
+        if not p:
+            print(f"  WARNING: {n!r} returned no discharge history — API error or "
+                  "genuinely none? Delete the cache and re-run if this looks wrong.")
+        periods[n] = p
+    with open(cache, "w") as f:
+        json.dump({n: [(a.isoformat(), b.isoformat()) for a, b in p]
+                   for n, p in periods.items()}, f)
     return periods
 
 
@@ -99,35 +113,44 @@ def classify_variant(rows, all_periods, upstream_subset):
 
 
 def main():
-    rows = list(csv.DictReader(open(data_file("thameswatch_correlation_with_cso.csv"))))
+    with open(data_file("thameswatch_correlation_with_cso.csv")) as f:
+        rows = list(csv.DictReader(f))
     all_periods = load_periods()
+
+    # classify_variant and the fix below mutate module globals; restore them on exit so
+    # importing this module (rather than running it) can't leave config in a mutated state.
+    orig_monitors = config.CSO_MONITORS
+    orig_chertsey = list(model.SITE_CSO_RELEVANCE["Chertsey"])
     # Geography fix #1, held constant across variants so only the monitor set moves.
     model.SITE_CSO_RELEVANCE["Chertsey"] = ["ThamesUpstream"]
+    try:
+        print(f"\n{len(rows)} historical samples · existing monitors held constant · "
+              "Chertsey=ThamesUpstream-only\n")
+        print(f"{'variant':<7} {'GREEN n':>7} {'safe%':>6} {'unsafe%':>8} {'danger%':>8}  "
+              f"{'GREEN-unsafe':>12}")
+        results = {}
+        for name, subset in VARIANTS.items():
+            buckets, gu = classify_variant(rows, all_periods, subset)
+            results[name] = (buckets, gu)
+            g = buckets["GREEN"]
+            sp = g["safe"] / g["n"] * 100 if g["n"] else 0
+            up = g["unsafe"] / g["n"] * 100 if g["n"] else 0
+            dp = g["danger"] / g["n"] * 100 if g["n"] else 0
+            print(f"{name:<7} {g['n']:>7} {sp:>5.0f}% {up:>7.0f}% {dp:>7.0f}%  "
+                  f"{len(gu):>9} days")
 
-    print(f"\n{len(rows)} historical samples · existing monitors held constant · "
-          "Chertsey=ThamesUpstream-only\n")
-    print(f"{'variant':<7} {'GREEN n':>7} {'safe%':>6} {'unsafe%':>8} {'danger%':>8}  "
-          f"{'GREEN-unsafe':>12}")
-    results = {}
-    for name, subset in VARIANTS.items():
-        buckets, gu = classify_variant(rows, all_periods, subset)
-        results[name] = (buckets, gu)
-        g = buckets["GREEN"]
-        sp = g["safe"] / g["n"] * 100 if g["n"] else 0
-        up = g["unsafe"] / g["n"] * 100 if g["n"] else 0
-        dp = g["danger"] / g["n"] * 100 if g["n"] else 0
-        print(f"{name:<7} {g['n']:>7} {sp:>5.0f}% {up:>7.0f}% {dp:>7.0f}%  {len(gu):>9} days")
-
-    # What does each upstream set newly catch, vs leave missed, in GREEN?
-    base_gu = {(s, d) for s, d, _, _ in results["none"][1]}
-    for name in ("near2", "all5"):
-        gu = results[name][1]
-        caught = base_gu - {(s, d) for s, d, _, _ in gu}
-        print(f"\n{name}: GREEN-but-unsafe days newly caught vs 'none': {len(caught)}")
-        still = [x for x in gu]
-        print(f"  still GREEN-but-unsafe under {name}: {len(still)}")
-        for s, d, ec, mon in sorted(still, key=lambda x: -x[2]):
-            print(f"    {d}  {s:22s} EC={ec:5d}  {mon[:60]}")
+        # What does each upstream set newly catch, vs leave missed, in GREEN?
+        base_gu = {(s, d) for s, d, _, _ in results["none"][1]}
+        for name in ("near2", "all5"):
+            gu = results[name][1]
+            caught = base_gu - {(s, d) for s, d, _, _ in gu}
+            print(f"\n{name}: GREEN-but-unsafe days newly caught vs 'none': {len(caught)}")
+            print(f"  still GREEN-but-unsafe under {name}: {len(gu)}")
+            for s, d, ec, mon in sorted(gu, key=lambda x: -x[2]):
+                print(f"    {d}  {s:22s} EC={ec:5d}  {mon[:60]}")
+    finally:
+        config.CSO_MONITORS = orig_monitors
+        model.SITE_CSO_RELEVANCE["Chertsey"] = orig_chertsey
 
 
 if __name__ == "__main__":

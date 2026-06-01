@@ -100,7 +100,7 @@ The system does the checking for you and publishes a verdict twice a day. The th
 
 | Signal | What to do |
 |---|---|
-| **RED** | Do not go on the water. No exceptions. The water is unsafe 79% of the time in these conditions. |
+| **RED** | Do not go on the water. No exceptions. The water is unsafe 77% of the time in these conditions. |
 | **AMBER** | Test the water with an R-Card before the activity. If you can't test, don't go. |
 | **GREEN** | Go with confidence at Walton, Chertsey, or Kingston HMT. Standard hygiene precautions apply. |
 

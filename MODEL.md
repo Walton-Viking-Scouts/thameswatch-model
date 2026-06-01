@@ -253,7 +253,7 @@ has never once been issued for dangerously contaminated water (0%)**.
 
 ### Versus the previous model
 
-v3 (site-specific) versus v2.1 (generic): false-safe GREEN predictions fell from **13%
+The current model versus v2.1 (generic): false-safe GREEN predictions fell from **13%
 to 4%**, and dangerous-in-GREEN from 1% to 0% — by moving 40+ borderline cases out of
 GREEN into AMBER.
 
@@ -334,7 +334,7 @@ caught the day it begins.
 | v1 | Rainfall + dry-days correlation | First traffic light |
 | v2 | Added Thames Water CSO discharge data | CSO found to be the strongest predictor |
 | v2.1 | Multi-river CSO early-out rule | Wey+Mole simultaneous = 0% safe |
-| v3 | Site tiers, site-relevant CSO, real flow data, CSO count, 7-day rain | False-safe 16%→6% |
+| v3 | Site tiers, site-relevant CSO, real flow data, CSO count, 7-day rain | False-safe 16%→5% |
 | v3.1 | `ThamesUpstream` system (2 nearest Thames-above-Chertsey overflows); Chertsey re-keyed Wey→`ThamesUpstream` | False-safe 5%→4%; Chertsey gains a valid CSO predictor |
 
 **Dead ends** (tried and rejected — do not revisit without new evidence):

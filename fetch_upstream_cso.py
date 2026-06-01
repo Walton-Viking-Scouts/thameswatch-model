@@ -68,6 +68,11 @@ def main():
     print("Fetching all Thames Water EDM monitor statuses...")
     items = fetch_current_status()
     print(f"  {len(items)} monitors total")
+    if not items:
+        raise SystemExit(
+            "EDM /discharge/status returned no monitors — almost certainly an API error "
+            "(auth / rate-limit / outage), not an empty feed. Refusing to overwrite "
+            f"{OUT_CSV} with empty data; check the network and re-run.")
 
     upstream = sorted((m for m in items if is_upstream_thames(m)),
                       key=lambda m: m.get("x") or 0)

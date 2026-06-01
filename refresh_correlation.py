@@ -66,7 +66,7 @@ def main():
     rain = fetch_station_readings("hogsmill_rain")
     print(f"  {len(rain)} days ({min(rain)} to {max(rain)})")
 
-    print("Fetching CSO discharge history (14 monitors)...")
+    print(f"Fetching CSO discharge history ({len(CSO_MONITOR_NAMES)} monitors)...")
     periods = {}
     for name in CSO_MONITOR_NAMES:
         periods[name] = build_discharge_periods(fetch_monitor_history(name))

@@ -40,20 +40,34 @@ class EAStation:
         return f"{EA_HYDROLOGY_ROOT}/id/stations/{self.station_guid}/measures.json"
 
 
+# Valid CSO river-system classifications. The model keys off these exact strings
+# (traffic_light_model_v3.count_active_river_systems, SITE_CSO_RELEVANCE, and the
+# UPSTREAM_THAMES_NAMES filter below), so a typo must fail loudly at import rather than
+# silently drop a monitor from every system it should belong to.
+RIVER_SYSTEMS = frozenset({"Wey", "Mole", "Thames", "Minor", "ThamesUpstream"})
+
+
 @dataclass(frozen=True)
 class CSOMonitor:
     """A Thames Water EDM (storm overflow) monitor near our stretch.
 
     easting/northing are the monitor's OS grid coordinates from the EDM
-    /discharge/status feed — recorded as provenance (the geography each monitor's
-    river_system classification rests on) and to support distance reasoning, e.g.
-    the upstream-of-Chertsey near/far cut.
+    /discharge/status feed, recorded as provenance — the geography each monitor's
+    river_system classification rests on. They are not read by the model itself; the
+    upstream-of-Chertsey near/far distance cut lives in fetch_upstream_cso.py, which
+    works on the live feed.
     """
 
     name: str                   # exact Thames Water locationName
-    river_system: str           # "Wey" | "Mole" | "Thames" | "Minor" | "ThamesUpstream"
+    river_system: str           # one of RIVER_SYSTEMS
     easting: int                # OS grid easting (from EDM /discharge/status)
     northing: int               # OS grid northing
+
+    def __post_init__(self):
+        if self.river_system not in RIVER_SYSTEMS:
+            raise ValueError(
+                f"CSOMonitor {self.name!r}: unknown river_system {self.river_system!r} "
+                f"(expected one of {sorted(RIVER_SYSTEMS)})")
 
 
 @dataclass(frozen=True)
