@@ -78,8 +78,10 @@ tw/                        data-gathering package
   enrichment.py             windowed rain metrics
   snapshot.py               assembles model inputs for a date, all sites
 rebuild_correlation.py     re-enrich the calibration dataset's rain columns
+rebuild_cso.py             re-enrich the calibration dataset's CSO columns (full monitor set)
 refresh_correlation.py     append new ThamesWatch test results to the dataset
 fetch_thameswatch.py       pull raw ThamesWatch results to CSV
+fetch_upstream_cso.py      discover Thames CSO monitors upstream of Chertsey
 data/                      flow / rain / correlation CSVs
 archive/                   superseded scripts, kept for reference
 prediction.json            latest prediction (committed by the workflow)
@@ -179,6 +181,25 @@ E. coli tests paired with rain/flow/CSO conditions.
 - `fetch_thameswatch.py` pulls the latest raw test results.
 - `refresh_correlation.py` appends any new results to the calibration dataset.
 - `rebuild_correlation.py` re-computes the dataset's rain enrichment.
+- `rebuild_cso.py` re-computes the dataset's CSO enrichment against the current monitor set.
 - `python3 traffic_light_model_v3.py --validate` reports model accuracy.
 
 Re-validate after adding data: GREEN should stay ~95% safe with 0% dangerous.
+
+### Upstream-of-Chertsey Thames CSOs
+
+The CSO network historically began at Chertsey (the top of the stretch), so Chertsey had
+no upstream storm-overflow predictor — its relevance was set to the Wey, which actually
+joins downstream at Weybridge. To add the Thames-mainstem overflows above Chertsey:
+
+```bash
+python3 fetch_upstream_cso.py                  # discover them by geography -> data/cso_upstream_chertsey.csv
+python3 rebuild_cso.py                          # re-enrich all historical CSO columns with the expanded set
+python3 traffic_light_model_v3.py --validate    # review the before/after impact
+```
+
+`tw/config.py` loads `data/cso_upstream_chertsey.csv` at import and tags each monitor as a
+`ThamesUpstream` system relevant to every site. Until that CSV exists the feature is inert
+and the model is unchanged. Note `ThamesUpstream` is a distinct river system, so the
+multi-river RED rule can now trip on Wey + ThamesUpstream at Chertsey/Walton — review the
+GREEN-availability trade-off in the validation output before relying on it.
