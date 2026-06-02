@@ -14,16 +14,16 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-02** — updated 2026-06-02T19:08:53Z (model v3).
+Assessment for **2026-06-02** — updated 2026-06-02T21:57:59Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 45 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · ThamesUpstream: Windsor 6.8h · Wey flow rising (13.0 m³/s) |
-| 🟠 | **Chertsey** | AMBER | 32 m³/s | CSO active upstream (ThamesUpstream) — 33-46% safe, consider testing<br>ThamesUpstream: Windsor 6.8h |
-| 🔴 | **Kingston Albany Reach** | RED | 47 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · Mole: Leatherhead 7.2h · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 6.8h · Wey flow rising (13.0 m³/s) · Mole flow rising (3.4 m³/s) |
-| 🔴 | **Kingston HMT** | RED | 47 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · Mole: Leatherhead 7.2h · ThamesUpstream: Windsor 6.8h · Wey flow rising (13.0 m³/s) · Mole flow rising (3.4 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 47 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · Mole: Leatherhead 7.2h · ThamesUpstream: Windsor 6.8h · Wey flow rising (13.0 m³/s) · Mole flow rising (3.4 m³/s) |
-| 🔴 | **Teddington** | RED | 47 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · Mole: Leatherhead 7.2h · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 6.8h · Wey flow rising (13.0 m³/s) · Mole flow rising (3.4 m³/s) |
+| 🔴 | **Walton Wharf** | RED | 41 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · ThamesUpstream: Windsor 6.8h · Wey flow rising (10.7 m³/s) |
+| 🟠 | **Chertsey** | AMBER | 28 m³/s | CSO active upstream (ThamesUpstream) — 33-46% safe, consider testing<br>ThamesUpstream: Windsor 6.8h |
+| 🔴 | **Kingston Albany Reach** | RED | 43 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · Mole: Leatherhead (live) · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 6.8h · Wey flow rising (10.7 m³/s) · Mole flow rising (3.3 m³/s) |
+| 🔴 | **Kingston HMT** | RED | 43 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · Mole: Leatherhead (live) · ThamesUpstream: Windsor 6.8h · Wey flow rising (10.7 m³/s) · Mole flow rising (3.3 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 43 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · Mole: Leatherhead (live) · ThamesUpstream: Windsor 6.8h · Wey flow rising (10.7 m³/s) · Mole flow rising (3.3 m³/s) |
+| 🔴 | **Teddington** | RED | 43 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 7.2h, Ripley 2.8h, Weybridge (live) · Mole: Leatherhead (live) · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 6.8h · Wey flow rising (10.7 m³/s) · Mole flow rising (3.3 m³/s) |
 
 **0 🟢 GREEN · 1 🟠 AMBER · 5 🔴 RED**
 
