@@ -10,11 +10,19 @@ on:
 permissions:
   contents: write
 
+# Never let two predict runs (or a run and a manual dispatch) push concurrently — they
+# would race on the same main ref. Queue them instead of cancelling, so none is lost.
+concurrency:
+  group: predict
+  cancel-in-progress: false
+
 jobs:
   predict:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so the rebase-and-push below is a clean fast-forward
 
       - uses: actions/setup-python@v5
         with:
@@ -33,7 +41,26 @@ jobs:
           git add prediction.json README.md data/
           if git diff --staged --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "Prediction update $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            exit 0
           fi
+          # main can advance between checkout and push (a merge, or another run). Re-base
+          # our staged output onto the latest main each attempt (last-writer-wins on these
+          # generated files — no merge conflict on appended CSV rows) and retry on a lost
+          # race, rather than the old bare push that failed hard.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --soft FETCH_HEAD
+            if git diff --staged --quiet; then
+              echo "Nothing new versus latest main; done."
+              exit 0
+            fi
+            git commit -m "Prediction update $(date -u +%Y-%m-%dT%H:%MZ)"
+            if git push origin HEAD:main; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected (main moved); retry $attempt."
+            sleep $((RANDOM % 8 + 3))
+          done
+          echo "Failed to push prediction after 5 attempts." >&2
+          exit 1
