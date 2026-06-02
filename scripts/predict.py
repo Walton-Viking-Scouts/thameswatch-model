@@ -7,20 +7,23 @@ consumers (e.g. a website). Replaces the hand-assembly of API calls that running
 model for "today" used to require.
 
 Usage:
-    python3 predict.py                          # all sites, text report
-    python3 predict.py --site Teddington        # one site
-    python3 predict.py --date 2026-05-10        # back-dated assessment
-    python3 predict.py --json prediction.json   # also write a JSON artifact
-    python3 predict.py --json -                 # JSON to stdout (no text)
-    python3 predict.py --no-topup               # skip the CSV refresh (faster)
+    python3 scripts/predict.py                          # all sites, text report
+    python3 scripts/predict.py --site Teddington        # one site
+    python3 scripts/predict.py --date 2026-05-10        # back-dated assessment
+    python3 scripts/predict.py --json prediction.json   # also write a JSON artifact
+    python3 scripts/predict.py --json -                 # JSON to stdout (no text)
+    python3 scripts/predict.py --no-topup               # skip the CSV refresh (faster)
 """
+
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # repo root → import tw
 
 import argparse
 import json
 import sys
 from datetime import datetime, timezone
 
-from traffic_light_model_v3 import assess_safety
+from tw.model import assess_safety
 from tw.snapshot import build_snapshot, build_upstream_watch
 
 SCHEMA_VERSION = 1

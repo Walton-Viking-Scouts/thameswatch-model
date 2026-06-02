@@ -18,13 +18,16 @@ monitors (Windsor ~5 km, Little Marlow ~17 km) carry signal; the farther three (
 Henley, Hambleden — 26-32 km up, beyond ~1-2 days of E. coli die-off) added only
 false-conservatism. The "near/far" column below records that cut; keep only NEAR monitors.
 
-    python3 fetch_upstream_cso.py                   # discover -> print records + data/ CSV
+    python3 scripts/fetch_upstream_cso.py                   # discover -> print records + data/ CSV
     # paste the NEAR records into tw.config.CSO_MONITORS, then:
-    python3 rebuild_cso.py                          # re-enrich history with the new set
-    python3 traffic_light_model_v3.py --validate    # review the impact
+    python3 scripts/rebuild_cso.py                          # re-enrich history with the new set
+    python3 -m tw.model --validate    # review the impact
 
 Run where outbound network is available (CI or locally — not the restricted sandbox).
 """
+
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # repo root → import tw
 
 import csv
 import os
@@ -98,7 +101,7 @@ def main():
         for m in upstream:
             w.writerow({k: m.get(k, "") for k in FIELDS})
     print(f"\nWrote provenance for {len(upstream)} discovered monitors -> {OUT_CSV}")
-    print("Next: paste NEAR records into tw/config.py, then python3 rebuild_cso.py")
+    print("Next: paste NEAR records into tw/config.py, then python3 scripts/rebuild_cso.py")
 
 
 if __name__ == "__main__":

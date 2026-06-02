@@ -50,7 +50,7 @@ public, no-authentication APIs:
 | Storm-overflow (CSO) discharge | Thames Water EDM API |
 | E. coli test results (model calibration only) | ThamesWatch API |
 
-The model (`traffic_light_model_v3.py`) is **site-specific** — each of the six sites
+The model (`tw/model.py`) is **site-specific** — each of the six sites
 has its own pollution profile. It was validated against 229 real E. coli tests:
 GREEN is safe **96%** of the time (and has **never** been GREEN when the water was
 dangerously contaminated); RED is correct ~80% of the time.
@@ -68,20 +68,25 @@ with no sewage overflow — surface runoff alone washes bacteria off farmland an
 ## Repository layout
 
 ```
-predict.py                 entry point — RED/AMBER/GREEN for every site
-traffic_light_model_v3.py  the prediction model (assess_safety)
-tw/                        data-gathering package
+README.md MODEL.md EXEC-SUMMARY.md   documentation
+tw/                        core package — data gathering + the model
   config.py                central registry: APIs, stations, CSO monitors, sites
-  ea_hydrology.py           Environment Agency flow + rain fetcher
-  thames_water.py           Thames Water CSO fetcher (status + history)
-  thameswatch.py            ThamesWatch test-result fetcher
-  enrichment.py             windowed rain metrics
-  snapshot.py               assembles model inputs for a date, all sites
-rebuild_correlation.py     re-enrich the calibration dataset's rain columns
-rebuild_cso.py             re-enrich the calibration dataset's CSO columns (full monitor set)
-refresh_correlation.py     append new ThamesWatch test results to the dataset
-fetch_thameswatch.py       pull raw ThamesWatch results to CSV
-fetch_upstream_cso.py      discover Thames CSO monitors upstream of Chertsey
+  model.py                 the prediction model (assess_safety; run: python3 -m tw.model)
+  ea_hydrology.py          Environment Agency daily flow + rain fetcher
+  flood_monitoring.py      EA flood-monitoring live 15-min flow (surge detection)
+  thames_water.py          Thames Water CSO fetcher (status + history)
+  thameswatch.py           ThamesWatch test-result fetcher
+  enrichment.py            windowed rain metrics
+  snapshot.py              assembles model inputs for a date, all sites
+scripts/                   entry-point scripts (run from the repo root)
+  predict.py               RED/AMBER/GREEN for every site (the CI entry point)
+  fetch_thameswatch.py     pull raw ThamesWatch results to CSV
+  fetch_upstream_cso.py    discover Thames CSO monitors upstream of Chertsey
+  rebuild_correlation.py   re-enrich the calibration dataset's rain columns
+  rebuild_cso.py           re-enrich the calibration dataset's CSO columns
+  refresh_correlation.py   append new ThamesWatch test results to the dataset
+  experiment_upstream_weighting.py   one-off near/far upstream-CSO ablation
+  chart_site.py            plot test results vs the model's RAG verdict
 data/                      flow / rain / correlation CSVs
 archive/                   superseded scripts, kept for reference
 prediction.json            latest prediction (committed by the workflow)
@@ -92,12 +97,12 @@ prediction.json            latest prediction (committed by the workflow)
 ```bash
 pip install -r requirements.txt
 
-python3 predict.py                       # all sites, text report
-python3 predict.py --site Teddington     # one site
-python3 predict.py --date 2026-05-10     # back-dated assessment
-python3 predict.py --json prediction.json   # also write the JSON artifact
-python3 predict.py --json -              # JSON to stdout
-python3 predict.py --no-topup            # skip refreshing the flow/rain CSVs
+python3 scripts/predict.py                       # all sites, text report
+python3 scripts/predict.py --site Teddington     # one site
+python3 scripts/predict.py --date 2026-05-10     # back-dated assessment
+python3 scripts/predict.py --json prediction.json   # also write the JSON artifact
+python3 scripts/predict.py --json -              # JSON to stdout
+python3 scripts/predict.py --no-topup            # skip refreshing the flow/rain CSVs
 ```
 
 A normal run refreshes the flow/rain CSVs from the EA API, fetches live CSO status,
@@ -119,7 +124,7 @@ and early afternoon UK time, so an afternoon check catches rain or CSO that land
 during the day). Each run:
 
 1. Checks out the repo and installs `requests`.
-2. Runs `python3 predict.py --json prediction.json --readme README.md` — refreshing the
+2. Runs `python3 scripts/predict.py --json prediction.json --readme README.md` — refreshing the
    flow/rain CSVs, fetching live CSO data, writing the JSON artifact, and splicing the
    live status block into this README.
 3. Commits the updated `prediction.json`, `README.md` and `data/` CSVs back to the repo.
@@ -178,11 +183,11 @@ before they show up locally.
 The model is calibrated against `data/thameswatch_correlation_with_cso.csv` — real
 E. coli tests paired with rain/flow/CSO conditions.
 
-- `fetch_thameswatch.py` pulls the latest raw test results.
-- `refresh_correlation.py` appends any new results to the calibration dataset.
-- `rebuild_correlation.py` re-computes the dataset's rain enrichment.
-- `rebuild_cso.py` re-computes the dataset's CSO enrichment against the current monitor set.
-- `python3 traffic_light_model_v3.py --validate` reports model accuracy.
+- `scripts/fetch_thameswatch.py` pulls the latest raw test results.
+- `scripts/refresh_correlation.py` appends any new results to the calibration dataset.
+- `scripts/rebuild_correlation.py` re-computes the dataset's rain enrichment.
+- `scripts/rebuild_cso.py` re-computes the dataset's CSO enrichment against the current monitor set.
+- `python3 -m tw.model --validate` reports model accuracy.
 
 Re-validate after adding data: GREEN should stay ~95% safe with 0% dangerous.
 
@@ -196,17 +201,17 @@ Chertsey are its only valid CSO predictor, and Chertsey's relevance is now
 
 These monitors are hard-coded in `tw/config.py` as `ThamesUpstream` `CSOMonitor` records —
 the same discover-once-then-freeze pattern as the in-stretch monitors and the EA station
-GUIDs. `fetch_upstream_cso.py` is the discovery tool, not a runtime dependency:
+GUIDs. `scripts/fetch_upstream_cso.py` is the discovery tool, not a runtime dependency:
 
 ```bash
-python3 fetch_upstream_cso.py                   # discover -> print paste-ready records + data/ provenance CSV
+python3 scripts/fetch_upstream_cso.py                   # discover -> print paste-ready records + data/ provenance CSV
 # paste the NEAR records into tw/config.py CSO_MONITORS, then:
-python3 rebuild_cso.py                           # re-enrich all historical CSO columns with the new set
-python3 traffic_light_model_v3.py --validate     # review the impact
+python3 scripts/rebuild_cso.py                           # re-enrich all historical CSO columns with the new set
+python3 -m tw.model --validate     # review the impact
 ```
 
 **Only the two monitors closest to Chertsey are kept** (Windsor ~5 km, Little Marlow
-~17 km). An ablation (`experiment_upstream_weighting.py`) showed the three farther ones
+~17 km). An ablation (`scripts/experiment_upstream_weighting.py`) showed the three farther ones
 (Reading, Henley, Hambleden — 26–32 km up, beyond ~1–2 days of *E. coli* die-off and
 dilution) caught zero extra unsafe-in-GREEN days while removing 7 safe days from GREEN —
 pure false-conservatism. `ThamesUpstream` is a distinct river system, so the multi-river

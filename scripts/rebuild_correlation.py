@@ -14,8 +14,11 @@ rain columns change. Run `traffic_light_model_v3.py --validate` afterwards to co
 model accuracy still holds.
 
 Usage:
-    python3 rebuild_correlation.py
+    python3 scripts/rebuild_correlation.py
 """
+
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # repo root → import tw
 
 import csv
 import shutil
@@ -85,7 +88,7 @@ def main():
     print(f"\nRebuilt per-catchment rain enrichment for {len(rows)} rows "
           f"({changed} rain_48h values changed).")
     print(f"Backup of the pre-rebuild dataset: {backup}")
-    print("Next: python3 traffic_light_model_v3.py --validate")
+    print("Next: python3 -m tw.model --validate")
 
 
 if __name__ == "__main__":

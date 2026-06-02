@@ -15,8 +15,11 @@ Inputs:
 Output: thameswatch_correlation_with_cso.csv (rewritten = old rows + new rows)
 
 Usage:
-    python3 refresh_correlation.py
+    python3 scripts/refresh_correlation.py
 """
+
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # repo root → import tw
 
 import csv
 from datetime import datetime

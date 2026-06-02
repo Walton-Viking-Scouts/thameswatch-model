@@ -15,6 +15,9 @@ throughout (the geography fix) so only the monitor set varies.
 Run where outbound network is available (fetches discharge history once, caches to /tmp).
 """
 
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # repo root → import tw
+
 import csv
 import hashlib
 import json
@@ -22,7 +25,7 @@ import os
 from datetime import datetime
 
 import tw.config as config
-import traffic_light_model_v3 as model
+from tw import model
 from tw.config import CSOMonitor
 from tw.paths import data_file
 from tw.thames_water import (

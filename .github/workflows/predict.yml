@@ -24,7 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run prediction
-        run: python3 predict.py --json prediction.json --readme README.md
+        run: python3 scripts/predict.py --json prediction.json --readme README.md
 
       - name: Commit updated prediction, README and data
         run: |

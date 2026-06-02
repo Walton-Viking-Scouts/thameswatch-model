@@ -13,7 +13,7 @@ from tw.enrichment import calc_rain_metrics, season_of
 from tw.paths import data_file
 
 # Reused from the model — flow series loader and upstream-flow context.
-from traffic_light_model_v3 import get_walton_flow, get_upstream_context
+from tw.model import get_walton_flow, get_upstream_context
 
 
 @dataclass
