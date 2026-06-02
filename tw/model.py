@@ -127,6 +127,26 @@ def count_active_monitors(cso_active_monitors_str):
     return len([m for m in cso_active_monitors_str.split(";") if m.strip()])
 
 
+def count_relevant_monitors(site, cso_active_monitors_str):
+    """Count DISTINCT active CSO monitors whose river system can physically reach `site`.
+
+    The monitor-count RED rules (2-3 / 4+) use this so an upstream site is never flagged
+    by overflows downstream of it — e.g. Chertsey, above the Wey and Mole confluences,
+    must not count Wey/Mole/lower-Thames monitors. Filters by SITE_CSO_RELEVANCE (as
+    count_active_river_systems / filter_relevant_cso already do) and dedupes by name (a
+    monitor can appear twice: 48h history + live current-status).
+    """
+    if not cso_active_monitors_str:
+        return 0
+    from tw.config import CSO_MONITORS
+    system_of = {m.name: m.river_system for m in CSO_MONITORS}
+    relevant = set(SITE_CSO_RELEVANCE.get(site, ["Wey", "Mole", "Thames", "Minor"]))
+    names = {name for entry in cso_active_monitors_str.split(";")
+             if (name := entry.split("(")[0].strip())
+             and system_of.get(name) in relevant}
+    return len(names)
+
+
 def filter_relevant_cso(site, cso_active_monitors_str):
     """
     Filter CSO monitors to only those that affect this site.
@@ -180,8 +200,9 @@ def assess_safety(rain_48h, dry_days, season, cso_active_48h, cso_hours_48h=0,
     # Use site-filtered CSO for multi-river check
     multi_river = site_cso_count >= 2
 
-    # Count individual active monitors (not just river systems)
-    monitor_count = count_active_monitors(cso_active_monitors_str)
+    # Count individual active monitors RELEVANT to this site (not just river systems).
+    # Site-filtered so a downstream overflow can't trip an upstream site's count rules.
+    monitor_count = count_relevant_monitors(site, cso_active_monitors_str)
 
     # === RED conditions ===
 

@@ -70,8 +70,8 @@ condition was unsafe in the historical data.
 | # | Condition | Rationale (historical) |
 |---|---|---|
 | 1 | CSO active on **2+ relevant river systems** | 0% safe in 34 cases |
-| 2 | **4+ CSO monitors** discharging | 0% safe, 67% dangerous |
-| 3 | **2-3 CSO monitors** discharging | only 7% safe |
+| 2 | **4+ relevant CSO monitors** discharging | 0% safe, 67% dangerous |
+| 3 | **2-3 relevant CSO monitors** discharging | only 7% safe |
 | 4 | `rain_48h` > 10mm | only 5-20% safe |
 | 5 | Rained today **and** CSO active | only 11% safe |
 | 6 | Rained today (`dry_days` = 0) | only 35% safe |
@@ -141,6 +141,13 @@ to every site. By geography:
   `ThamesUpstream`, and ignores the Mole.
 - **Kingston, Teddington and Ditton's Bend** are below both confluences and consider Wey,
   Mole, Thames and `ThamesUpstream`.
+
+This relevance filter applies to **both** CSO rules — the multi-river rule (#1) *and* the
+monitor-count rules (#2/#3) count only monitors whose system can reach the site. So an
+upstream site is never RED-flagged by overflows downstream of it (e.g. Chertsey, with only
+`ThamesUpstream` relevant, is not tripped by active Wey/Mole/lower-Thames monitors). This
+is calibration-neutral — it changed no historical verdict — and only corrects the live
+over-flagging of upstream sites.
 
 The `ThamesUpstream` system is the two monitors nearest Chertsey (Windsor ~5 km, Little
 Marlow ~17 km). Three farther overflows were discovered but excluded — see §9.
