@@ -38,6 +38,7 @@ MODEL_VERSION = "v3"
 LEVEL_ICON = {"GREEN": "🟢", "AMBER": "🟠", "RED": "🔴"}
 LEVEL_LEGEND = ("🔴 do not go on the water · 🟠 test the water with an R-Card first · "
                 "🟢 good to go")
+EC_LEGEND = "safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)"
 
 # The workflow splices the live status into the README between these markers.
 README_START = "<!-- PREDICTION:START -->"
@@ -174,6 +175,7 @@ def render_text(result):
     su = result["summary"]
     lines.append(f"  {su.get('GREEN', 0)} GREEN   {su.get('AMBER', 0)} AMBER   "
                   f"{su.get('RED', 0)} RED")
+    lines.append(f"  ({EC_LEGEND})")
 
     uw = result.get("upstream_watch")
     if uw:
@@ -215,6 +217,8 @@ def render_markdown(result):
         f"{su.get('RED', 0)} 🔴 RED**",
         "",
         f"_{LEVEL_LEGEND}_",
+        "",
+        f"_{EC_LEGEND}_",
     ]
     uw = result.get("upstream_watch")
     if uw:
