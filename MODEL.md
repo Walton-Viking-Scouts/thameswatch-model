@@ -47,11 +47,14 @@ public APIs with no authentication.
 | `cso_hours_48h` | Total overflow discharge hours in that window | Thames Water EDM |
 | `cso_active_monitors` | Which overflow monitors, and their hours | Thames Water EDM |
 | `flow_m3s` | River flow at Walton (m³/s) | EA Hydrology — station 3100TH |
-| `upstream_ctx` | Wey / Mole flow, % of total, and surge flags | EA Hydrology — 3090TH / 3290TH |
+| `upstream_ctx` | Wey / Mole flow, % of total, and surge flags | EA daily mean (levels) + EA flood-monitoring (live surge) — 3090TH / 3290TH |
 
 Rainfall is read from a **single gauge** (Hogsmill, at Kingston) — see §6 for why.
-River flow and rainfall are read from the **15-minute** series on the live path, so a
-prediction runs on data current to ~1 hour rather than the 1-3-day-stale daily series.
+Rainfall runs on the **15-minute** Hydrology series (current to ~1h). Flow is split by
+source: the absolute flow value uses the Hydrology **daily mean** (the freshest daily
+EA publishes, ~2 days behind), while the live **surge** signal reads 15-minute flow from
+the EA **flood-monitoring** API (current to ~1h). The Hydrology *15-minute flow* series
+is not used — it is quality-controlled and lags badly (frozen ~2026-04-15 for our gauges).
 
 ---
 
@@ -282,15 +285,18 @@ ThamesWatch API ──┘     (fetch + enrich)            (model)         + READ
 ```
 
 - `tw/config.py` — registry of APIs, stations, CSO monitors, sites.
-- `tw/ea_hydrology.py`, `tw/thames_water.py`, `tw/thameswatch.py` — API clients.
+- `tw/ea_hydrology.py`, `tw/flood_monitoring.py`, `tw/thames_water.py`,
+  `tw/thameswatch.py` — API clients.
 - `tw/snapshot.py` — assembles every `assess_safety` input for a date, all sites.
 - `predict.py` — runs the model, emits text + `prediction.json` + the README status block.
 - A GitHub Action runs `predict.py` twice daily and commits the outputs.
 
-Rainfall and flow are read from the **15-minute** series live (current to ~1h); the
-daily series lags 1-3 days. River flow daily-mean is still used for the calibrated
-absolute thresholds; the **surge** signal uses 15-minute flow so a developing surge is
-caught the day it begins.
+Live freshness by signal: **rainfall** runs on the Hydrology 15-minute series (~1h);
+the **absolute flow** value uses the Hydrology daily mean (the freshest daily EA
+publishes, ~2 days behind); the live **surge** signal reads 15-minute flow from the EA
+flood-monitoring API (~1h) so a developing surge is caught the day it begins. A
+staleness guard (`flood_monitoring.MAX_STALENESS_HOURS`) refuses to compute a surge from
+a stale feed and falls back to the daily-mean trend, rather than silently using old data.
 
 ---
 
