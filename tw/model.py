@@ -73,6 +73,14 @@ SITE_RISK_TIER = {
 
 DEFAULT_RISK_TIER = 2  # unknown sites get moderate treatment
 
+# A "rained today" reading (no CSO) only forces RED above this much prior-day rain. A mere
+# trace (>2mm, enough to set dry_days=0) is not reason alone to RED — below this it falls
+# through to AMBER ("test first"). Stops a ~2mm drizzle flipping a clean reading to RED
+# (e.g. Walton 2026-05-19, EC 367). Non-rain danger at an upstream site (e.g. the Hogsmill
+# STW spikes at Kingston Albany) is still caught by that site's tier-3 AMBER floor — not by
+# this rain rule — so raising it cannot let such a reading slip to GREEN.
+RAINED_TODAY_RED_MM = 3.0
+
 # Site-specific flow thresholds (from actual Walton 3100TH correlation analysis)
 # None = flow doesn't meaningfully predict safety at this site
 SITE_FLOW_CONFIG = {
@@ -227,9 +235,10 @@ def assess_safety(rain_48h, dry_days, season, cso_active_48h, cso_hours_48h=0,
     if dry_days == 0 and site_cso_active:
         return "RED", 89, f"Rain today + CSO discharging upstream — only 11% safe"
 
-    # Rained today
-    if dry_days == 0:
-        return "RED", 65, f"Rained today — only 35% safe even without CSO"
+    # Rained today (more than a trace) — a >2mm-but-light prior day alone falls through
+    # to AMBER rather than RED (see RAINED_TODAY_RED_MM).
+    if dry_days == 0 and rain_48h > RAINED_TODAY_RED_MM:
+        return "RED", 65, f"Rained today ({rain_48h:.0f}mm/48h) — only 35% safe even without CSO"
 
     # Moderate rain + relevant CSO
     if rain_48h > 2 and site_cso_active:

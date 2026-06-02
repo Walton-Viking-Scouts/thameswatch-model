@@ -74,7 +74,7 @@ condition was unsafe in the historical data.
 | 3 | **2-3 relevant CSO monitors** discharging | only 7% safe |
 | 4 | `rain_48h` > 10mm | only 5-20% safe |
 | 5 | Rained today **and** CSO active | only 11% safe |
-| 6 | Rained today (`dry_days` = 0) | only 35% safe |
+| 6 | Rained today (`dry_days` = 0) **and** `rain_48h` > 3mm | only 35% safe (a sub-3mm trace alone falls through to AMBER, not RED) |
 | 7 | `rain_48h` > 2mm **and** CSO active | only 16% safe |
 | 8 | Autumn/winter **and** CSO active | only 10-14% safe |
 | 9 | Prolonged CSO (> 50 discharge hours) | only 5% safe |
