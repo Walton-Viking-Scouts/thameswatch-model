@@ -8,7 +8,7 @@ This is the glue that replaces hand-assembling API calls before each model run.
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 
-from tw import config, ea_hydrology, thames_water
+from tw import config, ea_hydrology, flood_monitoring, thames_water
 from tw.enrichment import calc_rain_metrics, season_of
 from tw.paths import data_file
 
@@ -124,7 +124,7 @@ def build_snapshot(date=None, topup=True):
     if is_today:
         for river in ("wey", "mole"):
             try:
-                rising, recent, _prior = ea_hydrology.recent_flow_surge(river)
+                rising, recent, _prior = flood_monitoring.recent_flow_surge(river)
                 upstream_ctx[f"{river}_rising"] = rising
                 upstream_ctx[f"{river}_flow_15min"] = recent
                 upstream_ctx["surge_source"] = "15min-live"
@@ -226,7 +226,7 @@ def build_upstream_watch(date=None):
         flow_source = "daily"
         if is_today:
             try:
-                _rising, flow_now, flow_prior = ea_hydrology.recent_flow_surge(flow_key)
+                _rising, flow_now, flow_prior = flood_monitoring.recent_flow_surge(flow_key)
                 flow_source = "15min"
             except Exception:  # noqa: BLE001 — fall back to daily, never abort
                 flow_now = None

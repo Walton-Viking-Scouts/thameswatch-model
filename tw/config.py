@@ -12,6 +12,7 @@ from dataclasses import dataclass
 
 # --- API roots ---
 EA_HYDROLOGY_ROOT = "https://environment.data.gov.uk/hydrology"
+EA_FLOOD_MONITORING_ROOT = "https://environment.data.gov.uk/flood-monitoring"
 THAMES_WATER_ROOT = "https://api.thameswater.co.uk"
 THAMESWATCH_ROOT = "https://thames-watch.uk/api/v1"
 
@@ -137,6 +138,23 @@ RAIN_CSV = {
     "cranleigh_rain": "cranleigh_rain.csv",
     "burstow_rain": "burstow_rain.csv",
     "reading_rain": "reading_rain.csv",
+}
+
+# Live 15-minute flow measures on the EA flood-monitoring API, keyed by station_key.
+# The Hydrology API's daily mean lags ~2 days and its 15-minute *flow* series is staler
+# still (it froze ~2026-04-15 for these gauges; rainfall 15-min is unaffected). Genuinely
+# live flow telemetry — current to ~1h — is on the flood-monitoring API instead, and the
+# model uses it only for tributary-surge detection (absolute thresholds stay on the
+# Hydrology daily mean). Measure ids are not string-buildable — the notation varies per
+# station and some carry a dead duplicate with no readings — so they are discovered and
+# frozen here via tw.flood_monitoring.discover_flow_measures(); re-run that if a gauge's
+# surge check starts raising StaleFlowError or 404s.
+FLOOD_MONITORING_FLOW = {
+    "walton": "3100TH-flow--i-15_min-m3_s",
+    "wey": "3090TH-flow-water-i-15_min-m3_s",
+    "mole": "3290TH-flow--i-15_min-m3_s",
+    "staines": "2900TH-flow--Mean-15_min-m3_s",
+    "reading": "2200TH-flow--Mean-15_min-m3_s",
 }
 
 
