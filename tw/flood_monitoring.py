@@ -71,6 +71,19 @@ def fetch_15min_flow(station_key, hours=55):
     return out  # _sorted => newest first
 
 
+def latest_flow(station_key):
+    """Most recent live flow reading as (value_m3s, dateTime_str), or (None, None).
+
+    For the status display's per-site flow column. Returns the newest reading regardless
+    of age — callers wanting a freshness guarantee should check the timestamp.
+    """
+    readings = fetch_15min_flow(station_key, hours=6)
+    if not readings:
+        return None, None
+    dt, value = readings[0]
+    return value, dt
+
+
 def recent_flow_surge(station_key, threshold=1.3):
     """Detect a sharp live rise in flow: mean of the last ~2h vs a ~2h window ~24h earlier.
 

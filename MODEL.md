@@ -290,7 +290,7 @@ ThamesWatch API ──┘     (fetch + enrich)            (model)         + READ
 - `tw/snapshot.py` — assembles every `assess_safety` input for a date, all sites.
 - `tw/model.py` — the model itself (`assess_safety`) + the `--validate` gate; run as `python3 -m tw.model`.
 - `scripts/predict.py` — runs the model, emits text + `prediction.json` + the README status block.
-- A GitHub Action runs `scripts/predict.py` twice daily and commits the outputs.
+- A GitHub Action runs `scripts/predict.py` every 3 hours and commits the outputs.
 
 Live freshness by signal: **rainfall** runs on the Hydrology 15-minute series (~1h);
 the **absolute flow** value uses the Hydrology daily mean (the freshest daily EA

@@ -107,6 +107,10 @@ EA_STATIONS = {
         "reading", "Thames at Reading", "2200TH", "flow",
         "f44bf96d-3953-4fec-88bd-30ef4e12e523",
         "f44bf96d-3953-4fec-88bd-30ef4e12e523-flow-m-86400-m3s-qualified"),
+    # Kingston (3399TH) is used only for the live flow display (the downstream sites'
+    # nearest flow gauge); no Hydrology daily series is loaded for it, hence no GUID.
+    "kingston": EAStation(
+        "kingston", "Thames at Kingston", "3399TH", "flow", None, None),
     "hogsmill_rain": EAStation(
         "hogsmill_rain", "Hogsmill rain (Kingston)", "-", "rainfall",
         "a04aa8e8-45a2-4d8d-9983-7a55330693b0",
@@ -155,6 +159,22 @@ FLOOD_MONITORING_FLOW = {
     "mole": "3290TH-flow--i-15_min-m3_s",
     "staines": "2900TH-flow--Mean-15_min-m3_s",
     "reading": "2200TH-flow--Mean-15_min-m3_s",
+    "kingston": "3399TH-flow-water-i-15_min-m3_s",
+}
+
+# Which live flow gauge to display as each site's "current flow" (safety context — high
+# flow means strong currents regardless of water quality). The Thames gains volume
+# downstream as the Wey and Mole join, so sites map to their nearest mainstem gauge.
+# Teddington is the tidal limit with no comparable flow gauge, so it borrows Kingston
+# (the nearest gauge upstream). This is display-only — the model's flow thresholds still
+# use the Walton daily mean (see traffic_light_model_v3.SITE_FLOW_CONFIG).
+SITE_LIVE_FLOW_GAUGE = {
+    "Chertsey": "staines",
+    "Walton Wharf": "walton",
+    "Ditton's Bend": "kingston",
+    "Kingston Albany Reach": "kingston",
+    "Kingston HMT": "kingston",
+    "Teddington": "kingston",
 }
 
 
