@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-02T11:58:15Z",
+  "generated_at": "2026-06-02T12:02:18Z",
   "assessment_date": "2026-06-02",
   "model_version": "v3",
   "sites": [
@@ -19,8 +19,8 @@
         "season": "summer",
         "flow_m3s": 22.084,
         "cso_active_48h": true,
-        "cso_hours_48h": 24.3,
-        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Windsor(7.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 24.6,
+        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Old Palace Lane(0.2h); Windsor(7.1h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.084,
           "wey_flow": 4.656,
@@ -58,8 +58,8 @@
         "season": "summer",
         "flow_m3s": 22.084,
         "cso_active_48h": true,
-        "cso_hours_48h": 24.3,
-        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Windsor(7.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 24.6,
+        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Old Palace Lane(0.2h); Windsor(7.1h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.084,
           "wey_flow": 4.656,
@@ -87,7 +87,7 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 Thames: Old Palace Lane (live) \u00b7 ThamesUpstream: Windsor 7.1h \u00b7 Wey flow rising (8.6 m\u00b3/s) \u00b7 Mole flow rising (2.2 m\u00b3/s)",
+      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor 7.1h \u00b7 Wey flow rising (8.6 m\u00b3/s) \u00b7 Mole flow rising (2.2 m\u00b3/s)",
       "live_flow_m3s": 31.634,
       "flow_gauge": "kingston",
       "inputs": {
@@ -97,8 +97,8 @@
         "season": "summer",
         "flow_m3s": 22.084,
         "cso_active_48h": true,
-        "cso_hours_48h": 24.3,
-        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Windsor(7.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 24.6,
+        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Old Palace Lane(0.2h); Windsor(7.1h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.084,
           "wey_flow": 4.656,
@@ -136,8 +136,8 @@
         "season": "summer",
         "flow_m3s": 22.084,
         "cso_active_48h": true,
-        "cso_hours_48h": 24.3,
-        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Windsor(7.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 24.6,
+        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Old Palace Lane(0.2h); Windsor(7.1h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.084,
           "wey_flow": 4.656,
@@ -175,8 +175,8 @@
         "season": "summer",
         "flow_m3s": 22.084,
         "cso_active_48h": true,
-        "cso_hours_48h": 24.3,
-        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Windsor(7.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 24.6,
+        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Old Palace Lane(0.2h); Windsor(7.1h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.084,
           "wey_flow": 4.656,
@@ -204,7 +204,7 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 Thames: Old Palace Lane (live) \u00b7 ThamesUpstream: Windsor 7.1h \u00b7 Wey flow rising (8.6 m\u00b3/s) \u00b7 Mole flow rising (2.2 m\u00b3/s)",
+      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor 7.1h \u00b7 Wey flow rising (8.6 m\u00b3/s) \u00b7 Mole flow rising (2.2 m\u00b3/s)",
       "live_flow_m3s": 31.634,
       "flow_gauge": "kingston",
       "inputs": {
@@ -214,8 +214,8 @@
         "season": "summer",
         "flow_m3s": 22.084,
         "cso_active_48h": true,
-        "cso_hours_48h": 24.3,
-        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Windsor(7.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 24.6,
+        "cso_active_monitors": "Woking(7.2h); Ripley(2.8h); Leatherhead(7.2h); Old Palace Lane(0.2h); Windsor(7.1h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.084,
           "wey_flow": 4.656,
