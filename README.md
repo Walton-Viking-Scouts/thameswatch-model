@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-01** — updated 2026-06-01T14:14:18Z (model v3).
+Assessment for **2026-06-02** — updated 2026-06-02T07:56:31Z (model v3).
 
 | | Site | Status | Why this colour |
 |---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | Dry conditions (12d), no CSO, summer — safe |
-| 🟢 | **Chertsey** | GREEN | Dry conditions (12d), no CSO, summer — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | Dry conditions (12d), no CSO, summer — safe |
-| 🟠 | **Ditton's Bend** | AMBER | Ditton's Bend has elevated baseline from continuous upstream effluent — test first |
-| 🟠 | **Teddington** | AMBER | Teddington has elevated baseline from continuous upstream effluent — test first |
+| 🔴 | **Walton Wharf** | RED | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically |
+| 🔴 | **Chertsey** | RED | 4 CSO monitors discharging — 0% safe, 67% dangerous historically |
+| 🔴 | **Kingston Albany Reach** | RED | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically |
+| 🔴 | **Kingston HMT** | RED | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically |
+| 🔴 | **Ditton's Bend** | RED | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically |
+| 🔴 | **Teddington** | RED | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically |
 
-**3 🟢 GREEN · 3 🟠 AMBER · 0 🔴 RED**
+**0 🟢 GREEN · 0 🟠 AMBER · 6 🔴 RED**
 
 _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢 good to go_
 
