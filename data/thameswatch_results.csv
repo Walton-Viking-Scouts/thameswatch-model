@@ -35,6 +35,8 @@ b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.386
 8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-04-11,30,Excellent,,N/A,R-Card,51.94,11.0,0.1,0.1,0.3,,9a15fb0d-e363-40b7-0e97-08de9bd98e2b
 8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-04-20,370,Excellent,,N/A,R-Card,40.65,14.0,0.0,0.3,2.0,,482217d0-8d50-4cf6-79dd-08de9fc70d44
 8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-05-04,30,Excellent,,N/A,Laboratory,28.07,16.0,0.0,0.0,3.3,,c4d0e294-f3f3-42ec-acf5-08deab423323
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-05-20,167,Excellent,,N/A,R-Card,23.74,14.0,0.0,0.5,10.2,,02336029-ee49-4471-ea81-08deb6890957
+8ff878e1-a463-f011-b41b-0050568e7300,Ditton’s Bend,3100TH,51.39138,-0.327254,2026-05-31,300,Excellent,,N/A,R-Card,25.2,21.0,0.0,0.0,0.0,,9ee88dc0-465c-4ac9-d498-08debf232726
 80fece7b-c570-47f8-a79f-e90f09ebafcf,Hampton Court Bridge (upstream of),3400TH,51.403986,-0.34455,2026-03-09,667,Sufficient,0,Excellent,R-Card,121.25,,0.0,6.9,7.0,,6fa2b60f-5781-4158-cedb-08de989704d0
 80fece7b-c570-47f8-a79f-e90f09ebafcf,Hampton Court Bridge (upstream of),3400TH,51.403986,-0.34455,2026-03-16,700,Sufficient,0,Excellent,R-Card,133.55,,4.1,4.3,4.3,,69a01616-3c61-4f48-cedc-08de989704d0
 80fece7b-c570-47f8-a79f-e90f09ebafcf,Hampton Court Bridge (upstream of),3400TH,51.403986,-0.34455,2026-03-23,633,Sufficient,0,Excellent,Laboratory,81.22,9.0,0.0,0.0,0.3,,9e7ceb8b-3fa2-4dfd-cedd-08de989704d0
@@ -99,6 +101,8 @@ b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.386
 3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2026-04-24,310,Excellent,26,Excellent,Laboratory,,,0.0,0.0,0.0,,ffaebeea-b6be-4a85-4a35-08dea419c4ab
 3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2026-05-01,86,Excellent,27,Excellent,Laboratory,,,0.0,0.0,8.7,,f6522ab4-f764-427d-b5a5-08dea9fe1114
 3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2026-05-08,770,Sufficient,28,Excellent,Laboratory,,,0.0,0.0,3.2,,7a9bad19-6450-4519-222c-08deaf137a3d
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2026-05-15,230,Excellent,110,Excellent,Laboratory,,,0.0,0.0,1.5,,57988551-3b84-4910-10ed-08deb44d472b
+3623efa5-a818-f011-b418-0050568e7300,Kingston (Albany Reach),3400TH,51.422497,-0.305844,2026-05-26,280,Excellent,62,Excellent,Laboratory,,,0.0,0.0,2.5,,749c5e7a-9abb-4c84-ef64-08debcdb4c79
 655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-04-15,650,Sufficient,120,Excellent,Laboratory,109.15,,0.0,0.0,5.2,,55dda430-5619-f011-b418-0050568e7300
 655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-04-30,1100,Poor,410,Poor,Laboratory,185.33,,0.4,23.8,30.4,,56dda430-5619-f011-b418-0050568e7300
 655beb4f-a818-f011-b418-0050568e7300,Kingston (Half Mile Tree),3400TH,51.424278,-0.307032,2024-05-13,390,Excellent,64,Excellent,Laboratory,71.29,,0.0,0.0,11.2,,57dda430-5619-f011-b418-0050568e7300
@@ -151,6 +155,8 @@ b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.386
 7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2025-07-16,1000,Poor,10,Excellent,Laboratory,4.16,,0.1,1.6,1.8,,8bc4051d-fb9c-4218-a88f-08ddcc020ee2
 7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2025-07-20,1000,Poor,1000,Poor,Laboratory,14.46,,4.5,22.1,24.3,,ac44c912-9d43-4841-a891-08ddcc020ee2
 7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2025-08-07,530,Sufficient,160,Excellent,Laboratory,4.31,,0.0,0.9,24.0,,1f2aa1e3-bcab-4173-a625-08dddfeb3096
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2026-05-20,150,Excellent,27,Excellent,Laboratory,,,0.0,0.4,8.1,,71d29844-7195-42bf-53e4-08debe0f8b40
+7024ef20-7143-ef11-9141-801844dec051,Teddington (Hawker Centre),3400TH,51.42702,-0.3108,2026-05-27,82,Excellent,36,Excellent,Laboratory,,,0.0,0.0,0.0,,920b7315-2022-475e-11ba-08dec067dc7f
 407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2025-07-29,2900,Poor,,N/A,R-Card,13.21,,3.2,3.2,5.3,,c3d2b36e-6b41-46d7-5047-08ddcfaac905
 407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2025-08-01,1800,Poor,,N/A,Laboratory,14.58,,1.6,13.1,16.5,,420666a5-aa55-4f76-6cbf-08ddd2bfbc46
 407acc18-866d-f011-b41b-0050568e7300,Walton On Thames (Walton Rowing Club),3100TH,51.395612,-0.417356,2025-08-07,200,Excellent,,N/A,R-Card,12.87,,0.0,0.0,14.6,,7a738951-ab33-4379-c1b0-08ddd64fabbb
@@ -275,3 +281,7 @@ b4e3a64e-de28-ef11-913f-801844dec051,Chertsey (Paxmead River Base),2900TH,51.386
 8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-04-11,360,Excellent,,N/A,R-Card,55.19,,0.0,0.0,0.2,,40ea65b0-cf01-475c-cede-08de989704d0
 8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-04-22,300,Excellent,,N/A,R-Card,40.21,,0.0,0.0,0.8,,7d7dcb80-50c0-44e8-352e-08dea16eb355
 8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-04-29,70,Excellent,,N/A,R-Card,41.26,,0.0,0.0,0.0,,19dbe9d7-76cf-4820-f83a-08dea77f7521
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-05-17,1733,Poor,,N/A,R-Card,25.08,,0.0,0.0,7.6,,776bb644-81e7-43c8-2286-08deb4d9c709
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-05-18,1333,Poor,,N/A,R-Card,20.11,,0.0,0.0,7.6,,5818967e-dc6f-405a-33a1-08deb5a72724
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-05-19,367,Excellent,,N/A,R-Card,19.63,,0.0,0.5,6.9,,9962494a-81fa-4465-ea80-08deb6890957
+8a4e89f8-661a-ef11-802c-b42e99b7dc64,Walton On Thames (Walton Warf),3100TH,51.38988,-0.42325,2026-05-26,300,Excellent,,N/A,R-Card,26.28,,0.0,0.0,0.8,,ba36d516-59c9-4585-ec60-08debbf2bbcd

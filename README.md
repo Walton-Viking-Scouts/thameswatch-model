@@ -7,9 +7,9 @@ without waiting 24-48h for a lab result.
 It checks rainfall, river flow, and sewage-discharge conditions and returns a
 **RED / AMBER / GREEN** verdict for each test site:
 
-- 🔴 **RED** — do not go on the water. Unsafe ~80% of the time in these conditions.
+- 🔴 **RED** — do not go on the water. Unsafe ~76% of the time in these conditions.
 - 🟠 **AMBER** — borderline. Test the water with an R-Card first; if you can't test, don't go.
-- 🟢 **GREEN** — go with confidence. Safe ~96% of the time.
+- 🟢 **GREEN** — go with confidence. Safe ~93% of the time.
 
 <!-- PREDICTION:START -->
 ## Current water-safety status
@@ -51,9 +51,9 @@ public, no-authentication APIs:
 | E. coli test results (model calibration only) | ThamesWatch API |
 
 The model (`tw/model.py`) is **site-specific** — each of the six sites
-has its own pollution profile. It was validated against 229 real E. coli tests:
-GREEN is safe **96%** of the time (and has **never** been GREEN when the water was
-dangerously contaminated); RED is correct ~80% of the time.
+has its own pollution profile. It was validated against 239 real E. coli tests:
+GREEN is safe **93%** of the time (and has **never** been GREEN when the water was
+dangerously contaminated); RED is correct ~76% of the time.
 
 Six sites, upstream → downstream:
 
@@ -198,7 +198,7 @@ E. coli tests paired with rain/flow/CSO conditions.
 - `scripts/rebuild_cso.py` re-computes the dataset's CSO enrichment against the current monitor set.
 - `python3 -m tw.model --validate` reports model accuracy.
 
-Re-validate after adding data: GREEN should stay ~95% safe with 0% dangerous.
+Re-validate after adding data: the hard gate is **0% dangerous-in-GREEN**; GREEN-safe sits ~93% (the shortfall is the irreducible spring spikes — see MODEL.md §9).
 
 ### Upstream-of-Chertsey Thames CSOs
 
@@ -225,4 +225,4 @@ python3 -m tw.model --validate     # review the impact
 dilution) caught zero extra unsafe-in-GREEN days while removing 7 safe days from GREEN —
 pure false-conservatism. `ThamesUpstream` is a distinct river system, so the multi-river
 RED rule can trip on Wey + ThamesUpstream at Walton; the GREEN-availability trade-off is
-favourable (GREEN stays 96% safe, 0% dangerous).
+favourable (GREEN stays ~93% safe, 0% dangerous).

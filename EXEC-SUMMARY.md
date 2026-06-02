@@ -4,7 +4,7 @@
 
 We've built a system that checks weather, sewage, and river conditions and tells you whether it's safe to go on the water — **before you get there**. It uses a simple traffic light: RED (don't go), AMBER (test the water first), GREEN (go with confidence).
 
-We tested it against 229 real water quality results from ThamesWatch. When it says GREEN, the water was safe **96% of the time**. When it says RED, the water was unsafe **77% of the time**. It has never given a GREEN when the water was dangerously contaminated.
+We tested it against 239 real water quality results from ThamesWatch. When it says GREEN, the water was safe **93% of the time**. When it says RED, the water was unsafe **76% of the time**. It has never given a GREEN when the water was dangerously contaminated.
 
 ---
 
@@ -44,7 +44,7 @@ This is one of the most important findings. The water quality at our different t
 
 ### Our safest sites
 
-**Walton Wharf** — our home base. Safe 95% of the time when conditions look good. The main risk comes from the River Wey, which joins the Thames just upstream at Weybridge and carries sewage from Guildford, Cranleigh, and Woking.
+**Walton Wharf** — our home base. Safe 91% of the time when conditions look good. The handful of misses are all **dry-weather spring spikes** — short contamination events with no rain or sewage overflow behind them (likely waterfowl or boat traffic), which no forecast can predict, so **test before relying on a spring GREEN**. The main risk comes from the River Wey, which joins the Thames just upstream at Weybridge and carries sewage from Guildford, Cranleigh, and Woking.
 
 **Chertsey** and **Kingston Half Mile Tree** — consistently clean. Kingston HMT is safe 100% of the time when conditions look good, because it sits just upstream of the Hogsmill sewage works outfall.
 
@@ -100,7 +100,7 @@ The system does the checking for you and publishes a verdict every few hours. Th
 
 | Signal | What to do |
 |---|---|
-| **RED** | Do not go on the water. No exceptions. The water is unsafe 77% of the time in these conditions. |
+| **RED** | Do not go on the water. No exceptions. The water is unsafe 76% of the time in these conditions. |
 | **AMBER** | Test the water with an R-Card before the activity. If you can't test, don't go. |
 | **GREEN** | Go with confidence at Walton, Chertsey, or Kingston HMT. Standard hygiene precautions apply. |
 
@@ -132,7 +132,7 @@ For Kingston Albany Reach and Teddington: the system will never say GREEN becaus
 
 We combined three freely available public datasets:
 
-- **ThamesWatch water quality results** — 229 E. coli tests from our monitoring sites (the only source of actual bacteria data on this stretch — the Environment Agency doesn't test for E. coli here)
+- **ThamesWatch water quality results** — 239 E. coli tests from our monitoring sites (the only source of actual bacteria data on this stretch — the Environment Agency doesn't test for E. coli here)
 - **Environment Agency data** — local rainfall, and river flow from 5 stations (Walton, Wey, Mole, Staines, Reading), which between them capture rain falling anywhere upstream
 - **Thames Water data** — real-time sewage overflow status from 16 monitored outfalls
 
@@ -145,4 +145,4 @@ We compared our approach against a £5 million government-funded AI project (Riv
 ---
 
 *Prepared March 2026; updated May 2026 — refreshed dataset, automated frequent pipeline, and real-time (15-minute) river and rainfall data.*
-*Based on analysis of 229 water quality test results, 800+ days of river flow data, and 16 sewage overflow monitoring points.*
+*Based on analysis of 239 water quality test results, 800+ days of river flow data, and 16 sewage overflow monitoring points.*
