@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-02T13:09:11Z",
+  "generated_at": "2026-06-02T15:23:22Z",
   "assessment_date": "2026-06-02",
   "model_version": "v3",
   "sites": [
@@ -9,8 +9,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 ThamesUpstream: Windsor 6.8h",
-      "live_flow_m3s": null,
+      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 ThamesUpstream: Windsor 6.8h \u00b7 Wey flow rising (13.5 m\u00b3/s)",
+      "live_flow_m3s": 33.959,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.75,
@@ -27,9 +27,11 @@
           "mole_flow": 1.578,
           "wey_pct": 21.083137112841875,
           "mole_pct": 7.14544466582141,
-          "wey_rising": false,
-          "mole_rising": false,
-          "surge_source": "daily"
+          "wey_rising": true,
+          "mole_rising": true,
+          "surge_source": "15min-live",
+          "wey_flow_15min": 13.488,
+          "mole_flow_15min": 2.597
         }
       },
       "data_quality": {
@@ -37,17 +39,6 @@
         "flow_data_date": "2026-05-31",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of walton failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/b92a2ca3-4eb9-4a8f-b82f-8bbc2a1dfbc9-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of wey failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/2629abeb-e504-49f7-9996-080f37e15930-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of mole failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/024f218d-9a70-43b7-8ea2-7d038eeb2cff-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of staines failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/305bad2c-6aa6-417d-a101-698edc850bbd-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of reading failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f44bf96d-3953-4fec-88bd-30ef4e12e523-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of hogsmill_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/a04aa8e8-45a2-4d8d-9983-7a55330693b0-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of cranleigh_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f8093480-7cda-45e8-8e0a-7b1723b4f989-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of burstow_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/8864da31-6c81-4cb1-bde9-d4ca73423222-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of reading_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/0a37c7cf-0c60-4024-a5ef-b9c6c7c14600-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "15-min wey surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3090TH-flow-water-i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A31Z&_sorted=",
-          "15-min mole surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3290TH-flow--i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A32Z&_sorted=",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -58,7 +49,7 @@
       "confidence": 45,
       "explanation": "CSO active upstream (ThamesUpstream) \u2014 33-46% safe, consider testing",
       "why_detail": "ThamesUpstream: Windsor 6.8h",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 22.429,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.75,
@@ -75,9 +66,11 @@
           "mole_flow": 1.578,
           "wey_pct": 21.083137112841875,
           "mole_pct": 7.14544466582141,
-          "wey_rising": false,
-          "mole_rising": false,
-          "surge_source": "daily"
+          "wey_rising": true,
+          "mole_rising": true,
+          "surge_source": "15min-live",
+          "wey_flow_15min": 13.488,
+          "mole_flow_15min": 2.597
         }
       },
       "data_quality": {
@@ -85,17 +78,6 @@
         "flow_data_date": "2026-05-31",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of walton failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/b92a2ca3-4eb9-4a8f-b82f-8bbc2a1dfbc9-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of wey failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/2629abeb-e504-49f7-9996-080f37e15930-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of mole failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/024f218d-9a70-43b7-8ea2-7d038eeb2cff-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of staines failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/305bad2c-6aa6-417d-a101-698edc850bbd-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of reading failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f44bf96d-3953-4fec-88bd-30ef4e12e523-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of hogsmill_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/a04aa8e8-45a2-4d8d-9983-7a55330693b0-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of cranleigh_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f8093480-7cda-45e8-8e0a-7b1723b4f989-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of burstow_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/8864da31-6c81-4cb1-bde9-d4ca73423222-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of reading_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/0a37c7cf-0c60-4024-a5ef-b9c6c7c14600-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "15-min wey surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3090TH-flow-water-i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A31Z&_sorted=",
-          "15-min mole surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3290TH-flow--i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A32Z&_sorted=",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -105,8 +87,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor 6.8h",
-      "live_flow_m3s": null,
+      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor 6.8h \u00b7 Wey flow rising (13.5 m\u00b3/s) \u00b7 Mole flow rising (2.6 m\u00b3/s)",
+      "live_flow_m3s": 29.566,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.75,
@@ -123,9 +105,11 @@
           "mole_flow": 1.578,
           "wey_pct": 21.083137112841875,
           "mole_pct": 7.14544466582141,
-          "wey_rising": false,
-          "mole_rising": false,
-          "surge_source": "daily"
+          "wey_rising": true,
+          "mole_rising": true,
+          "surge_source": "15min-live",
+          "wey_flow_15min": 13.488,
+          "mole_flow_15min": 2.597
         }
       },
       "data_quality": {
@@ -133,17 +117,6 @@
         "flow_data_date": "2026-05-31",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of walton failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/b92a2ca3-4eb9-4a8f-b82f-8bbc2a1dfbc9-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of wey failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/2629abeb-e504-49f7-9996-080f37e15930-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of mole failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/024f218d-9a70-43b7-8ea2-7d038eeb2cff-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of staines failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/305bad2c-6aa6-417d-a101-698edc850bbd-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of reading failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f44bf96d-3953-4fec-88bd-30ef4e12e523-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of hogsmill_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/a04aa8e8-45a2-4d8d-9983-7a55330693b0-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of cranleigh_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f8093480-7cda-45e8-8e0a-7b1723b4f989-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of burstow_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/8864da31-6c81-4cb1-bde9-d4ca73423222-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of reading_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/0a37c7cf-0c60-4024-a5ef-b9c6c7c14600-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "15-min wey surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3090TH-flow-water-i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A31Z&_sorted=",
-          "15-min mole surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3290TH-flow--i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A32Z&_sorted=",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -153,8 +126,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 ThamesUpstream: Windsor 6.8h",
-      "live_flow_m3s": null,
+      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 ThamesUpstream: Windsor 6.8h \u00b7 Wey flow rising (13.5 m\u00b3/s) \u00b7 Mole flow rising (2.6 m\u00b3/s)",
+      "live_flow_m3s": 29.566,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.75,
@@ -171,9 +144,11 @@
           "mole_flow": 1.578,
           "wey_pct": 21.083137112841875,
           "mole_pct": 7.14544466582141,
-          "wey_rising": false,
-          "mole_rising": false,
-          "surge_source": "daily"
+          "wey_rising": true,
+          "mole_rising": true,
+          "surge_source": "15min-live",
+          "wey_flow_15min": 13.488,
+          "mole_flow_15min": 2.597
         }
       },
       "data_quality": {
@@ -181,17 +156,6 @@
         "flow_data_date": "2026-05-31",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of walton failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/b92a2ca3-4eb9-4a8f-b82f-8bbc2a1dfbc9-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of wey failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/2629abeb-e504-49f7-9996-080f37e15930-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of mole failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/024f218d-9a70-43b7-8ea2-7d038eeb2cff-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of staines failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/305bad2c-6aa6-417d-a101-698edc850bbd-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of reading failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f44bf96d-3953-4fec-88bd-30ef4e12e523-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of hogsmill_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/a04aa8e8-45a2-4d8d-9983-7a55330693b0-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of cranleigh_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f8093480-7cda-45e8-8e0a-7b1723b4f989-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of burstow_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/8864da31-6c81-4cb1-bde9-d4ca73423222-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of reading_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/0a37c7cf-0c60-4024-a5ef-b9c6c7c14600-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "15-min wey surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3090TH-flow-water-i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A31Z&_sorted=",
-          "15-min mole surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3290TH-flow--i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A32Z&_sorted=",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -201,8 +165,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 ThamesUpstream: Windsor 6.8h",
-      "live_flow_m3s": null,
+      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 ThamesUpstream: Windsor 6.8h \u00b7 Wey flow rising (13.5 m\u00b3/s) \u00b7 Mole flow rising (2.6 m\u00b3/s)",
+      "live_flow_m3s": 29.566,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.75,
@@ -219,9 +183,11 @@
           "mole_flow": 1.578,
           "wey_pct": 21.083137112841875,
           "mole_pct": 7.14544466582141,
-          "wey_rising": false,
-          "mole_rising": false,
-          "surge_source": "daily"
+          "wey_rising": true,
+          "mole_rising": true,
+          "surge_source": "15min-live",
+          "wey_flow_15min": 13.488,
+          "mole_flow_15min": 2.597
         }
       },
       "data_quality": {
@@ -229,17 +195,6 @@
         "flow_data_date": "2026-05-31",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of walton failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/b92a2ca3-4eb9-4a8f-b82f-8bbc2a1dfbc9-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of wey failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/2629abeb-e504-49f7-9996-080f37e15930-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of mole failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/024f218d-9a70-43b7-8ea2-7d038eeb2cff-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of staines failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/305bad2c-6aa6-417d-a101-698edc850bbd-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of reading failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f44bf96d-3953-4fec-88bd-30ef4e12e523-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of hogsmill_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/a04aa8e8-45a2-4d8d-9983-7a55330693b0-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of cranleigh_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f8093480-7cda-45e8-8e0a-7b1723b4f989-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of burstow_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/8864da31-6c81-4cb1-bde9-d4ca73423222-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of reading_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/0a37c7cf-0c60-4024-a5ef-b9c6c7c14600-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "15-min wey surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3090TH-flow-water-i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A31Z&_sorted=",
-          "15-min mole surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3290TH-flow--i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A32Z&_sorted=",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -249,8 +204,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor 6.8h",
-      "live_flow_m3s": null,
+      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h \u00b7 Mole: Leatherhead 7.2h \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor 6.8h \u00b7 Wey flow rising (13.5 m\u00b3/s) \u00b7 Mole flow rising (2.6 m\u00b3/s)",
+      "live_flow_m3s": 29.566,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.75,
@@ -267,9 +222,11 @@
           "mole_flow": 1.578,
           "wey_pct": 21.083137112841875,
           "mole_pct": 7.14544466582141,
-          "wey_rising": false,
-          "mole_rising": false,
-          "surge_source": "daily"
+          "wey_rising": true,
+          "mole_rising": true,
+          "surge_source": "15min-live",
+          "wey_flow_15min": 13.488,
+          "mole_flow_15min": 2.597
         }
       },
       "data_quality": {
@@ -277,17 +234,6 @@
         "flow_data_date": "2026-05-31",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of walton failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/b92a2ca3-4eb9-4a8f-b82f-8bbc2a1dfbc9-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of wey failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/2629abeb-e504-49f7-9996-080f37e15930-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of mole failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/024f218d-9a70-43b7-8ea2-7d038eeb2cff-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of staines failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/305bad2c-6aa6-417d-a101-698edc850bbd-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of reading failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f44bf96d-3953-4fec-88bd-30ef4e12e523-flow-m-86400-m3s-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-31",
-          "top-up of hogsmill_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/a04aa8e8-45a2-4d8d-9983-7a55330693b0-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of cranleigh_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/f8093480-7cda-45e8-8e0a-7b1723b4f989-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of burstow_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/8864da31-6c81-4cb1-bde9-d4ca73423222-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "top-up of reading_rain failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/hydrology/id/measures/0a37c7cf-0c60-4024-a5ef-b9c6c7c14600-rainfall-t-900-mm-qualified/readings.json?_limit=5000&_sort=-dateTime&mineq-date=2026-05-28",
-          "15-min wey surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3090TH-flow-water-i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A31Z&_sorted=",
-          "15-min mole surge check failed: 403 Client Error: Forbidden for url: https://environment.data.gov.uk/flood-monitoring/id/measures/3290TH-flow--i-15_min-m3_s/readings?since=2026-05-31T06%3A08%3A32Z&_sorted=",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -301,7 +247,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 30.3,
+        "rain_5d_mm": 33.2,
         "rain_recent": [
           {
             "date": "2026-05-29",
@@ -321,21 +267,21 @@
           },
           {
             "date": "2026-06-02",
-            "mm": 28.63
+            "mm": 31.5
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.656,
-        "flow_change_pct": -5,
+        "flow_m3s": 13.488,
+        "flow_change_pct": 187,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "flat"
+        "flow_source": "15min",
+        "status": "surge"
       },
       {
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 18.1,
+        "rain_5d_mm": 19.2,
         "rain_recent": [
           {
             "date": "2026-05-29",
@@ -355,21 +301,21 @@
           },
           {
             "date": "2026-06-02",
-            "mm": 17.08
+            "mm": 18.2
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.578,
-        "flow_change_pct": -2,
+        "flow_m3s": 2.597,
+        "flow_change_pct": 52,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "flat"
+        "flow_source": "15min",
+        "status": "surge"
       },
       {
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 20.7,
+        "rain_5d_mm": 21.6,
         "rain_recent": [
           {
             "date": "2026-05-29",
@@ -389,15 +335,15 @@
           },
           {
             "date": "2026-06-02",
-            "mm": 10.21
+            "mm": 11.09
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 8.446,
-        "flow_change_pct": -3,
+        "flow_m3s": 13.536,
+        "flow_change_pct": 65,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "flat"
+        "flow_source": "15min",
+        "status": "surge"
       }
     ]
   },
