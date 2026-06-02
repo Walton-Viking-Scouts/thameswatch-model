@@ -60,7 +60,7 @@ is not used — it is quality-controlled and lags badly (frozen ~2026-04-15 for 
 
 ## 4. Decision logic
 
-The model (`traffic_light_model_v3.py`, function `assess_safety`) evaluates a fixed
+The model (`tw/model.py`, function `assess_safety`) evaluates a fixed
 cascade of rules. The **first rule that matches** sets the verdict — rules are ordered
 most-severe first. Each carries a confidence percentage derived from how often that
 condition was unsafe in the historical data.
@@ -232,7 +232,7 @@ residual gap is rare and non-critical.
 
 The model is validated against `data/thameswatch_correlation_with_cso.csv` — **229 real
 ThamesWatch E. coli tests** (2024-03 to 2026-05), each paired with the rain, flow and CSO
-conditions on its date. Run `python3 traffic_light_model_v3.py --validate`.
+conditions on its date. Run `python3 -m tw.model --validate`.
 
 ### Overall (v3, 229 samples)
 
@@ -288,8 +288,9 @@ ThamesWatch API ──┘     (fetch + enrich)            (model)         + READ
 - `tw/ea_hydrology.py`, `tw/flood_monitoring.py`, `tw/thames_water.py`,
   `tw/thameswatch.py` — API clients.
 - `tw/snapshot.py` — assembles every `assess_safety` input for a date, all sites.
-- `predict.py` — runs the model, emits text + `prediction.json` + the README status block.
-- A GitHub Action runs `predict.py` twice daily and commits the outputs.
+- `tw/model.py` — the model itself (`assess_safety`) + the `--validate` gate; run as `python3 -m tw.model`.
+- `scripts/predict.py` — runs the model, emits text + `prediction.json` + the README status block.
+- A GitHub Action runs `scripts/predict.py` twice daily and commits the outputs.
 
 Live freshness by signal: **rainfall** runs on the Hydrology 15-minute series (~1h);
 the **absolute flow** value uses the Hydrology daily mean (the freshest daily EA
@@ -308,7 +309,7 @@ a stale feed and falls back to the daily-mean trend, rather than silently using 
   none predictable from weather, flow or CSO data. This is the floor on GREEN accuracy.
 - **Far-upstream Thames overflows add no signal.** Five storm overflows were found on the
   Thames above Chertsey; only the two nearest (Windsor ~5 km, Little Marlow ~17 km) are
-  used. In the ablation (`experiment_upstream_weighting.py`) the three farther ones
+  used. In the ablation (`scripts/experiment_upstream_weighting.py`) the three farther ones
   (Reading, Henley, Hambleden — 26–32 km up, beyond ~1–2 days of *E. coli* die-off and
   dilution) caught zero extra unsafe-in-GREEN days while removing seven safe days from
   GREEN — pure false-conservatism, so they are excluded.
@@ -363,10 +364,10 @@ a stale feed and falls back to the daily-mean trend, rather than silently using 
 
 The calibration dataset must be kept current as ThamesWatch publishes new tests.
 
-1. `python3 fetch_thameswatch.py` — pull the latest raw test results.
-2. `python3 refresh_correlation.py` — append any new results to the dataset.
-3. `python3 rebuild_correlation.py` — recompute the rain enrichment.
-4. `python3 traffic_light_model_v3.py --validate` — **the re-validation gate**.
+1. `python3 scripts/fetch_thameswatch.py` — pull the latest raw test results.
+2. `python3 scripts/refresh_correlation.py` — append any new results to the dataset.
+3. `python3 scripts/rebuild_correlation.py` — recompute the rain enrichment.
+4. `python3 -m tw.model --validate` — **the re-validation gate**.
 
 After any dataset change, GREEN must remain ≈95% safe with **0% dangerous**. If accuracy
 degrades materially, a change is wrong — investigate before deploying. Keep a backup of

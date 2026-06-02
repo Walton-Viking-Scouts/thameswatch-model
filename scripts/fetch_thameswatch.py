@@ -13,10 +13,13 @@ API: ThamesWatch public API — https://thames-watch.uk/swagger
 Public read endpoints need no authentication.
 
 Usage:
-    python3 fetch_thameswatch.py                       # full history -> thameswatch_results.csv
-    python3 fetch_thameswatch.py --from 2026-03-13     # only results on/after a date
-    python3 fetch_thameswatch.py --out latest.csv      # custom output path
+    python3 scripts/fetch_thameswatch.py                       # full history -> thameswatch_results.csv
+    python3 scripts/fetch_thameswatch.py --from 2026-03-13     # only results on/after a date
+    python3 scripts/fetch_thameswatch.py --out latest.csv      # custom output path
 """
+
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # repo root → import tw
 
 import argparse
 import csv

@@ -16,9 +16,12 @@ timestamped backup of the dataset is written to /tmp before the rewrite.
 
 Run where outbound network is available (it fetches each monitor's discharge history):
 
-    python3 rebuild_cso.py
-    python3 traffic_light_model_v3.py --validate
+    python3 scripts/rebuild_cso.py
+    python3 -m tw.model --validate
 """
+
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))  # repo root → import tw
 
 import csv
 import shutil
@@ -77,7 +80,7 @@ def main():
 
     print(f"\nRebuilt CSO enrichment for {len(rows)} rows ({changed} changed).")
     print(f"Backup of the pre-rebuild dataset: {backup}")
-    print("Next: python3 traffic_light_model_v3.py --validate")
+    print("Next: python3 -m tw.model --validate")
 
 
 if __name__ == "__main__":
