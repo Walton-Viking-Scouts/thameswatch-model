@@ -23,8 +23,14 @@ import json
 import sys
 from datetime import datetime, timezone
 
-from tw.model import assess_safety
+from tw import flood_monitoring
+from tw.config import CSO_MONITORS, SITE_LIVE_FLOW_GAUGE
+from tw.model import assess_safety, SITE_CSO_RELEVANCE
 from tw.snapshot import build_snapshot, build_upstream_watch
+
+# monitor name -> river_system, for grouping active CSOs into the systems each site cares
+# about (the "Why" detail lists only site-relevant discharges).
+_CSO_SYSTEM = {m.name: m.river_system for m in CSO_MONITORS}
 
 SCHEMA_VERSION = 1
 MODEL_VERSION = "v3"
@@ -38,6 +44,49 @@ README_START = "<!-- PREDICTION:START -->"
 README_END = "<!-- PREDICTION:END -->"
 
 
+def _why_detail(s):
+    """A specifics line for the verdict: site-relevant active CSOs (with discharge hours),
+    notable rain, and any tributary surge — built from the snapshot's own inputs."""
+    relevant = set(SITE_CSO_RELEVANCE.get(
+        s.site, ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"]))
+    # Collect one label per monitor, preferring a discharge-hours figure over a bare
+    # "live" flag (a monitor can appear in both the 48h history and the current-status feed).
+    mon_label = {}
+    for entry in (s.cso_active_monitors_str or "").split(";"):
+        entry = entry.strip()
+        if not entry:
+            continue
+        name = entry.split("(")[0].strip()
+        system = _CSO_SYSTEM.get(name)
+        if system is None or system not in relevant:
+            continue  # not a monitor that can reach this site
+        label = entry[entry.rindex("(") + 1:-1].strip() if entry.endswith(")") else ""
+        cur = mon_label.get(name)
+        if cur is None or (cur[1] in ("", "live") and label not in ("", "live")):
+            mon_label[name] = (system, label)
+
+    by_sys = {}
+    for name, (system, label) in mon_label.items():
+        disp = f"{name} (live)" if label == "live" else (f"{name} {label}".strip())
+        by_sys.setdefault(system, []).append(disp)
+
+    bits = [f"{sysname}: " + ", ".join(mons)
+            for sysname in ("Wey", "Mole", "Thames", "ThamesUpstream", "Minor")
+            if (mons := by_sys.get(sysname))]
+
+    if s.rain_48h and s.rain_48h > 2:
+        bits.append(f"rain {s.rain_48h:.0f}mm/48h")
+    elif s.rain_7d and s.rain_7d > 15:
+        bits.append(f"rain {s.rain_7d:.0f}mm/7d antecedent")
+
+    ctx = s.upstream_ctx or {}
+    for river, key in (("Wey", "wey"), ("Mole", "mole")):
+        if river in relevant and ctx.get(f"{key}_rising"):
+            f15 = ctx.get(f"{key}_flow_15min")
+            bits.append(f"{river} flow rising{f' ({f15:.1f} m³/s)' if f15 else ''}")
+    return " · ".join(bits)
+
+
 def check_today(site=None, date=None, topup=True):
     """Build a snapshot, run the model per site, return a structured result dict."""
     snaps = build_snapshot(date, topup=topup)
@@ -45,6 +94,23 @@ def check_today(site=None, date=None, topup=True):
         if site not in snaps:
             raise SystemExit(f"unknown site '{site}' — known: {', '.join(snaps)}")
         snaps = {site: snaps[site]}
+
+    # Live per-site flow (safety context) — only for a live "today" run, and fetched once
+    # per gauge. Best-effort: a feed failure leaves the column blank, never aborts.
+    today = datetime.now(timezone.utc).date().isoformat()
+    is_today = next(iter(snaps.values())).date >= today
+    _flow_cache = {}
+
+    def _live_flow(site_name):
+        gauge = SITE_LIVE_FLOW_GAUGE.get(site_name)
+        if not is_today or not gauge:
+            return None
+        if gauge not in _flow_cache:
+            try:
+                _flow_cache[gauge], _ = flood_monitoring.latest_flow(gauge)
+            except Exception:  # noqa: BLE001 — never abort a prediction on a flow fetch
+                _flow_cache[gauge] = None
+        return _flow_cache[gauge]
 
     sites_out = []
     summary = {"GREEN": 0, "AMBER": 0, "RED": 0}
@@ -58,6 +124,9 @@ def check_today(site=None, date=None, topup=True):
             "level": level,
             "confidence": confidence,
             "explanation": explanation,
+            "why_detail": _why_detail(s),
+            "live_flow_m3s": _live_flow(name),
+            "flow_gauge": SITE_LIVE_FLOW_GAUGE.get(name),
             "inputs": {
                 "rain_48h": s.rain_48h, "rain_7d": s.rain_7d, "dry_days": s.dry_days,
                 "season": s.season, "flow_m3s": s.flow_m3s,
@@ -93,8 +162,12 @@ def render_text(result):
         "=" * 72,
     ]
     for s in result["sites"]:
-        lines.append(f"  {s['level']:6s} {s['site']:24s} {s['confidence']:>3}%  "
+        flow = s.get("live_flow_m3s")
+        flow_str = f"{flow:.0f} m3/s" if flow is not None else "  —  "
+        lines.append(f"  {s['level']:6s} {s['site']:24s} {flow_str:>9s} {s['confidence']:>3}%  "
                       f"{s['explanation']}")
+        if s.get("why_detail"):
+            lines.append(f"         · {s['why_detail']}")
         for w in s["data_quality"]["warnings"]:
             lines.append(f"         ! {w}")
     lines.append("=" * 72)
@@ -124,12 +197,17 @@ def render_markdown(result):
         f"Assessment for **{result['assessment_date']}** — "
         f"updated {result['generated_at']} (model {result['model_version']}).",
         "",
-        "| | Site | Status | Why this colour |",
-        "|---|---|---|---|",
+        "| | Site | Status | Flow (live) | Why this colour |",
+        "|---|---|---|---|---|",
     ]
     for s in result["sites"]:
         icon = LEVEL_ICON.get(s["level"], "")
-        lines.append(f"| {icon} | **{s['site']}** | {s['level']} | {s['explanation']} |")
+        flow = s.get("live_flow_m3s")
+        flow_cell = f"{flow:.0f} m³/s" if flow is not None else "—"
+        why = s["explanation"]
+        if s.get("why_detail"):
+            why += f"<br>{s['why_detail']}"
+        lines.append(f"| {icon} | **{s['site']}** | {s['level']} | {flow_cell} | {why} |")
     su = result["summary"]
     lines += [
         "",

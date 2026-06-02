@@ -10,7 +10,7 @@ We tested it against 229 real water quality results from ThamesWatch. When it sa
 
 ## Why This Matters
 
-E. coli testing takes 24-48 hours in a lab. That's no use when you need to decide this morning whether to put boats on the water. Our system gives an answer in seconds by checking conditions that predict whether the water is contaminated — primarily **sewage discharges** and **rainfall**. It now runs automatically twice a day on live data, so a current RED/AMBER/GREEN for every site is always ready.
+E. coli testing takes 24-48 hours in a lab. That's no use when you need to decide this morning whether to put boats on the water. Our system gives an answer in seconds by checking conditions that predict whether the water is contaminated — primarily **sewage discharges** and **rainfall**. It now runs automatically every few hours on live data, so a current RED/AMBER/GREEN for every site is always ready.
 
 ---
 
@@ -70,13 +70,13 @@ In dry summers, the Wey and Mole make up **over 40% of all the water flowing pas
 
 ## Watching the Rivers in Real Time
 
-The system now runs by itself. Twice a day — morning and early afternoon — it automatically gathers the latest rainfall, river-flow and sewage-discharge data and publishes a fresh RED/AMBER/GREEN for every site. Nobody has to collect anything by hand.
+The system now runs by itself. Every few hours, around the clock, it automatically gathers the latest rainfall, river-flow and sewage-discharge data and publishes a fresh RED/AMBER/GREEN for every site. Nobody has to collect anything by hand.
 
 That continuous watch matters, because the water can change completely between tests. ThamesWatch testing is roughly weekly — and a week is ample time for conditions to swing from safe to dangerous.
 
 **A real example — Walton Wharf, late summer 2025.** On 27 August the water at Walton Wharf tested at just **62** E. coli per 100ml — pristine, comfortably safe, after a fortnight of dry weather. A clear GREEN day. The next test was a week later, on 3 September: it came back at **10,000 — twenty times the safe limit, catastrophically contaminated**.
 
-For that whole week the weekly test told us nothing. The rivers did. Heavy rain arrived at the start of September — 15mm in 48 hours — and the Wey, the tributary joining just above Walton, nearly doubled, climbing from 3 to 6 cubic metres per second. Reading rain and river flow twice a day, the system would have turned Walton from GREEN to RED as those conditions arrived — in real time, before the 3 September lab sample had even been processed.
+For that whole week the weekly test told us nothing. The rivers did. Heavy rain arrived at the start of September — 15mm in 48 hours — and the Wey, the tributary joining just above Walton, nearly doubled, climbing from 3 to 6 cubic metres per second. Reading rain and river flow every few hours, the system would have turned Walton from GREEN to RED as those conditions arrived — in real time, before the 3 September lab sample had even been processed.
 
 Two things stand out. First, **no storm overflow discharged anywhere on the Wey** — the Thames Water overflow map showed all-clear throughout. This was rain washing bacteria straight off the land, not a monitored sewage spill; a leader checking only the overflow map would have seen nothing wrong. Second, the weekly test left a **seven-day blind window** — anyone relying on it spent that week believing the water was still a pristine 62. Only watching the weather and the rivers continuously catches a swing like this.
 
@@ -86,7 +86,7 @@ Two things stand out. First, **no storm overflow discharged anywhere on the Wey*
 
 ## How to Use This
 
-The system does the checking for you and publishes a verdict twice a day. The three signals below are what it weighs — useful for understanding a result, or as a manual sense-check.
+The system does the checking for you and publishes a verdict every few hours. The three signals below are what it weighs — useful for understanding a result, or as a manual sense-check.
 
 ### The three signals behind every verdict
 
@@ -112,7 +112,7 @@ For Kingston Albany Reach and Teddington: the system will never say GREEN becaus
 
 ### This season
 
-1. **Check conditions before every session.** This is now automated. A prediction pipeline runs twice a day — checking rainfall, sewage overflows, and river flow — and publishes a RED/AMBER/GREEN for every site as a machine-readable file (`prediction.json`). A simple leader-facing alert (a web page or text) can be built on top of it as a next step.
+1. **Check conditions before every session.** This is now automated. A prediction pipeline runs every few hours — checking rainfall, sewage overflows, and river flow — and publishes a RED/AMBER/GREEN for every site as a machine-readable file (`prediction.json`). A simple leader-facing alert (a web page or text) can be built on top of it as a next step.
 
 2. **Carry R-Card test kits for AMBER days.** The traffic light tells you when conditions are uncertain. A quick test on the day resolves it.
 
@@ -136,7 +136,7 @@ We combined three freely available public datasets:
 - **Environment Agency data** — local rainfall, and river flow from 5 stations (Walton, Wey, Mole, Staines, Reading), which between them capture rain falling anywhere upstream
 - **Thames Water data** — real-time sewage overflow status from 16 monitored outfalls
 
-All data is free and publicly available. The system runs as a small automated job twice a day — no special software, no laptop, and no manual data-gathering.
+All data is free and publicly available. The system runs as a small automated job every few hours — no special software, no laptop, and no manual data-gathering.
 
 For the complete technical detail — every input, every decision rule, the full validation results, and the model's known limitations — see the model reference document (`MODEL.md`).
 
@@ -144,5 +144,5 @@ We compared our approach against a £5 million government-funded AI project (Riv
 
 ---
 
-*Prepared March 2026; updated May 2026 — refreshed dataset, automated twice-daily pipeline, and real-time (15-minute) river and rainfall data.*
+*Prepared March 2026; updated May 2026 — refreshed dataset, automated frequent pipeline, and real-time (15-minute) river and rainfall data.*
 *Based on analysis of 229 water quality test results, 800+ days of river flow data, and 16 sewage overflow monitoring points.*

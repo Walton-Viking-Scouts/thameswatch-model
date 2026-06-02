@@ -1,10 +1,10 @@
 name: predict
 
-# Twice daily — morning and early afternoon (UK). Cron is UTC.
+# Every 3 hours — captures live CSO discharge and tributary surges quickly (the live
+# 15-minute flow + current-status feeds update within ~1h). Cron is UTC.
 on:
   schedule:
-    - cron: "0 6 * * *"
-    - cron: "0 12 * * *"
+    - cron: "0 */3 * * *"
   workflow_dispatch: {}
 
 permissions:

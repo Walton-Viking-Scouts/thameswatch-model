@@ -119,9 +119,9 @@ ThamesWatch water safety — 2026-05-16  (model v3)
 
 ## How it runs as a workflow
 
-`.github/workflows/predict.yml` runs **twice daily** — 06:00 and 12:00 UTC (morning
-and early afternoon UK time, so an afternoon check catches rain or CSO that landed
-during the day). Each run:
+`.github/workflows/predict.yml` runs **every 3 hours** (`0 */3 * * *` UTC) — frequent
+enough to catch a CSO discharge or tributary surge soon after it starts, since the live
+CSO current-status and 15-minute flow feeds update within ~1h. Each run:
 
 1. Checks out the repo and installs `requests`.
 2. Runs `python3 scripts/predict.py --json prediction.json --readme README.md` — refreshing the
@@ -149,6 +149,8 @@ Each run commits `prediction.json` (versioned via `schema_version`). Its stable
       "level": "AMBER",
       "confidence": 24,
       "explanation": "2 dry day(s) — 76% safe but recent rain, consider testing",
+      "why_detail": "Wey: Woking 7.2h, Ripley 2.8h · ThamesUpstream: Windsor 7.1h · Wey flow rising (7.3 m³/s)",
+      "live_flow_m3s": 25.1, "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.0, "rain_7d": 6.05, "dry_days": 2, "season": "spring",
         "flow_m3s": 28.373, "cso_active_48h": false, "cso_hours_48h": 0.0,
@@ -165,6 +167,13 @@ Each run commits `prediction.json` (versioned via `schema_version`). Its stable
 ```
 
 - **`level` / `confidence` / `explanation`** — the verdict and why.
+- **`why_detail`** — the specifics behind the verdict: the site-relevant active CSOs with
+  discharge hours, notable rain, and any tributary surge (also shown in the README status
+  table's "Why" column).
+- **`live_flow_m3s` / `flow_gauge`** — the current Thames flow at the site's nearest live
+  gauge (Staines / Walton / Kingston), shown in the status table's "Flow" column. Safety
+  context — high flow means strong currents irrespective of water quality. Display-only;
+  the model's flow *thresholds* still use the Walton daily mean (`inputs.flow_m3s`).
 - **`inputs`** — the exact values fed to the model, so a consumer can show the reasoning.
 - **`data_quality`** — provenance and staleness. EA daily data lags 1-3 days; when the
   assessment date's flow isn't published yet the most recent reading is used and a
