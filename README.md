@@ -89,9 +89,13 @@ scripts/                   entry-point scripts (run from the repo root)
   refresh_correlation.py   append new ThamesWatch test results to the dataset
   experiment_upstream_weighting.py   one-off near/far upstream-CSO ablation
   chart_site.py            plot test results vs the model's RAG verdict
+  build_recent.py          emit recent.json (last 96h rain/flow/CSO for the web panel)
+web/                       front-end snippets
+  recent-panel.html        embeddable storm-panel chart (reads recent.json)
 data/                      flow / rain / correlation CSVs
 archive/                   superseded scripts, kept for reference
 prediction.json            latest prediction (committed by the workflow)
+recent.json                last 96h of rain/flow/CSO per site (committed by the workflow)
 ```
 
 ## Running it
@@ -129,7 +133,17 @@ CSO current-status and 15-minute flow feeds update within ~1h. Each run:
 2. Runs `python3 scripts/predict.py --json prediction.json --readme README.md` — refreshing the
    flow/rain CSVs, fetching live CSO data, writing the JSON artifact, and splicing the
    live status block into this README.
-3. Commits the updated `prediction.json`, `README.md` and `data/` CSVs back to the repo.
+3. Runs `python3 scripts/build_recent.py --json recent.json` — the last 96h of rain, flow
+   and CSO discharge per site, for the web storm-panel chart.
+4. Commits the updated `prediction.json`, `recent.json`, `README.md` and `data/` CSVs.
+
+### Embedding the data on a website
+
+Both JSON files have stable `raw.githubusercontent.com` URLs and `access-control-allow-origin: *`,
+so a browser can fetch them directly. `prediction.json` is the current RED/AMBER/GREEN per
+site; `recent.json` is the 96h time-series behind it. `web/recent-panel.html` is a
+drop-in, no-build Chart.js panel (rainfall bars → sewage-overflow bands → river-flow line)
+that reads `recent.json` — paste it into a WordPress Custom HTML block.
 
 No secrets or API keys are needed — every data source is public. The workflow can
 also be triggered manually from the Actions tab (`workflow_dispatch`).
