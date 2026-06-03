@@ -85,17 +85,21 @@ def main():
     sites_out = {}
     for site in SITES:
         systems = set(SITE_CSO_RELEVANCE.get(site, []))
+        mons = [m for m in CSO_MONITORS if m.river_system in systems]
         cso = []
-        for m in CSO_MONITORS:
-            if m.river_system not in systems:
-                continue
+        for m in mons:
             for st, en in periods.get(m.name, []):
                 en = min(en, now)
                 if en >= start and st < now:
                     cso.append({"monitor": m.name, "system": m.river_system,
                                 "start": _iso(max(st, start)), "stop": _iso(en)})
         cso.sort(key=lambda e: e["start"])
-        sites_out[site] = {"flow_gauge": SITE_LIVE_FLOW_GAUGE.get(site), "cso": cso}
+        sites_out[site] = {
+            "flow_gauge": SITE_LIVE_FLOW_GAUGE.get(site),
+            # all CSOs relevant to this site (so the detail view can show quiet ones too)
+            "monitors": [{"name": m.name, "system": m.river_system} for m in mons],
+            "cso": cso,
+        }
 
     out = {
         "generated_at": _iso(now),

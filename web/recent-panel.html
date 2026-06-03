@@ -19,9 +19,10 @@
 <div class="tw-panel" style="font-family:system-ui,sans-serif;max-width:780px;margin:1.5em auto;color:#222">
   <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1em;flex-wrap:wrap">
     <h3 style="margin:0">Recent conditions — last 96 h</h3>
-    <label style="font-size:.9em;color:#555">Site
-      <select id="tw-site" style="font-size:1em;padding:.2em"></select>
-    </label>
+    <span style="font-size:.9em;color:#555">
+      <label>Site <select id="tw-site" style="font-size:1em;padding:.2em"></select></label>
+      <label style="margin-left:1em"><input type="checkbox" id="tw-detail-toggle"> Per-overflow detail</label>
+    </span>
   </div>
   <p style="margin:.3em 0 .6em;font-size:.85em;color:#666">
     Rainfall (blue bars) drives sewage overflows (shaded bands) and river flow (green line).
@@ -29,6 +30,7 @@
   </p>
   <div style="position:relative;height:340px"><canvas id="tw-chart"></canvas></div>
   <p id="tw-legend" style="margin:.5em 0 0;font-size:.8em;color:#777"></p>
+  <div id="tw-detail" style="display:none;margin-top:.5em"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
@@ -46,6 +48,8 @@
     ThamesUpstream: "rgba(138,63,255,.15)",
     Minor:          "rgba(120,120,120,.14)"
   };
+  // Solid versions for the per-monitor detail timeline segments.
+  var SYS_SOLID = { Wey:"#b5651d", Mole:"#1e783c", Thames:"#3c5aa0", ThamesUpstream:"#8a3ffc", Minor:"#777" };
 
   // Plugin: shade each CSO discharge interval as a vertical band behind the data.
   var csoBands = {
@@ -104,6 +108,25 @@
     };
     if (chart) chart.destroy();
     chart = new Chart(document.getElementById("tw-chart"), cfg);
+
+    // Per-overflow detail timeline (one row per relevant monitor; quiet ones show empty).
+    var t1 = new Date(data.generated_at).getTime();
+    var t0 = t1 - data.window_hours * 3600 * 1000;
+    function pct(iso) { return (new Date(iso).getTime() - t0) / (t1 - t0) * 100; }
+    var rows = (s.monitors || []).map(function (m) {
+      var segs = s.cso.filter(function (e) { return e.monitor === m.name; }).map(function (e) {
+        var L = Math.max(0, pct(e.start)), W = Math.min(100, pct(e.stop)) - L;
+        return '<div title="' + m.name + ' ' + e.start + ' → ' + e.stop +
+          '" style="position:absolute;top:1px;bottom:1px;left:' + L + '%;width:' +
+          Math.max(W, 0.5) + '%;background:' + (SYS_SOLID[m.system] || "#777") + ';border-radius:2px"></div>';
+      }).join("");
+      return '<div style="display:flex;align-items:center;gap:.5em;margin:.12em 0">' +
+        '<div style="width:150px;text-align:right;font-size:.78em;color:#555">' + m.name + '</div>' +
+        '<div style="position:relative;flex:1;height:15px;background:#f0f0f0;border-radius:3px">' + segs + '</div></div>';
+    }).join("");
+    document.getElementById("tw-detail").innerHTML =
+      '<div style="font-size:.78em;color:#666;margin:.1em 0 .3em">Sewage discharge by overflow — last ' +
+      data.window_hours + 'h (filled = discharging)</div>' + rows;
   }
 
   fetch(RECENT_URL, { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
@@ -116,6 +139,10 @@
     });
     sel.value = "Walton Wharf";
     sel.addEventListener("change", function () { draw(sel.value); });
+    var tog = document.getElementById("tw-detail-toggle");
+    tog.addEventListener("change", function () {
+      document.getElementById("tw-detail").style.display = tog.checked ? "block" : "none";
+    });
     draw(sel.value);
   }).catch(function () {
     document.querySelector(".tw-panel").insertAdjacentHTML("beforeend",
