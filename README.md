@@ -14,16 +14,16 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-03** — updated 2026-06-03T07:35:43Z (model v3).
+Assessment for **2026-06-03** — updated 2026-06-03T10:33:49Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | — | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.3 m³/s) |
+| 🔴 | **Walton Wharf** | RED | 33 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.5 m³/s) |
 | 🔴 | **Chertsey** | RED | 22 m³/s | Heavy rain (31mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 28.9h · rain 31mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 30 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · Mole: Leatherhead 20.2h · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.3 m³/s) · Mole flow rising (3.2 m³/s) |
-| 🔴 | **Kingston HMT** | RED | 30 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · Mole: Leatherhead 20.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.3 m³/s) · Mole flow rising (3.2 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 30 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · Mole: Leatherhead 20.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.3 m³/s) · Mole flow rising (3.2 m³/s) |
-| 🔴 | **Teddington** | RED | 30 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · Mole: Leatherhead 20.2h · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.3 m³/s) · Mole flow rising (3.2 m³/s) |
+| 🔴 | **Kingston Albany Reach** | RED | 29 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · Mole: Leatherhead 20.2h · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.5 m³/s) · Mole flow rising (3.3 m³/s) |
+| 🔴 | **Kingston HMT** | RED | 29 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · Mole: Leatherhead 20.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.5 m³/s) · Mole flow rising (3.3 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 29 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · Mole: Leatherhead 20.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.5 m³/s) · Mole flow rising (3.3 m³/s) |
+| 🔴 | **Teddington** | RED | 29 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h · Mole: Leatherhead 20.2h · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h · Wey flow rising (10.5 m³/s) · Mole flow rising (3.3 m³/s) |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 6 🔴 RED**
 
@@ -31,7 +31,7 @@ _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey surge · Mole surge · Thames surge._
+_Upstream watch (tributary flow, last 24h): Wey rising · Mole surge · Thames surge._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
