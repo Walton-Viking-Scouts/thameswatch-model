@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-03T16:32:46Z",
+  "generated_at": "2026-06-03T19:14:26Z",
   "assessment_date": "2026-06-03",
   "model_version": "v3",
   "sites": [
@@ -9,8 +9,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 31mm/48h",
-      "live_flow_m3s": 32.928,
+      "why_detail": "Wey: Ripley (live), Weybridge (live), Woking (live) \u00b7 ThamesUpstream: Windsor 28.9h \u00b7 rain 31mm/48h",
+      "live_flow_m3s": 33.208,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 31.43,
@@ -19,8 +19,8 @@
         "season": "summer",
         "flow_m3s": 19.255,
         "cso_active_48h": true,
-        "cso_hours_48h": 51.2,
-        "cso_active_monitors": "Woking(16.0h); Ripley(14.2h); Weybridge(0.5h); Leatherhead(20.2h); Old Palace Lane(0.2h); Old Palace Lane (live); Windsor(live)",
+        "cso_hours_48h": 29.2,
+        "cso_active_monitors": "Old Palace Lane(0.2h); Windsor(28.9h); Leatherhead(live); Old Palace Lane (live); Ripley(live); Weybridge(live); Woking(live)",
         "upstream_ctx": {
           "walton_flow": 19.255,
           "wey_flow": 4.865,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 11.374,
-          "mole_flow_15min": 3.61
+          "wey_flow_15min": 11.301,
+          "mole_flow_15min": 4.273
         }
       },
       "data_quality": {
@@ -48,8 +48,8 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (31mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor (live) \u00b7 rain 31mm/48h",
-      "live_flow_m3s": 22.866,
+      "why_detail": "ThamesUpstream: Windsor 28.9h \u00b7 rain 31mm/48h",
+      "live_flow_m3s": 26.117,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 31.43,
@@ -58,8 +58,8 @@
         "season": "summer",
         "flow_m3s": 19.255,
         "cso_active_48h": true,
-        "cso_hours_48h": 51.2,
-        "cso_active_monitors": "Woking(16.0h); Ripley(14.2h); Weybridge(0.5h); Leatherhead(20.2h); Old Palace Lane(0.2h); Old Palace Lane (live); Windsor(live)",
+        "cso_hours_48h": 29.2,
+        "cso_active_monitors": "Old Palace Lane(0.2h); Windsor(28.9h); Leatherhead(live); Old Palace Lane (live); Ripley(live); Weybridge(live); Woking(live)",
         "upstream_ctx": {
           "walton_flow": 19.255,
           "wey_flow": 4.865,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 11.374,
-          "mole_flow_15min": 3.61
+          "wey_flow_15min": 11.301,
+          "mole_flow_15min": 4.273
         }
       },
       "data_quality": {
@@ -87,8 +87,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h \u00b7 Mole: Leatherhead 20.2h \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 31mm/48h",
-      "live_flow_m3s": 33.601,
+      "why_detail": "Wey: Ripley (live), Weybridge (live), Woking (live) \u00b7 Mole: Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor 28.9h \u00b7 rain 31mm/48h",
+      "live_flow_m3s": 31.586,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 31.43,
@@ -97,8 +97,8 @@
         "season": "summer",
         "flow_m3s": 19.255,
         "cso_active_48h": true,
-        "cso_hours_48h": 51.2,
-        "cso_active_monitors": "Woking(16.0h); Ripley(14.2h); Weybridge(0.5h); Leatherhead(20.2h); Old Palace Lane(0.2h); Old Palace Lane (live); Windsor(live)",
+        "cso_hours_48h": 29.2,
+        "cso_active_monitors": "Old Palace Lane(0.2h); Windsor(28.9h); Leatherhead(live); Old Palace Lane (live); Ripley(live); Weybridge(live); Woking(live)",
         "upstream_ctx": {
           "walton_flow": 19.255,
           "wey_flow": 4.865,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 11.374,
-          "mole_flow_15min": 3.61
+          "wey_flow_15min": 11.301,
+          "mole_flow_15min": 4.273
         }
       },
       "data_quality": {
@@ -126,8 +126,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h \u00b7 Mole: Leatherhead 20.2h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 31mm/48h",
-      "live_flow_m3s": 33.601,
+      "why_detail": "Wey: Ripley (live), Weybridge (live), Woking (live) \u00b7 Mole: Leatherhead (live) \u00b7 ThamesUpstream: Windsor 28.9h \u00b7 rain 31mm/48h",
+      "live_flow_m3s": 31.586,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 31.43,
@@ -136,8 +136,8 @@
         "season": "summer",
         "flow_m3s": 19.255,
         "cso_active_48h": true,
-        "cso_hours_48h": 51.2,
-        "cso_active_monitors": "Woking(16.0h); Ripley(14.2h); Weybridge(0.5h); Leatherhead(20.2h); Old Palace Lane(0.2h); Old Palace Lane (live); Windsor(live)",
+        "cso_hours_48h": 29.2,
+        "cso_active_monitors": "Old Palace Lane(0.2h); Windsor(28.9h); Leatherhead(live); Old Palace Lane (live); Ripley(live); Weybridge(live); Woking(live)",
         "upstream_ctx": {
           "walton_flow": 19.255,
           "wey_flow": 4.865,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 11.374,
-          "mole_flow_15min": 3.61
+          "wey_flow_15min": 11.301,
+          "mole_flow_15min": 4.273
         }
       },
       "data_quality": {
@@ -165,8 +165,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h \u00b7 Mole: Leatherhead 20.2h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 31mm/48h",
-      "live_flow_m3s": 33.601,
+      "why_detail": "Wey: Ripley (live), Weybridge (live), Woking (live) \u00b7 Mole: Leatherhead (live) \u00b7 ThamesUpstream: Windsor 28.9h \u00b7 rain 31mm/48h",
+      "live_flow_m3s": 31.586,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 31.43,
@@ -175,8 +175,8 @@
         "season": "summer",
         "flow_m3s": 19.255,
         "cso_active_48h": true,
-        "cso_hours_48h": 51.2,
-        "cso_active_monitors": "Woking(16.0h); Ripley(14.2h); Weybridge(0.5h); Leatherhead(20.2h); Old Palace Lane(0.2h); Old Palace Lane (live); Windsor(live)",
+        "cso_hours_48h": 29.2,
+        "cso_active_monitors": "Old Palace Lane(0.2h); Windsor(28.9h); Leatherhead(live); Old Palace Lane (live); Ripley(live); Weybridge(live); Woking(live)",
         "upstream_ctx": {
           "walton_flow": 19.255,
           "wey_flow": 4.865,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 11.374,
-          "mole_flow_15min": 3.61
+          "wey_flow_15min": 11.301,
+          "mole_flow_15min": 4.273
         }
       },
       "data_quality": {
@@ -204,8 +204,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 16.0h, Ripley 14.2h, Weybridge 0.5h \u00b7 Mole: Leatherhead 20.2h \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 31mm/48h",
-      "live_flow_m3s": 33.601,
+      "why_detail": "Wey: Ripley (live), Weybridge (live), Woking (live) \u00b7 Mole: Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.2h \u00b7 ThamesUpstream: Windsor 28.9h \u00b7 rain 31mm/48h",
+      "live_flow_m3s": 31.586,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 31.43,
@@ -214,8 +214,8 @@
         "season": "summer",
         "flow_m3s": 19.255,
         "cso_active_48h": true,
-        "cso_hours_48h": 51.2,
-        "cso_active_monitors": "Woking(16.0h); Ripley(14.2h); Weybridge(0.5h); Leatherhead(20.2h); Old Palace Lane(0.2h); Old Palace Lane (live); Windsor(live)",
+        "cso_hours_48h": 29.2,
+        "cso_active_monitors": "Old Palace Lane(0.2h); Windsor(28.9h); Leatherhead(live); Old Palace Lane (live); Ripley(live); Weybridge(live); Woking(live)",
         "upstream_ctx": {
           "walton_flow": 19.255,
           "wey_flow": 4.865,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 11.374,
-          "mole_flow_15min": 3.61
+          "wey_flow_15min": 11.301,
+          "mole_flow_15min": 4.273
         }
       },
       "data_quality": {
@@ -271,8 +271,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 11.374,
-        "flow_change_pct": -17,
+        "flow_m3s": 11.301,
+        "flow_change_pct": -10,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -305,8 +305,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 3.61,
-        "flow_change_pct": 21,
+        "flow_m3s": 4.273,
+        "flow_change_pct": 25,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
@@ -335,15 +335,15 @@
           },
           {
             "date": "2026-06-03",
-            "mm": 3.43
+            "mm": 3.44
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 14.817,
-        "flow_change_pct": -4,
+        "flow_m3s": 13.068,
+        "flow_change_pct": -18,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "easing"
       }
     ]
   },
