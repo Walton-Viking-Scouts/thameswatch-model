@@ -1,0 +1,154 @@
+<!doctype html>
+<!--
+  ThamesWatch "storm panel" — rainfall (bars) → sewage overflows (shaded bands) →
+  river flow (line), on one shared timeline, for the last 96 h. Reads recent.json
+  (emitted by scripts/build_recent.py, committed every workflow run).
+
+  To embed in WordPress: paste everything from <div class="tw-panel"> to the end of
+  the final </script> into a Custom HTML block (the two <script src> CDN tags included).
+  Self-hosted WordPress runs this as-is; no plugin needed.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ThamesWatch — recent conditions</title>
+</head>
+<body style="margin:0;background:#fff">
+
+<div class="tw-panel" style="font-family:system-ui,sans-serif;max-width:780px;margin:1.5em auto;color:#222">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1em;flex-wrap:wrap">
+    <h3 style="margin:0">Recent conditions — last 96 h</h3>
+    <span style="font-size:.9em;color:#555">
+      <label>Site <select id="tw-site" style="font-size:1em;padding:.2em"></select></label>
+      <label style="margin-left:1em"><input type="checkbox" id="tw-detail-toggle"> Per-overflow detail</label>
+    </span>
+  </div>
+  <p style="margin:.3em 0 .6em;font-size:.85em;color:#666">
+    Rainfall (blue bars) drives sewage overflows (shaded bands) and river flow (green line).
+    <span id="tw-when"></span>
+  </p>
+  <div style="position:relative;height:340px"><canvas id="tw-chart"></canvas></div>
+  <p id="tw-legend" style="margin:.5em 0 0;font-size:.8em;color:#777"></p>
+  <div id="tw-detail" style="display:none;margin-top:.5em"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script>
+(function () {
+  // Point this at your committed recent.json (raw GitHub URL, or same-origin copy).
+  var RECENT_URL = "https://raw.githubusercontent.com/Walton-Viking-Scouts/thameswatch-model/main/recent.json";
+
+  // Per-river shading colours for the sewage-discharge bands (low alpha so the line shows through).
+  var SYS = {
+    Wey:            "rgba(181,101,29,.20)",
+    Mole:           "rgba(30,120,60,.16)",
+    Thames:         "rgba(60,90,160,.16)",
+    ThamesUpstream: "rgba(138,63,255,.15)",
+    Minor:          "rgba(120,120,120,.14)"
+  };
+  // Solid versions for the per-monitor detail timeline segments.
+  var SYS_SOLID = { Wey:"#b5651d", Mole:"#1e783c", Thames:"#3c5aa0", ThamesUpstream:"#8a3ffc", Minor:"#777" };
+
+  // Plugin: shade each CSO discharge interval as a vertical band behind the data.
+  var csoBands = {
+    id: "csoBands",
+    beforeDatasetsDraw: function (chart, _a, opts) {
+      var x = chart.scales.x, area = chart.chartArea, ctx = chart.ctx;
+      (opts.intervals || []).forEach(function (iv) {
+        var x0 = x.getPixelForValue(new Date(iv.start).getTime());
+        var x1 = x.getPixelForValue(new Date(iv.stop).getTime());
+        var L = Math.max(x0, area.left), R = Math.min(x1, area.right);
+        if (R <= L) return;
+        ctx.save(); ctx.fillStyle = SYS[iv.system] || SYS.Minor;
+        ctx.fillRect(L, area.top, R - L, area.height); ctx.restore();
+      });
+    }
+  };
+
+  var chart, data;
+  function draw(site) {
+    var s = data.sites[site];
+    var rain = data.rain.map(function (p) { return { x: p.t, y: p.mm }; });
+    var flow = (data.flows[s.flow_gauge] || []).map(function (p) { return { x: p.t, y: p.m3s }; });
+    var systems = {};
+    s.cso.forEach(function (e) { systems[e.system] = true; });
+    document.getElementById("tw-legend").innerHTML =
+      "Shaded = sewage discharging upstream " +
+      Object.keys(systems).map(function (k) {
+        return '<span style="background:' + (SYS[k] || SYS.Minor) +
+               ';padding:0 .5em;border-radius:3px">' + k + "</span>";
+      }).join(" ") + " · flow gauge: " + s.flow_gauge;
+
+    var cfg = {
+      data: {
+        datasets: [
+          { type: "bar", label: "Rain (mm/hr)", data: rain, yAxisID: "yRain",
+            backgroundColor: "#2a7fff", barPercentage: 1, categoryPercentage: 1, order: 2 },
+          { type: "line", label: "Flow (m³/s)", data: flow, yAxisID: "yFlow",
+            borderColor: "#1a9850", backgroundColor: "rgba(26,152,80,.12)",
+            borderWidth: 2, pointRadius: 0, fill: true, tension: .25, order: 1 }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false, animation: false,
+        interaction: { mode: "index", intersect: false },
+        scales: {
+          x: { type: "time", time: { unit: "day", displayFormats: { day: "EEE d" } },
+               grid: { display: false }, ticks: { maxRotation: 0 } },
+          yRain: { position: "left", beginAtZero: true, title: { display: true, text: "Rain mm/hr" },
+                   grid: { display: false } },
+          yFlow: { position: "right", beginAtZero: true, title: { display: true, text: "Flow m³/s" },
+                   grid: { color: "rgba(0,0,0,.06)" } }
+        },
+        plugins: { legend: { display: true }, csoBands: { intervals: s.cso } }
+      },
+      plugins: [csoBands]
+    };
+    if (chart) chart.destroy();
+    chart = new Chart(document.getElementById("tw-chart"), cfg);
+
+    // Per-overflow detail timeline (one row per relevant monitor; quiet ones show empty).
+    var t1 = new Date(data.generated_at).getTime();
+    var t0 = t1 - data.window_hours * 3600 * 1000;
+    function pct(iso) { return (new Date(iso).getTime() - t0) / (t1 - t0) * 100; }
+    var rows = (s.monitors || []).map(function (m) {
+      var segs = s.cso.filter(function (e) { return e.monitor === m.name; }).map(function (e) {
+        var L = Math.max(0, pct(e.start)), W = Math.min(100, pct(e.stop)) - L;
+        return '<div title="' + m.name + ' ' + e.start + ' → ' + e.stop +
+          '" style="position:absolute;top:1px;bottom:1px;left:' + L + '%;width:' +
+          Math.max(W, 0.5) + '%;background:' + (SYS_SOLID[m.system] || "#777") + ';border-radius:2px"></div>';
+      }).join("");
+      return '<div style="display:flex;align-items:center;gap:.5em;margin:.12em 0">' +
+        '<div style="width:150px;text-align:right;font-size:.78em;color:#555">' + m.name + '</div>' +
+        '<div style="position:relative;flex:1;height:15px;background:#f0f0f0;border-radius:3px">' + segs + '</div></div>';
+    }).join("");
+    document.getElementById("tw-detail").innerHTML =
+      '<div style="font-size:.78em;color:#666;margin:.1em 0 .3em">Sewage discharge by overflow — last ' +
+      data.window_hours + 'h (filled = discharging)</div>' + rows;
+  }
+
+  fetch(RECENT_URL, { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+    data = d;
+    var when = new Date(d.generated_at).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" });
+    document.getElementById("tw-when").textContent = "Updated " + when + ".";
+    var sel = document.getElementById("tw-site");
+    Object.keys(d.sites).forEach(function (name) {
+      var o = document.createElement("option"); o.value = o.textContent = name; sel.appendChild(o);
+    });
+    sel.value = "Walton Wharf";
+    sel.addEventListener("change", function () { draw(sel.value); });
+    var tog = document.getElementById("tw-detail-toggle");
+    tog.addEventListener("change", function () {
+      document.getElementById("tw-detail").style.display = tog.checked ? "block" : "none";
+    });
+    draw(sel.value);
+  }).catch(function () {
+    document.querySelector(".tw-panel").insertAdjacentHTML("beforeend",
+      '<p style="color:#b00">Couldn’t load recent conditions right now.</p>');
+  });
+})();
+</script>
+</body>
+</html>
