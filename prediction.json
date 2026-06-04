@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-04T12:56:54Z",
+  "generated_at": "2026-06-04T16:07:42Z",
   "assessment_date": "2026-06-04",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (ThamesUpstream, Wey) \u2014 0% safe historically",
       "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h",
-      "live_flow_m3s": 32.435,
+      "live_flow_m3s": 31.631,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 33.01,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.437,
-          "mole_flow_15min": 5.627
+          "wey_flow_15min": 7.456,
+          "mole_flow_15min": 4.9
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (33mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h",
-      "live_flow_m3s": 21.275,
+      "live_flow_m3s": 18.403,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 33.01,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.437,
-          "mole_flow_15min": 5.627
+          "wey_flow_15min": 7.456,
+          "mole_flow_15min": 4.9
         }
       },
       "data_quality": {
@@ -87,8 +87,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 Mole: Leatherhead 13.0h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h \u00b7 Mole flow rising (5.6 m\u00b3/s)",
-      "live_flow_m3s": 32.764,
+      "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 Mole: Leatherhead 13.0h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h \u00b7 Mole flow rising (4.9 m\u00b3/s)",
+      "live_flow_m3s": 33.086,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 33.01,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.437,
-          "mole_flow_15min": 5.627
+          "wey_flow_15min": 7.456,
+          "mole_flow_15min": 4.9
         }
       },
       "data_quality": {
@@ -126,8 +126,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 Mole: Leatherhead 13.0h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h \u00b7 Mole flow rising (5.6 m\u00b3/s)",
-      "live_flow_m3s": 32.764,
+      "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 Mole: Leatherhead 13.0h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h \u00b7 Mole flow rising (4.9 m\u00b3/s)",
+      "live_flow_m3s": 33.086,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 33.01,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.437,
-          "mole_flow_15min": 5.627
+          "wey_flow_15min": 7.456,
+          "mole_flow_15min": 4.9
         }
       },
       "data_quality": {
@@ -165,8 +165,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 Mole: Leatherhead 13.0h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h \u00b7 Mole flow rising (5.6 m\u00b3/s)",
-      "live_flow_m3s": 32.764,
+      "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 Mole: Leatherhead 13.0h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h \u00b7 Mole flow rising (4.9 m\u00b3/s)",
+      "live_flow_m3s": 33.086,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 33.01,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.437,
-          "mole_flow_15min": 5.627
+          "wey_flow_15min": 7.456,
+          "mole_flow_15min": 4.9
         }
       },
       "data_quality": {
@@ -204,8 +204,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 Mole: Leatherhead 13.0h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h \u00b7 Mole flow rising (5.6 m\u00b3/s)",
-      "live_flow_m3s": 32.764,
+      "why_detail": "Wey: Woking 8.8h, Ripley 11.5h, Weybridge 0.5h \u00b7 Mole: Leatherhead 13.0h \u00b7 ThamesUpstream: Windsor 8.1h \u00b7 rain 33mm/48h \u00b7 Mole flow rising (4.9 m\u00b3/s)",
+      "live_flow_m3s": 33.086,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 33.01,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.437,
-          "mole_flow_15min": 5.627
+          "wey_flow_15min": 7.456,
+          "mole_flow_15min": 4.9
         }
       },
       "data_quality": {
@@ -247,7 +247,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 56.4,
+        "rain_5d_mm": 59.7,
         "rain_recent": [
           {
             "date": "2026-05-31",
@@ -267,12 +267,12 @@
           },
           {
             "date": "2026-06-04",
-            "mm": 8.66
+            "mm": 12.02
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 7.437,
-        "flow_change_pct": -33,
+        "flow_m3s": 7.456,
+        "flow_change_pct": -35,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -281,7 +281,7 @@
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 32.5,
+        "rain_5d_mm": 35.3,
         "rain_recent": [
           {
             "date": "2026-05-31",
@@ -301,12 +301,12 @@
           },
           {
             "date": "2026-06-04",
-            "mm": 7.36
+            "mm": 10.15
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 5.627,
-        "flow_change_pct": 66,
+        "flow_m3s": 4.9,
+        "flow_change_pct": 31,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "surge"
@@ -315,7 +315,7 @@
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 30.6,
+        "rain_5d_mm": 31.5,
         "rain_recent": [
           {
             "date": "2026-05-31",
@@ -335,15 +335,15 @@
           },
           {
             "date": "2026-06-04",
-            "mm": 2.51
+            "mm": 3.39
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 15.005,
-        "flow_change_pct": -3,
+        "flow_m3s": 17.513,
+        "flow_change_pct": 19,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "rising"
       }
     ]
   },
