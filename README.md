@@ -14,16 +14,16 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-04** — updated 2026-06-04T18:42:41Z (model v3).
+Assessment for **2026-06-04** — updated 2026-06-04T21:31:28Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 29 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 8.8h, Ripley 11.5h · ThamesUpstream: Windsor 8.1h · rain 33mm/48h |
-| 🔴 | **Chertsey** | RED | 22 m³/s | Heavy rain (33mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 8.1h · rain 33mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 32 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 8.8h, Ripley 11.5h · Mole: Leatherhead 13.0h · ThamesUpstream: Windsor 8.1h · rain 33mm/48h |
-| 🔴 | **Kingston HMT** | RED | 32 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 8.8h, Ripley 11.5h · Mole: Leatherhead 13.0h · ThamesUpstream: Windsor 8.1h · rain 33mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 32 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 8.8h, Ripley 11.5h · Mole: Leatherhead 13.0h · ThamesUpstream: Windsor 8.1h · rain 33mm/48h |
-| 🔴 | **Teddington** | RED | 32 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 8.8h, Ripley 11.5h · Mole: Leatherhead 13.0h · ThamesUpstream: Windsor 8.1h · rain 33mm/48h |
+| 🔴 | **Walton Wharf** | RED | 29 m³/s | Heavy rain (33mm/48h) — only 5-20% safe<br>rain 33mm/48h |
+| 🔴 | **Chertsey** | RED | 25 m³/s | Heavy rain (33mm/48h) — only 5-20% safe<br>rain 33mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 30 m³/s | Heavy rain (33mm/48h) — only 5-20% safe<br>rain 33mm/48h |
+| 🔴 | **Kingston HMT** | RED | 30 m³/s | Heavy rain (33mm/48h) — only 5-20% safe<br>rain 33mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 30 m³/s | Heavy rain (33mm/48h) — only 5-20% safe<br>rain 33mm/48h |
+| 🔴 | **Teddington** | RED | 30 m³/s | Heavy rain (33mm/48h) — only 5-20% safe<br>rain 33mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 6 🔴 RED**
 
@@ -31,7 +31,7 @@ _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole flat · Thames surge._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole flat · Thames rising._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
