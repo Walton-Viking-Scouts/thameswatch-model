@@ -14,16 +14,16 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-03** — updated 2026-06-03T19:14:26Z (model v3).
+Assessment for **2026-06-05** — updated 2026-06-05T18:36:38Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 33 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley (live), Weybridge (live), Woking (live) · ThamesUpstream: Windsor 28.9h · rain 31mm/48h |
-| 🔴 | **Chertsey** | RED | 26 m³/s | Heavy rain (31mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 28.9h · rain 31mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 32 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley (live), Weybridge (live), Woking (live) · Mole: Leatherhead (live) · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h |
-| 🔴 | **Kingston HMT** | RED | 32 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley (live), Weybridge (live), Woking (live) · Mole: Leatherhead (live) · ThamesUpstream: Windsor 28.9h · rain 31mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 32 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley (live), Weybridge (live), Woking (live) · Mole: Leatherhead (live) · ThamesUpstream: Windsor 28.9h · rain 31mm/48h |
-| 🔴 | **Teddington** | RED | 32 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley (live), Weybridge (live), Woking (live) · Mole: Leatherhead (live) · Thames: Old Palace Lane 0.2h · ThamesUpstream: Windsor 28.9h · rain 31mm/48h |
+| 🔴 | **Walton Wharf** | RED | 31 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Chertsey** | RED | 24 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Kingston HMT** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Teddington** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 6 🔴 RED**
 
@@ -31,7 +31,7 @@ _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole rising · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
