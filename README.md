@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-05** — updated 2026-06-05T12:55:00Z (model v3).
+Assessment for **2026-06-05** — updated 2026-06-05T15:59:25Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Chertsey** | RED | 27 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Walton Wharf** | RED | 33 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Chertsey** | RED | 25 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
 | 🔴 | **Kingston Albany Reach** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
 | 🔴 | **Kingston HMT** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
 | 🔴 | **Ditton's Bend** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
@@ -31,7 +31,7 @@ _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
