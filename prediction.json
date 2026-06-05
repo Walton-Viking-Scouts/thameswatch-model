@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-05T00:29:06Z",
+  "generated_at": "2026-06-05T04:29:13Z",
   "assessment_date": "2026-06-05",
   "model_version": "v3",
   "sites": [
     {
       "site": "Walton Wharf",
       "level": "RED",
-      "confidence": 89,
-      "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
-      "why_detail": "Wey: Ripley (live) \u00b7 rain 8mm/48h",
-      "live_flow_m3s": 29.91,
+      "confidence": 65,
+      "explanation": "Rained today (8mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 8mm/48h",
+      "live_flow_m3s": 30.634,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 7.5,
@@ -18,9 +18,9 @@
         "dry_days": 0,
         "season": "summer",
         "flow_m3s": 34.499,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Ripley(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 34.499,
           "wey_flow": 10.663,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.657,
-          "mole_flow_15min": 4.21
+          "wey_flow_15min": 7.424,
+          "mole_flow_15min": 4.242
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 65,
       "explanation": "Rained today (8mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 8mm/48h",
-      "live_flow_m3s": 25.377,
+      "live_flow_m3s": 25.579,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 7.5,
@@ -57,9 +57,9 @@
         "dry_days": 0,
         "season": "summer",
         "flow_m3s": 34.499,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Ripley(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 34.499,
           "wey_flow": 10.663,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.657,
-          "mole_flow_15min": 4.21
+          "wey_flow_15min": 7.424,
+          "mole_flow_15min": 4.242
         }
       },
       "data_quality": {
@@ -85,10 +85,10 @@
     {
       "site": "Kingston Albany Reach",
       "level": "RED",
-      "confidence": 100,
-      "explanation": "Multiple river CSOs active (Mole, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley (live) \u00b7 Mole: Leatherhead (live) \u00b7 rain 8mm/48h",
-      "live_flow_m3s": 28.575,
+      "confidence": 65,
+      "explanation": "Rained today (8mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 8mm/48h",
+      "live_flow_m3s": 27.055,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.5,
@@ -96,9 +96,9 @@
         "dry_days": 0,
         "season": "summer",
         "flow_m3s": 34.499,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Ripley(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 34.499,
           "wey_flow": 10.663,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.657,
-          "mole_flow_15min": 4.21
+          "wey_flow_15min": 7.424,
+          "mole_flow_15min": 4.242
         }
       },
       "data_quality": {
@@ -124,10 +124,10 @@
     {
       "site": "Kingston HMT",
       "level": "RED",
-      "confidence": 100,
-      "explanation": "Multiple river CSOs active (Mole, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley (live) \u00b7 Mole: Leatherhead (live) \u00b7 rain 8mm/48h",
-      "live_flow_m3s": 28.575,
+      "confidence": 65,
+      "explanation": "Rained today (8mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 8mm/48h",
+      "live_flow_m3s": 27.055,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.5,
@@ -135,9 +135,9 @@
         "dry_days": 0,
         "season": "summer",
         "flow_m3s": 34.499,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Ripley(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 34.499,
           "wey_flow": 10.663,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.657,
-          "mole_flow_15min": 4.21
+          "wey_flow_15min": 7.424,
+          "mole_flow_15min": 4.242
         }
       },
       "data_quality": {
@@ -163,10 +163,10 @@
     {
       "site": "Ditton's Bend",
       "level": "RED",
-      "confidence": 100,
-      "explanation": "Multiple river CSOs active (Mole, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley (live) \u00b7 Mole: Leatherhead (live) \u00b7 rain 8mm/48h",
-      "live_flow_m3s": 28.575,
+      "confidence": 65,
+      "explanation": "Rained today (8mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 8mm/48h",
+      "live_flow_m3s": 27.055,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.5,
@@ -174,9 +174,9 @@
         "dry_days": 0,
         "season": "summer",
         "flow_m3s": 34.499,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Ripley(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 34.499,
           "wey_flow": 10.663,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.657,
-          "mole_flow_15min": 4.21
+          "wey_flow_15min": 7.424,
+          "mole_flow_15min": 4.242
         }
       },
       "data_quality": {
@@ -202,10 +202,10 @@
     {
       "site": "Teddington",
       "level": "RED",
-      "confidence": 100,
-      "explanation": "Multiple river CSOs active (Mole, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley (live) \u00b7 Mole: Leatherhead (live) \u00b7 rain 8mm/48h",
-      "live_flow_m3s": 28.575,
+      "confidence": 65,
+      "explanation": "Rained today (8mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 8mm/48h",
+      "live_flow_m3s": 27.055,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.5,
@@ -213,9 +213,9 @@
         "dry_days": 0,
         "season": "summer",
         "flow_m3s": 34.499,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Ripley(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 34.499,
           "wey_flow": 10.663,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.657,
-          "mole_flow_15min": 4.21
+          "wey_flow_15min": 7.424,
+          "mole_flow_15min": 4.242
         }
       },
       "data_quality": {
@@ -271,8 +271,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 7.657,
-        "flow_change_pct": -27,
+        "flow_m3s": 7.424,
+        "flow_change_pct": -25,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -305,8 +305,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 4.21,
-        "flow_change_pct": -15,
+        "flow_m3s": 4.242,
+        "flow_change_pct": -29,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -339,8 +339,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 16.634,
-        "flow_change_pct": 23,
+        "flow_m3s": 15.43,
+        "flow_change_pct": 12,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
