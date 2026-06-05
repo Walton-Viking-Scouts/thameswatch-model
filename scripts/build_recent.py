@@ -18,14 +18,18 @@ _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)
 
 import argparse
 import json
+import time
 from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 
 from tw import flood_monitoring
 from tw.config import EA_STATIONS, EA_HYDROLOGY_ROOT, SITES, SITE_LIVE_FLOW_GAUGE, CSO_MONITORS
-from tw.ea_hydrology import _get
-from tw.model import SITE_CSO_RELEVANCE
-from tw.thames_water import fetch_monitor_history, build_discharge_periods
+from tw.ea_hydrology import _get, fetch_rainfall_15min_daily
+from tw.enrichment import calc_rain_metrics, season_of
+from tw.model import SITE_CSO_RELEVANCE, assess_safety, get_upstream_context, get_walton_flow
+from tw.thames_water import (
+    build_discharge_periods, count_cso_hours, fetch_monitor_history, was_cso_active,
+)
 
 WINDOW_H = 96
 
@@ -81,6 +85,7 @@ def main():
             periods[name] = build_discharge_periods(fetch_monitor_history(name), now=now)
         except Exception:  # noqa: BLE001
             periods[name] = []
+        time.sleep(0.2)  # ease off the EDM rate limit across ~14 monitors
 
     sites_out = {}
     for site in SITES:
@@ -101,12 +106,45 @@ def main():
             "cso": cso,
         }
 
+    # --- 3-hourly RAG (traffic-light) — one verdict per 3h, matching the publish cadence ---
+    # Rain inputs are daily (same-day rain excluded by model design), CSO and flow are
+    # from the discharge periods and committed flow CSVs already in hand — no extra calls.
+    RAG_STEP_H = 3
+    rain_daily = fetch_rainfall_15min_daily(
+        EA_STATIONS["hogsmill_rain"].measure_id,
+        since=(now - timedelta(days=12)).date().isoformat())
+    walton_flow = get_walton_flow()
+    t = start.replace(minute=0, second=0, microsecond=0)
+    # align to the nearest 3h boundary at or after start
+    if t.hour % RAG_STEP_H:
+        t += timedelta(hours=RAG_STEP_H - t.hour % RAG_STEP_H)
+    rag_points = []
+    while t <= now:
+        ds = t.date().isoformat()
+        metrics = calc_rain_metrics(rain_daily, ds)
+        active48, _ = was_cso_active(periods, t, 48)
+        hours48, mons48 = count_cso_hours(periods, t, 48)
+        mon_str = "; ".join(f"{n}({h}h)" for n, h in mons48)
+        ctx = get_upstream_context(ds)
+        season = season_of(ds)
+        flow = walton_flow.get(ds)
+        point = {"t": _iso(t)}
+        for site in SITES:
+            level, _, _ = assess_safety(
+                metrics["rain_48h"], metrics["dry_days"], season, active48, hours48,
+                mon_str, site, flow, metrics["rain_7d"], ctx)
+            point[site] = level
+        rag_points.append(point)
+        t += timedelta(hours=RAG_STEP_H)
+
     out = {
         "generated_at": _iso(now),
         "window_hours": WINDOW_H,
+        "rag_step_hours": RAG_STEP_H,
         "rain_gauge": "Hogsmill (Kingston)",
         "rain": rain,
         "flows": flows,
+        "rag": rag_points,     # [{t, site: level, ...}, ...]  — keyed by site name
         "sites": sites_out,
     }
     with open(args.out, "w") as f:
