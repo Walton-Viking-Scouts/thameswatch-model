@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-05** — updated 2026-06-05T15:59:25Z (model v3).
+Assessment for **2026-06-05** — updated 2026-06-05T18:36:38Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 33 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Chertsey** | RED | 25 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Walton Wharf** | RED | 31 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Chertsey** | RED | 24 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
 | 🔴 | **Kingston Albany Reach** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
 | 🔴 | **Kingston HMT** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
 | 🔴 | **Ditton's Bend** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
