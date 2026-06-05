@@ -5,6 +5,7 @@ Public API at api.thameswater.co.uk/opendata/v2, no authentication. Two endpoint
   /discharge/status  — current status of every monitor (alertStatus, alertPast48Hours)
 """
 
+import time
 from datetime import datetime, timedelta
 
 import requests
@@ -14,6 +15,25 @@ from tw.config import THAMES_WATER_ROOT, CSO_MONITOR_NAMES
 ALERTS_ENDPOINT = f"{THAMES_WATER_ROOT}/opendata/v2/discharge/alerts"
 STATUS_ENDPOINT = f"{THAMES_WATER_ROOT}/opendata/v2/discharge/status"
 API_LIMIT = 1000
+
+
+def _get(url, params, timeout=30, max_retries=4):
+    """GET with backoff on rate-limiting (HTTP 429/503).
+
+    The EDM API throttles when many monitors are fetched in quick succession (predict +
+    build_recent both sweep every monitor). Without this a throttled request returned a
+    non-200 that callers read as "no data" — silently dropping a monitor's discharge
+    history (e.g. a panel showing an overflow as quiet when it had discharged for hours).
+    """
+    delay = 3
+    for attempt in range(max_retries):
+        r = requests.get(url, params=params, timeout=timeout)
+        if r.status_code in (429, 503) and attempt < max_retries - 1:
+            time.sleep(delay)
+            delay *= 2
+            continue
+        return r
+    return r
 
 
 # --- datetime parsing --------------------------------------------------------
@@ -40,11 +60,8 @@ def fetch_monitor_history(location_name):
     all_items = []
     offset = 0
     while True:
-        r = requests.get(
-            ALERTS_ENDPOINT,
-            params={"limit": API_LIMIT, "offset": offset, "locationName": location_name},
-            timeout=30,
-        )
+        r = _get(ALERTS_ENDPOINT,
+                 {"limit": API_LIMIT, "offset": offset, "locationName": location_name})
         if r.status_code != 200:
             break
         items = r.json().get("items", [])
@@ -129,8 +146,7 @@ def fetch_current_status():
     all_items = []
     offset = 0
     while True:
-        r = requests.get(STATUS_ENDPOINT, params={"limit": API_LIMIT, "offset": offset},
-                          timeout=30)
+        r = _get(STATUS_ENDPOINT, {"limit": API_LIMIT, "offset": offset})
         if r.status_code != 200:
             break
         items = r.json().get("items", [])
