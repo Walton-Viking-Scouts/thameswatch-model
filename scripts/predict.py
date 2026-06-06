@@ -36,8 +36,8 @@ SCHEMA_VERSION = 1
 MODEL_VERSION = "v3"
 
 LEVEL_ICON = {"GREEN": "🟢", "AMBER": "🟠", "RED": "🔴"}
-LEVEL_LEGEND = ("🔴 do not go on the water · 🟠 test the water with an R-Card first · "
-                "🟢 good to go")
+LEVEL_LEGEND = ("🔴 enhanced precautions · 🟠 increased precautions · "
+                "🟢 normal precautions")
 EC_LEGEND = "safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)"
 
 # The workflow splices the live status into the README between these markers.

@@ -7,9 +7,9 @@ without waiting 24-48h for a lab result.
 It checks rainfall, river flow, and sewage-discharge conditions and returns a
 **RED / AMBER / GREEN** verdict for each test site:
 
-- 🔴 **RED** — do not go on the water. Unsafe ~76% of the time in these conditions.
-- 🟠 **AMBER** — borderline. Test the water with an R-Card first; if you can't test, don't go.
-- 🟢 **GREEN** — go with confidence. Safe ~93% of the time.
+- 🔴 **RED** — Enhanced precautions.
+- 🟠 **AMBER** — Increased precautions.
+- 🟢 **GREEN** — Normal precautions.
 
 <!-- PREDICTION:START -->
 ## Current water-safety status

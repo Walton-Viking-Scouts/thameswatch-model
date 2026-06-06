@@ -640,11 +640,11 @@ def interactive():
     print(f"Confidence: {confidence}%")
 
     if level == "GREEN":
-        print("\nGo with confidence. Standard precautions apply.")
+        print("\nNormal precautions.")
     elif level == "AMBER":
-        print("\nTest water before activity. Consider postponing if test unavailable.")
+        print("\nIncreased precautions.")
     else:
-        print("\nDo not go on the water. Wait for conditions to improve.")
+        print("\nEnhanced precautions.")
 
 
 if __name__ == "__main__":
