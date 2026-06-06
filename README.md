@@ -14,16 +14,16 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-06** — updated 2026-06-06T09:39:29Z (model v3).
+Assessment for **2026-06-06** — updated 2026-06-06T12:05:51Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 28 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Chertsey** | AMBER | 22 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Ditton's Bend** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Teddington** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 24 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Chertsey** | AMBER | 20 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 18 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 18 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 18 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Teddington** | AMBER | 18 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
 
 **0 🟢 GREEN · 6 🟠 AMBER · 0 🔴 RED**
 
@@ -31,7 +31,7 @@ _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole rising · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
@@ -52,16 +52,15 @@ public, no-authentication APIs:
 | Storm-overflow (CSO) discharge | Thames Water EDM API |
 | E. coli test results (model calibration only) | ThamesWatch API |
 
-The model (`tw/model.py`) is **site-specific** — each of the eight sites
-has its own pollution profile. Six sites were validated against 239 real E. coli tests:
+The model (`tw/model.py`) is **site-specific** — each of the six sites
+has its own pollution profile. It was validated against 239 real E. coli tests:
 GREEN is safe **93%** of the time (and has **never** been GREEN when the water was
-dangerously contaminated); RED is correct ~76% of the time. Two sites (Hogsmill confluence,
-Minima Yacht Club) are newly added and pending calibration.
+dangerously contaminated); RED is correct ~76% of the time.
 
-Eight sites, upstream → downstream:
+Six sites, upstream → downstream:
 
 ```
-Chertsey ─ Wey confluence ─ Walton Wharf ─ Mole confluence ─ Hogsmill confluence ─ Kingston ─ Teddington
+Chertsey ─ Wey confluence ─ Walton Wharf ─ Mole confluence ─ Kingston ─ Teddington
 ```
 
 The biggest risk factors, in order: multiple rivers discharging sewage simultaneously,

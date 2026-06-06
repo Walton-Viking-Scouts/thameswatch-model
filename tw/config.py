@@ -175,8 +175,6 @@ SITE_LIVE_FLOW_GAUGE = {
     "Kingston Albany Reach": "kingston",
     "Kingston HMT": "kingston",
     "Teddington": "kingston",
-    "Hogsmill confluence": "kingston",
-    "Minima Yacht Club": "kingston",
 }
 
 
@@ -249,12 +247,6 @@ SITES = {
     "Teddington": Site(
         "Teddington", "Teddington (Hawker Centre)",
         51.42702, -0.3108, "hogsmill_rain"),
-    "Hogsmill confluence": Site(
-        "Hogsmill confluence", "Hogsmill confluence",
-        51.409377, -0.308450, "hogsmill_rain"),
-    "Minima Yacht Club": Site(
-        "Minima Yacht Club", "Minima Yacht Club",
-        51.407652, -0.308423, "hogsmill_rain"),
 }
 
 # ThamesWatch API locationName -> canonical model site name
