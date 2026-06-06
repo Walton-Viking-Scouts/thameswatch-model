@@ -120,27 +120,39 @@ profiles. The model is therefore site-specific in three ways.
 |---|---|---|
 | 1 | Chertsey, Kingston HMT | Reliably clean — can be certified GREEN |
 | 2 | Walton Wharf | Mostly reliable — can be certified GREEN |
-| 3 | Kingston Albany Reach, Teddington, Ditton's Bend | Elevated baseline — **never GREEN**, AMBER minimum |
+| 3 | Kingston Albany Reach, Teddington, Ditton's Bend, Hogsmill confluence¹, Minima Yacht Club¹ | Elevated baseline — **never GREEN**, AMBER minimum |
 
 Tier 3 sites sit downstream of continuous sewage-works effluent (e.g. Kingston Albany
 Reach catches the Hogsmill works outfall) and produce spikes no weather model can
 predict. Rule 19 enforces their AMBER floor.
 
+¹ Hogsmill confluence and Minima Yacht Club (added June 2026) have no ThamesWatch
+calibration record yet, so they are kept at the cautious Tier-3 floor by geographic
+reasoning. Hogsmill confluence is at the Hogsmill mouth (maximum exposure); Minima is the
+upstream control 191 m above it. Note their Tier-3 floor is independent of the `Hogsmill`
+CSO system — the floor keeps them always-AMBER regardless, while the CSO system governs
+when *Tier-1* HMT and the others escalate to RED.
+
 ### Site-relevant CSO filtering
 
 A site only considers overflows that are physically upstream of it, so a downstream
-overflow never wrongly penalises an upstream site. The monitor set is 16: the 14 along
-the Chertsey–Teddington stretch, plus a `ThamesUpstream` system — storm overflows on the
-Thames mainstem *above* Chertsey, which sit above the whole stretch and so are relevant
-to every site. By geography:
+overflow never wrongly penalises an upstream site. The monitor set is 17: the 14 along
+the Chertsey–Teddington stretch, the `Hogsmill` works at Kingston, plus a `ThamesUpstream`
+system — storm overflows on the Thames mainstem *above* Chertsey, which sit above the whole
+stretch and so are relevant to every site. By geography:
 
 - **Chertsey** is above *both* the Mole and the Wey confluences (the Wey joins downstream
   at Weybridge), so it considers only the `ThamesUpstream` overflows — these are its one
   valid CSO predictor. (Before this was corrected, Chertsey was wrongly keyed to the Wey.)
 - **Walton** is below the Wey confluence but above the Mole, so it considers Wey +
   `ThamesUpstream`, and ignores the Mole.
-- **Kingston, Teddington and Ditton's Bend** are below both confluences and consider Wey,
-  Mole, Thames and `ThamesUpstream`.
+- **Ditton's Bend** is below both confluences but above Kingston, so it considers Wey,
+  Mole and `ThamesUpstream` — but not the Hogsmill (which enters further downstream).
+- **Kingston Albany Reach, Kingston HMT, Hogsmill confluence and Teddington** are at or
+  below the Hogsmill mouth at Kingston and additionally consider the `Hogsmill` system.
+- **Minima Yacht Club** sits ~191 m *above* the Hogsmill mouth — the upstream control —
+  so it considers the general Thames-at-Kingston background (Wey, Mole, Thames,
+  `ThamesUpstream`) but **not** the Hogsmill.
 
 This relevance filter applies to **both** CSO rules — the multi-river rule (#1) *and* the
 monitor-count rules (#2/#3) count only monitors whose system can reach the site. So an
@@ -151,6 +163,18 @@ over-flagging of upstream sites.
 
 The `ThamesUpstream` system is the two monitors nearest Chertsey (Windsor ~5 km, Little
 Marlow ~17 km). Three farther overflows were discovered but excluded — see §9.
+
+The `Hogsmill` system is the single Thames Water EDM monitor "Hogsmill" (permit CASM.0042,
+receiving water "River Hogsmill") — the Berrylands sewage works' storm overflow, which
+discharges into the Hogsmill ~2 km up from where it joins the Thames at Kingston. It is its
+own river system (not folded into the in-stretch `Thames`) so its reach is exactly the four
+sites at or below the Kingston confluence. **Kingston HMT is included even though it is
+geographically the cleanest Kingston site:** on every day both HMT and Albany were tested,
+HMT read *lower* than Albany 214 m upstream (the plume disperses as the river flows north),
+so HMT keeps its Tier-1 status — but an *active* Hogsmill discharge still flags it, because
+the weekly test record has never caught a heavy-rain discharge at its peak (see §9). The
+historical correlation dataset predates this monitor, so adding it does not change the
+`--validate` numbers until `rebuild_cso.py` is re-run (§11); the change is live-only.
 
 ### Site-specific flow rules
 
@@ -342,7 +366,18 @@ a stale feed and falls back to the daily-mean trend, rather than silently using 
 - **Calibration drift.** The model's thresholds are fixed; as new test data accrues the
   dataset must be refreshed and the model re-validated (see §11).
 - **Sparse data at some sites.** Chertsey, Teddington and Ditton's Bend have relatively
-  few tests; their per-site figures are less robust than Walton's.
+  few tests; their per-site figures are less robust than Walton's. Hogsmill confluence and
+  Minima Yacht Club have **no** ThamesWatch calibration record yet — their Tier-3 floor and
+  CSO relevance rest on geography (and Leander's single 2026-06-02 sample), not validation.
+- **The Hogsmill signal is geographically reasoned, not yet calibrated.** Across the whole
+  ThamesWatch record, only three weekly tests coincided with a Hogsmill discharge (all
+  summer, low-flow) and all read clean at both Albany and HMT — so the historical data on
+  its own would say the Hogsmill is harmless. Leander's live sampling on 2026-06-02 (EC
+  >10,000 at the confluence and 5,100 at Albany, mid-discharge after 15 mm rain) shows the
+  opposite for the acute case: a sharp, short-lived, rain-driven plume the date-only weekly
+  sampling almost never catches at its peak. We therefore flag the four downstream sites on
+  an active Hogsmill discharge despite the benign historical average. Folding the monitor
+  into the calibration set (`rebuild_cso.py`, §11) is the way to put a number on this.
 - **AMBER is a coin flip by design** (72% safe). It is an instruction to test, not a
   confident verdict.
 
@@ -357,6 +392,7 @@ a stale feed and falls back to the daily-mean trend, rather than silently using 
 | v2.1 | Multi-river CSO early-out rule | Wey+Mole simultaneous = 0% safe |
 | v3 | Site tiers, site-relevant CSO, real flow data, CSO count, 7-day rain | False-safe 16%→5% |
 | v3.1 | `ThamesUpstream` system (2 nearest Thames-above-Chertsey overflows); Chertsey re-keyed Wey→`ThamesUpstream` | False-safe 5%→4%; Chertsey gains a valid CSO predictor |
+| v3.2 | Two new Kingston sites (Hogsmill confluence, Minima Yacht Club); `Hogsmill` CSO system tracking the Berrylands works' storm overflow, applied to the four sites at/below the Kingston confluence (HMT included, Minima excluded as the upstream control) | Live-only (validation unchanged until `rebuild_cso.py`); corroborated by Leander's 2026-06-02 sampling |
 
 **Dead ends** (tried and rejected — do not revisit without new evidence):
 
@@ -382,6 +418,11 @@ The calibration dataset must be kept current as ThamesWatch publishes new tests.
 2. `python3 scripts/refresh_correlation.py` — append any new results to the dataset.
 3. `python3 scripts/rebuild_correlation.py` — recompute the rain enrichment.
 4. `python3 -m tw.model --validate` — **the re-validation gate**.
+
+Whenever the **monitor set** changes (e.g. the `Hogsmill` monitor added in v3.2), also run
+`python3 scripts/rebuild_cso.py` to re-enrich the historical CSO columns from the new set,
+then re-validate. Until that is run the new monitor is live-only: it drives the current
+prediction but is invisible to `--validate`, so the headline numbers above predate it.
 
 After any dataset change, the **hard gate is 0% dangerous-in-GREEN** — that must never
 break. GREEN-safe is a soft target: it sits at ~93% (the shortfall is the irreducible

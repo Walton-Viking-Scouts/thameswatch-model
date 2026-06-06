@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-06** — updated 2026-06-06T13:13:06Z (model v3).
+Assessment for **2026-06-06** — updated 2026-06-06T15:02:29Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 25 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Chertsey** | AMBER | 19 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Ditton's Bend** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Teddington** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Hogsmill confluence** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Minima Yacht Club** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 26 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Chertsey** | AMBER | 16 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 22 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 22 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 22 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Teddington** | AMBER | 22 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Hogsmill confluence** | AMBER | 22 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Minima Yacht Club** | AMBER | 22 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
 
 **0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole rising · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
@@ -60,11 +60,21 @@ GREEN is safe **93%** of the time (and has **never** been GREEN when the water w
 dangerously contaminated); RED is correct ~76% of the time. Two sites (Hogsmill confluence,
 Minima Yacht Club) are newly added and pending calibration.
 
-Eight sites, upstream → downstream:
+Eight sites, upstream → downstream (at Kingston the Thames flows south → north):
 
 ```
-Chertsey ─ Wey confluence ─ Walton Wharf ─ Mole confluence ─ Hogsmill confluence ─ Kingston ─ Teddington
+Chertsey ─ Wey conf. ─ Walton ─ Mole conf. ─ Minima ─║─ Hogsmill conf. ─ Albany ─ Kingston HMT ─ Teddington
+                                          (control)  ║
+                                       Hogsmill STW joins the Thames here
 ```
+
+The Hogsmill sewage works (Berrylands) discharges into the Hogsmill, which joins the
+Thames at Kingston. Its storm overflow is tracked as its own **Hogsmill** monitor and
+applies only to the four sites at or below that mouth — Hogsmill confluence, Albany,
+Kingston HMT and Teddington. Minima sits just *above* the mouth (the upstream control)
+and is not affected by it. On 2 June 2026 Leander Sea Scouts measured EC >10,000 at the
+confluence and 5,100 at Albany during an active Hogsmill discharge, while Minima — 191 m
+upstream — read 530.
 
 The biggest risk factors, in order: multiple rivers discharging sewage simultaneously,
 heavy rain (>10mm/48h), rain today, and active CSO discharge. Rain raises E. coli even

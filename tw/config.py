@@ -45,7 +45,7 @@ class EAStation:
 # (traffic_light_model_v3.count_active_river_systems, SITE_CSO_RELEVANCE, and the
 # UPSTREAM_THAMES_NAMES filter below), so a typo must fail loudly at import rather than
 # silently drop a monitor from every system it should belong to.
-RIVER_SYSTEMS = frozenset({"Wey", "Mole", "Thames", "Minor", "ThamesUpstream"})
+RIVER_SYSTEMS = frozenset({"Wey", "Mole", "Thames", "Minor", "ThamesUpstream", "Hogsmill"})
 
 
 @dataclass(frozen=True)
@@ -181,7 +181,7 @@ SITE_LIVE_FLOW_GAUGE = {
 
 
 # --- Thames Water CSO monitors ----------------------------------------------
-# 16 monitors. Coordinates and river_system are discovered from the EDM
+# 17 monitors. Coordinates and river_system are discovered from the EDM
 # /discharge/status feed (archive/fetch_cso_outfalls.py for the in-stretch set;
 # fetch_upstream_cso.py for the upstream-of-Chertsey set) and then frozen here — the
 # same discover-once-then-hard-code pattern as the EAStation GUIDs above. river_system
@@ -204,6 +204,16 @@ CSO_MONITORS = [
     CSOMonitor("Old Palace Lane", "Thames", 517308, 174821),
     CSOMonitor("Portsmouth Road, Uxbridge Road", "Thames", 517670, 168010),
     CSOMonitor("Kingston Main", "Thames", 517800, 169600),
+
+    # Hogsmill STW (Berrylands) storm overflow. The EDM monitor named "Hogsmill"
+    # (permit CASM.0042, receivingWaterCourse "River Hogsmill") sits on the Hogsmill
+    # ~2 km up from where that river joins the Thames at Kingston (~51.409). Its own
+    # river_system "Hogsmill" so the relevance map can give it the exact downstream reach:
+    # only sites AT or BELOW the Kingston confluence (Hogsmill confluence, Albany Reach,
+    # Kingston HMT, Teddington) see it; Minima and everything upstream do not. Coordinates
+    # here are the works itself (the discharge point on the Hogsmill), recorded as
+    # provenance — the Thames-reach relevance lives in SITE_CSO_RELEVANCE, not these.
+    CSOMonitor("Hogsmill", "Hogsmill", 519200, 168560),
 
     # Upstream-of-Chertsey Thames mainstem overflows. These sit ABOVE the whole monitored
     # stretch, so they are the geographically-correct CSO predictor for Chertsey (whose

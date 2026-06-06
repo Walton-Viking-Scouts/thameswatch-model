@@ -9,16 +9,23 @@ Changes from v2.1:
   - Site-relevant CSO filtering: Walton only sees Wey CSOs, Kingston sees Wey+Mole+Hogsmill
   - Separate GREEN thresholds per site based on historical false-positive rates
 
-Geographic model (downstream order, river flows W->E):
-    Chertsey ─── Wey confluence ─── WALTON ─── Mole confluence ─── HOGSMILL CONFLUENCE ─── KINGSTON ─── TEDDINGTON
-                      ↑                             ↑                        ↑                   ↑
-                 Wey CSOs                  Esher STW + Mole CSOs      Hogsmill STW       (further effluent)
-              (Ripley, Weybridge)          (join BELOW Walton)     (discharges into Hogsmill
-                                                                     tributary, which joins here)
+Geographic model (downstream order; at Kingston the Thames flows S->N):
+    Chertsey ─ Wey conf. ─ WALTON ─ Mole conf. ─ MINIMA ─║─ HOGSMILL CONF. ─ ALBANY ─ KINGSTON HMT ─ TEDDINGTON
+                  ↑                       ↑          (control) ║      ↑
+             Wey CSOs            Esher STW + Mole CSOs      Hogsmill mouth (Kingston)
+          (Ripley, Weybridge)    (join BELOW Walton)   ← STW discharges into the Hogsmill,
+                                                          which joins the Thames here (║)
 
-    So Walton sees the Wey (upstream) + Thames-upstream CSOs, but NOT the Mole, which
-    joins downstream at Molesey. Chertsey is above the Wey confluence, so it sees only
-    the Thames-upstream CSOs.
+    The Hogsmill enters at Kingston. Only sites AT or BELOW that mouth see it: Hogsmill
+    confluence (at it), then Albany, Kingston HMT and Teddington downstream. Minima sits
+    ~191m ABOVE the mouth — the upstream control — so it does NOT see the Hogsmill.
+    Note HMT is ~214m DOWNSTREAM of Albany (not upstream): it is in the plume path, but
+    reads cleaner than Albany on every paired historical test (the plume disperses
+    northward), so it stays Tier 1 while still being flagged on an active discharge.
+
+    Walton sees the Wey (upstream) + Thames-upstream CSOs, but NOT the Mole, which joins
+    downstream at Molesey. Chertsey is above the Wey confluence, so it sees only the
+    Thames-upstream CSOs.
 
 Flow impact by site (from actual Walton 3100TH data):
   - Teddington: strong predictor. <15 m3/s = 25% safe (RED). <20 = AMBER.
@@ -52,13 +59,13 @@ SITE_CSO_RELEVANCE = {
     "Chertsey": ["ThamesUpstream"],
     "Walton Wharf": ["Wey", "ThamesUpstream"],  # Wey joins at Weybridge, just above Walton
     "Ditton's Bend": ["Wey", "Mole", "ThamesUpstream"],  # downstream of both confluences
-    "Kingston Albany Reach": ["Wey", "Mole", "Thames", "ThamesUpstream"],  # gets everything + Hogsmill STW
-    "Kingston HMT": ["Wey", "Mole", "ThamesUpstream"],  # empirically cleaner (100% safe in GREEN, n=13); excludes in-stretch Thames/Minor CSOs
+    "Kingston Albany Reach": ["Wey", "Mole", "Thames", "ThamesUpstream", "Hogsmill"],  # ~1.5km below the Hogsmill confluence — catches the plume (Leander 2026-06-02: EC 5100 mid-discharge)
+    "Kingston HMT": ["Wey", "Mole", "ThamesUpstream", "Hogsmill"],  # ~214m DOWNSTREAM of Albany — also in the Hogsmill plume path; dispersion keeps it cleaner (Tier 1) but an active discharge still flags it
     "West Molesey": ["Wey", "Mole", "ThamesUpstream"],
     "Hampton Court Bridge": ["Wey", "Mole", "Thames", "ThamesUpstream"],
-    "Teddington": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],  # gets absolutely everything
-    "Hogsmill confluence": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],  # at Hogsmill STW outfall — full exposure; no calibration data yet
-    "Minima Yacht Club":   ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],  # ~170m downstream of confluence — same plume; no calibration data yet
+    "Teddington": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream", "Hogsmill"],  # gets absolutely everything, incl. the Hogsmill below Kingston
+    "Hogsmill confluence": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream", "Hogsmill"],  # AT the Hogsmill mouth — maximum exposure (Leander 2026-06-02: EC >10000 mid-discharge)
+    "Minima Yacht Club":   ["Wey", "Mole", "Thames", "ThamesUpstream"],  # ~191m UPSTREAM of the Hogsmill mouth — the upstream control; does NOT see the Hogsmill (Leander 2026-06-02: EC 530 vs >10000 at the confluence)
 }
 
 # Site risk tier based on historical GREEN performance
@@ -67,13 +74,13 @@ SITE_CSO_RELEVANCE = {
 # Tier 3: unreliable even in GREEN conditions (< 70% safe)
 SITE_RISK_TIER = {
     "Chertsey": 1,          # 100% safe in GREEN (n=4), clean at all flows
-    "Kingston HMT": 1,      # 100% safe in GREEN (n=13), upstream of Hogsmill outfall
+    "Kingston HMT": 1,      # 100% safe in GREEN (n=13); downstream of the Hogsmill but dispersion keeps it the cleanest Kingston site (reads below Albany 214m upstream on every paired test)
     "Walton Wharf": 2,      # 89% safe in GREEN (n=38)
     "Kingston Albany Reach": 3,  # 70% safe in GREEN (n=23) — Hogsmill STW, chaotic at all flows
     "Teddington": 3,        # 57% safe in GREEN (n=7) — gets everything + flow-sensitive
     "Ditton's Bend": 3,     # 24% safe overall (mostly winter data)
-    "Hogsmill confluence": 3,  # directly at Hogsmill STW outfall — no calibration data yet
-    "Minima Yacht Club":   3,  # same stretch, no calibration data yet
+    "Hogsmill confluence": 3,  # at the Hogsmill mouth — maximum exposure; no ThamesWatch calibration yet (Leander single-sample EC >10000 on a discharge day)
+    "Minima Yacht Club":   3,  # upstream control (above the Hogsmill mouth); no calibration yet — kept cautious (Leander EC 530 / IE 480 even as the clean control)
 }
 
 DEFAULT_RISK_TIER = 2  # unknown sites get moderate treatment

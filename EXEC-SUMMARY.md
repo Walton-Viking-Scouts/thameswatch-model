@@ -18,7 +18,7 @@ E. coli testing takes 24-48 hours in a lab. That's no use when you need to decid
 
 ### Sewage overflows are the biggest factor
 
-When it rains heavily, the sewer system overflows and raw sewage is pumped into the rivers that feed the Thames. Thames Water monitors 16 overflow points near our stretch (14 along it, plus the two closest on the Thames above Chertsey). When sewage is being discharged upstream:
+When it rains heavily, the sewer system overflows and raw sewage is pumped into the rivers that feed the Thames. Thames Water monitors 17 overflow points near our stretch (14 along it, the Hogsmill sewage works that discharges at Kingston, plus the two closest on the Thames above Chertsey). When sewage is being discharged upstream:
 
 - E. coli levels are **3.4 times higher** than normal
 - When overflows are active on both the River Wey and River Mole simultaneously, the water has been **unsafe in every single case** we tested (34 out of 34)
@@ -46,13 +46,15 @@ This is one of the most important findings. The water quality at our different t
 
 **Walton Wharf** — our home base. Safe 91% of the time when conditions look good. The handful of misses are all **dry-weather spring spikes** — short contamination events with no rain or sewage overflow behind them (likely waterfowl or boat traffic), which no forecast can predict, so **test before relying on a spring GREEN**. The main risk comes from the River Wey, which joins the Thames just upstream at Weybridge and carries sewage from Guildford, Cranleigh, and Woking.
 
-**Chertsey** and **Kingston Half Mile Tree** — consistently clean. Kingston HMT is safe 100% of the time when conditions look good, because it sits just upstream of the Hogsmill sewage works outfall.
+**Chertsey** and **Kingston Half Mile Tree** — consistently clean. Kingston HMT is safe 100% of the time when conditions look good. It actually sits a little *downstream* of where the Hogsmill joins the Thames, but on every day we tested both, it read cleaner than Albany 200m upstream — the pollution disperses as the river carries it north. We still flag HMT when the Hogsmill is actively discharging (see below), because our weekly test history has never caught a heavy-rain discharge at its peak.
 
 ### Our problem sites
 
-**Kingston Albany Reach** — just 200m downstream from Kingston HMT, but this site catches the full output of the Hogsmill sewage treatment works. Even on perfect dry summer days, it was only safe 70% of the time. The sewage works creates unpredictable spikes that no weather forecast can predict. **We recommend always testing the water here before any activity.**
+**Kingston Albany Reach** — about 1.5km downstream of the Hogsmill mouth (and ~200m *upstream* of Kingston HMT). This site catches the Hogsmill plume: on 2 June 2026, with the works actively discharging after heavy rain, Leander Sea Scouts measured 5,100 here (and over 10,000 right at the confluence). Even on perfect dry summer days it was only safe 70% of the time, from the works' continuous background effluent. **We recommend always testing the water here before any activity.**
 
 **Teddington** — the furthest downstream site, receiving pollution from the entire catchment. In summer 2025, the river flow was so low (just 12-14 cubic metres per second, compared to a normal 30+) that the water was unsafe 75% of the time. **We recommend treating Teddington as unsuitable for water activities unless you test on the day.**
+
+**Hogsmill confluence** and **Minima Yacht Club** — two newly added sites at Kingston, not yet calibrated against repeat testing. The Hogsmill confluence sits right where the Hogsmill sewage works' outfall reaches the Thames and is the most exposed point on the whole stretch. Minima, 191m upstream of the mouth, is above that source — it serves as a useful "upstream control" — but is not clean water in its own right. We treat both cautiously (always test) until we have a calibration record. The Hogsmill works' storm discharges are now tracked live, the same way as the other overflows.
 
 ---
 
@@ -134,7 +136,7 @@ We combined three freely available public datasets:
 
 - **ThamesWatch water quality results** — 239 E. coli tests from our monitoring sites (the only source of actual bacteria data on this stretch — the Environment Agency doesn't test for E. coli here)
 - **Environment Agency data** — local rainfall, and river flow from 5 stations (Walton, Wey, Mole, Staines, Reading), which between them capture rain falling anywhere upstream
-- **Thames Water data** — real-time sewage overflow status from 16 monitored outfalls
+- **Thames Water data** — real-time sewage overflow status from 17 monitored outfalls (including the Hogsmill works at Kingston)
 
 All data is free and publicly available. The system runs as a small automated job every few hours — no special software, no laptop, and no manual data-gathering.
 
@@ -145,4 +147,4 @@ We compared our approach against a £5 million government-funded AI project (Riv
 ---
 
 *Prepared March 2026; updated May 2026 — refreshed dataset, automated frequent pipeline, and real-time (15-minute) river and rainfall data.*
-*Based on analysis of 239 water quality test results, 800+ days of river flow data, and 16 sewage overflow monitoring points.*
+*Based on analysis of 239 water quality test results, 800+ days of river flow data, and 17 sewage overflow monitoring points.*
