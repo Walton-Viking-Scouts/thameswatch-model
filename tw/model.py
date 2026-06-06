@@ -10,10 +10,10 @@ Changes from v2.1:
   - Separate GREEN thresholds per site based on historical false-positive rates
 
 Geographic model (downstream order, river flows W->E):
-    Chertsey ─── Wey confluence ─── WALTON ─── Mole confluence ─── KINGSTON ─── TEDDINGTON
-                      ↑                             ↑                   ↑
-                 Wey CSOs                  Esher STW + Mole CSOs   Hogsmill STW
-              (Ripley, Weybridge)          (join BELOW Walton)    (continuous effluent)
+    Chertsey ─── Wey confluence ─── WALTON ─── Mole confluence ─── HOGSMILL CONFLUENCE ─── KINGSTON ─── TEDDINGTON
+                      ↑                             ↑                        ↑                   ↑
+                 Wey CSOs                  Esher STW + Mole CSOs      Hogsmill STW       (further effluent)
+              (Ripley, Weybridge)          (join BELOW Walton)       (direct discharge)
 
     So Walton sees the Wey (upstream) + Thames-upstream CSOs, but NOT the Mole, which
     joins downstream at Molesey. Chertsey is above the Wey confluence, so it sees only
@@ -56,6 +56,9 @@ SITE_CSO_RELEVANCE = {
     "West Molesey": ["Wey", "Mole", "ThamesUpstream"],
     "Hampton Court Bridge": ["Wey", "Mole", "Thames", "ThamesUpstream"],
     "Teddington": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],  # gets absolutely everything
+    # At the Hogsmill STW outfall — worse exposure than Kingston Albany Reach; no calibration data yet
+    "Hogsmill confluence": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],
+    "Minima Yacht Club":   ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],
 }
 
 # Site risk tier based on historical GREEN performance
@@ -69,6 +72,8 @@ SITE_RISK_TIER = {
     "Kingston Albany Reach": 3,  # 70% safe in GREEN (n=23) — Hogsmill STW, chaotic at all flows
     "Teddington": 3,        # 57% safe in GREEN (n=7) — gets everything + flow-sensitive
     "Ditton's Bend": 3,     # 24% safe overall (mostly winter data)
+    "Hogsmill confluence": 3,  # directly at Hogsmill STW outfall — no calibration data yet
+    "Minima Yacht Club":   3,  # same stretch, no calibration data yet
 }
 
 DEFAULT_RISK_TIER = 2  # unknown sites get moderate treatment
@@ -96,6 +101,8 @@ SITE_FLOW_CONFIG = {
         "red_below": 15,    # downstream of everything, assume similar to Teddington
         "amber_below": 20,
     },
+    "Hogsmill confluence": None,  # no calibration data yet
+    "Minima Yacht Club":   None,  # no calibration data yet
 }
 
 
@@ -302,7 +309,8 @@ def assess_safety(rain_48h, dry_days, season, cso_active_48h, cso_hours_48h=0,
                 f"Wey flow rising sharply (upstream rainfall flush) — "
                 f"Wey is {upstream_ctx['wey_pct']:.0f}% of Walton flow, test first"
             )
-        if site in ("Kingston Albany Reach", "Kingston HMT", "Teddington", "Ditton's Bend"):
+        if site in ("Kingston Albany Reach", "Kingston HMT", "Teddington", "Ditton's Bend",
+                    "Hogsmill confluence", "Minima Yacht Club"):
             if upstream_ctx.get("wey_rising") or upstream_ctx.get("mole_rising"):
                 rivers = []
                 if upstream_ctx.get("wey_rising"):
