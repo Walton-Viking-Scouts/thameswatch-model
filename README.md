@@ -14,24 +14,24 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-05** — updated 2026-06-05T21:30:01Z (model v3).
+Assessment for **2026-06-06** — updated 2026-06-06T00:27:49Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 30 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Chertsey** | RED | 24 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 31 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Kingston HMT** | RED | 31 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 31 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Teddington** | RED | 31 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 30 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Chertsey** | AMBER | 23 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 29 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 29 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 29 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Teddington** | AMBER | 29 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
 
-**0 🟢 GREEN · 0 🟠 AMBER · 6 🔴 RED**
+**0 🟢 GREEN · 6 🟠 AMBER · 0 🔴 RED**
 
 _🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢 good to go_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
