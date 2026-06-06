@@ -2,7 +2,7 @@
 
 ## The Short Answer
 
-We've built a system that checks weather, sewage, and river conditions and tells you whether it's safe to go on the water — **before you get there**. It uses a simple traffic light: RED (don't go), AMBER (test the water first), GREEN (go with confidence).
+We've built a system that checks weather, sewage, and river conditions and gives a precaution level for water activities — **before you get there**. It uses a simple traffic light: RED (enhanced precautions), AMBER (increased precautions), GREEN (normal precautions).
 
 We tested it against 239 real water quality results from ThamesWatch. When it says GREEN, the water was safe **93% of the time**. When it says RED, the water was unsafe **76% of the time**. It has never given a GREEN when the water was dangerously contaminated.
 
@@ -100,11 +100,11 @@ The system does the checking for you and publishes a verdict every few hours. Th
 
 | Signal | What to do |
 |---|---|
-| **RED** | Do not go on the water. No exceptions. The water is unsafe 76% of the time in these conditions. |
-| **AMBER** | Test the water with an R-Card before the activity. If you can't test, don't go. |
-| **GREEN** | Go with confidence at Walton, Chertsey, or Kingston HMT. Standard hygiene precautions apply. |
+| **RED** | Enhanced precautions. The water is unsafe 76% of the time in these conditions. |
+| **AMBER** | Increased precautions. Test the water with an R-Card before the activity. |
+| **GREEN** | Normal precautions at Walton, Chertsey, or Kingston HMT. |
 
-For Kingston Albany Reach and Teddington: the system will never say GREEN because these sites have too much background pollution. Always test.
+For Kingston Albany Reach, Teddington, Hogsmill confluence, and Minima Yacht Club: the system will never say GREEN because these sites have too much background pollution. Always test.
 
 ---
 
@@ -120,7 +120,7 @@ For Kingston Albany Reach and Teddington: the system will never say GREEN becaus
 
 ### Longer term
 
-4. **Add two new test sites** at the Wey confluence (below Weybridge) and Mole confluence (below Esher). These tell us exactly what pollution is arriving from each tributary.
+4. **Add test sites at the Wey and Mole confluences** (below Weybridge and below Esher). These would tell us exactly what pollution is arriving from each tributary. Two new sites — Hogsmill confluence and Minima Yacht Club — have now been added near the Hogsmill outfall; calibration data is accumulating.
 
 5. **Increase sampling at under-tested sites.** Chertsey (11 tests), Teddington (11), and Ditton's Bend (17) all need more data to validate the model, especially outside summer.
 

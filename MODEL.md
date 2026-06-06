@@ -9,8 +9,8 @@ overview see [EXEC-SUMMARY.md](EXEC-SUMMARY.md); for how to run it see
 
 ## 1. Purpose
 
-The model predicts whether the River Thames is safe for in-water scout activities at
-six test sites between Chertsey and Teddington, **without waiting 24-48 hours for a
+The model assigns a precaution level for in-water scout activities at
+eight test sites between Chertsey and Teddington, **without waiting 24-48 hours for a
 laboratory E. coli result**. It converts freely available weather, river and sewage
 data into a RED / AMBER / GREEN verdict per site.
 
@@ -21,11 +21,11 @@ asymmetric: never call dangerous water safe, even at the cost of some false alar
 
 ## 2. The verdict scale
 
-| Verdict | Meaning | Action |
+| Verdict | Meaning | Precaution level |
 |---|---|---|
-| 🔴 RED | Water very likely unsafe | Do not go on the water. No exceptions. |
-| 🟠 AMBER | Genuinely uncertain | Test with an R-Card before activity; if you can't test, don't go. |
-| 🟢 GREEN | Water very likely safe | Go, with standard hygiene precautions. |
+| 🔴 RED | Water very likely unsafe | Enhanced precautions. |
+| 🟠 AMBER | Genuinely uncertain | Increased precautions. |
+| 🟢 GREEN | Water very likely safe | Normal precautions. |
 
 "Safe" means E. coli ≤ 500 cfu/100ml — the EU/UK "Excellent" bathing-water threshold
 for inland waters. "Dangerous" means E. coli > 2000 cfu/100ml.
@@ -120,11 +120,15 @@ profiles. The model is therefore site-specific in three ways.
 |---|---|---|
 | 1 | Chertsey, Kingston HMT | Reliably clean — can be certified GREEN |
 | 2 | Walton Wharf | Mostly reliable — can be certified GREEN |
-| 3 | Kingston Albany Reach, Teddington, Ditton's Bend | Elevated baseline — **never GREEN**, AMBER minimum |
+| 3 | Kingston Albany Reach, Teddington, Ditton's Bend, Hogsmill confluence¹, Minima Yacht Club¹ | Elevated baseline — **never GREEN**, AMBER minimum |
 
 Tier 3 sites sit downstream of continuous sewage-works effluent (e.g. Kingston Albany
 Reach catches the Hogsmill works outfall) and produce spikes no weather model can
 predict. Rule 19 enforces their AMBER floor.
+
+¹ Hogsmill confluence and Minima Yacht Club were added in June 2026. They are assigned
+Tier 3 by geographic reasoning — both sit at the Hogsmill STW outfall, worse exposure
+than Kingston Albany Reach — pending accumulation of calibration data.
 
 ### Site-relevant CSO filtering
 
@@ -139,6 +143,9 @@ to every site. By geography:
   valid CSO predictor. (Before this was corrected, Chertsey was wrongly keyed to the Wey.)
 - **Walton** is below the Wey confluence but above the Mole, so it considers Wey +
   `ThamesUpstream`, and ignores the Mole.
+- **Hogsmill confluence and Minima Yacht Club** sit between the Mole confluence and
+  Kingston, at the Hogsmill STW outfall. They are downstream of all confluences and
+  consider Wey, Mole, Thames, Minor and `ThamesUpstream` — the full set.
 - **Kingston, Teddington and Ditton's Bend** are below both confluences and consider Wey,
   Mole, Thames and `ThamesUpstream`.
 
@@ -342,7 +349,9 @@ a stale feed and falls back to the daily-mean trend, rather than silently using 
 - **Calibration drift.** The model's thresholds are fixed; as new test data accrues the
   dataset must be refreshed and the model re-validated (see §11).
 - **Sparse data at some sites.** Chertsey, Teddington and Ditton's Bend have relatively
-  few tests; their per-site figures are less robust than Walton's.
+  few tests; their per-site figures are less robust than Walton's. Hogsmill confluence
+  and Minima Yacht Club have no calibration data yet — their Tier 3 assignment and CSO
+  relevance are based on geography, not statistical validation.
 - **AMBER is a coin flip by design** (72% safe). It is an instruction to test, not a
   confident verdict.
 
