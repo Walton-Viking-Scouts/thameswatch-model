@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-06T12:23:22Z",
+  "generated_at": "2026-06-06T12:25:20Z",
   "assessment_date": "2026-06-06",
   "model_version": "v3",
   "sites": [
@@ -247,7 +247,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 65.8,
+        "rain_5d_mm": 65.9,
         "rain_recent": [
           {
             "date": "2026-06-02",
@@ -267,7 +267,7 @@
           },
           {
             "date": "2026-06-06",
-            "mm": 7.69
+            "mm": 7.75
           }
         ],
         "flow_station": "Wey at Weybridge",
@@ -301,7 +301,7 @@
           },
           {
             "date": "2026-06-06",
-            "mm": 4.85
+            "mm": 4.91
           }
         ],
         "flow_station": "Mole at Esher",
@@ -335,7 +335,7 @@
           },
           {
             "date": "2026-06-06",
-            "mm": 2.74
+            "mm": 2.76
           }
         ],
         "flow_station": "Thames at Reading",
