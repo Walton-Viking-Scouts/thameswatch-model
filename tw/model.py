@@ -13,7 +13,8 @@ Geographic model (downstream order, river flows W->E):
     Chertsey ─── Wey confluence ─── WALTON ─── Mole confluence ─── HOGSMILL CONFLUENCE ─── KINGSTON ─── TEDDINGTON
                       ↑                             ↑                        ↑                   ↑
                  Wey CSOs                  Esher STW + Mole CSOs      Hogsmill STW       (further effluent)
-              (Ripley, Weybridge)          (join BELOW Walton)       (direct discharge)
+              (Ripley, Weybridge)          (join BELOW Walton)     (discharges into Hogsmill
+                                                                     tributary, which joins here)
 
     So Walton sees the Wey (upstream) + Thames-upstream CSOs, but NOT the Mole, which
     joins downstream at Molesey. Chertsey is above the Wey confluence, so it sees only
@@ -52,13 +53,12 @@ SITE_CSO_RELEVANCE = {
     "Walton Wharf": ["Wey", "ThamesUpstream"],  # Wey joins at Weybridge, just above Walton
     "Ditton's Bend": ["Wey", "Mole", "ThamesUpstream"],  # downstream of both confluences
     "Kingston Albany Reach": ["Wey", "Mole", "Thames", "ThamesUpstream"],  # gets everything + Hogsmill STW
-    "Kingston HMT": ["Wey", "Mole", "ThamesUpstream"],  # upstream of Hogsmill — explains why it's cleaner
+    "Kingston HMT": ["Wey", "Mole", "ThamesUpstream"],  # empirically cleaner (100% safe in GREEN, n=13); excludes in-stretch Thames/Minor CSOs
     "West Molesey": ["Wey", "Mole", "ThamesUpstream"],
     "Hampton Court Bridge": ["Wey", "Mole", "Thames", "ThamesUpstream"],
     "Teddington": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],  # gets absolutely everything
-    # At the Hogsmill STW outfall — worse exposure than Kingston Albany Reach; no calibration data yet
-    "Hogsmill confluence": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],
-    "Minima Yacht Club":   ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],
+    "Hogsmill confluence": ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],  # at Hogsmill STW outfall — full exposure; no calibration data yet
+    "Minima Yacht Club":   ["Wey", "Mole", "Thames", "Minor", "ThamesUpstream"],  # ~170m downstream of confluence — same plume; no calibration data yet
 }
 
 # Site risk tier based on historical GREEN performance
