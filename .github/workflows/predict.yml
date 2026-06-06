@@ -31,30 +31,30 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run prediction
-        run: python3 scripts/predict.py --json prediction.json --readme README.md
-
-      - name: Build recent-conditions panel data
-        run: python3 scripts/build_recent.py --json recent.json
-
-      - name: Commit updated prediction, README and data
+      - name: Generate, commit and push prediction
         run: |
           git config user.name "thameswatch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add prediction.json recent.json README.md data/
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-          # main can advance between checkout and push (a merge, or another run). Re-base
-          # our staged output onto the latest main each attempt (last-writer-wins on these
-          # generated files — no merge conflict on appended CSV rows) and retry on a lost
-          # race, rather than the old bare push that failed hard.
+          # main can advance between this job's checkout and its push (a merge, another
+          # run). On every attempt we hard-reset to the freshest main and REGENERATE the
+          # outputs against it, then commit only the generated artifacts.
+          #
+          # Why regenerate each attempt rather than carry a pre-built commit: the bot must
+          # never author a tree that contains stale *source* files. The previous approach
+          # (`git reset --soft` onto latest main, then commit the kept index) committed the
+          # whole stale checkout tree — silently reverting any source file (config.py,
+          # model.py, README static content) that landed on main during the run. Building
+          # on a clean `reset --hard origin/main` each time means the commit's only diff is
+          # the regenerated artifacts: prediction.json, recent.json, the README status
+          # block (spliced into the up-to-date README), and the topped-up data CSVs.
           for attempt in 1 2 3 4 5; do
             git fetch origin main
-            git reset --soft FETCH_HEAD
+            git reset --hard origin/main
+            python3 scripts/predict.py --json prediction.json --readme README.md
+            python3 scripts/build_recent.py --json recent.json
+            git add prediction.json recent.json README.md data/
             if git diff --staged --quiet; then
-              echo "Nothing new versus latest main; done."
+              echo "No changes to commit."
               exit 0
             fi
             git commit -m "Prediction update $(date -u +%Y-%m-%dT%H:%MZ)"

@@ -14,18 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-06** — updated 2026-06-06T12:58:41Z (model v3).
+Assessment for **2026-06-06** — updated 2026-06-06T13:11:02Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 25 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
 | 🟠 | **Chertsey** | AMBER | 19 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 16 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 16 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Ditton's Bend** | AMBER | 16 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Teddington** | AMBER | 16 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Teddington** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Hogsmill confluence** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Minima Yacht Club** | AMBER | 14 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
 
-**0 🟢 GREEN · 6 🟠 AMBER · 0 🔴 RED**
+**0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
@@ -52,15 +54,16 @@ public, no-authentication APIs:
 | Storm-overflow (CSO) discharge | Thames Water EDM API |
 | E. coli test results (model calibration only) | ThamesWatch API |
 
-The model (`tw/model.py`) is **site-specific** — each of the six sites
-has its own pollution profile. It was validated against 239 real E. coli tests:
+The model (`tw/model.py`) is **site-specific** — each of the eight sites
+has its own pollution profile. Six sites were validated against 239 real E. coli tests:
 GREEN is safe **93%** of the time (and has **never** been GREEN when the water was
-dangerously contaminated); RED is correct ~76% of the time.
+dangerously contaminated); RED is correct ~76% of the time. Two sites (Hogsmill confluence,
+Minima Yacht Club) are newly added and pending calibration.
 
-Six sites, upstream → downstream:
+Eight sites, upstream → downstream:
 
 ```
-Chertsey ─ Wey confluence ─ Walton Wharf ─ Mole confluence ─ Kingston ─ Teddington
+Chertsey ─ Wey confluence ─ Walton Wharf ─ Mole confluence ─ Hogsmill confluence ─ Kingston ─ Teddington
 ```
 
 The biggest risk factors, in order: multiple rivers discharging sewage simultaneously,
@@ -130,12 +133,14 @@ enough to catch a CSO discharge or tributary surge soon after it starts, since t
 CSO current-status and 15-minute flow feeds update within ~1h. Each run:
 
 1. Checks out the repo and installs `requests`.
-2. Runs `python3 scripts/predict.py --json prediction.json --readme README.md` — refreshing the
-   flow/rain CSVs, fetching live CSO data, writing the JSON artifact, and splicing the
-   live status block into this README.
+2. Hard-resets to the freshest `main`, then runs `python3 scripts/predict.py --json
+   prediction.json --readme README.md` — refreshing the flow/rain CSVs, fetching live CSO
+   data, writing the JSON artifact, and splicing the live status block into this README.
 3. Runs `python3 scripts/build_recent.py --json recent.json` — the last 96h of rain, flow
    and CSO discharge per site, for the web storm-panel chart.
-4. Commits the updated `prediction.json`, `recent.json`, `README.md` and `data/` CSVs.
+4. Commits **only** the regenerated artifacts (`prediction.json`, `recent.json`,
+   `README.md`, `data/` CSVs) and pushes, regenerating against latest `main` on each retry
+   so a concurrent merge is never reverted.
 
 ### Embedding the data on a website
 
