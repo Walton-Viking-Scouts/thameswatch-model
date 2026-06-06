@@ -14,20 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-06** — updated 2026-06-06T12:05:51Z (model v3).
+Assessment for **2026-06-06** — updated 2026-06-06T12:23:22Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 24 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
 | 🟠 | **Chertsey** | AMBER | 20 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 18 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 18 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Ditton's Bend** | AMBER | 18 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Teddington** | AMBER | 18 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 17 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 17 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 17 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🟠 | **Teddington** | AMBER | 17 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
 
 **0 🟢 GREEN · 6 🟠 AMBER · 0 🔴 RED**
 
-_🔴 do not go on the water · 🟠 test the water with an R-Card first · 🟢 good to go_
+_🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
