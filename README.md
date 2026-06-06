@@ -52,15 +52,16 @@ public, no-authentication APIs:
 | Storm-overflow (CSO) discharge | Thames Water EDM API |
 | E. coli test results (model calibration only) | ThamesWatch API |
 
-The model (`tw/model.py`) is **site-specific** — each of the six sites
-has its own pollution profile. It was validated against 239 real E. coli tests:
+The model (`tw/model.py`) is **site-specific** — each of the eight sites
+has its own pollution profile. Six sites were validated against 239 real E. coli tests:
 GREEN is safe **93%** of the time (and has **never** been GREEN when the water was
-dangerously contaminated); RED is correct ~76% of the time.
+dangerously contaminated); RED is correct ~76% of the time. Two sites (Hogsmill confluence,
+Minima Yacht Club) are newly added and pending calibration.
 
-Six sites, upstream → downstream:
+Eight sites, upstream → downstream:
 
 ```
-Chertsey ─ Wey confluence ─ Walton Wharf ─ Mole confluence ─ Kingston ─ Teddington
+Chertsey ─ Wey confluence ─ Walton Wharf ─ Mole confluence ─ Hogsmill confluence ─ Kingston ─ Teddington
 ```
 
 The biggest risk factors, in order: multiple rivers discharging sewage simultaneously,
