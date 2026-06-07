@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-06** — updated 2026-06-06T21:21:52Z (model v3).
+Assessment for **2026-06-07** — updated 2026-06-07T00:27:52Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Chertsey** | AMBER | 13 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Ditton's Bend** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Teddington** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Hogsmill confluence** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
-| 🟠 | **Minima Yacht Club** | AMBER | 15 m³/s | Moderate rain (5mm/48h) — 55% safe, test first<br>rain 5mm/48h |
+| 🔴 | **Walton Wharf** | RED | 16 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
+| 🔴 | **Chertsey** | RED | 14 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 14 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
+| 🔴 | **Kingston HMT** | RED | 14 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 14 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
+| 🔴 | **Teddington** | RED | 14 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 14 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 14 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
 
-**0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
+**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
