@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-08** — updated 2026-06-08T13:22:51Z (model v3).
+Assessment for **2026-06-08** — updated 2026-06-08T16:23:53Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 24 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Chertsey** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.4 m³/s) |
-| 🟠 | **Kingston HMT** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.4 m³/s) |
-| 🟠 | **Ditton's Bend** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.4 m³/s) |
-| 🟠 | **Teddington** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.4 m³/s) |
-| 🟠 | **Hogsmill confluence** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.4 m³/s) |
-| 🟠 | **Minima Yacht Club** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.4 m³/s) |
+| 🟠 | **Walton Wharf** | AMBER | 25 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Chertsey** | AMBER | 19 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 25 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.1 m³/s) |
+| 🟠 | **Kingston HMT** | AMBER | 25 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.1 m³/s) |
+| 🟠 | **Ditton's Bend** | AMBER | 25 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.1 m³/s) |
+| 🟠 | **Teddington** | AMBER | 25 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.1 m³/s) |
+| 🟠 | **Hogsmill confluence** | AMBER | 25 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.1 m³/s) |
+| 🟠 | **Minima Yacht Club** | AMBER | 25 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (4.1 m³/s) |
 
 **0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
