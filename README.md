@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-08** — updated 2026-06-08T18:46:45Z (model v3).
+Assessment for **2026-06-08** — updated 2026-06-08T21:36:25Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 24 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
 | 🟠 | **Chertsey** | AMBER | 19 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (3.9 m³/s) |
-| 🟠 | **Kingston HMT** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (3.9 m³/s) |
-| 🟠 | **Ditton's Bend** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (3.9 m³/s) |
-| 🟠 | **Teddington** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (3.9 m³/s) |
-| 🟠 | **Hogsmill confluence** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (3.9 m³/s) |
-| 🟠 | **Minima Yacht Club** | AMBER | 26 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (3.9 m³/s) |
+| 🟠 | **Kingston Albany Reach** | AMBER | 24 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 24 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 24 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Teddington** | AMBER | 24 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Hogsmill confluence** | AMBER | 24 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Minima Yacht Club** | AMBER | 24 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
 
 **0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey rising · Mole surge · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
