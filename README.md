@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-10** — updated 2026-06-10T13:02:21Z (model v3).
+Assessment for **2026-06-10** — updated 2026-06-10T16:17:23Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 25 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 23 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
 | 🟠 | **Chertsey** | AMBER | 18 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 25 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 25 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
-| 🟠 | **Ditton's Bend** | AMBER | 25 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
-| 🟠 | **Teddington** | AMBER | 25 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
-| 🟠 | **Hogsmill confluence** | AMBER | 25 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
-| 🟠 | **Minima Yacht Club** | AMBER | 25 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 23 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 23 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 23 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Teddington** | AMBER | 23 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Hogsmill confluence** | AMBER | 23 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Minima Yacht Club** | AMBER | 23 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
 
 **0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
