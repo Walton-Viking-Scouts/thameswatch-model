@@ -14,20 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-09** — updated 2026-06-09T21:32:54Z (model v3).
+Assessment for **2026-06-10** — updated 2026-06-10T00:31:53Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 21 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Chertsey** | RED | 15 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 17 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Kingston HMT** | RED | 17 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 17 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Teddington** | RED | 17 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 17 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 17 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 21 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Chertsey** | AMBER | 16 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 18 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 18 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 18 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Teddington** | AMBER | 18 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Hogsmill confluence** | AMBER | 18 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
+| 🟠 | **Minima Yacht Club** | AMBER | 18 m³/s | Moderate rain (7mm/48h) — 55% safe, test first<br>rain 7mm/48h |
 
-**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
+**0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
