@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-10T21:39:48Z",
-  "assessment_date": "2026-06-10",
+  "generated_at": "2026-06-11T00:33:11Z",
+  "assessment_date": "2026-06-11",
   "model_version": "v3",
   "sites": [
     {
       "site": "Walton Wharf",
       "level": "RED",
       "confidence": 84,
-      "explanation": "Moderate rain (7mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Wey: Weybridge (live) \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 21.575,
+      "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 20.891,
       "flow_gauge": "walton",
       "inputs": {
-        "rain_48h": 7.28,
-        "rain_7d": 18.71,
-        "dry_days": 1,
+        "rain_48h": 3.04,
+        "rain_7d": 17.54,
+        "dry_days": 2,
         "season": "summer",
         "flow_m3s": 21.295,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_hours_48h": 1.0,
+        "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 21.295,
           "wey_flow": 6.952,
@@ -30,34 +30,36 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.796,
-          "mole_flow_15min": 3.224
+          "wey_flow_15min": 6.357,
+          "mole_flow_15min": 3.171
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-06-09",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
       "site": "Chertsey",
       "level": "AMBER",
       "confidence": 55,
-      "explanation": "Moderate rain (7mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 7mm/48h",
-      "live_flow_m3s": 15.418,
+      "explanation": "Moderate rain (3mm/48h) \u2014 55% safe, test first",
+      "why_detail": "rain 3mm/48h",
+      "live_flow_m3s": 16.145,
       "flow_gauge": "staines",
       "inputs": {
-        "rain_48h": 7.28,
-        "rain_7d": 18.71,
-        "dry_days": 1,
+        "rain_48h": 3.04,
+        "rain_7d": 17.54,
+        "dry_days": 2,
         "season": "summer",
         "flow_m3s": 21.295,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_hours_48h": 1.0,
+        "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 21.295,
           "wey_flow": 6.952,
@@ -67,34 +69,36 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.796,
-          "mole_flow_15min": 3.224
+          "wey_flow_15min": 6.357,
+          "mole_flow_15min": 3.171
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-06-09",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
       "site": "Kingston Albany Reach",
       "level": "RED",
       "confidence": 84,
-      "explanation": "Moderate rain (7mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Wey: Weybridge (live) \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 17.943,
+      "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 18.276,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 7.28,
-        "rain_7d": 18.71,
-        "dry_days": 1,
+        "rain_48h": 3.04,
+        "rain_7d": 17.54,
+        "dry_days": 2,
         "season": "summer",
         "flow_m3s": 21.295,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_hours_48h": 1.0,
+        "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 21.295,
           "wey_flow": 6.952,
@@ -104,34 +108,36 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.796,
-          "mole_flow_15min": 3.224
+          "wey_flow_15min": 6.357,
+          "mole_flow_15min": 3.171
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-06-09",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
       "site": "Kingston HMT",
       "level": "RED",
       "confidence": 84,
-      "explanation": "Moderate rain (7mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Wey: Weybridge (live) \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 17.943,
+      "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 18.276,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 7.28,
-        "rain_7d": 18.71,
-        "dry_days": 1,
+        "rain_48h": 3.04,
+        "rain_7d": 17.54,
+        "dry_days": 2,
         "season": "summer",
         "flow_m3s": 21.295,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_hours_48h": 1.0,
+        "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 21.295,
           "wey_flow": 6.952,
@@ -141,34 +147,36 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.796,
-          "mole_flow_15min": 3.224
+          "wey_flow_15min": 6.357,
+          "mole_flow_15min": 3.171
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-06-09",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
       "site": "Ditton's Bend",
       "level": "RED",
       "confidence": 84,
-      "explanation": "Moderate rain (7mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Wey: Weybridge (live) \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 17.943,
+      "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 18.276,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 7.28,
-        "rain_7d": 18.71,
-        "dry_days": 1,
+        "rain_48h": 3.04,
+        "rain_7d": 17.54,
+        "dry_days": 2,
         "season": "summer",
         "flow_m3s": 21.295,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_hours_48h": 1.0,
+        "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 21.295,
           "wey_flow": 6.952,
@@ -178,34 +186,36 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.796,
-          "mole_flow_15min": 3.224
+          "wey_flow_15min": 6.357,
+          "mole_flow_15min": 3.171
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-06-09",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
       "site": "Teddington",
       "level": "RED",
       "confidence": 84,
-      "explanation": "Moderate rain (7mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Wey: Weybridge (live) \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 17.943,
+      "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 18.276,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 7.28,
-        "rain_7d": 18.71,
-        "dry_days": 1,
+        "rain_48h": 3.04,
+        "rain_7d": 17.54,
+        "dry_days": 2,
         "season": "summer",
         "flow_m3s": 21.295,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_hours_48h": 1.0,
+        "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 21.295,
           "wey_flow": 6.952,
@@ -215,34 +225,36 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.796,
-          "mole_flow_15min": 3.224
+          "wey_flow_15min": 6.357,
+          "mole_flow_15min": 3.171
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-06-09",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
       "site": "Hogsmill confluence",
       "level": "RED",
       "confidence": 84,
-      "explanation": "Moderate rain (7mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Wey: Weybridge (live) \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 17.943,
+      "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 18.276,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 7.28,
-        "rain_7d": 18.71,
-        "dry_days": 1,
+        "rain_48h": 3.04,
+        "rain_7d": 17.54,
+        "dry_days": 2,
         "season": "summer",
         "flow_m3s": 21.295,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_hours_48h": 1.0,
+        "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 21.295,
           "wey_flow": 6.952,
@@ -252,34 +264,36 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.796,
-          "mole_flow_15min": 3.224
+          "wey_flow_15min": 6.357,
+          "mole_flow_15min": 3.171
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-06-09",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
       "site": "Minima Yacht Club",
       "level": "RED",
       "confidence": 84,
-      "explanation": "Moderate rain (7mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Wey: Weybridge (live) \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 17.943,
+      "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 18.276,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 7.28,
-        "rain_7d": 18.71,
-        "dry_days": 1,
+        "rain_48h": 3.04,
+        "rain_7d": 17.54,
+        "dry_days": 2,
         "season": "summer",
         "flow_m3s": 21.295,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_hours_48h": 1.0,
+        "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 21.295,
           "wey_flow": 6.952,
@@ -289,32 +303,30 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.796,
-          "mole_flow_15min": 3.224
+          "wey_flow_15min": 6.357,
+          "mole_flow_15min": 3.171
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-06-09",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     }
   ],
   "upstream_watch": {
-    "date": "2026-06-10",
+    "date": "2026-06-11",
     "headwater_lag": "1-3 days",
     "catchments": [
       {
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 21.6,
+        "rain_5d_mm": 10.4,
         "rain_recent": [
-          {
-            "date": "2026-06-06",
-            "mm": 11.22
-          },
           {
             "date": "2026-06-07",
             "mm": 0.0
@@ -329,12 +341,16 @@
           },
           {
             "date": "2026-06-10",
-            "mm": 0.59
+            "mm": 0.61
+          },
+          {
+            "date": "2026-06-11",
+            "mm": 0.0
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 6.796,
-        "flow_change_pct": -3,
+        "flow_m3s": 6.357,
+        "flow_change_pct": -8,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -343,12 +359,8 @@
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 33.0,
+        "rain_5d_mm": 23.7,
         "rain_recent": [
-          {
-            "date": "2026-06-06",
-            "mm": 9.29
-          },
           {
             "date": "2026-06-07",
             "mm": 0.01
@@ -364,11 +376,15 @@
           {
             "date": "2026-06-10",
             "mm": 5.83
+          },
+          {
+            "date": "2026-06-11",
+            "mm": 0.0
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 3.224,
-        "flow_change_pct": 7,
+        "flow_m3s": 3.171,
+        "flow_change_pct": -5,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -377,12 +393,8 @@
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 11.1,
+        "rain_5d_mm": 7.1,
         "rain_recent": [
-          {
-            "date": "2026-06-06",
-            "mm": 3.94
-          },
           {
             "date": "2026-06-07",
             "mm": 0.0
@@ -398,11 +410,15 @@
           {
             "date": "2026-06-10",
             "mm": 0.01
+          },
+          {
+            "date": "2026-06-11",
+            "mm": 0.0
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 12.964,
-        "flow_change_pct": 1,
+        "flow_m3s": 12.085,
+        "flow_change_pct": 0,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
