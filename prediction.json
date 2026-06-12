@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T00:33:15Z",
+  "generated_at": "2026-06-12T04:29:52Z",
   "assessment_date": "2026-06-12",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 21.091,
+      "live_flow_m3s": 19.903,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 4.69,
@@ -23,15 +23,15 @@
         "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 22.151,
-          "wey_flow": 6.605,
-          "mole_flow": 3.306,
-          "wey_pct": 29.818066904428697,
-          "mole_pct": 14.924834093268927,
+          "wey_flow": 7.034,
+          "mole_flow": 3.775,
+          "wey_pct": 31.754774050832918,
+          "mole_pct": 17.042119994582638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.045,
-          "mole_flow_15min": 2.839
+          "wey_flow_15min": 5.852,
+          "mole_flow_15min": 2.898
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 65,
       "explanation": "Rained today (5mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 5mm/48h",
-      "live_flow_m3s": 15.056,
+      "live_flow_m3s": 16.203,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 4.69,
@@ -62,15 +62,15 @@
         "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 22.151,
-          "wey_flow": 6.605,
-          "mole_flow": 3.306,
-          "wey_pct": 29.818066904428697,
-          "mole_pct": 14.924834093268927,
+          "wey_flow": 7.034,
+          "mole_flow": 3.775,
+          "wey_pct": 31.754774050832918,
+          "mole_pct": 17.042119994582638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.045,
-          "mole_flow_15min": 2.839
+          "wey_flow_15min": 5.852,
+          "mole_flow_15min": 2.898
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.676,
+      "live_flow_m3s": 17.097,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -101,15 +101,15 @@
         "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 22.151,
-          "wey_flow": 6.605,
-          "mole_flow": 3.306,
-          "wey_pct": 29.818066904428697,
-          "mole_pct": 14.924834093268927,
+          "wey_flow": 7.034,
+          "mole_flow": 3.775,
+          "wey_pct": 31.754774050832918,
+          "mole_pct": 17.042119994582638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.045,
-          "mole_flow_15min": 2.839
+          "wey_flow_15min": 5.852,
+          "mole_flow_15min": 2.898
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.676,
+      "live_flow_m3s": 17.097,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -140,15 +140,15 @@
         "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 22.151,
-          "wey_flow": 6.605,
-          "mole_flow": 3.306,
-          "wey_pct": 29.818066904428697,
-          "mole_pct": 14.924834093268927,
+          "wey_flow": 7.034,
+          "mole_flow": 3.775,
+          "wey_pct": 31.754774050832918,
+          "mole_pct": 17.042119994582638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.045,
-          "mole_flow_15min": 2.839
+          "wey_flow_15min": 5.852,
+          "mole_flow_15min": 2.898
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.676,
+      "live_flow_m3s": 17.097,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -179,15 +179,15 @@
         "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 22.151,
-          "wey_flow": 6.605,
-          "mole_flow": 3.306,
-          "wey_pct": 29.818066904428697,
-          "mole_pct": 14.924834093268927,
+          "wey_flow": 7.034,
+          "mole_flow": 3.775,
+          "wey_pct": 31.754774050832918,
+          "mole_pct": 17.042119994582638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.045,
-          "mole_flow_15min": 2.839
+          "wey_flow_15min": 5.852,
+          "mole_flow_15min": 2.898
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.676,
+      "live_flow_m3s": 17.097,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -218,15 +218,15 @@
         "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 22.151,
-          "wey_flow": 6.605,
-          "mole_flow": 3.306,
-          "wey_pct": 29.818066904428697,
-          "mole_pct": 14.924834093268927,
+          "wey_flow": 7.034,
+          "mole_flow": 3.775,
+          "wey_pct": 31.754774050832918,
+          "mole_pct": 17.042119994582638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.045,
-          "mole_flow_15min": 2.839
+          "wey_flow_15min": 5.852,
+          "mole_flow_15min": 2.898
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.676,
+      "live_flow_m3s": 17.097,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -257,15 +257,15 @@
         "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 22.151,
-          "wey_flow": 6.605,
-          "mole_flow": 3.306,
-          "wey_pct": 29.818066904428697,
-          "mole_pct": 14.924834093268927,
+          "wey_flow": 7.034,
+          "mole_flow": 3.775,
+          "wey_pct": 31.754774050832918,
+          "mole_pct": 17.042119994582638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.045,
-          "mole_flow_15min": 2.839
+          "wey_flow_15min": 5.852,
+          "mole_flow_15min": 2.898
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.676,
+      "live_flow_m3s": 17.097,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -296,15 +296,15 @@
         "cso_active_monitors": "Weybridge(1.0h)",
         "upstream_ctx": {
           "walton_flow": 22.151,
-          "wey_flow": 6.605,
-          "mole_flow": 3.306,
-          "wey_pct": 29.818066904428697,
-          "mole_pct": 14.924834093268927,
+          "wey_flow": 7.034,
+          "mole_flow": 3.775,
+          "wey_pct": 31.754774050832918,
+          "mole_pct": 17.042119994582638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.045,
-          "mole_flow_15min": 2.839
+          "wey_flow_15min": 5.852,
+          "mole_flow_15min": 2.898
         }
       },
       "data_quality": {
@@ -349,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 6.045,
-        "flow_change_pct": -2,
+        "flow_m3s": 5.852,
+        "flow_change_pct": -3,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -383,11 +383,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.839,
-        "flow_change_pct": -10,
+        "flow_m3s": 2.898,
+        "flow_change_pct": -6,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "easing"
+        "status": "flat"
       },
       {
         "catchment": "Thames",
@@ -417,11 +417,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 12.87,
-        "flow_change_pct": 7,
+        "flow_m3s": 13.226,
+        "flow_change_pct": 12,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "rising"
       }
     ]
   },
