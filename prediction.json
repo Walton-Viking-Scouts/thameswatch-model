@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-12T10:29:49Z",
+  "generated_at": "2026-06-12T16:04:20Z",
   "assessment_date": "2026-06-12",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 21.637,
+      "live_flow_m3s": 23.59,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 4.69,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.842,
-          "mole_flow_15min": 2.904
+          "wey_flow_15min": 5.923,
+          "mole_flow_15min": 2.848
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 65,
       "explanation": "Rained today (5mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 5mm/48h",
-      "live_flow_m3s": 16.162,
+      "live_flow_m3s": 17.183,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 4.69,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.842,
-          "mole_flow_15min": 2.904
+          "wey_flow_15min": 5.923,
+          "mole_flow_15min": 2.848
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.297,
+      "live_flow_m3s": 19.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.842,
-          "mole_flow_15min": 2.904
+          "wey_flow_15min": 5.923,
+          "mole_flow_15min": 2.848
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.297,
+      "live_flow_m3s": 19.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.842,
-          "mole_flow_15min": 2.904
+          "wey_flow_15min": 5.923,
+          "mole_flow_15min": 2.848
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.297,
+      "live_flow_m3s": 19.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.842,
-          "mole_flow_15min": 2.904
+          "wey_flow_15min": 5.923,
+          "mole_flow_15min": 2.848
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.297,
+      "live_flow_m3s": 19.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.842,
-          "mole_flow_15min": 2.904
+          "wey_flow_15min": 5.923,
+          "mole_flow_15min": 2.848
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.297,
+      "live_flow_m3s": 19.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.842,
-          "mole_flow_15min": 2.904
+          "wey_flow_15min": 5.923,
+          "mole_flow_15min": 2.848
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Wey: Weybridge 1.0h \u00b7 rain 5mm/48h",
-      "live_flow_m3s": 18.297,
+      "live_flow_m3s": 19.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 4.69,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.842,
-          "mole_flow_15min": 2.904
+          "wey_flow_15min": 5.923,
+          "mole_flow_15min": 2.848
         }
       },
       "data_quality": {
@@ -349,7 +349,7 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 5.842,
+        "flow_m3s": 5.923,
         "flow_change_pct": -6,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -383,7 +383,7 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.904,
+        "flow_m3s": 2.846,
         "flow_change_pct": 2,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -417,11 +417,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 13.836,
-        "flow_change_pct": 8,
+        "flow_m3s": 14.054,
+        "flow_change_pct": 13,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "rising"
       }
     ]
   },
