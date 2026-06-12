@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-12** — updated 2026-06-12T07:31:54Z (model v3).
+Assessment for **2026-06-12** — updated 2026-06-12T10:29:49Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 20 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
-| 🔴 | **Chertsey** | RED | 17 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 16 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
-| 🔴 | **Kingston HMT** | RED | 16 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 16 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
-| 🔴 | **Teddington** | RED | 16 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 16 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 16 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
+| 🔴 | **Walton Wharf** | RED | 22 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
+| 🔴 | **Chertsey** | RED | 16 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 18 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
+| 🔴 | **Kingston HMT** | RED | 18 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 18 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
+| 🔴 | **Teddington** | RED | 18 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 18 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 18 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 1.0h · rain 5mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
