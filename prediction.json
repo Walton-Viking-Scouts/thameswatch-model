@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-13T07:14:30Z",
+  "generated_at": "2026-06-13T09:59:55Z",
   "assessment_date": "2026-06-13",
   "model_version": "v3",
   "sites": [
     {
       "site": "Walton Wharf",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 22.186,
+      "level": "RED",
+      "confidence": 84,
+      "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 3.5h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 22.541,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 3.53,
@@ -18,9 +18,9 @@
         "dry_days": 1,
         "season": "summer",
         "flow_m3s": 21.769,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 3.5,
+        "cso_active_monitors": "Weybridge(3.5h)",
         "upstream_ctx": {
           "walton_flow": 21.769,
           "wey_flow": 6.115,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.158,
-          "mole_flow_15min": 3.014
+          "wey_flow_15min": 6.14,
+          "mole_flow_15min": 3.067
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 17.315,
+      "live_flow_m3s": 18.762,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 3.53,
@@ -57,9 +57,9 @@
         "dry_days": 1,
         "season": "summer",
         "flow_m3s": 21.769,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 3.5,
+        "cso_active_monitors": "Weybridge(3.5h)",
         "upstream_ctx": {
           "walton_flow": 21.769,
           "wey_flow": 6.115,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.158,
-          "mole_flow_15min": 3.014
+          "wey_flow_15min": 6.14,
+          "mole_flow_15min": 3.067
         }
       },
       "data_quality": {
@@ -84,11 +84,11 @@
     },
     {
       "site": "Kingston Albany Reach",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 17.378,
+      "level": "RED",
+      "confidence": 84,
+      "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 3.5h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 18.077,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.53,
@@ -96,9 +96,9 @@
         "dry_days": 1,
         "season": "summer",
         "flow_m3s": 21.769,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 3.5,
+        "cso_active_monitors": "Weybridge(3.5h)",
         "upstream_ctx": {
           "walton_flow": 21.769,
           "wey_flow": 6.115,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.158,
-          "mole_flow_15min": 3.014
+          "wey_flow_15min": 6.14,
+          "mole_flow_15min": 3.067
         }
       },
       "data_quality": {
@@ -123,11 +123,11 @@
     },
     {
       "site": "Kingston HMT",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 17.378,
+      "level": "RED",
+      "confidence": 84,
+      "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 3.5h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 18.077,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.53,
@@ -135,9 +135,9 @@
         "dry_days": 1,
         "season": "summer",
         "flow_m3s": 21.769,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 3.5,
+        "cso_active_monitors": "Weybridge(3.5h)",
         "upstream_ctx": {
           "walton_flow": 21.769,
           "wey_flow": 6.115,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.158,
-          "mole_flow_15min": 3.014
+          "wey_flow_15min": 6.14,
+          "mole_flow_15min": 3.067
         }
       },
       "data_quality": {
@@ -162,11 +162,11 @@
     },
     {
       "site": "Ditton's Bend",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 17.378,
+      "level": "RED",
+      "confidence": 84,
+      "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 3.5h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 18.077,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.53,
@@ -174,9 +174,9 @@
         "dry_days": 1,
         "season": "summer",
         "flow_m3s": 21.769,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 3.5,
+        "cso_active_monitors": "Weybridge(3.5h)",
         "upstream_ctx": {
           "walton_flow": 21.769,
           "wey_flow": 6.115,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.158,
-          "mole_flow_15min": 3.014
+          "wey_flow_15min": 6.14,
+          "mole_flow_15min": 3.067
         }
       },
       "data_quality": {
@@ -201,11 +201,11 @@
     },
     {
       "site": "Teddington",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 17.378,
+      "level": "RED",
+      "confidence": 84,
+      "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 3.5h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 18.077,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.53,
@@ -213,9 +213,9 @@
         "dry_days": 1,
         "season": "summer",
         "flow_m3s": 21.769,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 3.5,
+        "cso_active_monitors": "Weybridge(3.5h)",
         "upstream_ctx": {
           "walton_flow": 21.769,
           "wey_flow": 6.115,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.158,
-          "mole_flow_15min": 3.014
+          "wey_flow_15min": 6.14,
+          "mole_flow_15min": 3.067
         }
       },
       "data_quality": {
@@ -240,11 +240,11 @@
     },
     {
       "site": "Hogsmill confluence",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 17.378,
+      "level": "RED",
+      "confidence": 84,
+      "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 3.5h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 18.077,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.53,
@@ -252,9 +252,9 @@
         "dry_days": 1,
         "season": "summer",
         "flow_m3s": 21.769,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 3.5,
+        "cso_active_monitors": "Weybridge(3.5h)",
         "upstream_ctx": {
           "walton_flow": 21.769,
           "wey_flow": 6.115,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.158,
-          "mole_flow_15min": 3.014
+          "wey_flow_15min": 6.14,
+          "mole_flow_15min": 3.067
         }
       },
       "data_quality": {
@@ -279,11 +279,11 @@
     },
     {
       "site": "Minima Yacht Club",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 17.378,
+      "level": "RED",
+      "confidence": 84,
+      "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
+      "why_detail": "Wey: Weybridge 3.5h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 18.077,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.53,
@@ -291,9 +291,9 @@
         "dry_days": 1,
         "season": "summer",
         "flow_m3s": 21.769,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 3.5,
+        "cso_active_monitors": "Weybridge(3.5h)",
         "upstream_ctx": {
           "walton_flow": 21.769,
           "wey_flow": 6.115,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.158,
-          "mole_flow_15min": 3.014
+          "wey_flow_15min": 6.14,
+          "mole_flow_15min": 3.067
         }
       },
       "data_quality": {
@@ -349,11 +349,11 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 6.158,
-        "flow_change_pct": 6,
+        "flow_m3s": 6.14,
+        "flow_change_pct": 11,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "rising"
       },
       {
         "catchment": "Mole",
@@ -383,8 +383,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 3.014,
-        "flow_change_pct": 4,
+        "flow_m3s": 3.067,
+        "flow_change_pct": 6,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -417,8 +417,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 12.107,
-        "flow_change_pct": -9,
+        "flow_m3s": 13.047,
+        "flow_change_pct": -6,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -427,7 +427,7 @@
   },
   "summary": {
     "GREEN": 0,
-    "AMBER": 8,
-    "RED": 0
+    "AMBER": 1,
+    "RED": 7
   }
 }
