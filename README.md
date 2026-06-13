@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-13** — updated 2026-06-13T00:33:16Z (model v3).
+Assessment for **2026-06-13** — updated 2026-06-13T04:29:52Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 21 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Chertsey** | AMBER | 17 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Ditton's Bend** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Teddington** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Hogsmill confluence** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Minima Yacht Club** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Chertsey** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 17 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 17 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Ditton's Bend** | AMBER | 17 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Teddington** | AMBER | 17 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Hogsmill confluence** | AMBER | 17 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🟠 | **Minima Yacht Club** | AMBER | 17 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
 
 **0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
