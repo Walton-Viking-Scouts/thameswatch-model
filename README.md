@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-13** — updated 2026-06-13T12:31:49Z (model v3).
+Assessment for **2026-06-13** — updated 2026-06-13T15:32:14Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 22 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
-| 🟠 | **Chertsey** | AMBER | 18 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 21 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
-| 🔴 | **Kingston HMT** | RED | 21 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 21 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
-| 🔴 | **Teddington** | RED | 21 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 21 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 21 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
+| 🔴 | **Walton Wharf** | RED | 23 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
+| 🟠 | **Chertsey** | AMBER | 15 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 22 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
+| 🔴 | **Kingston HMT** | RED | 22 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 22 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
+| 🔴 | **Teddington** | RED | 22 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 22 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 22 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.0h · rain 4mm/48h |
 
 **0 🟢 GREEN · 1 🟠 AMBER · 7 🔴 RED**
 
