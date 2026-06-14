@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-14** — updated 2026-06-14T07:31:21Z (model v3).
+Assessment for **2026-06-14** — updated 2026-06-14T10:09:47Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 19 m³/s | Recent rain (2d ago) + CSO active — only 16% safe, test first<br>Wey: Weybridge 1.0h |
-| 🟠 | **Chertsey** | AMBER | 15 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing |
+| 🟠 | **Chertsey** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing |
 | 🟠 | **Kingston Albany Reach** | AMBER | 14 m³/s | Recent rain (2d ago) + CSO active — only 16% safe, test first<br>Wey: Weybridge 1.0h |
 | 🟠 | **Kingston HMT** | AMBER | 14 m³/s | Recent rain (2d ago) + CSO active — only 16% safe, test first<br>Wey: Weybridge 1.0h |
 | 🟠 | **Ditton's Bend** | AMBER | 14 m³/s | Recent rain (2d ago) + CSO active — only 16% safe, test first<br>Wey: Weybridge 1.0h |
