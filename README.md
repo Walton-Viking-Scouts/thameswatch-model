@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-15** — updated 2026-06-15T04:31:10Z (model v3).
+Assessment for **2026-06-15** — updated 2026-06-15T07:49:37Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 18 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
-| 🟢 | **Chertsey** | GREEN | 13 m³/s | Dry conditions (3d), no CSO, summer — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | 17 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
-| 🟠 | **Kingston HMT** | AMBER | 17 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
-| 🟠 | **Ditton's Bend** | AMBER | 17 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
-| 🟠 | **Teddington** | AMBER | 17 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
-| 🟠 | **Hogsmill confluence** | AMBER | 17 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
-| 🟠 | **Minima Yacht Club** | AMBER | 17 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
+| 🟢 | **Chertsey** | GREEN | 18 m³/s | Dry conditions (3d), no CSO, summer — safe |
+| 🟠 | **Kingston Albany Reach** | AMBER | 14 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
+| 🟠 | **Kingston HMT** | AMBER | 14 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
+| 🟠 | **Ditton's Bend** | AMBER | 14 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
+| 🟠 | **Teddington** | AMBER | 14 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
+| 🟠 | **Hogsmill confluence** | AMBER | 14 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
+| 🟠 | **Minima Yacht Club** | AMBER | 14 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge (live) |
 
 **1 🟢 GREEN · 7 🟠 AMBER · 0 🔴 RED**
 
