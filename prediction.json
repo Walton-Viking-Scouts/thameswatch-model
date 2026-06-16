@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-16T07:51:02Z",
+  "generated_at": "2026-06-16T10:35:40Z",
   "assessment_date": "2026-06-16",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 80,
       "explanation": "Dry conditions (4d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 16.862,
+      "live_flow_m3s": 20.123,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.19,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.975,
-          "mole_flow_15min": 2.481
+          "wey_flow_15min": 5.066,
+          "mole_flow_15min": 2.256
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 80,
       "explanation": "Dry conditions (4d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 15.848,
+      "live_flow_m3s": 23.139,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.19,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.975,
-          "mole_flow_15min": 2.481
+          "wey_flow_15min": 5.066,
+          "mole_flow_15min": 2.256
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 55,
       "explanation": "Kingston Albany Reach has elevated baseline from continuous upstream effluent \u2014 test first",
       "why_detail": "",
-      "live_flow_m3s": 13.905,
+      "live_flow_m3s": 14.475,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.19,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.975,
-          "mole_flow_15min": 2.481
+          "wey_flow_15min": 5.066,
+          "mole_flow_15min": 2.256
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 80,
       "explanation": "Dry conditions (4d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 13.905,
+      "live_flow_m3s": 14.475,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.19,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.975,
-          "mole_flow_15min": 2.481
+          "wey_flow_15min": 5.066,
+          "mole_flow_15min": 2.256
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 60,
       "explanation": "Low flow (18 m3/s) at Ditton's Bend \u2014 insufficient dilution below 20 m3/s, test first",
       "why_detail": "",
-      "live_flow_m3s": 13.905,
+      "live_flow_m3s": 14.475,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.19,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.975,
-          "mole_flow_15min": 2.481
+          "wey_flow_15min": 5.066,
+          "mole_flow_15min": 2.256
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 60,
       "explanation": "Low flow (18 m3/s) at Teddington \u2014 insufficient dilution below 20 m3/s, test first",
       "why_detail": "",
-      "live_flow_m3s": 13.905,
+      "live_flow_m3s": 14.475,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.19,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.975,
-          "mole_flow_15min": 2.481
+          "wey_flow_15min": 5.066,
+          "mole_flow_15min": 2.256
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 55,
       "explanation": "Hogsmill confluence has elevated baseline from continuous upstream effluent \u2014 test first",
       "why_detail": "",
-      "live_flow_m3s": 13.905,
+      "live_flow_m3s": 14.475,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.19,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.975,
-          "mole_flow_15min": 2.481
+          "wey_flow_15min": 5.066,
+          "mole_flow_15min": 2.256
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 55,
       "explanation": "Minima Yacht Club has elevated baseline from continuous upstream effluent \u2014 test first",
       "why_detail": "",
-      "live_flow_m3s": 13.905,
+      "live_flow_m3s": 14.475,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.19,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.975,
-          "mole_flow_15min": 2.481
+          "wey_flow_15min": 5.066,
+          "mole_flow_15min": 2.256
         }
       },
       "data_quality": {
@@ -349,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.975,
-        "flow_change_pct": -7,
+        "flow_m3s": 5.066,
+        "flow_change_pct": -3,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -383,8 +383,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.481,
-        "flow_change_pct": 3,
+        "flow_m3s": 2.256,
+        "flow_change_pct": -5,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -417,8 +417,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 10.816,
-        "flow_change_pct": -5,
+        "flow_m3s": 11.008,
+        "flow_change_pct": -6,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
