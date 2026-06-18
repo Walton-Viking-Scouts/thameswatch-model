@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-18** — updated 2026-06-18T18:45:20Z (model v3).
+Assessment for **2026-06-18** — updated 2026-06-18T21:40:06Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟢 | **Walton Wharf** | GREEN | 16 m³/s | Dry conditions (6d), no CSO, summer — safe |
-| 🟢 | **Chertsey** | GREEN | 15 m³/s | Dry conditions (6d), no CSO, summer — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | 14 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | 14 m³/s | Dry conditions (6d), no CSO, summer — safe |
-| 🟠 | **Ditton's Bend** | AMBER | 14 m³/s | Low flow (20 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first |
-| 🟠 | **Teddington** | AMBER | 14 m³/s | Low flow (20 m3/s) at Teddington — insufficient dilution below 20 m3/s, test first |
-| 🟠 | **Hogsmill confluence** | AMBER | 14 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
-| 🟠 | **Minima Yacht Club** | AMBER | 14 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
+| 🟢 | **Chertsey** | GREEN | 16 m³/s | Dry conditions (6d), no CSO, summer — safe |
+| 🟠 | **Kingston Albany Reach** | AMBER | 12 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
+| 🟢 | **Kingston HMT** | GREEN | 12 m³/s | Dry conditions (6d), no CSO, summer — safe |
+| 🔴 | **Ditton's Bend** | RED | 12 m³/s | Very low flow (15 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🔴 | **Teddington** | RED | 12 m³/s | Very low flow (15 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🟠 | **Hogsmill confluence** | AMBER | 12 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
+| 🟠 | **Minima Yacht Club** | AMBER | 12 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
 
-**3 🟢 GREEN · 5 🟠 AMBER · 0 🔴 RED**
+**3 🟢 GREEN · 3 🟠 AMBER · 2 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
