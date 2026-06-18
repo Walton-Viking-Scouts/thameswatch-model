@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-18** — updated 2026-06-18T04:29:51Z (model v3).
+Assessment for **2026-06-18** — updated 2026-06-18T07:34:22Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | 15 m³/s | Dry conditions (6d), no CSO, summer — safe |
-| 🟢 | **Chertsey** | GREEN | 3 m³/s | Dry conditions (6d), no CSO, summer — safe |
+| 🟢 | **Walton Wharf** | GREEN | 14 m³/s | Dry conditions (6d), no CSO, summer — safe |
+| 🟢 | **Chertsey** | GREEN | 8 m³/s | Dry conditions (6d), no CSO, summer — safe |
 | 🟠 | **Kingston Albany Reach** | AMBER | 15 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
 | 🟢 | **Kingston HMT** | GREEN | 15 m³/s | Dry conditions (6d), no CSO, summer — safe |
 | 🟠 | **Ditton's Bend** | AMBER | 15 m³/s | Low flow (20 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first |
