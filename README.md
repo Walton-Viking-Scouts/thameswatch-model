@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-20** — updated 2026-06-20T00:29:02Z (model v3).
+Assessment for **2026-06-20** — updated 2026-06-20T04:28:37Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | 17 m³/s | Dry conditions (8d), no CSO, summer — safe |
-| 🟢 | **Chertsey** | GREEN | 14 m³/s | Dry conditions (8d), no CSO, summer — safe |
+| 🟢 | **Walton Wharf** | GREEN | 16 m³/s | Dry conditions (8d), no CSO, summer — safe |
+| 🟢 | **Chertsey** | GREEN | 15 m³/s | Dry conditions (8d), no CSO, summer — safe |
 | 🟠 | **Kingston Albany Reach** | AMBER | 14 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
 | 🟢 | **Kingston HMT** | GREEN | 14 m³/s | Dry conditions (8d), no CSO, summer — safe |
 | 🔴 | **Ditton's Bend** | RED | 14 m³/s | Very low flow (15 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
