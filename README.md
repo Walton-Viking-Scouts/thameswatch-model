@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-21** — updated 2026-06-21T12:35:32Z (model v3).
+Assessment for **2026-06-21** — updated 2026-06-21T15:34:14Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | 15 m³/s | Dry conditions (9d), no CSO, summer — safe |
+| 🟢 | **Walton Wharf** | GREEN | 17 m³/s | Dry conditions (9d), no CSO, summer — safe |
 | 🟢 | **Chertsey** | GREEN | 15 m³/s | Dry conditions (9d), no CSO, summer — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | 6 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | 6 m³/s | Dry conditions (9d), no CSO, summer — safe |
-| 🟠 | **Ditton's Bend** | AMBER | 6 m³/s | Low flow (18 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first |
-| 🟠 | **Teddington** | AMBER | 6 m³/s | Low flow (18 m3/s) at Teddington — insufficient dilution below 20 m3/s, test first |
-| 🟠 | **Hogsmill confluence** | AMBER | 6 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
-| 🟠 | **Minima Yacht Club** | AMBER | 6 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
+| 🟠 | **Kingston Albany Reach** | AMBER | 11 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
+| 🟢 | **Kingston HMT** | GREEN | 11 m³/s | Dry conditions (9d), no CSO, summer — safe |
+| 🟠 | **Ditton's Bend** | AMBER | 11 m³/s | Low flow (18 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first |
+| 🟠 | **Teddington** | AMBER | 11 m³/s | Low flow (18 m3/s) at Teddington — insufficient dilution below 20 m3/s, test first |
+| 🟠 | **Hogsmill confluence** | AMBER | 11 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
+| 🟠 | **Minima Yacht Club** | AMBER | 11 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
 
 **3 🟢 GREEN · 5 🟠 AMBER · 0 🔴 RED**
 
