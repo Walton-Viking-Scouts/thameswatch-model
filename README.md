@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-23** — updated 2026-06-23T04:22:59Z (model v3).
+Assessment for **2026-06-23** — updated 2026-06-23T07:09:08Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | 13 m³/s | Dry conditions (11d), no CSO, summer — safe |
-| 🟢 | **Chertsey** | GREEN | 16 m³/s | Dry conditions (11d), no CSO, summer — safe |
-| 🔴 | **Kingston Albany Reach** | RED | 16 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>Thames: Old Palace Lane 8.7h, Portsmouth Road, Uxbridge Road 8.6h |
-| 🟢 | **Kingston HMT** | GREEN | 16 m³/s | Dry conditions (11d), no CSO, summer — safe |
-| 🟠 | **Ditton's Bend** | AMBER | 16 m³/s | Low flow (16 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first |
-| 🔴 | **Teddington** | RED | 16 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>Thames: Old Palace Lane 8.7h, Portsmouth Road, Uxbridge Road 8.6h |
-| 🔴 | **Hogsmill confluence** | RED | 16 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>Thames: Old Palace Lane 8.7h, Portsmouth Road, Uxbridge Road 8.6h |
-| 🔴 | **Minima Yacht Club** | RED | 16 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>Thames: Old Palace Lane 8.7h, Portsmouth Road, Uxbridge Road 8.6h |
+| 🟠 | **Walton Wharf** | AMBER | 15 m³/s | CSO active upstream (ThamesUpstream) — 33-46% safe, consider testing<br>ThamesUpstream: Windsor 6.6h |
+| 🟠 | **Chertsey** | AMBER | 18 m³/s | CSO active upstream (ThamesUpstream) — 33-46% safe, consider testing<br>ThamesUpstream: Windsor 6.6h |
+| 🔴 | **Kingston Albany Reach** | RED | 15 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h · ThamesUpstream: Windsor 6.6h |
+| 🟠 | **Kingston HMT** | AMBER | 15 m³/s | CSO active upstream (ThamesUpstream) — 33-46% safe, consider testing<br>ThamesUpstream: Windsor 6.6h |
+| 🟠 | **Ditton's Bend** | AMBER | 15 m³/s | CSO active upstream (ThamesUpstream) — 33-46% safe, consider testing<br>ThamesUpstream: Windsor 6.6h |
+| 🔴 | **Teddington** | RED | 15 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h · ThamesUpstream: Windsor 6.6h |
+| 🔴 | **Hogsmill confluence** | RED | 15 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h · ThamesUpstream: Windsor 6.6h |
+| 🔴 | **Minima Yacht Club** | RED | 15 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h · ThamesUpstream: Windsor 6.6h |
 
-**3 🟢 GREEN · 1 🟠 AMBER · 4 🔴 RED**
+**0 🟢 GREEN · 4 🟠 AMBER · 4 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames rising._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
