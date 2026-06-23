@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-23T00:29:20Z",
+  "generated_at": "2026-06-23T04:22:59Z",
   "assessment_date": "2026-06-23",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 85,
       "explanation": "Dry conditions (11d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 13.741,
+      "live_flow_m3s": 13.316,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.06,
@@ -18,9 +18,9 @@
         "dry_days": 11,
         "season": "summer",
         "flow_m3s": 16.148,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 17.3,
+        "cso_active_monitors": "Old Palace Lane(8.7h); Portsmouth Road, Uxbridge Road(8.6h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.526,
-          "mole_flow_15min": 1.899
+          "wey_flow_15min": 4.573,
+          "mole_flow_15min": 1.869
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 85,
       "explanation": "Dry conditions (11d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 10.713,
+      "live_flow_m3s": 15.718,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.06,
@@ -57,9 +57,9 @@
         "dry_days": 11,
         "season": "summer",
         "flow_m3s": 16.148,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 17.3,
+        "cso_active_monitors": "Old Palace Lane(8.7h); Portsmouth Road, Uxbridge Road(8.6h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.526,
-          "mole_flow_15min": 1.899
+          "wey_flow_15min": 4.573,
+          "mole_flow_15min": 1.869
         }
       },
       "data_quality": {
@@ -84,11 +84,11 @@
     },
     {
       "site": "Kingston Albany Reach",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Kingston Albany Reach has elevated baseline from continuous upstream effluent \u2014 test first",
-      "why_detail": "",
-      "live_flow_m3s": 11.923,
+      "level": "RED",
+      "confidence": 93,
+      "explanation": "2 CSO monitors discharging \u2014 only 7% safe historically",
+      "why_detail": "Thames: Old Palace Lane 8.7h, Portsmouth Road, Uxbridge Road 8.6h",
+      "live_flow_m3s": 15.791,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -96,9 +96,9 @@
         "dry_days": 11,
         "season": "summer",
         "flow_m3s": 16.148,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 17.3,
+        "cso_active_monitors": "Old Palace Lane(8.7h); Portsmouth Road, Uxbridge Road(8.6h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.526,
-          "mole_flow_15min": 1.899
+          "wey_flow_15min": 4.573,
+          "mole_flow_15min": 1.869
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 85,
       "explanation": "Dry conditions (11d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 11.923,
+      "live_flow_m3s": 15.791,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -135,9 +135,9 @@
         "dry_days": 11,
         "season": "summer",
         "flow_m3s": 16.148,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 17.3,
+        "cso_active_monitors": "Old Palace Lane(8.7h); Portsmouth Road, Uxbridge Road(8.6h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.526,
-          "mole_flow_15min": 1.899
+          "wey_flow_15min": 4.573,
+          "mole_flow_15min": 1.869
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 60,
       "explanation": "Low flow (16 m3/s) at Ditton's Bend \u2014 insufficient dilution below 20 m3/s, test first",
       "why_detail": "",
-      "live_flow_m3s": 11.923,
+      "live_flow_m3s": 15.791,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -174,9 +174,9 @@
         "dry_days": 11,
         "season": "summer",
         "flow_m3s": 16.148,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 17.3,
+        "cso_active_monitors": "Old Palace Lane(8.7h); Portsmouth Road, Uxbridge Road(8.6h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.526,
-          "mole_flow_15min": 1.899
+          "wey_flow_15min": 4.573,
+          "mole_flow_15min": 1.869
         }
       },
       "data_quality": {
@@ -201,11 +201,11 @@
     },
     {
       "site": "Teddington",
-      "level": "AMBER",
-      "confidence": 60,
-      "explanation": "Low flow (16 m3/s) at Teddington \u2014 insufficient dilution below 20 m3/s, test first",
-      "why_detail": "",
-      "live_flow_m3s": 11.923,
+      "level": "RED",
+      "confidence": 93,
+      "explanation": "2 CSO monitors discharging \u2014 only 7% safe historically",
+      "why_detail": "Thames: Old Palace Lane 8.7h, Portsmouth Road, Uxbridge Road 8.6h",
+      "live_flow_m3s": 15.791,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -213,9 +213,9 @@
         "dry_days": 11,
         "season": "summer",
         "flow_m3s": 16.148,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 17.3,
+        "cso_active_monitors": "Old Palace Lane(8.7h); Portsmouth Road, Uxbridge Road(8.6h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.526,
-          "mole_flow_15min": 1.899
+          "wey_flow_15min": 4.573,
+          "mole_flow_15min": 1.869
         }
       },
       "data_quality": {
@@ -240,11 +240,11 @@
     },
     {
       "site": "Hogsmill confluence",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Hogsmill confluence has elevated baseline from continuous upstream effluent \u2014 test first",
-      "why_detail": "",
-      "live_flow_m3s": 11.923,
+      "level": "RED",
+      "confidence": 93,
+      "explanation": "2 CSO monitors discharging \u2014 only 7% safe historically",
+      "why_detail": "Thames: Old Palace Lane 8.7h, Portsmouth Road, Uxbridge Road 8.6h",
+      "live_flow_m3s": 15.791,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -252,9 +252,9 @@
         "dry_days": 11,
         "season": "summer",
         "flow_m3s": 16.148,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 17.3,
+        "cso_active_monitors": "Old Palace Lane(8.7h); Portsmouth Road, Uxbridge Road(8.6h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.526,
-          "mole_flow_15min": 1.899
+          "wey_flow_15min": 4.573,
+          "mole_flow_15min": 1.869
         }
       },
       "data_quality": {
@@ -279,11 +279,11 @@
     },
     {
       "site": "Minima Yacht Club",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Minima Yacht Club has elevated baseline from continuous upstream effluent \u2014 test first",
-      "why_detail": "",
-      "live_flow_m3s": 11.923,
+      "level": "RED",
+      "confidence": 93,
+      "explanation": "2 CSO monitors discharging \u2014 only 7% safe historically",
+      "why_detail": "Thames: Old Palace Lane 8.7h, Portsmouth Road, Uxbridge Road 8.6h",
+      "live_flow_m3s": 15.791,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -291,9 +291,9 @@
         "dry_days": 11,
         "season": "summer",
         "flow_m3s": 16.148,
-        "cso_active_48h": false,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "",
+        "cso_active_48h": true,
+        "cso_hours_48h": 17.3,
+        "cso_active_monitors": "Old Palace Lane(8.7h); Portsmouth Road, Uxbridge Road(8.6h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.526,
-          "mole_flow_15min": 1.899
+          "wey_flow_15min": 4.573,
+          "mole_flow_15min": 1.869
         }
       },
       "data_quality": {
@@ -349,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.526,
-        "flow_change_pct": -2,
+        "flow_m3s": 4.573,
+        "flow_change_pct": 1,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -383,8 +383,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.899,
-        "flow_change_pct": 1,
+        "flow_m3s": 1.869,
+        "flow_change_pct": 0,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -417,8 +417,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 7.844,
-        "flow_change_pct": 5,
+        "flow_m3s": 7.357,
+        "flow_change_pct": 6,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -427,7 +427,7 @@
   },
   "summary": {
     "GREEN": 3,
-    "AMBER": 5,
-    "RED": 0
+    "AMBER": 1,
+    "RED": 4
   }
 }
