@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-23T07:09:08Z",
+  "generated_at": "2026-06-23T10:15:03Z",
   "assessment_date": "2026-06-23",
   "model_version": "v3",
   "sites": [
@@ -9,8 +9,8 @@
       "level": "AMBER",
       "confidence": 45,
       "explanation": "CSO active upstream (ThamesUpstream) \u2014 33-46% safe, consider testing",
-      "why_detail": "ThamesUpstream: Windsor 6.6h",
-      "live_flow_m3s": 15.309,
+      "why_detail": "ThamesUpstream: Windsor 3.0h",
+      "live_flow_m3s": 19.36,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.06,
@@ -19,8 +19,8 @@
         "season": "summer",
         "flow_m3s": 16.148,
         "cso_active_48h": true,
-        "cso_hours_48h": 8.9,
-        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(6.6h); Old Palace Lane (live)",
+        "cso_hours_48h": 5.3,
+        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(3.0h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.571,
-          "mole_flow_15min": 1.817
+          "wey_flow_15min": 4.564,
+          "mole_flow_15min": 1.851
         }
       },
       "data_quality": {
@@ -48,8 +48,8 @@
       "level": "AMBER",
       "confidence": 45,
       "explanation": "CSO active upstream (ThamesUpstream) \u2014 33-46% safe, consider testing",
-      "why_detail": "ThamesUpstream: Windsor 6.6h",
-      "live_flow_m3s": 18.307,
+      "why_detail": "ThamesUpstream: Windsor 3.0h",
+      "live_flow_m3s": 18.524,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.06,
@@ -58,8 +58,8 @@
         "season": "summer",
         "flow_m3s": 16.148,
         "cso_active_48h": true,
-        "cso_hours_48h": 8.9,
-        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(6.6h); Old Palace Lane (live)",
+        "cso_hours_48h": 5.3,
+        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(3.0h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.571,
-          "mole_flow_15min": 1.817
+          "wey_flow_15min": 4.564,
+          "mole_flow_15min": 1.851
         }
       },
       "data_quality": {
@@ -87,8 +87,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h \u00b7 ThamesUpstream: Windsor 6.6h",
-      "live_flow_m3s": 15.197,
+      "why_detail": "Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h \u00b7 ThamesUpstream: Windsor 3.0h",
+      "live_flow_m3s": 17.484,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -97,8 +97,8 @@
         "season": "summer",
         "flow_m3s": 16.148,
         "cso_active_48h": true,
-        "cso_hours_48h": 8.9,
-        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(6.6h); Old Palace Lane (live)",
+        "cso_hours_48h": 5.3,
+        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(3.0h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.571,
-          "mole_flow_15min": 1.817
+          "wey_flow_15min": 4.564,
+          "mole_flow_15min": 1.851
         }
       },
       "data_quality": {
@@ -126,8 +126,8 @@
       "level": "AMBER",
       "confidence": 45,
       "explanation": "CSO active upstream (ThamesUpstream) \u2014 33-46% safe, consider testing",
-      "why_detail": "ThamesUpstream: Windsor 6.6h",
-      "live_flow_m3s": 15.197,
+      "why_detail": "ThamesUpstream: Windsor 3.0h",
+      "live_flow_m3s": 17.484,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -136,8 +136,8 @@
         "season": "summer",
         "flow_m3s": 16.148,
         "cso_active_48h": true,
-        "cso_hours_48h": 8.9,
-        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(6.6h); Old Palace Lane (live)",
+        "cso_hours_48h": 5.3,
+        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(3.0h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.571,
-          "mole_flow_15min": 1.817
+          "wey_flow_15min": 4.564,
+          "mole_flow_15min": 1.851
         }
       },
       "data_quality": {
@@ -165,8 +165,8 @@
       "level": "AMBER",
       "confidence": 45,
       "explanation": "CSO active upstream (ThamesUpstream) \u2014 33-46% safe, consider testing",
-      "why_detail": "ThamesUpstream: Windsor 6.6h",
-      "live_flow_m3s": 15.197,
+      "why_detail": "ThamesUpstream: Windsor 3.0h",
+      "live_flow_m3s": 17.484,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -175,8 +175,8 @@
         "season": "summer",
         "flow_m3s": 16.148,
         "cso_active_48h": true,
-        "cso_hours_48h": 8.9,
-        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(6.6h); Old Palace Lane (live)",
+        "cso_hours_48h": 5.3,
+        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(3.0h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.571,
-          "mole_flow_15min": 1.817
+          "wey_flow_15min": 4.564,
+          "mole_flow_15min": 1.851
         }
       },
       "data_quality": {
@@ -204,8 +204,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h \u00b7 ThamesUpstream: Windsor 6.6h",
-      "live_flow_m3s": 15.197,
+      "why_detail": "Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h \u00b7 ThamesUpstream: Windsor 3.0h",
+      "live_flow_m3s": 17.484,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -214,8 +214,8 @@
         "season": "summer",
         "flow_m3s": 16.148,
         "cso_active_48h": true,
-        "cso_hours_48h": 8.9,
-        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(6.6h); Old Palace Lane (live)",
+        "cso_hours_48h": 5.3,
+        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(3.0h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.571,
-          "mole_flow_15min": 1.817
+          "wey_flow_15min": 4.564,
+          "mole_flow_15min": 1.851
         }
       },
       "data_quality": {
@@ -243,8 +243,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h \u00b7 ThamesUpstream: Windsor 6.6h",
-      "live_flow_m3s": 15.197,
+      "why_detail": "Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h \u00b7 ThamesUpstream: Windsor 3.0h",
+      "live_flow_m3s": 17.484,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -253,8 +253,8 @@
         "season": "summer",
         "flow_m3s": 16.148,
         "cso_active_48h": true,
-        "cso_hours_48h": 8.9,
-        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(6.6h); Old Palace Lane (live)",
+        "cso_hours_48h": 5.3,
+        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(3.0h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.571,
-          "mole_flow_15min": 1.817
+          "wey_flow_15min": 4.564,
+          "mole_flow_15min": 1.851
         }
       },
       "data_quality": {
@@ -282,8 +282,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h \u00b7 ThamesUpstream: Windsor 6.6h",
-      "live_flow_m3s": 15.197,
+      "why_detail": "Thames: Old Palace Lane 1.4h, Portsmouth Road, Uxbridge Road 0.9h \u00b7 ThamesUpstream: Windsor 3.0h",
+      "live_flow_m3s": 17.484,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.06,
@@ -292,8 +292,8 @@
         "season": "summer",
         "flow_m3s": 16.148,
         "cso_active_48h": true,
-        "cso_hours_48h": 8.9,
-        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(6.6h); Old Palace Lane (live)",
+        "cso_hours_48h": 5.3,
+        "cso_active_monitors": "Old Palace Lane(1.4h); Portsmouth Road, Uxbridge Road(0.9h); Windsor(3.0h); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 16.148,
           "wey_flow": 4.564,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.571,
-          "mole_flow_15min": 1.817
+          "wey_flow_15min": 4.564,
+          "mole_flow_15min": 1.851
         }
       },
       "data_quality": {
@@ -325,7 +325,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 0.0,
+        "rain_5d_mm": 0.1,
         "rain_recent": [
           {
             "date": "2026-06-19",
@@ -345,11 +345,11 @@
           },
           {
             "date": "2026-06-23",
-            "mm": 0.0
+            "mm": 0.05
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.571,
+        "flow_m3s": 4.564,
         "flow_change_pct": 2,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -359,7 +359,7 @@
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 0.1,
+        "rain_5d_mm": 0.2,
         "rain_recent": [
           {
             "date": "2026-06-19",
@@ -379,11 +379,11 @@
           },
           {
             "date": "2026-06-23",
-            "mm": 0.0
+            "mm": 0.08
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.817,
+        "flow_m3s": 1.851,
         "flow_change_pct": -6,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -393,7 +393,7 @@
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 1.5,
+        "rain_5d_mm": 1.6,
         "rain_recent": [
           {
             "date": "2026-06-19",
@@ -413,12 +413,12 @@
           },
           {
             "date": "2026-06-23",
-            "mm": 0.01
+            "mm": 0.02
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 7.545,
-        "flow_change_pct": 17,
+        "flow_m3s": 8.601,
+        "flow_change_pct": 14,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
