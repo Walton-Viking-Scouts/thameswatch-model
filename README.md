@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-25** — updated 2026-06-25T12:43:18Z (model v3).
+Assessment for **2026-06-25** — updated 2026-06-25T15:51:24Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 18 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
-| 🔴 | **Chertsey** | RED | 13 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 16 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
-| 🔴 | **Kingston HMT** | RED | 16 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 16 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
-| 🔴 | **Teddington** | RED | 16 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 16 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 16 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
+| 🔴 | **Walton Wharf** | RED | 17 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
+| 🔴 | **Chertsey** | RED | 11 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 12 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
+| 🔴 | **Kingston HMT** | RED | 12 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 12 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
+| 🔴 | **Teddington** | RED | 12 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 12 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 12 m³/s | Heavy rain (21mm/48h) — only 5-20% safe<br>rain 21mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
