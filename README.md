@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-26** — updated 2026-06-26T12:39:05Z (model v3).
+Assessment for **2026-06-26** — updated 2026-06-26T15:44:00Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | — | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Chertsey** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston Albany Reach** | AMBER | 13 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston HMT** | AMBER | 13 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Ditton's Bend** | AMBER | 13 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Teddington** | AMBER | 13 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Hogsmill confluence** | AMBER | 13 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Minima Yacht Club** | AMBER | 13 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Walton Wharf** | AMBER | 18 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Chertsey** | AMBER | 12 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston Albany Reach** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston HMT** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Ditton's Bend** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Teddington** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Hogsmill confluence** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Minima Yacht Club** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
 
 **0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
