@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-26** — updated 2026-06-26T00:30:49Z (model v3).
+Assessment for **2026-06-26** — updated 2026-06-26T04:27:45Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 14 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
 | 🟠 | **Chertsey** | AMBER | 13 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston Albany Reach** | AMBER | 11 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston HMT** | AMBER | 11 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Ditton's Bend** | AMBER | 11 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Teddington** | AMBER | 11 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Hogsmill confluence** | AMBER | 11 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
-| 🟠 | **Minima Yacht Club** | AMBER | 11 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston Albany Reach** | AMBER | 10 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston HMT** | AMBER | 10 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Ditton's Bend** | AMBER | 10 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Teddington** | AMBER | 10 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Hogsmill confluence** | AMBER | 10 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
+| 🟠 | **Minima Yacht Club** | AMBER | 10 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 21mm/7d antecedent |
 
 **0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
