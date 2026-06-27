@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-27** — updated 2026-06-27T04:21:13Z (model v3).
+Assessment for **2026-06-27** — updated 2026-06-27T07:01:06Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 16 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Chertsey** | AMBER | 13 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Chertsey** | AMBER | 11 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
 | 🟠 | **Kingston Albany Reach** | AMBER | 11 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
 | 🟠 | **Kingston HMT** | AMBER | 11 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
 | 🟠 | **Ditton's Bend** | AMBER | 11 m³/s | Low flow (16 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first<br>rain 21mm/7d antecedent |
