@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-27** — updated 2026-06-27T15:25:59Z (model v3).
+Assessment for **2026-06-27** — updated 2026-06-27T18:22:05Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 13 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Chertsey** | AMBER | 10 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Chertsey** | AMBER | 11 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
 | 🟠 | **Kingston Albany Reach** | AMBER | 10 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
 | 🟠 | **Kingston HMT** | AMBER | 10 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
 | 🟠 | **Ditton's Bend** | AMBER | 10 m³/s | Low flow (16 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first<br>rain 21mm/7d antecedent |
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
