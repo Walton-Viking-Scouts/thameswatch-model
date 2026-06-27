@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-27** — updated 2026-06-27T00:28:01Z (model v3).
+Assessment for **2026-06-27** — updated 2026-06-27T04:21:13Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 15 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Chertsey** | AMBER | 12 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston Albany Reach** | AMBER | 9 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston HMT** | AMBER | 9 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Ditton's Bend** | AMBER | 9 m³/s | Low flow (16 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Teddington** | AMBER | 9 m³/s | Low flow (16 m3/s) at Teddington — insufficient dilution below 20 m3/s, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Hogsmill confluence** | AMBER | 9 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Minima Yacht Club** | AMBER | 9 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Walton Wharf** | AMBER | 16 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Chertsey** | AMBER | 13 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston Albany Reach** | AMBER | 11 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston HMT** | AMBER | 11 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Ditton's Bend** | AMBER | 11 m³/s | Low flow (16 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Teddington** | AMBER | 11 m³/s | Low flow (16 m3/s) at Teddington — insufficient dilution below 20 m3/s, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Hogsmill confluence** | AMBER | 11 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Minima Yacht Club** | AMBER | 11 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
 
 **0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
 
