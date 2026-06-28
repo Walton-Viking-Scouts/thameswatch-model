@@ -14,20 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-27** — updated 2026-06-27T21:22:19Z (model v3).
+Assessment for **2026-06-28** — updated 2026-06-28T00:26:45Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 13 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Chertsey** | AMBER | 10 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston Albany Reach** | AMBER | 8 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston HMT** | AMBER | 8 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Ditton's Bend** | AMBER | 8 m³/s | Low flow (15 m3/s) at Ditton's Bend — insufficient dilution below 20 m3/s, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Teddington** | AMBER | 8 m³/s | Low flow (15 m3/s) at Teddington — insufficient dilution below 20 m3/s, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Hogsmill confluence** | AMBER | 8 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Minima Yacht Club** | AMBER | 8 m³/s | Heavy rain in past week (21mm/7d) — delayed runoff possible, test first<br>rain 21mm/7d antecedent |
+| 🔴 | **Walton Wharf** | RED | 12 m³/s | Rained today (3mm/48h) — only 35% safe even without CSO<br>rain 3mm/48h |
+| 🔴 | **Chertsey** | RED | 9 m³/s | Rained today (3mm/48h) — only 35% safe even without CSO<br>rain 3mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 8 m³/s | Rained today (3mm/48h) — only 35% safe even without CSO<br>rain 3mm/48h |
+| 🔴 | **Kingston HMT** | RED | 8 m³/s | Rained today (3mm/48h) — only 35% safe even without CSO<br>rain 3mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 8 m³/s | Rained today (3mm/48h) — only 35% safe even without CSO<br>rain 3mm/48h |
+| 🔴 | **Teddington** | RED | 8 m³/s | Rained today (3mm/48h) — only 35% safe even without CSO<br>rain 3mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 8 m³/s | Rained today (3mm/48h) — only 35% safe even without CSO<br>rain 3mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 8 m³/s | Rained today (3mm/48h) — only 35% safe even without CSO<br>rain 3mm/48h |
 
-**0 🟢 GREEN · 8 🟠 AMBER · 0 🔴 RED**
+**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
