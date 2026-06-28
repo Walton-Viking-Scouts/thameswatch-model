@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-28T07:16:45Z",
+  "generated_at": "2026-06-28T09:59:59Z",
   "assessment_date": "2026-06-28",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 65,
       "explanation": "Rained today (3mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 12.163,
+      "live_flow_m3s": 13.92,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 3.02,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.841,
-          "mole_flow_15min": 1.677
+          "wey_flow_15min": 3.934,
+          "mole_flow_15min": 1.519
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 65,
       "explanation": "Rained today (3mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 8.365,
+      "live_flow_m3s": 7.428,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 3.02,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.841,
-          "mole_flow_15min": 1.677
+          "wey_flow_15min": 3.934,
+          "mole_flow_15min": 1.519
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 65,
       "explanation": "Rained today (3mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 6.877,
+      "live_flow_m3s": 6.93,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.841,
-          "mole_flow_15min": 1.677
+          "wey_flow_15min": 3.934,
+          "mole_flow_15min": 1.519
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 65,
       "explanation": "Rained today (3mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 6.877,
+      "live_flow_m3s": 6.93,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.841,
-          "mole_flow_15min": 1.677
+          "wey_flow_15min": 3.934,
+          "mole_flow_15min": 1.519
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 65,
       "explanation": "Rained today (3mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 6.877,
+      "live_flow_m3s": 6.93,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.841,
-          "mole_flow_15min": 1.677
+          "wey_flow_15min": 3.934,
+          "mole_flow_15min": 1.519
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 65,
       "explanation": "Rained today (3mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 6.877,
+      "live_flow_m3s": 6.93,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.841,
-          "mole_flow_15min": 1.677
+          "wey_flow_15min": 3.934,
+          "mole_flow_15min": 1.519
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 65,
       "explanation": "Rained today (3mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 6.877,
+      "live_flow_m3s": 6.93,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.841,
-          "mole_flow_15min": 1.677
+          "wey_flow_15min": 3.934,
+          "mole_flow_15min": 1.519
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 65,
       "explanation": "Rained today (3mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 6.877,
+      "live_flow_m3s": 6.93,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.841,
-          "mole_flow_15min": 1.677
+          "wey_flow_15min": 3.934,
+          "mole_flow_15min": 1.519
         }
       },
       "data_quality": {
@@ -349,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.841,
-        "flow_change_pct": -11,
+        "flow_m3s": 3.934,
+        "flow_change_pct": -10,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -383,11 +383,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.677,
-        "flow_change_pct": 4,
+        "flow_m3s": 1.519,
+        "flow_change_pct": -19,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "easing"
       },
       {
         "catchment": "Thames",
@@ -417,8 +417,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 6.448,
-        "flow_change_pct": -5,
+        "flow_m3s": 6.933,
+        "flow_change_pct": -9,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
