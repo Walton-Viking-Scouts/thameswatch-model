@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-29** — updated 2026-06-29T04:30:45Z (model v3).
+Assessment for **2026-06-29** — updated 2026-06-29T07:34:00Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 11 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
-| 🟠 | **Chertsey** | AMBER | 6 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 10 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
+| 🟠 | **Chertsey** | AMBER | 8 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
 | 🟠 | **Kingston Albany Reach** | AMBER | 8 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
 | 🟠 | **Kingston HMT** | AMBER | 8 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
 | 🔴 | **Ditton's Bend** | RED | 8 m³/s | Very low flow (13 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 3mm/48h |
