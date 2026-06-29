@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-29T13:22:22Z",
+  "generated_at": "2026-06-29T16:17:37Z",
   "assessment_date": "2026-06-29",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (3mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 9.931,
+      "live_flow_m3s": 11.398,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 3.02,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.844,
-          "mole_flow_15min": 1.902
+          "wey_flow_15min": 4.14,
+          "mole_flow_15min": 1.846
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (3mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 7.551,
+      "live_flow_m3s": 6.606,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 3.02,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.844,
-          "mole_flow_15min": 1.902
+          "wey_flow_15min": 4.14,
+          "mole_flow_15min": 1.846
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (3mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 9.219,
+      "live_flow_m3s": 11.215,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.844,
-          "mole_flow_15min": 1.902
+          "wey_flow_15min": 4.14,
+          "mole_flow_15min": 1.846
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (3mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 9.219,
+      "live_flow_m3s": 11.215,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.844,
-          "mole_flow_15min": 1.902
+          "wey_flow_15min": 4.14,
+          "mole_flow_15min": 1.846
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 85,
       "explanation": "Very low flow (13 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 9.219,
+      "live_flow_m3s": 11.215,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.844,
-          "mole_flow_15min": 1.902
+          "wey_flow_15min": 4.14,
+          "mole_flow_15min": 1.846
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 85,
       "explanation": "Very low flow (13 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 9.219,
+      "live_flow_m3s": 11.215,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.844,
-          "mole_flow_15min": 1.902
+          "wey_flow_15min": 4.14,
+          "mole_flow_15min": 1.846
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (3mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 9.219,
+      "live_flow_m3s": 11.215,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.844,
-          "mole_flow_15min": 1.902
+          "wey_flow_15min": 4.14,
+          "mole_flow_15min": 1.846
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (3mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 3mm/48h",
-      "live_flow_m3s": 9.219,
+      "live_flow_m3s": 11.215,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.02,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.844,
-          "mole_flow_15min": 1.902
+          "wey_flow_15min": 4.14,
+          "mole_flow_15min": 1.846
         }
       },
       "data_quality": {
@@ -349,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.844,
-        "flow_change_pct": -3,
+        "flow_m3s": 4.14,
+        "flow_change_pct": 2,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -383,8 +383,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.902,
-        "flow_change_pct": 13,
+        "flow_m3s": 1.846,
+        "flow_change_pct": 14,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
@@ -417,8 +417,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 4.593,
-        "flow_change_pct": -31,
+        "flow_m3s": 4.274,
+        "flow_change_pct": -30,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
