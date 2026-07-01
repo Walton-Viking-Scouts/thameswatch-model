@@ -14,20 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-06-30** — updated 2026-06-30T21:31:02Z (model v3).
+Assessment for **2026-07-01** — updated 2026-07-01T00:28:59Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 9 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 24mm/7d antecedent |
-| 🟠 | **Chertsey** | AMBER | 6 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 24mm/7d antecedent |
-| 🟠 | **Kingston Albany Reach** | AMBER | 8 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 24mm/7d antecedent |
-| 🟠 | **Kingston HMT** | AMBER | 8 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 24mm/7d antecedent |
-| 🔴 | **Ditton's Bend** | RED | 8 m³/s | Very low flow (11 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 24mm/7d antecedent |
-| 🔴 | **Teddington** | RED | 8 m³/s | Very low flow (11 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 24mm/7d antecedent |
-| 🟠 | **Hogsmill confluence** | AMBER | 8 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 24mm/7d antecedent |
-| 🟠 | **Minima Yacht Club** | AMBER | 8 m³/s | 2 dry day(s) — 76% safe but recent rain, consider testing<br>rain 24mm/7d antecedent |
+| 🟢 | **Walton Wharf** | GREEN | 9 m³/s | Dry conditions (3d), no CSO, summer — safe |
+| 🟢 | **Chertsey** | GREEN | 7 m³/s | Dry conditions (3d), no CSO, summer — safe |
+| 🟠 | **Kingston Albany Reach** | AMBER | 7 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
+| 🟢 | **Kingston HMT** | GREEN | 7 m³/s | Dry conditions (3d), no CSO, summer — safe |
+| 🔴 | **Ditton's Bend** | RED | 7 m³/s | Very low flow (11 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🔴 | **Teddington** | RED | 7 m³/s | Very low flow (11 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🟠 | **Hogsmill confluence** | AMBER | 7 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
+| 🟠 | **Minima Yacht Club** | AMBER | 7 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
 
-**0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
+**3 🟢 GREEN · 3 🟠 AMBER · 2 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
