@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-28T21:24:00Z",
-  "assessment_date": "2026-07-28",
+  "generated_at": "2026-07-29T00:20:21Z",
+  "assessment_date": "2026-07-29",
   "model_version": "v3",
   "sites": [
     {
@@ -10,7 +10,7 @@
       "confidence": 85,
       "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 8.264,
+      "live_flow_m3s": 7.869,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.0,
@@ -30,15 +30,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.05,
-          "mole_flow_15min": 1.171
+          "wey_flow_15min": 3.407,
+          "mole_flow_15min": 1.221
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-07-27",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -47,7 +49,7 @@
       "confidence": 85,
       "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 7.03,
+      "live_flow_m3s": 5.885,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.0,
@@ -67,15 +69,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.05,
-          "mole_flow_15min": 1.171
+          "wey_flow_15min": 3.407,
+          "mole_flow_15min": 1.221
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-07-27",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -84,7 +88,7 @@
       "confidence": 55,
       "explanation": "Kingston Albany Reach has elevated baseline from continuous upstream effluent \u2014 test first",
       "why_detail": "",
-      "live_flow_m3s": 5.418,
+      "live_flow_m3s": 5.502,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -104,15 +108,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.05,
-          "mole_flow_15min": 1.171
+          "wey_flow_15min": 3.407,
+          "mole_flow_15min": 1.221
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-07-27",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -121,7 +127,7 @@
       "confidence": 85,
       "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 5.418,
+      "live_flow_m3s": 5.502,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -141,15 +147,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.05,
-          "mole_flow_15min": 1.171
+          "wey_flow_15min": 3.407,
+          "mole_flow_15min": 1.221
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-07-27",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -158,7 +166,7 @@
       "confidence": 85,
       "explanation": "Very low flow (9 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "",
-      "live_flow_m3s": 5.418,
+      "live_flow_m3s": 5.502,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -178,15 +186,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.05,
-          "mole_flow_15min": 1.171
+          "wey_flow_15min": 3.407,
+          "mole_flow_15min": 1.221
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-07-27",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -195,7 +205,7 @@
       "confidence": 85,
       "explanation": "Very low flow (9 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "",
-      "live_flow_m3s": 5.418,
+      "live_flow_m3s": 5.502,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -215,15 +225,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.05,
-          "mole_flow_15min": 1.171
+          "wey_flow_15min": 3.407,
+          "mole_flow_15min": 1.221
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-07-27",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -232,7 +244,7 @@
       "confidence": 55,
       "explanation": "Hogsmill confluence has elevated baseline from continuous upstream effluent \u2014 test first",
       "why_detail": "",
-      "live_flow_m3s": 5.418,
+      "live_flow_m3s": 5.502,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -252,15 +264,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.05,
-          "mole_flow_15min": 1.171
+          "wey_flow_15min": 3.407,
+          "mole_flow_15min": 1.221
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-07-27",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -269,7 +283,7 @@
       "confidence": 55,
       "explanation": "Minima Yacht Club has elevated baseline from continuous upstream effluent \u2014 test first",
       "why_detail": "",
-      "live_flow_m3s": 5.418,
+      "live_flow_m3s": 5.502,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -289,20 +303,22 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.05,
-          "mole_flow_15min": 1.171
+          "wey_flow_15min": 3.407,
+          "mole_flow_15min": 1.221
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-07-27",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     }
   ],
   "upstream_watch": {
-    "date": "2026-07-28",
+    "date": "2026-07-29",
     "headwater_lag": "1-3 days",
     "catchments": [
       {
@@ -311,10 +327,6 @@
         "rain_gauge": "Cranleigh rain (Wey catchment)",
         "rain_5d_mm": 0.2,
         "rain_recent": [
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-25",
             "mm": 0.0
@@ -333,11 +345,11 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.05,
-        "flow_change_pct": -10,
+        "flow_m3s": 3.451,
+        "flow_change_pct": 0,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "easing"
+        "status": "flat"
       },
       {
         "catchment": "Mole",
@@ -345,10 +357,6 @@
         "rain_gauge": "Burstow rain (Mole catchment)",
         "rain_5d_mm": 0.0,
         "rain_recent": [
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-25",
             "mm": 0.0
@@ -367,8 +375,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.171,
-        "flow_change_pct": -7,
+        "flow_m3s": 1.223,
+        "flow_change_pct": -3,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -379,10 +387,6 @@
         "rain_gauge": "Reading University rain (Thames upstream)",
         "rain_5d_mm": 0.0,
         "rain_recent": [
-          {
-            "date": "2026-07-24",
-            "mm": 0.0
-          },
           {
             "date": "2026-07-25",
             "mm": 0.0
@@ -401,8 +405,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 3.861,
-        "flow_change_pct": 21,
+        "flow_m3s": 3.9,
+        "flow_change_pct": 23,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
