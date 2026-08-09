@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-09T00:10:51Z",
+  "generated_at": "2026-08-09T03:33:56Z",
   "assessment_date": "2026-08-09",
   "model_version": "v3",
   "sites": [
@@ -29,9 +29,7 @@
           "mole_pct": 15.741313218746136,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 2.945,
-          "mole_flow_15min": 1.252
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -39,6 +37,8 @@
         "flow_data_date": "2026-08-07",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -68,9 +68,7 @@
           "mole_pct": 15.741313218746136,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 2.945,
-          "mole_flow_15min": 1.252
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -78,6 +76,8 @@
         "flow_data_date": "2026-08-07",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -107,9 +107,7 @@
           "mole_pct": 15.741313218746136,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 2.945,
-          "mole_flow_15min": 1.252
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -117,6 +115,8 @@
         "flow_data_date": "2026-08-07",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -146,9 +146,7 @@
           "mole_pct": 15.741313218746136,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 2.945,
-          "mole_flow_15min": 1.252
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -156,6 +154,8 @@
         "flow_data_date": "2026-08-07",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -185,9 +185,7 @@
           "mole_pct": 15.741313218746136,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 2.945,
-          "mole_flow_15min": 1.252
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -195,6 +193,8 @@
         "flow_data_date": "2026-08-07",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -224,9 +224,7 @@
           "mole_pct": 15.741313218746136,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 2.945,
-          "mole_flow_15min": 1.252
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -234,6 +232,8 @@
         "flow_data_date": "2026-08-07",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -263,9 +263,7 @@
           "mole_pct": 15.741313218746136,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 2.945,
-          "mole_flow_15min": 1.252
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -273,6 +271,8 @@
         "flow_data_date": "2026-08-07",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -302,9 +302,7 @@
           "mole_pct": 15.741313218746136,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 2.945,
-          "mole_flow_15min": 1.252
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -312,6 +310,8 @@
         "flow_data_date": "2026-08-07",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -341,6 +341,10 @@
           },
           {
             "date": "2026-08-08",
+            "mm": 0.0
+          },
+          {
+            "date": "2026-08-09",
             "mm": 0.0
           }
         ],
@@ -372,6 +376,10 @@
           {
             "date": "2026-08-08",
             "mm": 0.0
+          },
+          {
+            "date": "2026-08-09",
+            "mm": 0.0
           }
         ],
         "flow_station": "Mole at Esher",
@@ -401,6 +409,10 @@
           },
           {
             "date": "2026-08-08",
+            "mm": 0.0
+          },
+          {
+            "date": "2026-08-09",
             "mm": 0.0
           }
         ],
