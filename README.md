@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-08-09** — updated 2026-08-09T18:07:17Z (model v3).
+Assessment for **2026-08-10** — updated 2026-08-10T06:32:40Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | 8 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🟢 | **Chertsey** | GREEN | 6 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | 9 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | 9 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🔴 | **Ditton's Bend** | RED | 9 m³/s | Very low flow (8 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 9 m³/s | Very low flow (8 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🟠 | **Hogsmill confluence** | AMBER | 9 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
-| 🟠 | **Minima Yacht Club** | AMBER | 9 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
+| 🟠 | **Walton Wharf** | AMBER | — | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge 0.5h |
+| 🟢 | **Chertsey** | GREEN | 5 m³/s | Dry conditions (14d), no CSO, summer — safe |
+| 🟠 | **Kingston Albany Reach** | AMBER | 5 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge 0.5h |
+| 🟠 | **Kingston HMT** | AMBER | 5 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge 0.5h |
+| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Very low flow (8 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>Wey: Weybridge 0.5h |
+| 🔴 | **Teddington** | RED | 5 m³/s | Very low flow (8 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>Wey: Weybridge 0.5h |
+| 🟠 | **Hogsmill confluence** | AMBER | 5 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge 0.5h |
+| 🟠 | **Minima Yacht Club** | AMBER | 5 m³/s | CSO active upstream (Wey) — 33-46% safe, consider testing<br>Wey: Weybridge 0.5h |
 
-**3 🟢 GREEN · 3 🟠 AMBER · 2 🔴 RED**
+**1 🟢 GREEN · 5 🟠 AMBER · 2 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey rising · Mole flat · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
