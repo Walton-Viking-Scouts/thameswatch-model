@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-12T00:19:06Z",
+  "generated_at": "2026-08-12T15:19:41Z",
   "assessment_date": "2026-08-12",
   "model_version": "v3",
   "sites": [
     {
       "site": "Walton Wharf",
-      "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Wey) \u2014 33-46% safe, consider testing",
-      "why_detail": "Wey: Weybridge (live)",
-      "live_flow_m3s": 8.633,
+      "level": "GREEN",
+      "confidence": 85,
+      "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
+      "why_detail": "",
+      "live_flow_m3s": 9.338,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.0,
@@ -18,9 +18,9 @@
         "dry_days": 14,
         "season": "summer",
         "flow_m3s": 7.574,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 7.574,
           "wey_flow": 3.146,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.502,
-          "mole_flow_15min": 1.143
+          "wey_flow_15min": 3.595,
+          "mole_flow_15min": 1.164
         }
       },
       "data_quality": {
@@ -39,7 +39,6 @@
         "flow_data_date": "2026-08-10",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of reading_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -50,7 +49,7 @@
       "confidence": 85,
       "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
       "why_detail": "",
-      "live_flow_m3s": 6.393,
+      "live_flow_m3s": 8.564,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.0,
@@ -58,9 +57,9 @@
         "dry_days": 14,
         "season": "summer",
         "flow_m3s": 7.574,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 7.574,
           "wey_flow": 3.146,
@@ -70,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.502,
-          "mole_flow_15min": 1.143
+          "wey_flow_15min": 3.595,
+          "mole_flow_15min": 1.164
         }
       },
       "data_quality": {
@@ -79,7 +78,6 @@
         "flow_data_date": "2026-08-10",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of reading_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -87,10 +85,10 @@
     {
       "site": "Kingston Albany Reach",
       "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Wey) \u2014 33-46% safe, consider testing",
-      "why_detail": "Wey: Weybridge (live)",
-      "live_flow_m3s": 5.461,
+      "confidence": 55,
+      "explanation": "Kingston Albany Reach has elevated baseline from continuous upstream effluent \u2014 test first",
+      "why_detail": "",
+      "live_flow_m3s": 7.955,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -98,9 +96,9 @@
         "dry_days": 14,
         "season": "summer",
         "flow_m3s": 7.574,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 7.574,
           "wey_flow": 3.146,
@@ -110,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.502,
-          "mole_flow_15min": 1.143
+          "wey_flow_15min": 3.595,
+          "mole_flow_15min": 1.164
         }
       },
       "data_quality": {
@@ -119,18 +117,17 @@
         "flow_data_date": "2026-08-10",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of reading_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
     },
     {
       "site": "Kingston HMT",
-      "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Wey) \u2014 33-46% safe, consider testing",
-      "why_detail": "Wey: Weybridge (live)",
-      "live_flow_m3s": 5.461,
+      "level": "GREEN",
+      "confidence": 85,
+      "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
+      "why_detail": "",
+      "live_flow_m3s": 7.955,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -138,9 +135,9 @@
         "dry_days": 14,
         "season": "summer",
         "flow_m3s": 7.574,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 7.574,
           "wey_flow": 3.146,
@@ -150,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.502,
-          "mole_flow_15min": 1.143
+          "wey_flow_15min": 3.595,
+          "mole_flow_15min": 1.164
         }
       },
       "data_quality": {
@@ -159,7 +156,6 @@
         "flow_data_date": "2026-08-10",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of reading_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -169,8 +165,8 @@
       "level": "RED",
       "confidence": 85,
       "explanation": "Very low flow (8 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "Wey: Weybridge (live)",
-      "live_flow_m3s": 5.461,
+      "why_detail": "",
+      "live_flow_m3s": 7.955,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -178,9 +174,9 @@
         "dry_days": 14,
         "season": "summer",
         "flow_m3s": 7.574,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 7.574,
           "wey_flow": 3.146,
@@ -190,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.502,
-          "mole_flow_15min": 1.143
+          "wey_flow_15min": 3.595,
+          "mole_flow_15min": 1.164
         }
       },
       "data_quality": {
@@ -199,7 +195,6 @@
         "flow_data_date": "2026-08-10",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of reading_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -209,8 +204,8 @@
       "level": "RED",
       "confidence": 85,
       "explanation": "Very low flow (8 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "Wey: Weybridge (live)",
-      "live_flow_m3s": 5.461,
+      "why_detail": "",
+      "live_flow_m3s": 7.955,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -218,9 +213,9 @@
         "dry_days": 14,
         "season": "summer",
         "flow_m3s": 7.574,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 7.574,
           "wey_flow": 3.146,
@@ -230,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.502,
-          "mole_flow_15min": 1.143
+          "wey_flow_15min": 3.595,
+          "mole_flow_15min": 1.164
         }
       },
       "data_quality": {
@@ -239,7 +234,6 @@
         "flow_data_date": "2026-08-10",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of reading_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -247,10 +241,10 @@
     {
       "site": "Hogsmill confluence",
       "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Wey) \u2014 33-46% safe, consider testing",
-      "why_detail": "Wey: Weybridge (live)",
-      "live_flow_m3s": 5.461,
+      "confidence": 55,
+      "explanation": "Hogsmill confluence has elevated baseline from continuous upstream effluent \u2014 test first",
+      "why_detail": "",
+      "live_flow_m3s": 7.955,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -258,9 +252,9 @@
         "dry_days": 14,
         "season": "summer",
         "flow_m3s": 7.574,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 7.574,
           "wey_flow": 3.146,
@@ -270,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.502,
-          "mole_flow_15min": 1.143
+          "wey_flow_15min": 3.595,
+          "mole_flow_15min": 1.164
         }
       },
       "data_quality": {
@@ -279,7 +273,6 @@
         "flow_data_date": "2026-08-10",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of reading_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -287,10 +280,10 @@
     {
       "site": "Minima Yacht Club",
       "level": "AMBER",
-      "confidence": 45,
-      "explanation": "CSO active upstream (Wey) \u2014 33-46% safe, consider testing",
-      "why_detail": "Wey: Weybridge (live)",
-      "live_flow_m3s": 5.461,
+      "confidence": 55,
+      "explanation": "Minima Yacht Club has elevated baseline from continuous upstream effluent \u2014 test first",
+      "why_detail": "",
+      "live_flow_m3s": 7.955,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
@@ -298,9 +291,9 @@
         "dry_days": 14,
         "season": "summer",
         "flow_m3s": 7.574,
-        "cso_active_48h": true,
+        "cso_active_48h": false,
         "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Weybridge(live)",
+        "cso_active_monitors": "",
         "upstream_ctx": {
           "walton_flow": 7.574,
           "wey_flow": 3.146,
@@ -310,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.502,
-          "mole_flow_15min": 1.143
+          "wey_flow_15min": 3.595,
+          "mole_flow_15min": 1.164
         }
       },
       "data_quality": {
@@ -319,7 +312,6 @@
         "flow_data_date": "2026-08-10",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of reading_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -350,14 +342,18 @@
           {
             "date": "2026-08-11",
             "mm": 0.0
+          },
+          {
+            "date": "2026-08-12",
+            "mm": 0.0
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.502,
-        "flow_change_pct": 10,
+        "flow_m3s": 3.595,
+        "flow_change_pct": -6,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "flat"
       },
       {
         "catchment": "Mole",
@@ -380,11 +376,15 @@
           {
             "date": "2026-08-11",
             "mm": 0.0
+          },
+          {
+            "date": "2026-08-12",
+            "mm": 0.0
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.143,
-        "flow_change_pct": 1,
+        "flow_m3s": 1.164,
+        "flow_change_pct": 5,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -410,11 +410,15 @@
           {
             "date": "2026-08-11",
             "mm": 0.0
+          },
+          {
+            "date": "2026-08-12",
+            "mm": 0.0
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 2.993,
-        "flow_change_pct": -7,
+        "flow_m3s": 3.465,
+        "flow_change_pct": -3,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -422,8 +426,8 @@
     ]
   },
   "summary": {
-    "GREEN": 1,
-    "AMBER": 5,
+    "GREEN": 3,
+    "AMBER": 3,
     "RED": 2
   }
 }
