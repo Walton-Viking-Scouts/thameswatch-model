@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-08-15** — updated 2026-08-15T15:04:16Z (model v3).
+Assessment for **2026-08-15** — updated 2026-08-15T18:04:29Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟢 | **Walton Wharf** | GREEN | 8 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🟢 | **Chertsey** | GREEN | 8 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | 4 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | 4 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Very low flow (9 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 4 m³/s | Very low flow (9 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🟠 | **Hogsmill confluence** | AMBER | 4 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
-| 🟠 | **Minima Yacht Club** | AMBER | 4 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
+| 🟢 | **Chertsey** | GREEN | 6 m³/s | Dry conditions (14d), no CSO, summer — safe |
+| 🟠 | **Kingston Albany Reach** | AMBER | 38 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
+| 🟢 | **Kingston HMT** | GREEN | 38 m³/s | Dry conditions (14d), no CSO, summer — safe |
+| 🔴 | **Ditton's Bend** | RED | 38 m³/s | Very low flow (9 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🔴 | **Teddington** | RED | 38 m³/s | Very low flow (9 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🟠 | **Hogsmill confluence** | AMBER | 38 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
+| 🟠 | **Minima Yacht Club** | AMBER | 38 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
 
 **3 🟢 GREEN · 3 🟠 AMBER · 2 🔴 RED**
 
