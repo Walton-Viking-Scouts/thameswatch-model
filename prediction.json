@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-17T15:06:08Z",
+  "generated_at": "2026-08-17T18:07:32Z",
   "assessment_date": "2026-08-17",
   "model_version": "v3",
   "sites": [
@@ -417,11 +417,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 2.874,
-        "flow_change_pct": 1,
+        "flow_m3s": 2.722,
+        "flow_change_pct": -15,
         "flow_window": "24h",
-        "flow_source": "15min",
-        "status": "flat"
+        "flow_source": "daily",
+        "status": "easing"
       }
     ]
   },
