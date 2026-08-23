@@ -14,7 +14,7 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-08-23** — updated 2026-08-23T03:20:33Z (model v3).
+Assessment for **2026-08-23** — updated 2026-08-23T06:06:19Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
