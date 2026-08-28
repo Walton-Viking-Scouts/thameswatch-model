@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-08-27** — updated 2026-08-27T18:32:22Z (model v3).
+Assessment for **2026-08-28** — updated 2026-08-28T00:04:45Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟢 | **Walton Wharf** | GREEN | 8 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🟢 | **Chertsey** | GREEN | 7 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🟠 | **Kingston Albany Reach** | AMBER | 7 m³/s | Kingston Albany Reach has elevated baseline from continuous upstream effluent — test first |
-| 🟢 | **Kingston HMT** | GREEN | 7 m³/s | Dry conditions (14d), no CSO, summer — safe |
-| 🔴 | **Ditton's Bend** | RED | 7 m³/s | Very low flow (7 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 7 m³/s | Very low flow (7 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🟠 | **Hogsmill confluence** | AMBER | 7 m³/s | Hogsmill confluence has elevated baseline from continuous upstream effluent — test first |
-| 🟠 | **Minima Yacht Club** | AMBER | 7 m³/s | Minima Yacht Club has elevated baseline from continuous upstream effluent — test first |
+| 🔴 | **Walton Wharf** | RED | 7 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Chertsey** | RED | 7 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 4 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Kingston HMT** | RED | 4 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Teddington** | RED | 4 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 4 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 4 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
 
-**3 🟢 GREEN · 3 🟠 AMBER · 2 🔴 RED**
+**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->

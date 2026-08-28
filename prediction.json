@@ -1,42 +1,42 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T18:32:22Z",
-  "assessment_date": "2026-08-27",
+  "generated_at": "2026-08-28T00:04:45Z",
+  "assessment_date": "2026-08-28",
   "model_version": "v3",
   "sites": [
     {
       "site": "Walton Wharf",
-      "level": "GREEN",
-      "confidence": 85,
-      "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
-      "why_detail": "",
-      "live_flow_m3s": 7.7,
+      "level": "RED",
+      "confidence": 65,
+      "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 6mm/48h",
+      "live_flow_m3s": 6.577,
       "flow_gauge": "walton",
       "inputs": {
-        "rain_48h": 0.04,
-        "rain_7d": 0.13,
-        "dry_days": 14,
+        "rain_48h": 6.28,
+        "rain_7d": 6.28,
+        "dry_days": 0,
         "season": "summer",
-        "flow_m3s": 7.372,
+        "flow_m3s": 7.374,
         "cso_active_48h": false,
         "cso_hours_48h": 0.0,
         "cso_active_monitors": "",
         "upstream_ctx": {
-          "walton_flow": 7.372,
-          "wey_flow": 3.303,
-          "mole_flow": 1.243,
-          "wey_pct": 44.8046663049376,
-          "mole_pct": 16.86109603906674,
+          "walton_flow": 7.374,
+          "wey_flow": 3.291,
+          "mole_flow": 1.304,
+          "wey_pct": 44.629780309194466,
+          "mole_pct": 17.683753729319232,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.368,
-          "mole_flow_15min": 1.152
+          "wey_flow_15min": 3.256,
+          "mole_flow_15min": 1.192
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-25",
+        "flow_data_date": "2026-08-26",
         "data_lag_days": 2,
         "warnings": [
           "flow data 2 day(s) behind assessment date"
@@ -45,37 +45,37 @@
     },
     {
       "site": "Chertsey",
-      "level": "GREEN",
-      "confidence": 85,
-      "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
-      "why_detail": "",
-      "live_flow_m3s": 6.833,
+      "level": "RED",
+      "confidence": 65,
+      "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 6mm/48h",
+      "live_flow_m3s": 7.486,
       "flow_gauge": "staines",
       "inputs": {
-        "rain_48h": 0.04,
-        "rain_7d": 0.13,
-        "dry_days": 14,
+        "rain_48h": 6.28,
+        "rain_7d": 6.28,
+        "dry_days": 0,
         "season": "summer",
-        "flow_m3s": 7.372,
+        "flow_m3s": 7.374,
         "cso_active_48h": false,
         "cso_hours_48h": 0.0,
         "cso_active_monitors": "",
         "upstream_ctx": {
-          "walton_flow": 7.372,
-          "wey_flow": 3.303,
-          "mole_flow": 1.243,
-          "wey_pct": 44.8046663049376,
-          "mole_pct": 16.86109603906674,
+          "walton_flow": 7.374,
+          "wey_flow": 3.291,
+          "mole_flow": 1.304,
+          "wey_pct": 44.629780309194466,
+          "mole_pct": 17.683753729319232,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.368,
-          "mole_flow_15min": 1.152
+          "wey_flow_15min": 3.256,
+          "mole_flow_15min": 1.192
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-25",
+        "flow_data_date": "2026-08-26",
         "data_lag_days": 2,
         "warnings": [
           "flow data 2 day(s) behind assessment date"
@@ -84,37 +84,37 @@
     },
     {
       "site": "Kingston Albany Reach",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Kingston Albany Reach has elevated baseline from continuous upstream effluent \u2014 test first",
-      "why_detail": "",
-      "live_flow_m3s": 7.094,
+      "level": "RED",
+      "confidence": 65,
+      "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 6mm/48h",
+      "live_flow_m3s": 3.996,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.04,
-        "rain_7d": 0.13,
-        "dry_days": 14,
+        "rain_48h": 6.28,
+        "rain_7d": 6.28,
+        "dry_days": 0,
         "season": "summer",
-        "flow_m3s": 7.372,
+        "flow_m3s": 7.374,
         "cso_active_48h": false,
         "cso_hours_48h": 0.0,
         "cso_active_monitors": "",
         "upstream_ctx": {
-          "walton_flow": 7.372,
-          "wey_flow": 3.303,
-          "mole_flow": 1.243,
-          "wey_pct": 44.8046663049376,
-          "mole_pct": 16.86109603906674,
+          "walton_flow": 7.374,
+          "wey_flow": 3.291,
+          "mole_flow": 1.304,
+          "wey_pct": 44.629780309194466,
+          "mole_pct": 17.683753729319232,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.368,
-          "mole_flow_15min": 1.152
+          "wey_flow_15min": 3.256,
+          "mole_flow_15min": 1.192
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-25",
+        "flow_data_date": "2026-08-26",
         "data_lag_days": 2,
         "warnings": [
           "flow data 2 day(s) behind assessment date"
@@ -123,37 +123,37 @@
     },
     {
       "site": "Kingston HMT",
-      "level": "GREEN",
-      "confidence": 85,
-      "explanation": "Dry conditions (14d), no CSO, summer \u2014 safe",
-      "why_detail": "",
-      "live_flow_m3s": 7.094,
+      "level": "RED",
+      "confidence": 65,
+      "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 6mm/48h",
+      "live_flow_m3s": 3.996,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.04,
-        "rain_7d": 0.13,
-        "dry_days": 14,
+        "rain_48h": 6.28,
+        "rain_7d": 6.28,
+        "dry_days": 0,
         "season": "summer",
-        "flow_m3s": 7.372,
+        "flow_m3s": 7.374,
         "cso_active_48h": false,
         "cso_hours_48h": 0.0,
         "cso_active_monitors": "",
         "upstream_ctx": {
-          "walton_flow": 7.372,
-          "wey_flow": 3.303,
-          "mole_flow": 1.243,
-          "wey_pct": 44.8046663049376,
-          "mole_pct": 16.86109603906674,
+          "walton_flow": 7.374,
+          "wey_flow": 3.291,
+          "mole_flow": 1.304,
+          "wey_pct": 44.629780309194466,
+          "mole_pct": 17.683753729319232,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.368,
-          "mole_flow_15min": 1.152
+          "wey_flow_15min": 3.256,
+          "mole_flow_15min": 1.192
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-25",
+        "flow_data_date": "2026-08-26",
         "data_lag_days": 2,
         "warnings": [
           "flow data 2 day(s) behind assessment date"
@@ -163,36 +163,36 @@
     {
       "site": "Ditton's Bend",
       "level": "RED",
-      "confidence": 85,
-      "explanation": "Very low flow (7 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "",
-      "live_flow_m3s": 7.094,
+      "confidence": 65,
+      "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 6mm/48h",
+      "live_flow_m3s": 3.996,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.04,
-        "rain_7d": 0.13,
-        "dry_days": 14,
+        "rain_48h": 6.28,
+        "rain_7d": 6.28,
+        "dry_days": 0,
         "season": "summer",
-        "flow_m3s": 7.372,
+        "flow_m3s": 7.374,
         "cso_active_48h": false,
         "cso_hours_48h": 0.0,
         "cso_active_monitors": "",
         "upstream_ctx": {
-          "walton_flow": 7.372,
-          "wey_flow": 3.303,
-          "mole_flow": 1.243,
-          "wey_pct": 44.8046663049376,
-          "mole_pct": 16.86109603906674,
+          "walton_flow": 7.374,
+          "wey_flow": 3.291,
+          "mole_flow": 1.304,
+          "wey_pct": 44.629780309194466,
+          "mole_pct": 17.683753729319232,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.368,
-          "mole_flow_15min": 1.152
+          "wey_flow_15min": 3.256,
+          "mole_flow_15min": 1.192
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-25",
+        "flow_data_date": "2026-08-26",
         "data_lag_days": 2,
         "warnings": [
           "flow data 2 day(s) behind assessment date"
@@ -202,36 +202,36 @@
     {
       "site": "Teddington",
       "level": "RED",
-      "confidence": 85,
-      "explanation": "Very low flow (7 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "",
-      "live_flow_m3s": 7.094,
+      "confidence": 65,
+      "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 6mm/48h",
+      "live_flow_m3s": 3.996,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.04,
-        "rain_7d": 0.13,
-        "dry_days": 14,
+        "rain_48h": 6.28,
+        "rain_7d": 6.28,
+        "dry_days": 0,
         "season": "summer",
-        "flow_m3s": 7.372,
+        "flow_m3s": 7.374,
         "cso_active_48h": false,
         "cso_hours_48h": 0.0,
         "cso_active_monitors": "",
         "upstream_ctx": {
-          "walton_flow": 7.372,
-          "wey_flow": 3.303,
-          "mole_flow": 1.243,
-          "wey_pct": 44.8046663049376,
-          "mole_pct": 16.86109603906674,
+          "walton_flow": 7.374,
+          "wey_flow": 3.291,
+          "mole_flow": 1.304,
+          "wey_pct": 44.629780309194466,
+          "mole_pct": 17.683753729319232,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.368,
-          "mole_flow_15min": 1.152
+          "wey_flow_15min": 3.256,
+          "mole_flow_15min": 1.192
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-25",
+        "flow_data_date": "2026-08-26",
         "data_lag_days": 2,
         "warnings": [
           "flow data 2 day(s) behind assessment date"
@@ -240,37 +240,37 @@
     },
     {
       "site": "Hogsmill confluence",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Hogsmill confluence has elevated baseline from continuous upstream effluent \u2014 test first",
-      "why_detail": "",
-      "live_flow_m3s": 7.094,
+      "level": "RED",
+      "confidence": 65,
+      "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 6mm/48h",
+      "live_flow_m3s": 3.996,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.04,
-        "rain_7d": 0.13,
-        "dry_days": 14,
+        "rain_48h": 6.28,
+        "rain_7d": 6.28,
+        "dry_days": 0,
         "season": "summer",
-        "flow_m3s": 7.372,
+        "flow_m3s": 7.374,
         "cso_active_48h": false,
         "cso_hours_48h": 0.0,
         "cso_active_monitors": "",
         "upstream_ctx": {
-          "walton_flow": 7.372,
-          "wey_flow": 3.303,
-          "mole_flow": 1.243,
-          "wey_pct": 44.8046663049376,
-          "mole_pct": 16.86109603906674,
+          "walton_flow": 7.374,
+          "wey_flow": 3.291,
+          "mole_flow": 1.304,
+          "wey_pct": 44.629780309194466,
+          "mole_pct": 17.683753729319232,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.368,
-          "mole_flow_15min": 1.152
+          "wey_flow_15min": 3.256,
+          "mole_flow_15min": 1.192
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-25",
+        "flow_data_date": "2026-08-26",
         "data_lag_days": 2,
         "warnings": [
           "flow data 2 day(s) behind assessment date"
@@ -279,37 +279,37 @@
     },
     {
       "site": "Minima Yacht Club",
-      "level": "AMBER",
-      "confidence": 55,
-      "explanation": "Minima Yacht Club has elevated baseline from continuous upstream effluent \u2014 test first",
-      "why_detail": "",
-      "live_flow_m3s": 7.094,
+      "level": "RED",
+      "confidence": 65,
+      "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
+      "why_detail": "rain 6mm/48h",
+      "live_flow_m3s": 3.996,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.04,
-        "rain_7d": 0.13,
-        "dry_days": 14,
+        "rain_48h": 6.28,
+        "rain_7d": 6.28,
+        "dry_days": 0,
         "season": "summer",
-        "flow_m3s": 7.372,
+        "flow_m3s": 7.374,
         "cso_active_48h": false,
         "cso_hours_48h": 0.0,
         "cso_active_monitors": "",
         "upstream_ctx": {
-          "walton_flow": 7.372,
-          "wey_flow": 3.303,
-          "mole_flow": 1.243,
-          "wey_pct": 44.8046663049376,
-          "mole_pct": 16.86109603906674,
+          "walton_flow": 7.374,
+          "wey_flow": 3.291,
+          "mole_flow": 1.304,
+          "wey_pct": 44.629780309194466,
+          "mole_pct": 17.683753729319232,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.368,
-          "mole_flow_15min": 1.152
+          "wey_flow_15min": 3.256,
+          "mole_flow_15min": 1.192
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-25",
+        "flow_data_date": "2026-08-26",
         "data_lag_days": 2,
         "warnings": [
           "flow data 2 day(s) behind assessment date"
@@ -318,7 +318,7 @@
     }
   ],
   "upstream_watch": {
-    "date": "2026-08-27",
+    "date": "2026-08-28",
     "headwater_lag": "1-3 days",
     "catchments": [
       {
@@ -327,10 +327,6 @@
         "rain_gauge": "Cranleigh rain (Wey catchment)",
         "rain_5d_mm": 0.8,
         "rain_recent": [
-          {
-            "date": "2026-08-23",
-            "mm": 0.0
-          },
           {
             "date": "2026-08-24",
             "mm": 0.02
@@ -349,8 +345,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.368,
-        "flow_change_pct": 1,
+        "flow_m3s": 3.256,
+        "flow_change_pct": -2,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -361,10 +357,6 @@
         "rain_gauge": "Burstow rain (Mole catchment)",
         "rain_5d_mm": 4.3,
         "rain_recent": [
-          {
-            "date": "2026-08-23",
-            "mm": 0.0
-          },
           {
             "date": "2026-08-24",
             "mm": 0.0
@@ -383,11 +375,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.152,
-        "flow_change_pct": -12,
+        "flow_m3s": 1.192,
+        "flow_change_pct": -8,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "easing"
+        "status": "flat"
       },
       {
         "catchment": "Thames",
@@ -395,10 +387,6 @@
         "rain_gauge": "Reading University rain (Thames upstream)",
         "rain_5d_mm": 6.2,
         "rain_recent": [
-          {
-            "date": "2026-08-23",
-            "mm": 0.01
-          },
           {
             "date": "2026-08-24",
             "mm": 0.0
@@ -417,17 +405,17 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 2.044,
-        "flow_change_pct": -17,
+        "flow_m3s": 2.792,
+        "flow_change_pct": -5,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "easing"
+        "status": "flat"
       }
     ]
   },
   "summary": {
-    "GREEN": 3,
-    "AMBER": 3,
-    "RED": 2
+    "GREEN": 0,
+    "AMBER": 0,
+    "RED": 8
   }
 }
