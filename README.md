@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-08-28** — updated 2026-08-28T16:01:15Z (model v3).
+Assessment for **2026-08-28** — updated 2026-08-28T21:23:11Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 11 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
-| 🔴 | **Chertsey** | RED | 8 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 2 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
-| 🔴 | **Kingston HMT** | RED | 2 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 2 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
-| 🔴 | **Teddington** | RED | 2 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 2 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 2 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Walton Wharf** | RED | 9 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Chertsey** | RED | 6 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 6 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Kingston HMT** | RED | 6 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 6 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Teddington** | RED | 6 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 6 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 6 m³/s | Rained today (6mm/48h) — only 35% safe even without CSO<br>rain 6mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
