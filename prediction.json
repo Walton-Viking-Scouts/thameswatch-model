@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28T09:03:39Z",
+  "generated_at": "2026-08-28T16:01:15Z",
   "assessment_date": "2026-08-28",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 65,
       "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 6mm/48h",
-      "live_flow_m3s": 7.574,
+      "live_flow_m3s": 10.621,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 6.28,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 2.944,
-          "mole_flow_15min": 1.202
+          "wey_flow_15min": 3.215,
+          "mole_flow_15min": 1.191
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 65,
       "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 6mm/48h",
-      "live_flow_m3s": 8.62,
+      "live_flow_m3s": 8.028,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 6.28,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 2.944,
-          "mole_flow_15min": 1.202
+          "wey_flow_15min": 3.215,
+          "mole_flow_15min": 1.191
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 65,
       "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 6mm/48h",
-      "live_flow_m3s": 3.257,
+      "live_flow_m3s": 1.677,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 6.28,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 2.944,
-          "mole_flow_15min": 1.202
+          "wey_flow_15min": 3.215,
+          "mole_flow_15min": 1.191
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 65,
       "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 6mm/48h",
-      "live_flow_m3s": 3.257,
+      "live_flow_m3s": 1.677,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 6.28,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 2.944,
-          "mole_flow_15min": 1.202
+          "wey_flow_15min": 3.215,
+          "mole_flow_15min": 1.191
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 65,
       "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 6mm/48h",
-      "live_flow_m3s": 3.257,
+      "live_flow_m3s": 1.677,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 6.28,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 2.944,
-          "mole_flow_15min": 1.202
+          "wey_flow_15min": 3.215,
+          "mole_flow_15min": 1.191
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 65,
       "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 6mm/48h",
-      "live_flow_m3s": 3.257,
+      "live_flow_m3s": 1.677,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 6.28,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 2.944,
-          "mole_flow_15min": 1.202
+          "wey_flow_15min": 3.215,
+          "mole_flow_15min": 1.191
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 65,
       "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 6mm/48h",
-      "live_flow_m3s": 3.257,
+      "live_flow_m3s": 1.677,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 6.28,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 2.944,
-          "mole_flow_15min": 1.202
+          "wey_flow_15min": 3.215,
+          "mole_flow_15min": 1.191
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 65,
       "explanation": "Rained today (6mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 6mm/48h",
-      "live_flow_m3s": 3.257,
+      "live_flow_m3s": 1.677,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 6.28,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 2.944,
-          "mole_flow_15min": 1.202
+          "wey_flow_15min": 3.215,
+          "mole_flow_15min": 1.191
         }
       },
       "data_quality": {
@@ -325,7 +325,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 0.8,
+        "rain_5d_mm": 1.1,
         "rain_recent": [
           {
             "date": "2026-08-24",
@@ -345,12 +345,12 @@
           },
           {
             "date": "2026-08-28",
-            "mm": 0.02
+            "mm": 0.3
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 2.949,
-        "flow_change_pct": -2,
+        "flow_m3s": 3.215,
+        "flow_change_pct": -8,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -359,7 +359,7 @@
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 4.3,
+        "rain_5d_mm": 5.0,
         "rain_recent": [
           {
             "date": "2026-08-24",
@@ -379,21 +379,21 @@
           },
           {
             "date": "2026-08-28",
-            "mm": 0.0
+            "mm": 0.67
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.2,
-        "flow_change_pct": -21,
+        "flow_m3s": 1.191,
+        "flow_change_pct": 7,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "easing"
+        "status": "flat"
       },
       {
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 6.2,
+        "rain_5d_mm": 6.3,
         "rain_recent": [
           {
             "date": "2026-08-24",
@@ -413,12 +413,12 @@
           },
           {
             "date": "2026-08-28",
-            "mm": 0.0
+            "mm": 0.11
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 2.72,
-        "flow_change_pct": 5,
+        "flow_m3s": 2.606,
+        "flow_change_pct": 9,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
