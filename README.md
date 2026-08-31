@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-08-31** — updated 2026-08-31T12:05:47Z (model v3).
+Assessment for **2026-08-31** — updated 2026-08-31T15:03:54Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 11 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
-| 🟠 | **Chertsey** | AMBER | 12 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
+| 🟠 | **Chertsey** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Kingston Albany Reach** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Kingston HMT** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🔴 | **Ditton's Bend** | RED | 9 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 2mm/48h |
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey rising · Mole rising · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames rising._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
