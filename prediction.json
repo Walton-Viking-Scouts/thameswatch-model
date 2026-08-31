@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T15:03:54Z",
+  "generated_at": "2026-08-31T18:04:19Z",
   "assessment_date": "2026-08-31",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 10.925,
+      "live_flow_m3s": 11.049,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 2.17,
@@ -28,10 +28,10 @@
           "wey_pct": 39.945119560956485,
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
-          "mole_rising": false,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.884,
-          "mole_flow_15min": 2.108
+          "wey_flow_15min": 3.834,
+          "mole_flow_15min": 2.122
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 8.944,
+      "live_flow_m3s": 8.878,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 2.17,
@@ -67,10 +67,10 @@
           "wey_pct": 39.945119560956485,
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
-          "mole_rising": false,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.884,
-          "mole_flow_15min": 2.108
+          "wey_flow_15min": 3.834,
+          "mole_flow_15min": 2.122
         }
       },
       "data_quality": {
@@ -87,8 +87,8 @@
       "level": "AMBER",
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 9.114,
+      "why_detail": "rain 2mm/48h \u00b7 Mole flow rising (2.1 m\u00b3/s)",
+      "live_flow_m3s": 26.463,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -106,10 +106,10 @@
           "wey_pct": 39.945119560956485,
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
-          "mole_rising": false,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.884,
-          "mole_flow_15min": 2.108
+          "wey_flow_15min": 3.834,
+          "mole_flow_15min": 2.122
         }
       },
       "data_quality": {
@@ -126,8 +126,8 @@
       "level": "AMBER",
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 9.114,
+      "why_detail": "rain 2mm/48h \u00b7 Mole flow rising (2.1 m\u00b3/s)",
+      "live_flow_m3s": 26.463,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -145,10 +145,10 @@
           "wey_pct": 39.945119560956485,
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
-          "mole_rising": false,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.884,
-          "mole_flow_15min": 2.108
+          "wey_flow_15min": 3.834,
+          "mole_flow_15min": 2.122
         }
       },
       "data_quality": {
@@ -165,8 +165,8 @@
       "level": "RED",
       "confidence": 85,
       "explanation": "Very low flow (10 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 9.114,
+      "why_detail": "rain 2mm/48h \u00b7 Mole flow rising (2.1 m\u00b3/s)",
+      "live_flow_m3s": 26.463,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -184,10 +184,10 @@
           "wey_pct": 39.945119560956485,
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
-          "mole_rising": false,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.884,
-          "mole_flow_15min": 2.108
+          "wey_flow_15min": 3.834,
+          "mole_flow_15min": 2.122
         }
       },
       "data_quality": {
@@ -204,8 +204,8 @@
       "level": "RED",
       "confidence": 85,
       "explanation": "Very low flow (10 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 9.114,
+      "why_detail": "rain 2mm/48h \u00b7 Mole flow rising (2.1 m\u00b3/s)",
+      "live_flow_m3s": 26.463,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -223,10 +223,10 @@
           "wey_pct": 39.945119560956485,
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
-          "mole_rising": false,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.884,
-          "mole_flow_15min": 2.108
+          "wey_flow_15min": 3.834,
+          "mole_flow_15min": 2.122
         }
       },
       "data_quality": {
@@ -243,8 +243,8 @@
       "level": "AMBER",
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 9.114,
+      "why_detail": "rain 2mm/48h \u00b7 Mole flow rising (2.1 m\u00b3/s)",
+      "live_flow_m3s": 26.463,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -262,10 +262,10 @@
           "wey_pct": 39.945119560956485,
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
-          "mole_rising": false,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.884,
-          "mole_flow_15min": 2.108
+          "wey_flow_15min": 3.834,
+          "mole_flow_15min": 2.122
         }
       },
       "data_quality": {
@@ -282,8 +282,8 @@
       "level": "AMBER",
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 9.114,
+      "why_detail": "rain 2mm/48h \u00b7 Mole flow rising (2.1 m\u00b3/s)",
+      "live_flow_m3s": 26.463,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -301,10 +301,10 @@
           "wey_pct": 39.945119560956485,
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
-          "mole_rising": false,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.884,
-          "mole_flow_15min": 2.108
+          "wey_flow_15min": 3.834,
+          "mole_flow_15min": 2.122
         }
       },
       "data_quality": {
@@ -349,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.865,
-        "flow_change_pct": 3,
+        "flow_m3s": 3.846,
+        "flow_change_pct": 5,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -383,11 +383,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.12,
-        "flow_change_pct": 27,
+        "flow_m3s": 2.122,
+        "flow_change_pct": 35,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "surge"
       },
       {
         "catchment": "Thames",
@@ -417,11 +417,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 2.457,
-        "flow_change_pct": 23,
+        "flow_m3s": 5.147,
+        "flow_change_pct": -6,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "rising"
+        "flow_source": "15min",
+        "status": "flat"
       }
     ]
   },

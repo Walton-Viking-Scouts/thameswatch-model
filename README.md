@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-08-31** — updated 2026-08-31T15:03:54Z (model v3).
+Assessment for **2026-08-31** — updated 2026-08-31T18:04:19Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 11 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Chertsey** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 9 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 2mm/48h |
-| 🔴 | **Teddington** | RED | 9 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 2mm/48h |
-| 🟠 | **Hogsmill confluence** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
-| 🟠 | **Minima Yacht Club** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 26 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h · Mole flow rising (2.1 m³/s) |
+| 🟠 | **Kingston HMT** | AMBER | 26 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h · Mole flow rising (2.1 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 26 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 2mm/48h · Mole flow rising (2.1 m³/s) |
+| 🔴 | **Teddington** | RED | 26 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 2mm/48h · Mole flow rising (2.1 m³/s) |
+| 🟠 | **Hogsmill confluence** | AMBER | 26 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h · Mole flow rising (2.1 m³/s) |
+| 🟠 | **Minima Yacht Club** | AMBER | 26 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h · Mole flow rising (2.1 m³/s) |
 
 **0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames rising._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole surge · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
