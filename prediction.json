@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31T03:04:14Z",
+  "generated_at": "2026-08-31T06:09:15Z",
   "assessment_date": "2026-08-31",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 9.372,
+      "live_flow_m3s": null,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 2.17,
@@ -29,9 +29,7 @@
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 3.715,
-          "mole_flow_15min": 1.573
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -39,6 +37,8 @@
         "flow_data_date": "2026-08-29",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -49,7 +49,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 7.819,
+      "live_flow_m3s": null,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 2.17,
@@ -68,9 +68,7 @@
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 3.715,
-          "mole_flow_15min": 1.573
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -78,6 +76,8 @@
         "flow_data_date": "2026-08-29",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -88,7 +88,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 3.88,
+      "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -107,9 +107,7 @@
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 3.715,
-          "mole_flow_15min": 1.573
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -117,6 +115,8 @@
         "flow_data_date": "2026-08-29",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -127,7 +127,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 3.88,
+      "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -146,9 +146,7 @@
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 3.715,
-          "mole_flow_15min": 1.573
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -156,6 +154,8 @@
         "flow_data_date": "2026-08-29",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -166,7 +166,7 @@
       "confidence": 85,
       "explanation": "Very low flow (10 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 3.88,
+      "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -185,9 +185,7 @@
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 3.715,
-          "mole_flow_15min": 1.573
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -195,6 +193,8 @@
         "flow_data_date": "2026-08-29",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -205,7 +205,7 @@
       "confidence": 85,
       "explanation": "Very low flow (10 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 3.88,
+      "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -224,9 +224,7 @@
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 3.715,
-          "mole_flow_15min": 1.573
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -234,6 +232,8 @@
         "flow_data_date": "2026-08-29",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -244,7 +244,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 3.88,
+      "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -263,9 +263,7 @@
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 3.715,
-          "mole_flow_15min": 1.573
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -273,6 +271,8 @@
         "flow_data_date": "2026-08-29",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -283,7 +283,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (2mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 2mm/48h",
-      "live_flow_m3s": 3.88,
+      "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.17,
@@ -302,9 +302,7 @@
           "mole_pct": 14.856918855350843,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "15min-live",
-          "wey_flow_15min": 3.715,
-          "mole_flow_15min": 1.573
+          "surge_source": "daily"
         }
       },
       "data_quality": {
@@ -312,6 +310,8 @@
         "flow_data_date": "2026-08-29",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
+          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -349,11 +349,11 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.713,
-        "flow_change_pct": -2,
+        "flow_m3s": 4.076,
+        "flow_change_pct": 26,
         "flow_window": "24h",
-        "flow_source": "15min",
-        "status": "flat"
+        "flow_source": "daily",
+        "status": "rising"
       },
       {
         "catchment": "Mole",
@@ -379,15 +379,15 @@
           },
           {
             "date": "2026-08-31",
-            "mm": 0.85
+            "mm": 0.87
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.581,
-        "flow_change_pct": 3,
+        "flow_m3s": 1.516,
+        "flow_change_pct": 27,
         "flow_window": "24h",
-        "flow_source": "15min",
-        "status": "flat"
+        "flow_source": "daily",
+        "status": "rising"
       },
       {
         "catchment": "Thames",
@@ -413,15 +413,15 @@
           },
           {
             "date": "2026-08-31",
-            "mm": 2.32
+            "mm": 2.33
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 5.435,
-        "flow_change_pct": 32,
+        "flow_m3s": 2.457,
+        "flow_change_pct": 23,
         "flow_window": "24h",
-        "flow_source": "15min",
-        "status": "surge"
+        "flow_source": "daily",
+        "status": "rising"
       }
     ]
   },
