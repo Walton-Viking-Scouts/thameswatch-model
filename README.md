@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-01** — updated 2026-09-01T15:03:38Z (model v3).
+Assessment for **2026-09-01** — updated 2026-09-01T18:04:40Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Chertsey** | AMBER | 8 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Kingston Albany Reach** | RED | 9 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane 0.1h |
-| 🟠 | **Kingston HMT** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Ditton's Bend** | RED | 9 m³/s | Very low flow (11 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 9 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane 0.1h |
-| 🔴 | **Hogsmill confluence** | RED | 9 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane 0.1h |
-| 🔴 | **Minima Yacht Club** | RED | 9 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane 0.1h |
+| 🟠 | **Walton Wharf** | AMBER | 7 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Chertsey** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🔴 | **Kingston Albany Reach** | RED | -0 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane 0.1h |
+| 🟠 | **Kingston HMT** | AMBER | -0 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🔴 | **Ditton's Bend** | RED | -0 m³/s | Very low flow (11 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🔴 | **Teddington** | RED | -0 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane 0.1h |
+| 🔴 | **Hogsmill confluence** | RED | -0 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane 0.1h |
+| 🔴 | **Minima Yacht Club** | RED | -0 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane 0.1h |
 
 **0 🟢 GREEN · 3 🟠 AMBER · 5 🔴 RED**
 
