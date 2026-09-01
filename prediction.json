@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-01T18:04:40Z",
+  "generated_at": "2026-09-01T21:03:18Z",
   "assessment_date": "2026-09-01",
   "model_version": "v3",
   "sites": [
@@ -10,37 +10,35 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 7.4,
+      "live_flow_m3s": 7.783,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.51,
         "rain_7d": 9.39,
         "dry_days": 2,
         "season": "autumn",
-        "flow_m3s": 11.141,
+        "flow_m3s": 10.357,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.1,
-        "cso_active_monitors": "Old Palace Lane(0.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Old Palace Lane (live)",
         "upstream_ctx": {
-          "walton_flow": 11.141,
-          "wey_flow": 3.728,
-          "mole_flow": 1.621,
-          "wey_pct": 33.46198725428597,
-          "mole_pct": 14.549860874248271,
+          "walton_flow": 10.357,
+          "wey_flow": 3.787,
+          "mole_flow": 2.035,
+          "wey_pct": 36.56464227092788,
+          "mole_pct": 19.648546876508643,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.384,
-          "mole_flow_15min": 1.71
+          "wey_flow_15min": 3.324,
+          "mole_flow_15min": 1.679
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-30",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-08-31",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -49,37 +47,35 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 8.821,
+      "live_flow_m3s": 6.559,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.51,
         "rain_7d": 9.39,
         "dry_days": 2,
         "season": "autumn",
-        "flow_m3s": 11.141,
+        "flow_m3s": 10.357,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.1,
-        "cso_active_monitors": "Old Palace Lane(0.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Old Palace Lane (live)",
         "upstream_ctx": {
-          "walton_flow": 11.141,
-          "wey_flow": 3.728,
-          "mole_flow": 1.621,
-          "wey_pct": 33.46198725428597,
-          "mole_pct": 14.549860874248271,
+          "walton_flow": 10.357,
+          "wey_flow": 3.787,
+          "mole_flow": 2.035,
+          "wey_pct": 36.56464227092788,
+          "mole_pct": 19.648546876508643,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.384,
-          "mole_flow_15min": 1.71
+          "wey_flow_15min": 3.324,
+          "mole_flow_15min": 1.679
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-30",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-08-31",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -87,38 +83,36 @@
       "level": "RED",
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Thames: Old Palace Lane 0.1h",
-      "live_flow_m3s": -0.143,
+      "why_detail": "Thames: Old Palace Lane (live)",
+      "live_flow_m3s": 4.497,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.51,
         "rain_7d": 9.39,
         "dry_days": 2,
         "season": "autumn",
-        "flow_m3s": 11.141,
+        "flow_m3s": 10.357,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.1,
-        "cso_active_monitors": "Old Palace Lane(0.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Old Palace Lane (live)",
         "upstream_ctx": {
-          "walton_flow": 11.141,
-          "wey_flow": 3.728,
-          "mole_flow": 1.621,
-          "wey_pct": 33.46198725428597,
-          "mole_pct": 14.549860874248271,
+          "walton_flow": 10.357,
+          "wey_flow": 3.787,
+          "mole_flow": 2.035,
+          "wey_pct": 36.56464227092788,
+          "mole_pct": 19.648546876508643,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.384,
-          "mole_flow_15min": 1.71
+          "wey_flow_15min": 3.324,
+          "mole_flow_15min": 1.679
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-30",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-08-31",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -127,76 +121,72 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": -0.143,
+      "live_flow_m3s": 4.497,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.51,
         "rain_7d": 9.39,
         "dry_days": 2,
         "season": "autumn",
-        "flow_m3s": 11.141,
+        "flow_m3s": 10.357,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.1,
-        "cso_active_monitors": "Old Palace Lane(0.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Old Palace Lane (live)",
         "upstream_ctx": {
-          "walton_flow": 11.141,
-          "wey_flow": 3.728,
-          "mole_flow": 1.621,
-          "wey_pct": 33.46198725428597,
-          "mole_pct": 14.549860874248271,
+          "walton_flow": 10.357,
+          "wey_flow": 3.787,
+          "mole_flow": 2.035,
+          "wey_pct": 36.56464227092788,
+          "mole_pct": 19.648546876508643,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.384,
-          "mole_flow_15min": 1.71
+          "wey_flow_15min": 3.324,
+          "mole_flow_15min": 1.679
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-30",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-08-31",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
       "site": "Ditton's Bend",
       "level": "RED",
       "confidence": 85,
-      "explanation": "Very low flow (11 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
+      "explanation": "Very low flow (10 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "",
-      "live_flow_m3s": -0.143,
+      "live_flow_m3s": 4.497,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.51,
         "rain_7d": 9.39,
         "dry_days": 2,
         "season": "autumn",
-        "flow_m3s": 11.141,
+        "flow_m3s": 10.357,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.1,
-        "cso_active_monitors": "Old Palace Lane(0.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Old Palace Lane (live)",
         "upstream_ctx": {
-          "walton_flow": 11.141,
-          "wey_flow": 3.728,
-          "mole_flow": 1.621,
-          "wey_pct": 33.46198725428597,
-          "mole_pct": 14.549860874248271,
+          "walton_flow": 10.357,
+          "wey_flow": 3.787,
+          "mole_flow": 2.035,
+          "wey_pct": 36.56464227092788,
+          "mole_pct": 19.648546876508643,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.384,
-          "mole_flow_15min": 1.71
+          "wey_flow_15min": 3.324,
+          "mole_flow_15min": 1.679
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-30",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-08-31",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -204,38 +194,36 @@
       "level": "RED",
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Thames: Old Palace Lane 0.1h",
-      "live_flow_m3s": -0.143,
+      "why_detail": "Thames: Old Palace Lane (live)",
+      "live_flow_m3s": 4.497,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.51,
         "rain_7d": 9.39,
         "dry_days": 2,
         "season": "autumn",
-        "flow_m3s": 11.141,
+        "flow_m3s": 10.357,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.1,
-        "cso_active_monitors": "Old Palace Lane(0.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Old Palace Lane (live)",
         "upstream_ctx": {
-          "walton_flow": 11.141,
-          "wey_flow": 3.728,
-          "mole_flow": 1.621,
-          "wey_pct": 33.46198725428597,
-          "mole_pct": 14.549860874248271,
+          "walton_flow": 10.357,
+          "wey_flow": 3.787,
+          "mole_flow": 2.035,
+          "wey_pct": 36.56464227092788,
+          "mole_pct": 19.648546876508643,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.384,
-          "mole_flow_15min": 1.71
+          "wey_flow_15min": 3.324,
+          "mole_flow_15min": 1.679
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-30",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-08-31",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -243,38 +231,36 @@
       "level": "RED",
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Thames: Old Palace Lane 0.1h",
-      "live_flow_m3s": -0.143,
+      "why_detail": "Thames: Old Palace Lane (live)",
+      "live_flow_m3s": 4.497,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.51,
         "rain_7d": 9.39,
         "dry_days": 2,
         "season": "autumn",
-        "flow_m3s": 11.141,
+        "flow_m3s": 10.357,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.1,
-        "cso_active_monitors": "Old Palace Lane(0.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Old Palace Lane (live)",
         "upstream_ctx": {
-          "walton_flow": 11.141,
-          "wey_flow": 3.728,
-          "mole_flow": 1.621,
-          "wey_pct": 33.46198725428597,
-          "mole_pct": 14.549860874248271,
+          "walton_flow": 10.357,
+          "wey_flow": 3.787,
+          "mole_flow": 2.035,
+          "wey_pct": 36.56464227092788,
+          "mole_pct": 19.648546876508643,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.384,
-          "mole_flow_15min": 1.71
+          "wey_flow_15min": 3.324,
+          "mole_flow_15min": 1.679
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-30",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-08-31",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -282,38 +268,36 @@
       "level": "RED",
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Thames: Old Palace Lane 0.1h",
-      "live_flow_m3s": -0.143,
+      "why_detail": "Thames: Old Palace Lane (live)",
+      "live_flow_m3s": 4.497,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.51,
         "rain_7d": 9.39,
         "dry_days": 2,
         "season": "autumn",
-        "flow_m3s": 11.141,
+        "flow_m3s": 10.357,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.1,
-        "cso_active_monitors": "Old Palace Lane(0.1h); Old Palace Lane (live)",
+        "cso_hours_48h": 0.0,
+        "cso_active_monitors": "Old Palace Lane (live)",
         "upstream_ctx": {
-          "walton_flow": 11.141,
-          "wey_flow": 3.728,
-          "mole_flow": 1.621,
-          "wey_pct": 33.46198725428597,
-          "mole_pct": 14.549860874248271,
+          "walton_flow": 10.357,
+          "wey_flow": 3.787,
+          "mole_flow": 2.035,
+          "wey_pct": 36.56464227092788,
+          "mole_pct": 19.648546876508643,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 3.384,
-          "mole_flow_15min": 1.71
+          "wey_flow_15min": 3.324,
+          "mole_flow_15min": 1.679
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-08-30",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-08-31",
+        "data_lag_days": 1,
+        "warnings": []
       }
     }
   ],
@@ -349,8 +333,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.384,
-        "flow_change_pct": -12,
+        "flow_m3s": 3.324,
+        "flow_change_pct": -13,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -383,7 +367,7 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.71,
+        "flow_m3s": 1.679,
         "flow_change_pct": -19,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -417,8 +401,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 4.433,
-        "flow_change_pct": -15,
+        "flow_m3s": 4.034,
+        "flow_change_pct": -11,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
