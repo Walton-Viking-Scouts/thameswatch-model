@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-03** — updated 2026-09-03T04:17:10Z (model v3).
+Assessment for **2026-09-03** — updated 2026-09-03T06:06:17Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 8 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Chertsey** | AMBER | 4 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Kingston Albany Reach** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane (live) |
-| 🟠 | **Kingston HMT** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Very low flow (9 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane (live) |
-| 🔴 | **Hogsmill confluence** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane (live) |
-| 🔴 | **Minima Yacht Club** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Old Palace Lane (live) |
+| 🟠 | **Chertsey** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Kingston Albany Reach** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Kingston HMT** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🔴 | **Ditton's Bend** | RED | 6 m³/s | Very low flow (9 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🔴 | **Teddington** | RED | 6 m³/s | Very low flow (9 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🟠 | **Hogsmill confluence** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Minima Yacht Club** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
 
-**0 🟢 GREEN · 3 🟠 AMBER · 5 🔴 RED**
+**0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames rising._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames surge._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
