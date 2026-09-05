@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-05** — updated 2026-09-05T12:04:37Z (model v3).
+Assessment for **2026-09-05** — updated 2026-09-05T15:03:31Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Chertsey** | AMBER | 7 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Kingston Albany Reach** | AMBER | 4 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Kingston HMT** | AMBER | 4 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 4 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🟠 | **Hogsmill confluence** | AMBER | 4 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Minima Yacht Club** | AMBER | 4 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Chertsey** | AMBER | -6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Kingston Albany Reach** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Kingston HMT** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🔴 | **Ditton's Bend** | RED | 9 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🔴 | **Teddington** | RED | 9 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🟠 | **Hogsmill confluence** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Minima Yacht Club** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
 
 **0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
 
