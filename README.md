@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-08** — updated 2026-09-08T12:06:02Z (model v3).
+Assessment for **2026-09-08** — updated 2026-09-08T15:05:44Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 11 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Walton Wharf** | AMBER | 10 m³/s | Autumn/winter — only 32% safe even when dry, test first |
 | 🟠 | **Chertsey** | AMBER | 8 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Kingston Albany Reach** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Kingston HMT** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Very low flow (9 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 5 m³/s | Very low flow (9 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🟠 | **Hogsmill confluence** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Minima Yacht Club** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🔴 | **Kingston Albany Reach** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
+| 🔴 | **Kingston HMT** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
+| 🔴 | **Ditton's Bend** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
+| 🔴 | **Teddington** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
+| 🔴 | **Hogsmill confluence** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
+| 🔴 | **Minima Yacht Club** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
 
-**0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
+**0 🟢 GREEN · 2 🟠 AMBER · 6 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
