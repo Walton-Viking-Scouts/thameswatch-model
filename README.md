@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-08** — updated 2026-09-08T15:05:44Z (model v3).
+Assessment for **2026-09-08** — updated 2026-09-08T18:06:39Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 10 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Chertsey** | AMBER | 8 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Kingston Albany Reach** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
-| 🔴 | **Kingston HMT** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
-| 🔴 | **Ditton's Bend** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
-| 🔴 | **Teddington** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
-| 🔴 | **Hogsmill confluence** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
-| 🔴 | **Minima Yacht Club** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>Mole: Leatherhead 0.2h |
+| 🔴 | **Walton Wharf** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Windsor (live) |
+| 🔴 | **Chertsey** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Windsor (live) |
+| 🔴 | **Kingston Albany Reach** | RED | — | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 0.2h · ThamesUpstream: Windsor (live) |
+| 🔴 | **Kingston HMT** | RED | — | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 0.2h · ThamesUpstream: Windsor (live) |
+| 🔴 | **Ditton's Bend** | RED | — | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 0.2h · ThamesUpstream: Windsor (live) |
+| 🔴 | **Teddington** | RED | — | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 0.2h · ThamesUpstream: Windsor (live) |
+| 🔴 | **Hogsmill confluence** | RED | — | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 0.2h · ThamesUpstream: Windsor (live) |
+| 🔴 | **Minima Yacht Club** | RED | — | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 0.2h · ThamesUpstream: Windsor (live) |
 
-**0 🟢 GREEN · 2 🟠 AMBER · 6 🔴 RED**
+**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames rising._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->

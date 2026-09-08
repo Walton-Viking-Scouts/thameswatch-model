@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08T15:05:44Z",
+  "generated_at": "2026-09-08T18:06:39Z",
   "assessment_date": "2026-09-08",
   "model_version": "v3",
   "sites": [
     {
       "site": "Walton Wharf",
-      "level": "AMBER",
-      "confidence": 67,
-      "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
-      "why_detail": "",
-      "live_flow_m3s": 10.289,
+      "level": "RED",
+      "confidence": 86,
+      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
+      "why_detail": "ThamesUpstream: Windsor (live)",
+      "live_flow_m3s": null,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.0,
@@ -20,7 +20,7 @@
         "flow_m3s": 8.524,
         "cso_active_48h": true,
         "cso_hours_48h": 0.2,
-        "cso_active_monitors": "Leatherhead(0.2h)",
+        "cso_active_monitors": "Leatherhead(0.2h); Windsor(live)",
         "upstream_ctx": {
           "walton_flow": 8.524,
           "wey_flow": 3.614,
@@ -45,11 +45,11 @@
     },
     {
       "site": "Chertsey",
-      "level": "AMBER",
-      "confidence": 67,
-      "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
-      "why_detail": "",
-      "live_flow_m3s": 7.899,
+      "level": "RED",
+      "confidence": 86,
+      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
+      "why_detail": "ThamesUpstream: Windsor (live)",
+      "live_flow_m3s": null,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.0,
@@ -59,7 +59,7 @@
         "flow_m3s": 8.524,
         "cso_active_48h": true,
         "cso_hours_48h": 0.2,
-        "cso_active_monitors": "Leatherhead(0.2h)",
+        "cso_active_monitors": "Leatherhead(0.2h); Windsor(live)",
         "upstream_ctx": {
           "walton_flow": 8.524,
           "wey_flow": 3.614,
@@ -85,9 +85,9 @@
     {
       "site": "Kingston Albany Reach",
       "level": "RED",
-      "confidence": 86,
-      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Mole: Leatherhead 0.2h",
+      "confidence": 100,
+      "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
+      "why_detail": "Mole: Leatherhead 0.2h \u00b7 ThamesUpstream: Windsor (live)",
       "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
@@ -98,7 +98,7 @@
         "flow_m3s": 8.524,
         "cso_active_48h": true,
         "cso_hours_48h": 0.2,
-        "cso_active_monitors": "Leatherhead(0.2h)",
+        "cso_active_monitors": "Leatherhead(0.2h); Windsor(live)",
         "upstream_ctx": {
           "walton_flow": 8.524,
           "wey_flow": 3.614,
@@ -124,9 +124,9 @@
     {
       "site": "Kingston HMT",
       "level": "RED",
-      "confidence": 86,
-      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Mole: Leatherhead 0.2h",
+      "confidence": 100,
+      "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
+      "why_detail": "Mole: Leatherhead 0.2h \u00b7 ThamesUpstream: Windsor (live)",
       "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
@@ -137,7 +137,7 @@
         "flow_m3s": 8.524,
         "cso_active_48h": true,
         "cso_hours_48h": 0.2,
-        "cso_active_monitors": "Leatherhead(0.2h)",
+        "cso_active_monitors": "Leatherhead(0.2h); Windsor(live)",
         "upstream_ctx": {
           "walton_flow": 8.524,
           "wey_flow": 3.614,
@@ -163,9 +163,9 @@
     {
       "site": "Ditton's Bend",
       "level": "RED",
-      "confidence": 86,
-      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Mole: Leatherhead 0.2h",
+      "confidence": 100,
+      "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
+      "why_detail": "Mole: Leatherhead 0.2h \u00b7 ThamesUpstream: Windsor (live)",
       "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
@@ -176,7 +176,7 @@
         "flow_m3s": 8.524,
         "cso_active_48h": true,
         "cso_hours_48h": 0.2,
-        "cso_active_monitors": "Leatherhead(0.2h)",
+        "cso_active_monitors": "Leatherhead(0.2h); Windsor(live)",
         "upstream_ctx": {
           "walton_flow": 8.524,
           "wey_flow": 3.614,
@@ -202,9 +202,9 @@
     {
       "site": "Teddington",
       "level": "RED",
-      "confidence": 86,
-      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Mole: Leatherhead 0.2h",
+      "confidence": 100,
+      "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
+      "why_detail": "Mole: Leatherhead 0.2h \u00b7 ThamesUpstream: Windsor (live)",
       "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
@@ -215,7 +215,7 @@
         "flow_m3s": 8.524,
         "cso_active_48h": true,
         "cso_hours_48h": 0.2,
-        "cso_active_monitors": "Leatherhead(0.2h)",
+        "cso_active_monitors": "Leatherhead(0.2h); Windsor(live)",
         "upstream_ctx": {
           "walton_flow": 8.524,
           "wey_flow": 3.614,
@@ -241,9 +241,9 @@
     {
       "site": "Hogsmill confluence",
       "level": "RED",
-      "confidence": 86,
-      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Mole: Leatherhead 0.2h",
+      "confidence": 100,
+      "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
+      "why_detail": "Mole: Leatherhead 0.2h \u00b7 ThamesUpstream: Windsor (live)",
       "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
@@ -254,7 +254,7 @@
         "flow_m3s": 8.524,
         "cso_active_48h": true,
         "cso_hours_48h": 0.2,
-        "cso_active_monitors": "Leatherhead(0.2h)",
+        "cso_active_monitors": "Leatherhead(0.2h); Windsor(live)",
         "upstream_ctx": {
           "walton_flow": 8.524,
           "wey_flow": 3.614,
@@ -280,9 +280,9 @@
     {
       "site": "Minima Yacht Club",
       "level": "RED",
-      "confidence": 86,
-      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
-      "why_detail": "Mole: Leatherhead 0.2h",
+      "confidence": 100,
+      "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
+      "why_detail": "Mole: Leatherhead 0.2h \u00b7 ThamesUpstream: Windsor (live)",
       "live_flow_m3s": null,
       "flow_gauge": "kingston",
       "inputs": {
@@ -293,7 +293,7 @@
         "flow_m3s": 8.524,
         "cso_active_48h": true,
         "cso_hours_48h": 0.2,
-        "cso_active_monitors": "Leatherhead(0.2h)",
+        "cso_active_monitors": "Leatherhead(0.2h); Windsor(live)",
         "upstream_ctx": {
           "walton_flow": 8.524,
           "wey_flow": 3.614,
@@ -325,7 +325,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 0.6,
+        "rain_5d_mm": 0.7,
         "rain_recent": [
           {
             "date": "2026-09-04",
@@ -345,12 +345,12 @@
           },
           {
             "date": "2026-09-08",
-            "mm": 0.14
+            "mm": 0.22
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.855,
-        "flow_change_pct": 0,
+        "flow_m3s": 3.807,
+        "flow_change_pct": -5,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -383,17 +383,17 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.369,
-        "flow_change_pct": -4,
+        "flow_m3s": 1.689,
+        "flow_change_pct": 23,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "flat"
+        "flow_source": "15min",
+        "status": "rising"
       },
       {
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 15.4,
+        "rain_5d_mm": 15.5,
         "rain_recent": [
           {
             "date": "2026-09-04",
@@ -413,21 +413,21 @@
           },
           {
             "date": "2026-09-08",
-            "mm": 14.46
+            "mm": 14.54
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 4.396,
-        "flow_change_pct": 4,
+        "flow_m3s": 4.694,
+        "flow_change_pct": 16,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "rising"
       }
     ]
   },
   "summary": {
     "GREEN": 0,
-    "AMBER": 2,
-    "RED": 6
+    "AMBER": 0,
+    "RED": 8
   }
 }
