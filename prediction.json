@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-09T12:07:09Z",
+  "generated_at": "2026-09-09T15:05:27Z",
   "assessment_date": "2026-09-09",
   "model_version": "v3",
   "sites": [
@@ -9,7 +9,7 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (19mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor (live) \u00b7 rain 19mm/48h",
+      "why_detail": "ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
       "live_flow_m3s": null,
       "flow_gauge": "walton",
       "inputs": {
@@ -19,8 +19,8 @@
         "season": "autumn",
         "flow_m3s": 8.847,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Windsor(live)",
+        "cso_hours_48h": 11.9,
+        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 8.847,
           "wey_flow": 3.543,
@@ -48,7 +48,7 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (19mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor (live) \u00b7 rain 19mm/48h",
+      "why_detail": "ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
       "live_flow_m3s": null,
       "flow_gauge": "staines",
       "inputs": {
@@ -58,8 +58,8 @@
         "season": "autumn",
         "flow_m3s": 8.847,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Windsor(live)",
+        "cso_hours_48h": 11.9,
+        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 8.847,
           "wey_flow": 3.543,
@@ -87,8 +87,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead (live) \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 19mm/48h",
-      "live_flow_m3s": 6.332,
+      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
+      "live_flow_m3s": 5.14,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
@@ -97,8 +97,8 @@
         "season": "autumn",
         "flow_m3s": 8.847,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Windsor(live)",
+        "cso_hours_48h": 11.9,
+        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 8.847,
           "wey_flow": 3.543,
@@ -126,8 +126,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead (live) \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 19mm/48h",
-      "live_flow_m3s": 6.332,
+      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
+      "live_flow_m3s": 5.14,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
@@ -136,8 +136,8 @@
         "season": "autumn",
         "flow_m3s": 8.847,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Windsor(live)",
+        "cso_hours_48h": 11.9,
+        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 8.847,
           "wey_flow": 3.543,
@@ -165,8 +165,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead (live) \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 19mm/48h",
-      "live_flow_m3s": 6.332,
+      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
+      "live_flow_m3s": 5.14,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
@@ -175,8 +175,8 @@
         "season": "autumn",
         "flow_m3s": 8.847,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Windsor(live)",
+        "cso_hours_48h": 11.9,
+        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 8.847,
           "wey_flow": 3.543,
@@ -204,8 +204,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead (live) \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 19mm/48h",
-      "live_flow_m3s": 6.332,
+      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
+      "live_flow_m3s": 5.14,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
@@ -214,8 +214,8 @@
         "season": "autumn",
         "flow_m3s": 8.847,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Windsor(live)",
+        "cso_hours_48h": 11.9,
+        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 8.847,
           "wey_flow": 3.543,
@@ -243,8 +243,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead (live) \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 19mm/48h",
-      "live_flow_m3s": 6.332,
+      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
+      "live_flow_m3s": 5.14,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
@@ -253,8 +253,8 @@
         "season": "autumn",
         "flow_m3s": 8.847,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Windsor(live)",
+        "cso_hours_48h": 11.9,
+        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 8.847,
           "wey_flow": 3.543,
@@ -282,8 +282,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead (live) \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 19mm/48h",
-      "live_flow_m3s": 6.332,
+      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
+      "live_flow_m3s": 5.14,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
@@ -292,8 +292,8 @@
         "season": "autumn",
         "flow_m3s": 8.847,
         "cso_active_48h": true,
-        "cso_hours_48h": 0.0,
-        "cso_active_monitors": "Leatherhead(live); Windsor(live)",
+        "cso_hours_48h": 11.9,
+        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 8.847,
           "wey_flow": 3.543,
@@ -349,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.639,
-        "flow_change_pct": 18,
+        "flow_m3s": 4.466,
+        "flow_change_pct": 17,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
@@ -417,11 +417,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 3.867,
-        "flow_change_pct": -2,
+        "flow_m3s": 4.067,
+        "flow_change_pct": -11,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "flat"
+        "flow_source": "15min",
+        "status": "easing"
       }
     ]
   },
