@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-09T21:05:25Z",
-  "assessment_date": "2026-09-09",
+  "generated_at": "2026-09-10T00:08:53Z",
+  "assessment_date": "2026-09-10",
   "model_version": "v3",
   "sites": [
     {
@@ -10,17 +10,17 @@
       "confidence": 95,
       "explanation": "Heavy rain (19mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
-      "live_flow_m3s": 9.481,
+      "live_flow_m3s": 9.055,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 18.86,
-        "rain_7d": 20.21,
-        "dry_days": 0,
+        "rain_7d": 19.78,
+        "dry_days": 1,
         "season": "autumn",
         "flow_m3s": 10.101,
         "cso_active_48h": true,
-        "cso_hours_48h": 11.9,
-        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
+        "cso_hours_48h": 11.6,
+        "cso_active_monitors": "Leatherhead(10.2h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 10.101,
           "wey_flow": 4.279,
@@ -30,15 +30,16 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.417
+          "wey_flow_15min": 4.303,
+          "mole_flow_15min": 2.48
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-09-08",
-        "data_lag_days": 1,
+        "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)"
+          "flow data 2 day(s) behind assessment date"
         ]
       }
     },
@@ -48,17 +49,17 @@
       "confidence": 95,
       "explanation": "Heavy rain (19mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 5.5,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 18.86,
-        "rain_7d": 20.21,
-        "dry_days": 0,
+        "rain_7d": 19.78,
+        "dry_days": 1,
         "season": "autumn",
         "flow_m3s": 10.101,
         "cso_active_48h": true,
-        "cso_hours_48h": 11.9,
-        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
+        "cso_hours_48h": 11.6,
+        "cso_active_monitors": "Leatherhead(10.2h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 10.101,
           "wey_flow": 4.279,
@@ -68,15 +69,16 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.417
+          "wey_flow_15min": 4.303,
+          "mole_flow_15min": 2.48
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-09-08",
-        "data_lag_days": 1,
+        "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)"
+          "flow data 2 day(s) behind assessment date"
         ]
       }
     },
@@ -85,18 +87,18 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising",
-      "live_flow_m3s": null,
+      "why_detail": "Mole: Leatherhead 10.2h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising (2.5 m\u00b3/s)",
+      "live_flow_m3s": 4.59,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
-        "rain_7d": 20.21,
-        "dry_days": 0,
+        "rain_7d": 19.78,
+        "dry_days": 1,
         "season": "autumn",
         "flow_m3s": 10.101,
         "cso_active_48h": true,
-        "cso_hours_48h": 11.9,
-        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
+        "cso_hours_48h": 11.6,
+        "cso_active_monitors": "Leatherhead(10.2h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 10.101,
           "wey_flow": 4.279,
@@ -106,15 +108,16 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.417
+          "wey_flow_15min": 4.303,
+          "mole_flow_15min": 2.48
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-09-08",
-        "data_lag_days": 1,
+        "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)"
+          "flow data 2 day(s) behind assessment date"
         ]
       }
     },
@@ -123,18 +126,18 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising",
-      "live_flow_m3s": null,
+      "why_detail": "Mole: Leatherhead 10.2h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising (2.5 m\u00b3/s)",
+      "live_flow_m3s": 4.59,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
-        "rain_7d": 20.21,
-        "dry_days": 0,
+        "rain_7d": 19.78,
+        "dry_days": 1,
         "season": "autumn",
         "flow_m3s": 10.101,
         "cso_active_48h": true,
-        "cso_hours_48h": 11.9,
-        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
+        "cso_hours_48h": 11.6,
+        "cso_active_monitors": "Leatherhead(10.2h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 10.101,
           "wey_flow": 4.279,
@@ -144,15 +147,16 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.417
+          "wey_flow_15min": 4.303,
+          "mole_flow_15min": 2.48
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-09-08",
-        "data_lag_days": 1,
+        "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)"
+          "flow data 2 day(s) behind assessment date"
         ]
       }
     },
@@ -161,18 +165,18 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising",
-      "live_flow_m3s": null,
+      "why_detail": "Mole: Leatherhead 10.2h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising (2.5 m\u00b3/s)",
+      "live_flow_m3s": 4.59,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
-        "rain_7d": 20.21,
-        "dry_days": 0,
+        "rain_7d": 19.78,
+        "dry_days": 1,
         "season": "autumn",
         "flow_m3s": 10.101,
         "cso_active_48h": true,
-        "cso_hours_48h": 11.9,
-        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
+        "cso_hours_48h": 11.6,
+        "cso_active_monitors": "Leatherhead(10.2h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 10.101,
           "wey_flow": 4.279,
@@ -182,15 +186,16 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.417
+          "wey_flow_15min": 4.303,
+          "mole_flow_15min": 2.48
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-09-08",
-        "data_lag_days": 1,
+        "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)"
+          "flow data 2 day(s) behind assessment date"
         ]
       }
     },
@@ -199,18 +204,18 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising",
-      "live_flow_m3s": null,
+      "why_detail": "Mole: Leatherhead 10.2h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising (2.5 m\u00b3/s)",
+      "live_flow_m3s": 4.59,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
-        "rain_7d": 20.21,
-        "dry_days": 0,
+        "rain_7d": 19.78,
+        "dry_days": 1,
         "season": "autumn",
         "flow_m3s": 10.101,
         "cso_active_48h": true,
-        "cso_hours_48h": 11.9,
-        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
+        "cso_hours_48h": 11.6,
+        "cso_active_monitors": "Leatherhead(10.2h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 10.101,
           "wey_flow": 4.279,
@@ -220,15 +225,16 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.417
+          "wey_flow_15min": 4.303,
+          "mole_flow_15min": 2.48
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-09-08",
-        "data_lag_days": 1,
+        "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)"
+          "flow data 2 day(s) behind assessment date"
         ]
       }
     },
@@ -237,18 +243,18 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising",
-      "live_flow_m3s": null,
+      "why_detail": "Mole: Leatherhead 10.2h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising (2.5 m\u00b3/s)",
+      "live_flow_m3s": 4.59,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
-        "rain_7d": 20.21,
-        "dry_days": 0,
+        "rain_7d": 19.78,
+        "dry_days": 1,
         "season": "autumn",
         "flow_m3s": 10.101,
         "cso_active_48h": true,
-        "cso_hours_48h": 11.9,
-        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
+        "cso_hours_48h": 11.6,
+        "cso_active_monitors": "Leatherhead(10.2h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 10.101,
           "wey_flow": 4.279,
@@ -258,15 +264,16 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.417
+          "wey_flow_15min": 4.303,
+          "mole_flow_15min": 2.48
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-09-08",
-        "data_lag_days": 1,
+        "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)"
+          "flow data 2 day(s) behind assessment date"
         ]
       }
     },
@@ -275,18 +282,18 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream) \u2014 0% safe historically",
-      "why_detail": "Mole: Leatherhead 10.5h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising",
-      "live_flow_m3s": null,
+      "why_detail": "Mole: Leatherhead 10.2h \u00b7 ThamesUpstream: Windsor 1.4h \u00b7 rain 19mm/48h \u00b7 Mole flow rising (2.5 m\u00b3/s)",
+      "live_flow_m3s": 4.59,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 18.86,
-        "rain_7d": 20.21,
-        "dry_days": 0,
+        "rain_7d": 19.78,
+        "dry_days": 1,
         "season": "autumn",
         "flow_m3s": 10.101,
         "cso_active_48h": true,
-        "cso_hours_48h": 11.9,
-        "cso_active_monitors": "Leatherhead(10.5h); Windsor(1.4h)",
+        "cso_hours_48h": 11.6,
+        "cso_active_monitors": "Leatherhead(10.2h); Windsor(1.4h)",
         "upstream_ctx": {
           "walton_flow": 10.101,
           "wey_flow": 4.279,
@@ -296,33 +303,30 @@
           "wey_rising": false,
           "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.417
+          "wey_flow_15min": 4.303,
+          "mole_flow_15min": 2.48
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-09-08",
-        "data_lag_days": 1,
+        "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)"
+          "flow data 2 day(s) behind assessment date"
         ]
       }
     }
   ],
   "upstream_watch": {
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "headwater_lag": "1-3 days",
     "catchments": [
       {
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 0.3,
+        "rain_5d_mm": 0.2,
         "rain_recent": [
-          {
-            "date": "2026-09-05",
-            "mm": 0.03
-          },
           {
             "date": "2026-09-06",
             "mm": 0.01
@@ -341,11 +345,11 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.279,
-        "flow_change_pct": 21,
+        "flow_m3s": 4.303,
+        "flow_change_pct": -9,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "rising"
+        "flow_source": "15min",
+        "status": "flat"
       },
       {
         "catchment": "Mole",
@@ -353,10 +357,6 @@
         "rain_gauge": "Burstow rain (Mole catchment)",
         "rain_5d_mm": 23.7,
         "rain_recent": [
-          {
-            "date": "2026-09-05",
-            "mm": 0.0
-          },
           {
             "date": "2026-09-06",
             "mm": 0.0
@@ -375,11 +375,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.128,
-        "flow_change_pct": 18,
+        "flow_m3s": 2.48,
+        "flow_change_pct": 34,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "surge"
       },
       {
         "catchment": "Thames",
@@ -387,10 +387,6 @@
         "rain_gauge": "Reading University rain (Thames upstream)",
         "rain_5d_mm": 14.5,
         "rain_recent": [
-          {
-            "date": "2026-09-05",
-            "mm": 0.0
-          },
           {
             "date": "2026-09-06",
             "mm": 0.01
@@ -409,11 +405,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 4.35,
-        "flow_change_pct": 17,
+        "flow_m3s": 3.898,
+        "flow_change_pct": 2,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "flat"
       }
     ]
   },
