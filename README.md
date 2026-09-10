@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-10** — updated 2026-09-10T06:05:51Z (model v3).
+Assessment for **2026-09-10** — updated 2026-09-10T09:04:39Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🔴 | **Walton Wharf** | RED | 9 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 1.4h · rain 19mm/48h |
-| 🔴 | **Chertsey** | RED | 6 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 1.4h · rain 19mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 5 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.4 m³/s) |
-| 🔴 | **Kingston HMT** | RED | 5 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.4 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.4 m³/s) |
-| 🔴 | **Teddington** | RED | 5 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.4 m³/s) |
-| 🔴 | **Hogsmill confluence** | RED | 5 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.4 m³/s) |
-| 🔴 | **Minima Yacht Club** | RED | 5 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.4 m³/s) |
+| 🔴 | **Chertsey** | RED | 7 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 1.4h · rain 19mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 4 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.7 m³/s) |
+| 🔴 | **Kingston HMT** | RED | 4 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.7 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.7 m³/s) |
+| 🔴 | **Teddington** | RED | 4 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.7 m³/s) |
+| 🔴 | **Hogsmill confluence** | RED | 4 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.7 m³/s) |
+| 🔴 | **Minima Yacht Club** | RED | 4 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Leatherhead 10.2h · ThamesUpstream: Windsor 1.4h · rain 19mm/48h · Mole flow rising (3.7 m³/s) |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
