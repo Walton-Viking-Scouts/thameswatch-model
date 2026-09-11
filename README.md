@@ -14,20 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-10** — updated 2026-09-10T21:03:38Z (model v3).
+Assessment for **2026-09-11** — updated 2026-09-11T00:08:56Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 9 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>rain 19mm/48h |
-| 🔴 | **Chertsey** | RED | 7 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>rain 19mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 6 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>Mole: Leatherhead 10.2h · rain 19mm/48h · Mole flow rising (3.5 m³/s) |
-| 🔴 | **Kingston HMT** | RED | 6 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>Mole: Leatherhead 10.2h · rain 19mm/48h · Mole flow rising (3.5 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 6 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>Mole: Leatherhead 10.2h · rain 19mm/48h · Mole flow rising (3.5 m³/s) |
-| 🔴 | **Teddington** | RED | 6 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>Mole: Leatherhead 10.2h · rain 19mm/48h · Mole flow rising (3.5 m³/s) |
-| 🔴 | **Hogsmill confluence** | RED | 6 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>Mole: Leatherhead 10.2h · rain 19mm/48h · Mole flow rising (3.5 m³/s) |
-| 🔴 | **Minima Yacht Club** | RED | 6 m³/s | Heavy rain (19mm/48h) — only 5-20% safe<br>Mole: Leatherhead 10.2h · rain 19mm/48h · Mole flow rising (3.5 m³/s) |
+| 🟠 | **Walton Wharf** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Chertsey** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston Albany Reach** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent · Mole flow rising (3.5 m³/s) |
+| 🟠 | **Kingston HMT** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent · Mole flow rising (3.5 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 21mm/7d antecedent · Mole flow rising (3.5 m³/s) |
+| 🔴 | **Teddington** | RED | 5 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 21mm/7d antecedent · Mole flow rising (3.5 m³/s) |
+| 🟠 | **Hogsmill confluence** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent · Mole flow rising (3.5 m³/s) |
+| 🟠 | **Minima Yacht Club** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent · Mole flow rising (3.5 m³/s) |
 
-**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
+**0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
