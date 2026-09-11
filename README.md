@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-11** — updated 2026-09-11T06:05:59Z (model v3).
+Assessment for **2026-09-11** — updated 2026-09-11T09:04:58Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Chertsey** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston Albany Reach** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Kingston HMT** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
-| 🔴 | **Ditton's Bend** | RED | 6 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 21mm/7d antecedent |
-| 🔴 | **Teddington** | RED | 6 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 21mm/7d antecedent |
-| 🟠 | **Hogsmill confluence** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
-| 🟠 | **Minima Yacht Club** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Walton Wharf** | AMBER | 8 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Chertsey** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston Albany Reach** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Kingston HMT** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
+| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 21mm/7d antecedent |
+| 🔴 | **Teddington** | RED | 5 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 21mm/7d antecedent |
+| 🟠 | **Hogsmill confluence** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
+| 🟠 | **Minima Yacht Club** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 21mm/7d antecedent |
 
 **0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
