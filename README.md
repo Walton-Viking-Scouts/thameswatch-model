@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-12** — updated 2026-09-12T15:04:53Z (model v3).
+Assessment for **2026-09-12** — updated 2026-09-12T18:05:17Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 9 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
-| 🟠 | **Chertsey** | AMBER | — | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
-| 🟠 | **Kingston Albany Reach** | AMBER | 4 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 4 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 3mm/48h |
-| 🔴 | **Teddington** | RED | 4 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 3mm/48h |
-| 🟠 | **Hogsmill confluence** | AMBER | 4 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
-| 🟠 | **Minima Yacht Club** | AMBER | 4 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 7 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
+| 🟠 | **Chertsey** | AMBER | 7 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 6 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 6 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 6 m³/s | Very low flow (10 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 3mm/48h |
+| 🔴 | **Teddington** | RED | 6 m³/s | Very low flow (10 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 3mm/48h |
+| 🟠 | **Hogsmill confluence** | AMBER | 6 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
+| 🟠 | **Minima Yacht Club** | AMBER | 6 m³/s | Moderate rain (3mm/48h) — 55% safe, test first<br>rain 3mm/48h |
 
 **0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
 
