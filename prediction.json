@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T15:05:23Z",
+  "generated_at": "2026-09-13T18:06:01Z",
   "assessment_date": "2026-09-13",
   "model_version": "v3",
   "sites": [
@@ -345,7 +345,7 @@
           },
           {
             "date": "2026-09-13",
-            "mm": 1.07
+            "mm": 1.09
           }
         ],
         "flow_station": "Wey at Weybridge",
@@ -359,7 +359,7 @@
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 2.5,
+        "rain_5d_mm": 3.0,
         "rain_recent": [
           {
             "date": "2026-09-09",
@@ -379,7 +379,7 @@
           },
           {
             "date": "2026-09-13",
-            "mm": 0.69
+            "mm": 1.24
           }
         ],
         "flow_station": "Mole at Esher",
@@ -393,7 +393,7 @@
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 1.9,
+        "rain_5d_mm": 2.3,
         "rain_recent": [
           {
             "date": "2026-09-09",
@@ -413,7 +413,7 @@
           },
           {
             "date": "2026-09-13",
-            "mm": 0.25
+            "mm": 0.66
           }
         ],
         "flow_station": "Thames at Reading",
