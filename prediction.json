@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T09:20:39Z",
+  "generated_at": "2026-09-13T12:06:37Z",
   "assessment_date": "2026-09-13",
   "model_version": "v3",
   "sites": [
@@ -383,11 +383,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 3.425,
-        "flow_change_pct": 32,
+        "flow_m3s": 1.82,
+        "flow_change_pct": 2,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "surge"
+        "flow_source": "15min",
+        "status": "flat"
       },
       {
         "catchment": "Thames",
