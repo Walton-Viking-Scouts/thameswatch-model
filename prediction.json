@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-13T06:08:19Z",
+  "generated_at": "2026-09-13T09:20:39Z",
   "assessment_date": "2026-09-13",
   "model_version": "v3",
   "sites": [
@@ -325,7 +325,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 2.6,
+        "rain_5d_mm": 3.0,
         "rain_recent": [
           {
             "date": "2026-09-09",
@@ -345,14 +345,14 @@
           },
           {
             "date": "2026-09-13",
-            "mm": 0.02
+            "mm": 0.41
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 3.698,
-        "flow_change_pct": 6,
+        "flow_m3s": 4.247,
+        "flow_change_pct": -4,
         "flow_window": "24h",
-        "flow_source": "15min",
+        "flow_source": "daily",
         "status": "flat"
       },
       {
@@ -413,7 +413,7 @@
           },
           {
             "date": "2026-09-13",
-            "mm": 0.0
+            "mm": 0.02
           }
         ],
         "flow_station": "Thames at Reading",
