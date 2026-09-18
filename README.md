@@ -14,11 +14,11 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-18** — updated 2026-09-18T09:04:03Z (model v3).
+Assessment for **2026-09-18** — updated 2026-09-18T12:04:48Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 8 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Chertsey** | AMBER | 9 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Kingston Albany Reach** | AMBER | 3 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Kingston HMT** | AMBER | 3 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
