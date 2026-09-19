@@ -14,11 +14,11 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-19** — updated 2026-09-19T00:07:39Z (model v3).
+Assessment for **2026-09-19** — updated 2026-09-19T03:03:59Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 7 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 6 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Chertsey** | AMBER | 7 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Kingston Albany Reach** | AMBER | 3 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
 | 🟠 | **Kingston HMT** | AMBER | 3 m³/s | Moderate rain (2mm/48h) — 55% safe, test first<br>rain 2mm/48h |
