@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-09-26** — updated 2026-09-26T15:03:16Z (model v3).
+Assessment for **2026-09-26** — updated 2026-09-26T18:03:38Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 10 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Chertsey** | AMBER | 4 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Kingston Albany Reach** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 48.0h |
-| 🟠 | **Kingston HMT** | AMBER | 5 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Very low flow (8 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 48.0h |
-| 🔴 | **Hogsmill confluence** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 48.0h |
-| 🔴 | **Minima Yacht Club** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 48.0h |
+| 🟠 | **Walton Wharf** | AMBER | 7 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Chertsey** | AMBER | 8 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🔴 | **Kingston Albany Reach** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 48.0h |
+| 🟠 | **Kingston HMT** | AMBER | 4 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Very low flow (8 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
+| 🔴 | **Teddington** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 48.0h |
+| 🔴 | **Hogsmill confluence** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 48.0h |
+| 🔴 | **Minima Yacht Club** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 48.0h |
 
 **0 🟢 GREEN · 3 🟠 AMBER · 5 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
