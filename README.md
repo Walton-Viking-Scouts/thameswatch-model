@@ -14,20 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-07** — updated 2026-10-07T21:03:25Z (model v3).
+Assessment for **2026-10-08** — updated 2026-10-08T00:09:38Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 10 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🟠 | **Chertsey** | AMBER | 7 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Kingston Albany Reach** | RED | 6 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 19.6h |
-| 🟠 | **Kingston HMT** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Ditton's Bend** | RED | 6 m³/s | Very low flow (8 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted |
-| 🔴 | **Teddington** | RED | 6 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 19.6h |
-| 🔴 | **Hogsmill confluence** | RED | 6 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 19.6h |
-| 🔴 | **Minima Yacht Club** | RED | 6 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Thames: Portsmouth Road, Uxbridge Road 19.6h |
+| 🔴 | **Walton Wharf** | RED | 9 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Chertsey** | RED | 7 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | — | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Kingston HMT** | RED | — | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Ditton's Bend** | RED | — | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Teddington** | RED | — | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | — | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | — | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
 
-**0 🟢 GREEN · 3 🟠 AMBER · 5 🔴 RED**
+**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
