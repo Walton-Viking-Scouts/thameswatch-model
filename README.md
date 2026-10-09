@@ -14,26 +14,26 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-08** — updated 2026-10-08T21:03:16Z (model v3).
+Assessment for **2026-10-09** — updated 2026-10-09T00:08:40Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 9 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Chertsey** | RED | 6 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 4 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Kingston HMT** | RED | 4 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Teddington** | RED | 4 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 4 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 4 m³/s | Rained today (8mm/48h) — only 35% safe even without CSO<br>rain 8mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 8 m³/s | Moderate rain (8mm/48h) — 55% safe, test first<br>rain 8mm/48h |
+| 🟠 | **Chertsey** | AMBER | 7 m³/s | Moderate rain (8mm/48h) — 55% safe, test first<br>rain 8mm/48h |
+| 🟠 | **Kingston Albany Reach** | AMBER | 5 m³/s | Moderate rain (8mm/48h) — 55% safe, test first<br>rain 8mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 5 m³/s | Moderate rain (8mm/48h) — 55% safe, test first<br>rain 8mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Very low flow (9 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 8mm/48h |
+| 🔴 | **Teddington** | RED | 5 m³/s | Very low flow (9 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 8mm/48h |
+| 🟠 | **Hogsmill confluence** | AMBER | 5 m³/s | Moderate rain (8mm/48h) — 55% safe, test first<br>rain 8mm/48h |
+| 🟠 | **Minima Yacht Club** | AMBER | 5 m³/s | Moderate rain (8mm/48h) — 55% safe, test first<br>rain 8mm/48h |
 
-**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
+**0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames rising._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames rising._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
