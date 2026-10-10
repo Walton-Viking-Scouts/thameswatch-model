@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-10T09:03:40Z",
+  "generated_at": "2026-10-10T12:04:33Z",
   "assessment_date": "2026-10-10",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 8.425,
+      "live_flow_m3s": 9.103,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 1.85,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.178,
-          "mole_flow_15min": 2.246
+          "wey_flow_15min": 4.277,
+          "mole_flow_15min": 2.258
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 8.075,
+      "live_flow_m3s": 8.803,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 1.85,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.178,
-          "mole_flow_15min": 2.246
+          "wey_flow_15min": 4.277,
+          "mole_flow_15min": 2.258
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 5.814,
+      "live_flow_m3s": 6.385,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.85,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.178,
-          "mole_flow_15min": 2.246
+          "wey_flow_15min": 4.277,
+          "mole_flow_15min": 2.258
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 5.814,
+      "live_flow_m3s": 6.385,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.85,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.178,
-          "mole_flow_15min": 2.246
+          "wey_flow_15min": 4.277,
+          "mole_flow_15min": 2.258
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 85,
       "explanation": "Very low flow (9 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "",
-      "live_flow_m3s": 5.814,
+      "live_flow_m3s": 6.385,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.85,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.178,
-          "mole_flow_15min": 2.246
+          "wey_flow_15min": 4.277,
+          "mole_flow_15min": 2.258
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 85,
       "explanation": "Very low flow (9 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "",
-      "live_flow_m3s": 5.814,
+      "live_flow_m3s": 6.385,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.85,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.178,
-          "mole_flow_15min": 2.246
+          "wey_flow_15min": 4.277,
+          "mole_flow_15min": 2.258
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 5.814,
+      "live_flow_m3s": 6.385,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.85,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.178,
-          "mole_flow_15min": 2.246
+          "wey_flow_15min": 4.277,
+          "mole_flow_15min": 2.258
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 5.814,
+      "live_flow_m3s": 6.385,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.85,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.178,
-          "mole_flow_15min": 2.246
+          "wey_flow_15min": 4.277,
+          "mole_flow_15min": 2.258
         }
       },
       "data_quality": {
@@ -345,12 +345,12 @@
           },
           {
             "date": "2026-10-10",
-            "mm": 0.0
+            "mm": 0.03
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.187,
-        "flow_change_pct": 3,
+        "flow_m3s": 4.277,
+        "flow_change_pct": 7,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -383,8 +383,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.222,
-        "flow_change_pct": 3,
+        "flow_m3s": 2.258,
+        "flow_change_pct": 8,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -417,11 +417,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 3.75,
-        "flow_change_pct": -18,
+        "flow_m3s": 4.397,
+        "flow_change_pct": 5,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "easing"
+        "status": "flat"
       }
     ]
   },
