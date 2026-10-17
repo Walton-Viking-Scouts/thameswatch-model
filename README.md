@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-17** — updated 2026-10-17T12:04:29Z (model v3).
+Assessment for **2026-10-17** — updated 2026-10-17T15:03:16Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 10 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Chertsey** | RED | 7 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 7 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Kingston HMT** | RED | 7 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 7 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Teddington** | RED | 7 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 7 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 7 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
+| 🔴 | **Walton Wharf** | RED | 10 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 0.5h · rain 5mm/48h |
+| 🔴 | **Chertsey** | RED | 8 m³/s | Rained today (5mm/48h) — only 35% safe even without CSO<br>rain 5mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 1 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 0.5h · rain 5mm/48h |
+| 🔴 | **Kingston HMT** | RED | 1 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 0.5h · rain 5mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 1 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 0.5h · rain 5mm/48h |
+| 🔴 | **Teddington** | RED | 1 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 0.5h · rain 5mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 1 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 0.5h · rain 5mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 1 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Wey: Weybridge 0.5h · rain 5mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames rising._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole flat · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
