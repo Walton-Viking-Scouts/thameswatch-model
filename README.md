@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-18** — updated 2026-10-18T09:03:32Z (model v3).
+Assessment for **2026-10-18** — updated 2026-10-18T12:04:37Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 9 m³/s | Moderate rain (6mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.2h · rain 6mm/48h |
-| 🟠 | **Chertsey** | AMBER | 8 m³/s | Moderate rain (6mm/48h) — 55% safe, test first<br>rain 6mm/48h |
+| 🔴 | **Walton Wharf** | RED | 10 m³/s | Moderate rain (6mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.2h · rain 6mm/48h |
+| 🟠 | **Chertsey** | AMBER | 7 m³/s | Moderate rain (6mm/48h) — 55% safe, test first<br>rain 6mm/48h |
 | 🔴 | **Kingston Albany Reach** | RED | 5 m³/s | Moderate rain (6mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.2h · rain 6mm/48h |
 | 🔴 | **Kingston HMT** | RED | 5 m³/s | Moderate rain (6mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.2h · rain 6mm/48h |
 | 🔴 | **Ditton's Bend** | RED | 5 m³/s | Moderate rain (6mm) + CSO active — only 16% safe<br>Wey: Weybridge 1.2h · rain 6mm/48h |
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames rising._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
