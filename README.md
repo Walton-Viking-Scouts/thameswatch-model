@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-19** — updated 2026-10-19T18:04:18Z (model v3).
+Assessment for **2026-10-19** — updated 2026-10-19T21:03:12Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🔴 | **Walton Wharf** | RED | 9 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
 | 🟠 | **Chertsey** | AMBER | 8 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Kingston Albany Reach** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Kingston HMT** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Teddington** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Hogsmill confluence** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Minima Yacht Club** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Kingston Albany Reach** | RED | 3 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Kingston HMT** | RED | 3 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Ditton's Bend** | RED | 3 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Teddington** | RED | 3 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Hogsmill confluence** | RED | 3 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Minima Yacht Club** | RED | 3 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
 
 **0 🟢 GREEN · 1 🟠 AMBER · 7 🔴 RED**
 
