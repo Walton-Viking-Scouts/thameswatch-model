@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-19** — updated 2026-10-19T09:06:51Z (model v3).
+Assessment for **2026-10-19** — updated 2026-10-19T12:05:26Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🔴 | **Walton Wharf** | RED | 9 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🟠 | **Chertsey** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
-| 🔴 | **Kingston Albany Reach** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Kingston HMT** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Teddington** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Hogsmill confluence** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
-| 🔴 | **Minima Yacht Club** | RED | 5 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🟠 | **Chertsey** | AMBER | 7 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🔴 | **Kingston Albany Reach** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Kingston HMT** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Teddington** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Hogsmill confluence** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
+| 🔴 | **Minima Yacht Club** | RED | 4 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>Wey: Weybridge 0.8h |
 
 **0 🟢 GREEN · 1 🟠 AMBER · 7 🔴 RED**
 
