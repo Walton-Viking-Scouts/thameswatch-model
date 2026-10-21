@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-21** — updated 2026-10-21T18:04:04Z (model v3).
+Assessment for **2026-10-21** — updated 2026-10-21T21:03:17Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 13 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
-| 🔴 | **Chertsey** | RED | 16 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 11 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
-| 🔴 | **Kingston HMT** | RED | 11 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 11 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
-| 🔴 | **Teddington** | RED | 11 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 11 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 11 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
+| 🔴 | **Walton Wharf** | RED | 16 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
+| 🔴 | **Chertsey** | RED | 18 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 10 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
+| 🔴 | **Kingston HMT** | RED | 10 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 10 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
+| 🔴 | **Teddington** | RED | 10 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 10 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 10 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.1h · rain 5mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey rising · Mole rising · Thames surge._
+_Upstream watch (tributary flow, last 24h): Wey rising · Mole flat · Thames surge._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
