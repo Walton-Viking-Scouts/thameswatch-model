@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-22** — updated 2026-10-22T06:05:09Z (model v3).
+Assessment for **2026-10-22** — updated 2026-10-22T09:04:22Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 20 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
-| 🔴 | **Chertsey** | RED | 17 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 7 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
-| 🔴 | **Kingston HMT** | RED | 7 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 7 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
-| 🔴 | **Teddington** | RED | 7 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 7 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 7 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
+| 🔴 | **Walton Wharf** | RED | 18 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
+| 🔴 | **Chertsey** | RED | 14 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 11 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
+| 🔴 | **Kingston HMT** | RED | 11 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 11 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
+| 🔴 | **Teddington** | RED | 11 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 11 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 11 m³/s | Heavy rain (13mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.6h · rain 13mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
