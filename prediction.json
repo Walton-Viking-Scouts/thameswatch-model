@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T00:07:12Z",
+  "generated_at": "2026-10-22T03:04:13Z",
   "assessment_date": "2026-10-22",
   "model_version": "v3",
   "sites": [
@@ -9,8 +9,8 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.5 m\u00b3/s)",
-      "live_flow_m3s": 19.623,
+      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.6 m\u00b3/s)",
+      "live_flow_m3s": 20.746,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 13.05,
@@ -30,8 +30,8 @@
           "wey_rising": true,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.486,
-          "mole_flow_15min": 1.914
+          "wey_flow_15min": 7.56,
+          "mole_flow_15min": 1.973
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 18.23,
+      "live_flow_m3s": 17.857,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 13.05,
@@ -69,8 +69,8 @@
           "wey_rising": true,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.486,
-          "mole_flow_15min": 1.914
+          "wey_flow_15min": 7.56,
+          "mole_flow_15min": 1.973
         }
       },
       "data_quality": {
@@ -87,8 +87,8 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.5 m\u00b3/s)",
-      "live_flow_m3s": 11.429,
+      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.6 m\u00b3/s)",
+      "live_flow_m3s": 13.709,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -108,8 +108,8 @@
           "wey_rising": true,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.486,
-          "mole_flow_15min": 1.914
+          "wey_flow_15min": 7.56,
+          "mole_flow_15min": 1.973
         }
       },
       "data_quality": {
@@ -126,8 +126,8 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.5 m\u00b3/s)",
-      "live_flow_m3s": 11.429,
+      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.6 m\u00b3/s)",
+      "live_flow_m3s": 13.709,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -147,8 +147,8 @@
           "wey_rising": true,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.486,
-          "mole_flow_15min": 1.914
+          "wey_flow_15min": 7.56,
+          "mole_flow_15min": 1.973
         }
       },
       "data_quality": {
@@ -165,8 +165,8 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.5 m\u00b3/s)",
-      "live_flow_m3s": 11.429,
+      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.6 m\u00b3/s)",
+      "live_flow_m3s": 13.709,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -186,8 +186,8 @@
           "wey_rising": true,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.486,
-          "mole_flow_15min": 1.914
+          "wey_flow_15min": 7.56,
+          "mole_flow_15min": 1.973
         }
       },
       "data_quality": {
@@ -204,8 +204,8 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.5 m\u00b3/s)",
-      "live_flow_m3s": 11.429,
+      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.6 m\u00b3/s)",
+      "live_flow_m3s": 13.709,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -225,8 +225,8 @@
           "wey_rising": true,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.486,
-          "mole_flow_15min": 1.914
+          "wey_flow_15min": 7.56,
+          "mole_flow_15min": 1.973
         }
       },
       "data_quality": {
@@ -243,8 +243,8 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.5 m\u00b3/s)",
-      "live_flow_m3s": 11.429,
+      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.6 m\u00b3/s)",
+      "live_flow_m3s": 13.709,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -264,8 +264,8 @@
           "wey_rising": true,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.486,
-          "mole_flow_15min": 1.914
+          "wey_flow_15min": 7.56,
+          "mole_flow_15min": 1.973
         }
       },
       "data_quality": {
@@ -282,8 +282,8 @@
       "level": "RED",
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
-      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.5 m\u00b3/s)",
-      "live_flow_m3s": 11.429,
+      "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h \u00b7 Wey flow rising (7.6 m\u00b3/s)",
+      "live_flow_m3s": 13.709,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -303,8 +303,8 @@
           "wey_rising": true,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.486,
-          "mole_flow_15min": 1.914
+          "wey_flow_15min": 7.56,
+          "mole_flow_15min": 1.973
         }
       },
       "data_quality": {
@@ -325,7 +325,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 23.7,
+        "rain_5d_mm": 25.0,
         "rain_recent": [
           {
             "date": "2026-10-18",
@@ -342,11 +342,15 @@
           {
             "date": "2026-10-21",
             "mm": 11.07
+          },
+          {
+            "date": "2026-10-22",
+            "mm": 1.34
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 7.486,
-        "flow_change_pct": 32,
+        "flow_m3s": 7.545,
+        "flow_change_pct": 30,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "surge"
@@ -355,7 +359,7 @@
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 11.3,
+        "rain_5d_mm": 13.1,
         "rain_recent": [
           {
             "date": "2026-10-18",
@@ -372,10 +376,14 @@
           {
             "date": "2026-10-21",
             "mm": 3.32
+          },
+          {
+            "date": "2026-10-22",
+            "mm": 1.79
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.914,
+        "flow_m3s": 1.978,
         "flow_change_pct": 5,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -385,7 +393,7 @@
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 36.8,
+        "rain_5d_mm": 37.2,
         "rain_recent": [
           {
             "date": "2026-10-18",
@@ -402,11 +410,15 @@
           {
             "date": "2026-10-21",
             "mm": 16.85
+          },
+          {
+            "date": "2026-10-22",
+            "mm": 0.44
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 7.826,
-        "flow_change_pct": 18,
+        "flow_m3s": 7.564,
+        "flow_change_pct": 12,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
