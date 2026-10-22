@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T09:04:22Z",
+  "generated_at": "2026-10-22T12:05:03Z",
   "assessment_date": "2026-10-22",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 18.166,
+      "live_flow_m3s": 19.813,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 13.05,
@@ -30,7 +30,6 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.6,
           "mole_flow_15min": 2.018
         }
       },
@@ -39,6 +38,7 @@
         "flow_data_date": "2026-10-20",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -49,7 +49,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 14.486,
+      "live_flow_m3s": 13.403,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 13.05,
@@ -69,7 +69,6 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.6,
           "mole_flow_15min": 2.018
         }
       },
@@ -78,6 +77,7 @@
         "flow_data_date": "2026-10-20",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -88,7 +88,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 11.077,
+      "live_flow_m3s": 11.059,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -108,7 +108,6 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.6,
           "mole_flow_15min": 2.018
         }
       },
@@ -117,6 +116,7 @@
         "flow_data_date": "2026-10-20",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -127,7 +127,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 11.077,
+      "live_flow_m3s": 11.059,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -147,7 +147,6 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.6,
           "mole_flow_15min": 2.018
         }
       },
@@ -156,6 +155,7 @@
         "flow_data_date": "2026-10-20",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -166,7 +166,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 11.077,
+      "live_flow_m3s": 11.059,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -186,7 +186,6 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.6,
           "mole_flow_15min": 2.018
         }
       },
@@ -195,6 +194,7 @@
         "flow_data_date": "2026-10-20",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -205,7 +205,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 11.077,
+      "live_flow_m3s": 11.059,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -225,7 +225,6 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.6,
           "mole_flow_15min": 2.018
         }
       },
@@ -234,6 +233,7 @@
         "flow_data_date": "2026-10-20",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -244,7 +244,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 11.077,
+      "live_flow_m3s": 11.059,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -264,7 +264,6 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.6,
           "mole_flow_15min": 2.018
         }
       },
@@ -273,6 +272,7 @@
         "flow_data_date": "2026-10-20",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -283,7 +283,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (13mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 4.6h \u00b7 rain 13mm/48h",
-      "live_flow_m3s": 11.077,
+      "live_flow_m3s": 11.059,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 13.05,
@@ -303,7 +303,6 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.6,
           "mole_flow_15min": 2.018
         }
       },
@@ -312,6 +311,7 @@
         "flow_data_date": "2026-10-20",
         "data_lag_days": 2,
         "warnings": [
+          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -345,15 +345,15 @@
           },
           {
             "date": "2026-10-22",
-            "mm": 1.41
+            "mm": 1.46
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 6.6,
-        "flow_change_pct": 18,
+        "flow_m3s": 6.157,
+        "flow_change_pct": -29,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "easing"
       },
       {
         "catchment": "Mole",
@@ -384,7 +384,7 @@
         ],
         "flow_station": "Mole at Esher",
         "flow_m3s": 2.018,
-        "flow_change_pct": 4,
+        "flow_change_pct": -3,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -417,11 +417,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 7.68,
-        "flow_change_pct": 10,
+        "flow_m3s": 8.527,
+        "flow_change_pct": 5,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "flat"
       }
     ]
   },
