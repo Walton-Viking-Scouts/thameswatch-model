@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-23** — updated 2026-10-23T00:09:04Z (model v3).
+Assessment for **2026-10-23** — updated 2026-10-23T03:03:54Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 10 m³/s | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.5h · rain 20mm/48h |
-| 🔴 | **Chertsey** | RED | — | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.5h · rain 20mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | — | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.5h · rain 20mm/48h |
-| 🔴 | **Kingston HMT** | RED | — | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.5h · rain 20mm/48h |
-| 🔴 | **Ditton's Bend** | RED | — | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.5h · rain 20mm/48h |
-| 🔴 | **Teddington** | RED | — | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.5h · rain 20mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | — | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.5h · rain 20mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | — | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 4.5h · rain 20mm/48h |
+| 🔴 | **Walton Wharf** | RED | 11 m³/s | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 14.3h · rain 20mm/48h |
+| 🔴 | **Chertsey** | RED | 9 m³/s | Heavy rain (20mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 14.3h · rain 20mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 13 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Cobham Bridge, Adj Cobham PS 11.0h, Leatherhead 12.2h · ThamesUpstream: Windsor 14.3h · rain 20mm/48h |
+| 🔴 | **Kingston HMT** | RED | 13 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Cobham Bridge, Adj Cobham PS 11.0h, Leatherhead 12.2h · ThamesUpstream: Windsor 14.3h · rain 20mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 13 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Cobham Bridge, Adj Cobham PS 11.0h, Leatherhead 12.2h · ThamesUpstream: Windsor 14.3h · rain 20mm/48h |
+| 🔴 | **Teddington** | RED | 13 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Cobham Bridge, Adj Cobham PS 11.0h, Leatherhead 12.2h · ThamesUpstream: Windsor 14.3h · rain 20mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 13 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Cobham Bridge, Adj Cobham PS 11.0h, Leatherhead 12.2h · ThamesUpstream: Windsor 14.3h · rain 20mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 13 m³/s | Multiple river CSOs active (Mole, ThamesUpstream) — 0% safe historically<br>Mole: Cobham Bridge, Adj Cobham PS 11.0h, Leatherhead 12.2h · ThamesUpstream: Windsor 14.3h · rain 20mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole flat · Thames surge._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames rising._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
