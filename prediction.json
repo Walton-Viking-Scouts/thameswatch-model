@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T06:05:09Z",
+  "generated_at": "2026-10-23T09:03:31Z",
   "assessment_date": "2026-10-23",
   "model_version": "v3",
   "sites": [
@@ -9,8 +9,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 6.8h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h",
-      "live_flow_m3s": 11.987,
+      "why_detail": "Wey: Ripley 6.8h, Weybridge 5.5h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h \u00b7 Wey flow rising (9.4 m\u00b3/s)",
+      "live_flow_m3s": 20.764,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 20.4,
@@ -19,19 +19,19 @@
         "season": "autumn",
         "flow_m3s": 17.034,
         "cso_active_48h": true,
-        "cso_hours_48h": 43.4,
-        "cso_active_monitors": "Ripley(6.8h); Cobham Bridge, Adj Cobham PS(2.0h); Leatherhead(12.2h); Hogsmill(10.8h); Windsor(11.6h)",
+        "cso_hours_48h": 46.4,
+        "cso_active_monitors": "Ripley(6.8h); Weybridge(5.5h); Cobham Bridge, Adj Cobham PS(7.8h); Leatherhead(12.2h); Hogsmill(2.5h); Windsor(11.6h)",
         "upstream_ctx": {
           "walton_flow": 17.034,
           "wey_flow": 6.992,
           "mole_flow": 1.971,
           "wey_pct": 41.047317130444995,
           "mole_pct": 11.57097569566749,
-          "wey_rising": false,
-          "mole_rising": false,
+          "wey_rising": true,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.252,
-          "mole_flow_15min": 2.54
+          "wey_flow_15min": 9.442,
+          "mole_flow_15min": 3.053
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 95,
       "explanation": "Heavy rain (20mm/48h) \u2014 only 5-20% safe",
       "why_detail": "ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h",
-      "live_flow_m3s": 15.064,
+      "live_flow_m3s": 17.165,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 20.4,
@@ -58,19 +58,19 @@
         "season": "autumn",
         "flow_m3s": 17.034,
         "cso_active_48h": true,
-        "cso_hours_48h": 43.4,
-        "cso_active_monitors": "Ripley(6.8h); Cobham Bridge, Adj Cobham PS(2.0h); Leatherhead(12.2h); Hogsmill(10.8h); Windsor(11.6h)",
+        "cso_hours_48h": 46.4,
+        "cso_active_monitors": "Ripley(6.8h); Weybridge(5.5h); Cobham Bridge, Adj Cobham PS(7.8h); Leatherhead(12.2h); Hogsmill(2.5h); Windsor(11.6h)",
         "upstream_ctx": {
           "walton_flow": 17.034,
           "wey_flow": 6.992,
           "mole_flow": 1.971,
           "wey_pct": 41.047317130444995,
           "mole_pct": 11.57097569566749,
-          "wey_rising": false,
-          "mole_rising": false,
+          "wey_rising": true,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.252,
-          "mole_flow_15min": 2.54
+          "wey_flow_15min": 9.442,
+          "mole_flow_15min": 3.053
         }
       },
       "data_quality": {
@@ -87,8 +87,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 6.8h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 2.0h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h",
-      "live_flow_m3s": 11.618,
+      "why_detail": "Wey: Ripley 6.8h, Weybridge 5.5h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 7.8h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h \u00b7 Wey flow rising (9.4 m\u00b3/s) \u00b7 Mole flow rising (3.1 m\u00b3/s)",
+      "live_flow_m3s": 13.092,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 20.4,
@@ -97,19 +97,19 @@
         "season": "autumn",
         "flow_m3s": 17.034,
         "cso_active_48h": true,
-        "cso_hours_48h": 43.4,
-        "cso_active_monitors": "Ripley(6.8h); Cobham Bridge, Adj Cobham PS(2.0h); Leatherhead(12.2h); Hogsmill(10.8h); Windsor(11.6h)",
+        "cso_hours_48h": 46.4,
+        "cso_active_monitors": "Ripley(6.8h); Weybridge(5.5h); Cobham Bridge, Adj Cobham PS(7.8h); Leatherhead(12.2h); Hogsmill(2.5h); Windsor(11.6h)",
         "upstream_ctx": {
           "walton_flow": 17.034,
           "wey_flow": 6.992,
           "mole_flow": 1.971,
           "wey_pct": 41.047317130444995,
           "mole_pct": 11.57097569566749,
-          "wey_rising": false,
-          "mole_rising": false,
+          "wey_rising": true,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.252,
-          "mole_flow_15min": 2.54
+          "wey_flow_15min": 9.442,
+          "mole_flow_15min": 3.053
         }
       },
       "data_quality": {
@@ -126,8 +126,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 6.8h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 2.0h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h",
-      "live_flow_m3s": 11.618,
+      "why_detail": "Wey: Ripley 6.8h, Weybridge 5.5h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 7.8h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h \u00b7 Wey flow rising (9.4 m\u00b3/s) \u00b7 Mole flow rising (3.1 m\u00b3/s)",
+      "live_flow_m3s": 13.092,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 20.4,
@@ -136,19 +136,19 @@
         "season": "autumn",
         "flow_m3s": 17.034,
         "cso_active_48h": true,
-        "cso_hours_48h": 43.4,
-        "cso_active_monitors": "Ripley(6.8h); Cobham Bridge, Adj Cobham PS(2.0h); Leatherhead(12.2h); Hogsmill(10.8h); Windsor(11.6h)",
+        "cso_hours_48h": 46.4,
+        "cso_active_monitors": "Ripley(6.8h); Weybridge(5.5h); Cobham Bridge, Adj Cobham PS(7.8h); Leatherhead(12.2h); Hogsmill(2.5h); Windsor(11.6h)",
         "upstream_ctx": {
           "walton_flow": 17.034,
           "wey_flow": 6.992,
           "mole_flow": 1.971,
           "wey_pct": 41.047317130444995,
           "mole_pct": 11.57097569566749,
-          "wey_rising": false,
-          "mole_rising": false,
+          "wey_rising": true,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.252,
-          "mole_flow_15min": 2.54
+          "wey_flow_15min": 9.442,
+          "mole_flow_15min": 3.053
         }
       },
       "data_quality": {
@@ -165,8 +165,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 6.8h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 2.0h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h",
-      "live_flow_m3s": 11.618,
+      "why_detail": "Wey: Ripley 6.8h, Weybridge 5.5h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 7.8h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h \u00b7 Wey flow rising (9.4 m\u00b3/s) \u00b7 Mole flow rising (3.1 m\u00b3/s)",
+      "live_flow_m3s": 13.092,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 20.4,
@@ -175,19 +175,19 @@
         "season": "autumn",
         "flow_m3s": 17.034,
         "cso_active_48h": true,
-        "cso_hours_48h": 43.4,
-        "cso_active_monitors": "Ripley(6.8h); Cobham Bridge, Adj Cobham PS(2.0h); Leatherhead(12.2h); Hogsmill(10.8h); Windsor(11.6h)",
+        "cso_hours_48h": 46.4,
+        "cso_active_monitors": "Ripley(6.8h); Weybridge(5.5h); Cobham Bridge, Adj Cobham PS(7.8h); Leatherhead(12.2h); Hogsmill(2.5h); Windsor(11.6h)",
         "upstream_ctx": {
           "walton_flow": 17.034,
           "wey_flow": 6.992,
           "mole_flow": 1.971,
           "wey_pct": 41.047317130444995,
           "mole_pct": 11.57097569566749,
-          "wey_rising": false,
-          "mole_rising": false,
+          "wey_rising": true,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.252,
-          "mole_flow_15min": 2.54
+          "wey_flow_15min": 9.442,
+          "mole_flow_15min": 3.053
         }
       },
       "data_quality": {
@@ -204,8 +204,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 6.8h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 2.0h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h",
-      "live_flow_m3s": 11.618,
+      "why_detail": "Wey: Ripley 6.8h, Weybridge 5.5h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 7.8h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h \u00b7 Wey flow rising (9.4 m\u00b3/s) \u00b7 Mole flow rising (3.1 m\u00b3/s)",
+      "live_flow_m3s": 13.092,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 20.4,
@@ -214,19 +214,19 @@
         "season": "autumn",
         "flow_m3s": 17.034,
         "cso_active_48h": true,
-        "cso_hours_48h": 43.4,
-        "cso_active_monitors": "Ripley(6.8h); Cobham Bridge, Adj Cobham PS(2.0h); Leatherhead(12.2h); Hogsmill(10.8h); Windsor(11.6h)",
+        "cso_hours_48h": 46.4,
+        "cso_active_monitors": "Ripley(6.8h); Weybridge(5.5h); Cobham Bridge, Adj Cobham PS(7.8h); Leatherhead(12.2h); Hogsmill(2.5h); Windsor(11.6h)",
         "upstream_ctx": {
           "walton_flow": 17.034,
           "wey_flow": 6.992,
           "mole_flow": 1.971,
           "wey_pct": 41.047317130444995,
           "mole_pct": 11.57097569566749,
-          "wey_rising": false,
-          "mole_rising": false,
+          "wey_rising": true,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.252,
-          "mole_flow_15min": 2.54
+          "wey_flow_15min": 9.442,
+          "mole_flow_15min": 3.053
         }
       },
       "data_quality": {
@@ -243,8 +243,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 6.8h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 2.0h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h",
-      "live_flow_m3s": 11.618,
+      "why_detail": "Wey: Ripley 6.8h, Weybridge 5.5h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 7.8h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h \u00b7 Wey flow rising (9.4 m\u00b3/s) \u00b7 Mole flow rising (3.1 m\u00b3/s)",
+      "live_flow_m3s": 13.092,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 20.4,
@@ -253,19 +253,19 @@
         "season": "autumn",
         "flow_m3s": 17.034,
         "cso_active_48h": true,
-        "cso_hours_48h": 43.4,
-        "cso_active_monitors": "Ripley(6.8h); Cobham Bridge, Adj Cobham PS(2.0h); Leatherhead(12.2h); Hogsmill(10.8h); Windsor(11.6h)",
+        "cso_hours_48h": 46.4,
+        "cso_active_monitors": "Ripley(6.8h); Weybridge(5.5h); Cobham Bridge, Adj Cobham PS(7.8h); Leatherhead(12.2h); Hogsmill(2.5h); Windsor(11.6h)",
         "upstream_ctx": {
           "walton_flow": 17.034,
           "wey_flow": 6.992,
           "mole_flow": 1.971,
           "wey_pct": 41.047317130444995,
           "mole_pct": 11.57097569566749,
-          "wey_rising": false,
-          "mole_rising": false,
+          "wey_rising": true,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.252,
-          "mole_flow_15min": 2.54
+          "wey_flow_15min": 9.442,
+          "mole_flow_15min": 3.053
         }
       },
       "data_quality": {
@@ -282,8 +282,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 6.8h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 2.0h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h",
-      "live_flow_m3s": 11.618,
+      "why_detail": "Wey: Ripley 6.8h, Weybridge 5.5h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 7.8h, Leatherhead 12.2h \u00b7 ThamesUpstream: Windsor 11.6h \u00b7 rain 20mm/48h \u00b7 Wey flow rising (9.4 m\u00b3/s) \u00b7 Mole flow rising (3.1 m\u00b3/s)",
+      "live_flow_m3s": 13.092,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 20.4,
@@ -292,19 +292,19 @@
         "season": "autumn",
         "flow_m3s": 17.034,
         "cso_active_48h": true,
-        "cso_hours_48h": 43.4,
-        "cso_active_monitors": "Ripley(6.8h); Cobham Bridge, Adj Cobham PS(2.0h); Leatherhead(12.2h); Hogsmill(10.8h); Windsor(11.6h)",
+        "cso_hours_48h": 46.4,
+        "cso_active_monitors": "Ripley(6.8h); Weybridge(5.5h); Cobham Bridge, Adj Cobham PS(7.8h); Leatherhead(12.2h); Hogsmill(2.5h); Windsor(11.6h)",
         "upstream_ctx": {
           "walton_flow": 17.034,
           "wey_flow": 6.992,
           "mole_flow": 1.971,
           "wey_pct": 41.047317130444995,
           "mole_pct": 11.57097569566749,
-          "wey_rising": false,
-          "mole_rising": false,
+          "wey_rising": true,
+          "mole_rising": true,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.252,
-          "mole_flow_15min": 2.54
+          "wey_flow_15min": 9.442,
+          "mole_flow_15min": 3.053
         }
       },
       "data_quality": {
@@ -325,7 +325,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 53.5,
+        "rain_5d_mm": 66.9,
         "rain_recent": [
           {
             "date": "2026-10-19",
@@ -345,21 +345,21 @@
           },
           {
             "date": "2026-10-23",
-            "mm": 14.17
+            "mm": 27.56
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 7.252,
-        "flow_change_pct": 5,
+        "flow_m3s": 9.442,
+        "flow_change_pct": 47,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "surge"
       },
       {
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 33.7,
+        "rain_5d_mm": 38.9,
         "rain_recent": [
           {
             "date": "2026-10-19",
@@ -379,21 +379,21 @@
           },
           {
             "date": "2026-10-23",
-            "mm": 8.86
+            "mm": 14.09
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.54,
-        "flow_change_pct": 27,
+        "flow_m3s": 3.09,
+        "flow_change_pct": 52,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "surge"
       },
       {
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 44.9,
+        "rain_5d_mm": 47.6,
         "rain_recent": [
           {
             "date": "2026-10-19",
@@ -413,12 +413,12 @@
           },
           {
             "date": "2026-10-23",
-            "mm": 5.65
+            "mm": 8.42
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 8.891,
-        "flow_change_pct": 15,
+        "flow_m3s": 9.314,
+        "flow_change_pct": 18,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
