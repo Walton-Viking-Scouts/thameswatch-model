@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-25** — updated 2026-10-25T18:03:44Z (model v3).
+Assessment for **2026-10-25** — updated 2026-10-25T21:03:13Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 16 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
+| 🔴 | **Walton Wharf** | RED | 18 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
 | 🔴 | **Chertsey** | RED | 17 m³/s | Heavy rain (32mm/48h) — only 5-20% safe<br>ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 20 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
-| 🔴 | **Kingston HMT** | RED | 20 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 20 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
-| 🔴 | **Teddington** | RED | 20 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 20 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 20 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 18 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
+| 🔴 | **Kingston HMT** | RED | 18 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 18 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
+| 🔴 | **Teddington** | RED | 18 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 18 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 18 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 3.5h, Ripley 9.2h, Weybridge 3.0h · Mole: Cobham Bridge, Adj Cobham PS 2.8h, Esher 2.5h, Leatherhead 32.8h · ThamesUpstream: Windsor 8.0h · rain 32mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames rising._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
