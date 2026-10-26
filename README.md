@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-26** — updated 2026-10-26T18:05:24Z (model v3).
+Assessment for **2026-10-26** — updated 2026-10-26T21:03:12Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 23 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
+| 🔴 | **Walton Wharf** | RED | 21 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
 | 🔴 | **Chertsey** | RED | 19 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 24 m³/s | Multiple river CSOs active (Hogsmill, Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · Thames: Amyand Park Road, Twickenham 48.0h, Old Palace Lane 0.3h, Portsmouth Road, Uxbridge Road 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
-| 🔴 | **Kingston HMT** | RED | 24 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 24 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
-| 🔴 | **Teddington** | RED | 24 m³/s | Multiple river CSOs active (Hogsmill, Minor, Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · Thames: Amyand Park Road, Twickenham 48.0h, Old Palace Lane 0.3h, Portsmouth Road, Uxbridge Road 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · Minor: Commonside 48.0h · rain 18mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 24 m³/s | Multiple river CSOs active (Hogsmill, Minor, Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · Thames: Amyand Park Road, Twickenham 48.0h, Old Palace Lane 0.3h, Portsmouth Road, Uxbridge Road 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · Minor: Commonside 48.0h · rain 18mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 24 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · Thames: Amyand Park Road, Twickenham 48.0h, Old Palace Lane 0.3h, Portsmouth Road, Uxbridge Road 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 22 m³/s | Multiple river CSOs active (Hogsmill, Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · Thames: Amyand Park Road, Twickenham 48.0h, Old Palace Lane 0.3h, Portsmouth Road, Uxbridge Road 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
+| 🔴 | **Kingston HMT** | RED | 22 m³/s | Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 22 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
+| 🔴 | **Teddington** | RED | 22 m³/s | Multiple river CSOs active (Hogsmill, Minor, Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · Thames: Amyand Park Road, Twickenham 48.0h, Old Palace Lane 0.3h, Portsmouth Road, Uxbridge Road 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · Minor: Commonside 48.0h · rain 18mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 22 m³/s | Multiple river CSOs active (Hogsmill, Minor, Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · Thames: Amyand Park Road, Twickenham 48.0h, Old Palace Lane 0.3h, Portsmouth Road, Uxbridge Road 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · Minor: Commonside 48.0h · rain 18mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 22 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, Leatherhead 14.2h, River Lane 48.0h · Thames: Amyand Park Road, Twickenham 48.0h, Old Palace Lane 0.3h, Portsmouth Road, Uxbridge Road 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 48.0h · rain 18mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames rising._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole flat · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
