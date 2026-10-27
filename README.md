@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-27** — updated 2026-10-27T06:04:59Z (model v3).
+Assessment for **2026-10-27** — updated 2026-10-27T09:05:03Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 21 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · rain 58mm/7d antecedent |
+| 🔴 | **Walton Wharf** | RED | 19 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · rain 58mm/7d antecedent |
 | 🟠 | **Chertsey** | AMBER | 18 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 58mm/7d antecedent |
-| 🔴 | **Kingston Albany Reach** | RED | 15 m³/s | Multiple river CSOs active (Mole, Thames, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) · Thames: Old Palace Lane 0.3h · rain 58mm/7d antecedent |
-| 🔴 | **Kingston HMT** | RED | 15 m³/s | Multiple river CSOs active (Mole, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) · rain 58mm/7d antecedent |
-| 🔴 | **Ditton's Bend** | RED | 15 m³/s | Multiple river CSOs active (Mole, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) · rain 58mm/7d antecedent |
-| 🔴 | **Teddington** | RED | 15 m³/s | Multiple river CSOs active (Mole, Thames, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) · Thames: Old Palace Lane 0.3h · rain 58mm/7d antecedent |
-| 🔴 | **Hogsmill confluence** | RED | 15 m³/s | Multiple river CSOs active (Mole, Thames, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) · Thames: Old Palace Lane 0.3h · rain 58mm/7d antecedent |
-| 🔴 | **Minima Yacht Club** | RED | 15 m³/s | Multiple river CSOs active (Mole, Thames, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) · Thames: Old Palace Lane 0.3h · rain 58mm/7d antecedent |
+| 🔴 | **Kingston Albany Reach** | RED | 13 m³/s | Multiple river CSOs active (Mole, Thames, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: River Lane 48.0h · Thames: Old Palace Lane 0.3h · rain 58mm/7d antecedent |
+| 🔴 | **Kingston HMT** | RED | 13 m³/s | Multiple river CSOs active (Mole, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: River Lane 48.0h · rain 58mm/7d antecedent |
+| 🔴 | **Ditton's Bend** | RED | 13 m³/s | Multiple river CSOs active (Mole, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: River Lane 48.0h · rain 58mm/7d antecedent |
+| 🔴 | **Teddington** | RED | 13 m³/s | Multiple river CSOs active (Mole, Thames, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: River Lane 48.0h · Thames: Old Palace Lane 0.3h · rain 58mm/7d antecedent |
+| 🔴 | **Hogsmill confluence** | RED | 13 m³/s | Multiple river CSOs active (Mole, Thames, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: River Lane 48.0h · Thames: Old Palace Lane 0.3h · rain 58mm/7d antecedent |
+| 🔴 | **Minima Yacht Club** | RED | 13 m³/s | Multiple river CSOs active (Mole, Thames, Wey) — 0% safe historically<br>Wey: Ripley 48.0h, Weybridge 3.2h · Mole: River Lane 48.0h · Thames: Old Palace Lane 0.3h · rain 58mm/7d antecedent |
 
 **0 🟢 GREEN · 1 🟠 AMBER · 7 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
