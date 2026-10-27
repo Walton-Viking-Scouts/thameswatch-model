@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-27T00:08:32Z",
+  "generated_at": "2026-10-27T03:04:49Z",
   "assessment_date": "2026-10-27",
   "model_version": "v3",
   "sites": [
@@ -9,8 +9,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor (live) \u00b7 rain 58mm/7d antecedent",
-      "live_flow_m3s": null,
+      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 58mm/7d antecedent",
+      "live_flow_m3s": 20.292,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 1.9,
@@ -20,7 +20,7 @@
         "flow_m3s": 22.543,
         "cso_active_48h": true,
         "cso_hours_48h": 288.3,
-        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Hogsmill(live); Leatherhead(live); Old Palace Lane (live); Windsor(live)",
+        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Leatherhead(live); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.543,
           "wey_flow": 10.484,
@@ -30,7 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.181
+          "wey_flow_15min": 6.211,
+          "mole_flow_15min": 5.804
         }
       },
       "data_quality": {
@@ -38,7 +39,6 @@
         "flow_data_date": "2026-10-25",
         "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -46,10 +46,10 @@
     {
       "site": "Chertsey",
       "level": "RED",
-      "confidence": 93,
-      "explanation": "2 CSO monitors discharging \u2014 only 7% safe historically",
-      "why_detail": "ThamesUpstream: Little Marlow 48.0h, Windsor (live) \u00b7 rain 58mm/7d antecedent",
-      "live_flow_m3s": null,
+      "confidence": 86,
+      "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
+      "why_detail": "ThamesUpstream: Little Marlow 48.0h \u00b7 rain 58mm/7d antecedent",
+      "live_flow_m3s": 18.787,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 1.9,
@@ -59,7 +59,7 @@
         "flow_m3s": 22.543,
         "cso_active_48h": true,
         "cso_hours_48h": 288.3,
-        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Hogsmill(live); Leatherhead(live); Old Palace Lane (live); Windsor(live)",
+        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Leatherhead(live); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.543,
           "wey_flow": 10.484,
@@ -69,7 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.181
+          "wey_flow_15min": 6.211,
+          "mole_flow_15min": 5.804
         }
       },
       "data_quality": {
@@ -77,7 +78,6 @@
         "flow_data_date": "2026-10-25",
         "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -86,9 +86,9 @@
       "site": "Kingston Albany Reach",
       "level": "RED",
       "confidence": 100,
-      "explanation": "Multiple river CSOs active (Hogsmill, Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.3h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor (live) \u00b7 rain 58mm/7d antecedent",
-      "live_flow_m3s": null,
+      "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
+      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.3h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 58mm/7d antecedent",
+      "live_flow_m3s": 15.564,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.9,
@@ -98,7 +98,7 @@
         "flow_m3s": 22.543,
         "cso_active_48h": true,
         "cso_hours_48h": 288.3,
-        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Hogsmill(live); Leatherhead(live); Old Palace Lane (live); Windsor(live)",
+        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Leatherhead(live); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.543,
           "wey_flow": 10.484,
@@ -108,7 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.181
+          "wey_flow_15min": 6.211,
+          "mole_flow_15min": 5.804
         }
       },
       "data_quality": {
@@ -116,7 +117,6 @@
         "flow_data_date": "2026-10-25",
         "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -125,9 +125,9 @@
       "site": "Kingston HMT",
       "level": "RED",
       "confidence": 100,
-      "explanation": "Multiple river CSOs active (Hogsmill, Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor (live) \u00b7 rain 58mm/7d antecedent",
-      "live_flow_m3s": null,
+      "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
+      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 58mm/7d antecedent",
+      "live_flow_m3s": 15.564,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.9,
@@ -137,7 +137,7 @@
         "flow_m3s": 22.543,
         "cso_active_48h": true,
         "cso_hours_48h": 288.3,
-        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Hogsmill(live); Leatherhead(live); Old Palace Lane (live); Windsor(live)",
+        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Leatherhead(live); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.543,
           "wey_flow": 10.484,
@@ -147,7 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.181
+          "wey_flow_15min": 6.211,
+          "mole_flow_15min": 5.804
         }
       },
       "data_quality": {
@@ -155,7 +156,6 @@
         "flow_data_date": "2026-10-25",
         "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -165,8 +165,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor (live) \u00b7 rain 58mm/7d antecedent",
-      "live_flow_m3s": null,
+      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 58mm/7d antecedent",
+      "live_flow_m3s": 15.564,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.9,
@@ -176,7 +176,7 @@
         "flow_m3s": 22.543,
         "cso_active_48h": true,
         "cso_hours_48h": 288.3,
-        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Hogsmill(live); Leatherhead(live); Old Palace Lane (live); Windsor(live)",
+        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Leatherhead(live); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.543,
           "wey_flow": 10.484,
@@ -186,7 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.181
+          "wey_flow_15min": 6.211,
+          "mole_flow_15min": 5.804
         }
       },
       "data_quality": {
@@ -194,7 +195,6 @@
         "flow_data_date": "2026-10-25",
         "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -203,9 +203,9 @@
       "site": "Teddington",
       "level": "RED",
       "confidence": 100,
-      "explanation": "Multiple river CSOs active (Hogsmill, Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.3h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor (live) \u00b7 rain 58mm/7d antecedent",
-      "live_flow_m3s": null,
+      "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
+      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.3h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 58mm/7d antecedent",
+      "live_flow_m3s": 15.564,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.9,
@@ -215,7 +215,7 @@
         "flow_m3s": 22.543,
         "cso_active_48h": true,
         "cso_hours_48h": 288.3,
-        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Hogsmill(live); Leatherhead(live); Old Palace Lane (live); Windsor(live)",
+        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Leatherhead(live); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.543,
           "wey_flow": 10.484,
@@ -225,7 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.181
+          "wey_flow_15min": 6.211,
+          "mole_flow_15min": 5.804
         }
       },
       "data_quality": {
@@ -233,7 +234,6 @@
         "flow_data_date": "2026-10-25",
         "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -242,9 +242,9 @@
       "site": "Hogsmill confluence",
       "level": "RED",
       "confidence": 100,
-      "explanation": "Multiple river CSOs active (Hogsmill, Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.3h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor (live) \u00b7 rain 58mm/7d antecedent",
-      "live_flow_m3s": null,
+      "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
+      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.3h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 58mm/7d antecedent",
+      "live_flow_m3s": 15.564,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.9,
@@ -254,7 +254,7 @@
         "flow_m3s": 22.543,
         "cso_active_48h": true,
         "cso_hours_48h": 288.3,
-        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Hogsmill(live); Leatherhead(live); Old Palace Lane (live); Windsor(live)",
+        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Leatherhead(live); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.543,
           "wey_flow": 10.484,
@@ -264,7 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.181
+          "wey_flow_15min": 6.211,
+          "mole_flow_15min": 5.804
         }
       },
       "data_quality": {
@@ -272,7 +273,6 @@
         "flow_data_date": "2026-10-25",
         "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -282,8 +282,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.3h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor (live) \u00b7 rain 58mm/7d antecedent",
-      "live_flow_m3s": null,
+      "why_detail": "Wey: Woking 48.0h, Ripley 48.0h, Weybridge 48.0h \u00b7 Mole: Cobham Bridge, Adj Cobham PS 48.0h, River Lane 48.0h, Leatherhead (live) \u00b7 Thames: Old Palace Lane 0.3h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 58mm/7d antecedent",
+      "live_flow_m3s": 15.564,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 1.9,
@@ -293,7 +293,7 @@
         "flow_m3s": 22.543,
         "cso_active_48h": true,
         "cso_hours_48h": 288.3,
-        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Hogsmill(live); Leatherhead(live); Old Palace Lane (live); Windsor(live)",
+        "cso_active_monitors": "Woking(48.0h); Ripley(48.0h); Weybridge(48.0h); Cobham Bridge, Adj Cobham PS(48.0h); River Lane(48.0h); Old Palace Lane(0.3h); Little Marlow(48.0h); Leatherhead(live); Old Palace Lane (live)",
         "upstream_ctx": {
           "walton_flow": 22.543,
           "wey_flow": 10.484,
@@ -303,7 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 7.181
+          "wey_flow_15min": 6.211,
+          "mole_flow_15min": 5.804
         }
       },
       "data_quality": {
@@ -311,7 +312,6 @@
         "flow_data_date": "2026-10-25",
         "data_lag_days": 2,
         "warnings": [
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -325,7 +325,7 @@
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 59.2,
+        "rain_5d_mm": 59.3,
         "rain_recent": [
           {
             "date": "2026-10-23",
@@ -342,13 +342,17 @@
           {
             "date": "2026-10-26",
             "mm": 4.4
+          },
+          {
+            "date": "2026-10-27",
+            "mm": 0.13
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 10.484,
-        "flow_change_pct": -17,
+        "flow_m3s": 6.211,
+        "flow_change_pct": -40,
         "flow_window": "24h",
-        "flow_source": "daily",
+        "flow_source": "15min",
         "status": "easing"
       },
       {
@@ -372,20 +376,24 @@
           {
             "date": "2026-10-26",
             "mm": 2.74
+          },
+          {
+            "date": "2026-10-27",
+            "mm": 0.02
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 7.471,
-        "flow_change_pct": -14,
+        "flow_m3s": 5.804,
+        "flow_change_pct": -24,
         "flow_window": "24h",
-        "flow_source": "daily",
+        "flow_source": "15min",
         "status": "easing"
       },
       {
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 28.6,
+        "rain_5d_mm": 28.7,
         "rain_recent": [
           {
             "date": "2026-10-23",
@@ -401,14 +409,18 @@
           },
           {
             "date": "2026-10-26",
-            "mm": 3.12
+            "mm": 3.14
+          },
+          {
+            "date": "2026-10-27",
+            "mm": 0.1
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 12.425,
-        "flow_change_pct": 2,
+        "flow_m3s": 13.043,
+        "flow_change_pct": 5,
         "flow_window": "24h",
-        "flow_source": "daily",
+        "flow_source": "15min",
         "status": "flat"
       }
     ]
