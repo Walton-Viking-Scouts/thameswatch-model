@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-28** — updated 2026-10-28T00:07:06Z (model v3).
+Assessment for **2026-10-28** — updated 2026-10-28T03:03:29Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | — | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Walton Wharf** | RED | 13 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
 | 🔴 | **Chertsey** | RED | 12 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.5h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
-| 🔴 | **Kingston HMT** | RED | 11 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 11 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
-| 🔴 | **Teddington** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.5h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.5h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.5h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 9 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.5h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Kingston HMT** | RED | 9 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 9 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Teddington** | RED | 9 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.5h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 9 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.5h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 9 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.5h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
