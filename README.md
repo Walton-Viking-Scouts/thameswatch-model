@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-28** — updated 2026-10-28T12:03:58Z (model v3).
+Assessment for **2026-10-28** — updated 2026-10-28T15:02:42Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 13 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
-| 🔴 | **Chertsey** | RED | 15 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Walton Wharf** | RED | 12 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
+| 🔴 | **Chertsey** | RED | 19 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
 | 🔴 | **Kingston Albany Reach** | RED | 6 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
 | 🔴 | **Kingston HMT** | RED | 6 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
 | 🔴 | **Ditton's Bend** | RED | 6 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 2.5h, Weybridge 3.2h · ThamesUpstream: Windsor 0.8h · rain 5mm/48h |
