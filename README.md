@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-29** — updated 2026-10-29T12:03:40Z (model v3).
+Assessment for **2026-10-29** — updated 2026-10-29T15:04:04Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 12 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Chertsey** | RED | 10 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 7 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Kingston HMT** | RED | 7 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 7 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Teddington** | RED | 7 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 7 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 7 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
+| 🔴 | **Walton Wharf** | RED | 10 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
+| 🔴 | **Chertsey** | RED | 5 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 8 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
+| 🔴 | **Kingston HMT** | RED | 8 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 8 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
+| 🔴 | **Teddington** | RED | 8 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 8 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 8 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
