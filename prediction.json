@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T15:04:04Z",
+  "generated_at": "2026-10-29T18:03:40Z",
   "assessment_date": "2026-10-29",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 84,
       "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
       "why_detail": "ThamesUpstream: Windsor 0.1h \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 9.683,
+      "live_flow_m3s": 8.828,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 2.89,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.939,
-          "mole_flow_15min": 3.351
+          "wey_flow_15min": 5.465,
+          "mole_flow_15min": 3.158
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 84,
       "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
       "why_detail": "ThamesUpstream: Windsor 0.1h \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 5.179,
+      "live_flow_m3s": 4.486,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 2.89,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.939,
-          "mole_flow_15min": 3.351
+          "wey_flow_15min": 5.465,
+          "mole_flow_15min": 3.158
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Old Palace Lane 2.4h \u00b7 ThamesUpstream: Windsor 0.1h \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 7.681,
+      "live_flow_m3s": 31.197,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.89,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.939,
-          "mole_flow_15min": 3.351
+          "wey_flow_15min": 5.465,
+          "mole_flow_15min": 3.158
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 84,
       "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
       "why_detail": "ThamesUpstream: Windsor 0.1h \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 7.681,
+      "live_flow_m3s": 31.197,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.89,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.939,
-          "mole_flow_15min": 3.351
+          "wey_flow_15min": 5.465,
+          "mole_flow_15min": 3.158
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 84,
       "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
       "why_detail": "ThamesUpstream: Windsor 0.1h \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 7.681,
+      "live_flow_m3s": 31.197,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.89,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.939,
-          "mole_flow_15min": 3.351
+          "wey_flow_15min": 5.465,
+          "mole_flow_15min": 3.158
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Old Palace Lane 2.4h \u00b7 ThamesUpstream: Windsor 0.1h \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 7.681,
+      "live_flow_m3s": 31.197,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.89,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.939,
-          "mole_flow_15min": 3.351
+          "wey_flow_15min": 5.465,
+          "mole_flow_15min": 3.158
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Old Palace Lane 2.4h \u00b7 ThamesUpstream: Windsor 0.1h \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 7.681,
+      "live_flow_m3s": 31.197,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.89,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.939,
-          "mole_flow_15min": 3.351
+          "wey_flow_15min": 5.465,
+          "mole_flow_15min": 3.158
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Old Palace Lane 2.4h \u00b7 ThamesUpstream: Windsor 0.1h \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 7.681,
+      "live_flow_m3s": 31.197,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 2.89,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.939,
-          "mole_flow_15min": 3.351
+          "wey_flow_15min": 5.465,
+          "mole_flow_15min": 3.158
         }
       },
       "data_quality": {
@@ -349,11 +349,11 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 5.899,
-        "flow_change_pct": -6,
+        "flow_m3s": 5.456,
+        "flow_change_pct": -14,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "easing"
       },
       {
         "catchment": "Mole",
@@ -383,8 +383,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 3.321,
-        "flow_change_pct": 11,
+        "flow_m3s": 3.147,
+        "flow_change_pct": 13,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
@@ -417,8 +417,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 7.487,
-        "flow_change_pct": -27,
+        "flow_m3s": 8.052,
+        "flow_change_pct": -15,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
