@@ -14,20 +14,20 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-10-29** — updated 2026-10-29T21:02:49Z (model v3).
+Assessment for **2026-10-30** — updated 2026-10-30T00:06:38Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 8 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
-| 🔴 | **Chertsey** | RED | 5 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 8 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
-| 🔴 | **Kingston HMT** | RED | 8 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 8 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
-| 🔴 | **Teddington** | RED | 8 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 8 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 8 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Old Palace Lane 2.4h · ThamesUpstream: Windsor 0.1h · rain 3mm/48h |
+| 🟠 | **Walton Wharf** | AMBER | 8 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 36mm/7d antecedent |
+| 🟠 | **Chertsey** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first<br>rain 36mm/7d antecedent |
+| 🟠 | **Kingston Albany Reach** | AMBER | — | Autumn/winter — only 32% safe even when dry, test first<br>rain 36mm/7d antecedent |
+| 🟠 | **Kingston HMT** | AMBER | — | Autumn/winter — only 32% safe even when dry, test first<br>rain 36mm/7d antecedent |
+| 🔴 | **Ditton's Bend** | RED | — | Very low flow (14 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 36mm/7d antecedent |
+| 🔴 | **Teddington** | RED | — | Very low flow (14 m3/s) at Teddington — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 36mm/7d antecedent |
+| 🟠 | **Hogsmill confluence** | AMBER | — | Autumn/winter — only 32% safe even when dry, test first<br>rain 36mm/7d antecedent |
+| 🟠 | **Minima Yacht Club** | AMBER | — | Autumn/winter — only 32% safe even when dry, test first<br>rain 36mm/7d antecedent |
 
-**0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
+**0 🟢 GREEN · 6 🟠 AMBER · 2 🔴 RED**
 
 _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precautions_
 
