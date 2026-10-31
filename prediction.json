@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T21:02:32Z",
-  "assessment_date": "2026-10-30",
+  "generated_at": "2026-10-31T00:04:50Z",
+  "assessment_date": "2026-10-31",
   "model_version": "v3",
   "sites": [
     {
@@ -9,13 +9,13 @@
       "level": "AMBER",
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
-      "why_detail": "rain 36mm/7d antecedent",
-      "live_flow_m3s": 11.275,
+      "why_detail": "rain 23mm/7d antecedent",
+      "live_flow_m3s": 10.731,
       "flow_gauge": "walton",
       "inputs": {
-        "rain_48h": 0.0,
-        "rain_7d": 36.31,
-        "dry_days": 2,
+        "rain_48h": 0.06,
+        "rain_7d": 22.7,
+        "dry_days": 3,
         "season": "autumn",
         "flow_m3s": 9.308,
         "cso_active_48h": false,
@@ -30,15 +30,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.488,
-          "mole_flow_15min": 2.348
+          "wey_flow_15min": 5.382,
+          "mole_flow_15min": 2.327
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-29",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -46,13 +48,13 @@
       "level": "AMBER",
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
-      "why_detail": "rain 36mm/7d antecedent",
-      "live_flow_m3s": 9.588,
+      "why_detail": "rain 23mm/7d antecedent",
+      "live_flow_m3s": 8.805,
       "flow_gauge": "staines",
       "inputs": {
-        "rain_48h": 0.0,
-        "rain_7d": 36.31,
-        "dry_days": 2,
+        "rain_48h": 0.06,
+        "rain_7d": 22.7,
+        "dry_days": 3,
         "season": "autumn",
         "flow_m3s": 9.308,
         "cso_active_48h": false,
@@ -67,15 +69,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.488,
-          "mole_flow_15min": 2.348
+          "wey_flow_15min": 5.382,
+          "mole_flow_15min": 2.327
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-29",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -83,13 +87,13 @@
       "level": "AMBER",
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
-      "why_detail": "rain 36mm/7d antecedent",
-      "live_flow_m3s": 9.878,
+      "why_detail": "rain 23mm/7d antecedent",
+      "live_flow_m3s": 9.122,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.0,
-        "rain_7d": 36.31,
-        "dry_days": 2,
+        "rain_48h": 0.06,
+        "rain_7d": 22.7,
+        "dry_days": 3,
         "season": "autumn",
         "flow_m3s": 9.308,
         "cso_active_48h": false,
@@ -104,15 +108,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.488,
-          "mole_flow_15min": 2.348
+          "wey_flow_15min": 5.382,
+          "mole_flow_15min": 2.327
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-29",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -120,13 +126,13 @@
       "level": "AMBER",
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
-      "why_detail": "rain 36mm/7d antecedent",
-      "live_flow_m3s": 9.878,
+      "why_detail": "rain 23mm/7d antecedent",
+      "live_flow_m3s": 9.122,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.0,
-        "rain_7d": 36.31,
-        "dry_days": 2,
+        "rain_48h": 0.06,
+        "rain_7d": 22.7,
+        "dry_days": 3,
         "season": "autumn",
         "flow_m3s": 9.308,
         "cso_active_48h": false,
@@ -141,15 +147,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.488,
-          "mole_flow_15min": 2.348
+          "wey_flow_15min": 5.382,
+          "mole_flow_15min": 2.327
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-29",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -157,13 +165,13 @@
       "level": "RED",
       "confidence": 85,
       "explanation": "Very low flow (9 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "rain 36mm/7d antecedent",
-      "live_flow_m3s": 9.878,
+      "why_detail": "rain 23mm/7d antecedent",
+      "live_flow_m3s": 9.122,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.0,
-        "rain_7d": 36.31,
-        "dry_days": 2,
+        "rain_48h": 0.06,
+        "rain_7d": 22.7,
+        "dry_days": 3,
         "season": "autumn",
         "flow_m3s": 9.308,
         "cso_active_48h": false,
@@ -178,15 +186,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.488,
-          "mole_flow_15min": 2.348
+          "wey_flow_15min": 5.382,
+          "mole_flow_15min": 2.327
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-29",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -194,13 +204,13 @@
       "level": "RED",
       "confidence": 85,
       "explanation": "Very low flow (9 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "rain 36mm/7d antecedent",
-      "live_flow_m3s": 9.878,
+      "why_detail": "rain 23mm/7d antecedent",
+      "live_flow_m3s": 9.122,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.0,
-        "rain_7d": 36.31,
-        "dry_days": 2,
+        "rain_48h": 0.06,
+        "rain_7d": 22.7,
+        "dry_days": 3,
         "season": "autumn",
         "flow_m3s": 9.308,
         "cso_active_48h": false,
@@ -215,15 +225,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.488,
-          "mole_flow_15min": 2.348
+          "wey_flow_15min": 5.382,
+          "mole_flow_15min": 2.327
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-29",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -231,13 +243,13 @@
       "level": "AMBER",
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
-      "why_detail": "rain 36mm/7d antecedent",
-      "live_flow_m3s": 9.878,
+      "why_detail": "rain 23mm/7d antecedent",
+      "live_flow_m3s": 9.122,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.0,
-        "rain_7d": 36.31,
-        "dry_days": 2,
+        "rain_48h": 0.06,
+        "rain_7d": 22.7,
+        "dry_days": 3,
         "season": "autumn",
         "flow_m3s": 9.308,
         "cso_active_48h": false,
@@ -252,15 +264,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.488,
-          "mole_flow_15min": 2.348
+          "wey_flow_15min": 5.382,
+          "mole_flow_15min": 2.327
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-29",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -268,13 +282,13 @@
       "level": "AMBER",
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
-      "why_detail": "rain 36mm/7d antecedent",
-      "live_flow_m3s": 9.878,
+      "why_detail": "rain 23mm/7d antecedent",
+      "live_flow_m3s": 9.122,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.0,
-        "rain_7d": 36.31,
-        "dry_days": 2,
+        "rain_48h": 0.06,
+        "rain_7d": 22.7,
+        "dry_days": 3,
         "season": "autumn",
         "flow_m3s": 9.308,
         "cso_active_48h": false,
@@ -289,32 +303,30 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.488,
-          "mole_flow_15min": 2.348
+          "wey_flow_15min": 5.382,
+          "mole_flow_15min": 2.327
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-29",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     }
   ],
   "upstream_watch": {
-    "date": "2026-10-30",
+    "date": "2026-10-31",
     "headwater_lag": "1-3 days",
     "catchments": [
       {
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 9.0,
+        "rain_5d_mm": 4.6,
         "rain_recent": [
-          {
-            "date": "2026-10-26",
-            "mm": 4.4
-          },
           {
             "date": "2026-10-27",
             "mm": 4.36
@@ -333,8 +345,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 5.488,
-        "flow_change_pct": -2,
+        "flow_m3s": 5.382,
+        "flow_change_pct": -4,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -343,12 +355,8 @@
         "catchment": "Mole",
         "joins": "the Thames at East Molesey, above Kingston",
         "rain_gauge": "Burstow rain (Mole catchment)",
-        "rain_5d_mm": 5.9,
+        "rain_5d_mm": 3.1,
         "rain_recent": [
-          {
-            "date": "2026-10-26",
-            "mm": 2.74
-          },
           {
             "date": "2026-10-27",
             "mm": 3.05
@@ -367,8 +375,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.348,
-        "flow_change_pct": -23,
+        "flow_m3s": 2.327,
+        "flow_change_pct": -22,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -377,12 +385,8 @@
         "catchment": "Thames",
         "joins": "the stretch from upstream (Reading and beyond)",
         "rain_gauge": "Reading University rain (Thames upstream)",
-        "rain_5d_mm": 7.3,
+        "rain_5d_mm": 4.2,
         "rain_recent": [
-          {
-            "date": "2026-10-26",
-            "mm": 3.14
-          },
           {
             "date": "2026-10-27",
             "mm": 4.11
@@ -401,11 +405,11 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 9.657,
-        "flow_change_pct": 16,
+        "flow_m3s": 8.995,
+        "flow_change_pct": 5,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "flat"
       }
     ]
   },
