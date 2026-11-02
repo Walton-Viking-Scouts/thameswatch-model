@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01T21:02:34Z",
-  "assessment_date": "2026-11-01",
+  "generated_at": "2026-11-02T00:05:52Z",
+  "assessment_date": "2026-11-02",
   "model_version": "v3",
   "sites": [
     {
@@ -10,12 +10,12 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 9.46,
+      "live_flow_m3s": 8.425,
       "flow_gauge": "walton",
       "inputs": {
-        "rain_48h": 0.06,
-        "rain_7d": 4.85,
-        "dry_days": 4,
+        "rain_48h": 0.02,
+        "rain_7d": 4.82,
+        "dry_days": 5,
         "season": "autumn",
         "flow_m3s": 8.898,
         "cso_active_48h": false,
@@ -30,15 +30,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.45,
-          "mole_flow_15min": 1.774
+          "wey_flow_15min": 4.438,
+          "mole_flow_15min": 1.722
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-31",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -47,12 +49,12 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 6.043,
+      "live_flow_m3s": 6.7,
       "flow_gauge": "staines",
       "inputs": {
-        "rain_48h": 0.06,
-        "rain_7d": 4.85,
-        "dry_days": 4,
+        "rain_48h": 0.02,
+        "rain_7d": 4.82,
+        "dry_days": 5,
         "season": "autumn",
         "flow_m3s": 8.898,
         "cso_active_48h": false,
@@ -67,15 +69,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.45,
-          "mole_flow_15min": 1.774
+          "wey_flow_15min": 4.438,
+          "mole_flow_15min": 1.722
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-31",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -84,12 +88,12 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 4.12,
+      "live_flow_m3s": 5.6,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.06,
-        "rain_7d": 4.85,
-        "dry_days": 4,
+        "rain_48h": 0.02,
+        "rain_7d": 4.82,
+        "dry_days": 5,
         "season": "autumn",
         "flow_m3s": 8.898,
         "cso_active_48h": false,
@@ -104,15 +108,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.45,
-          "mole_flow_15min": 1.774
+          "wey_flow_15min": 4.438,
+          "mole_flow_15min": 1.722
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-31",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -121,12 +127,12 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 4.12,
+      "live_flow_m3s": 5.6,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.06,
-        "rain_7d": 4.85,
-        "dry_days": 4,
+        "rain_48h": 0.02,
+        "rain_7d": 4.82,
+        "dry_days": 5,
         "season": "autumn",
         "flow_m3s": 8.898,
         "cso_active_48h": false,
@@ -141,15 +147,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.45,
-          "mole_flow_15min": 1.774
+          "wey_flow_15min": 4.438,
+          "mole_flow_15min": 1.722
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-31",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -158,12 +166,12 @@
       "confidence": 85,
       "explanation": "Very low flow (9 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "",
-      "live_flow_m3s": 4.12,
+      "live_flow_m3s": 5.6,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.06,
-        "rain_7d": 4.85,
-        "dry_days": 4,
+        "rain_48h": 0.02,
+        "rain_7d": 4.82,
+        "dry_days": 5,
         "season": "autumn",
         "flow_m3s": 8.898,
         "cso_active_48h": false,
@@ -178,15 +186,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.45,
-          "mole_flow_15min": 1.774
+          "wey_flow_15min": 4.438,
+          "mole_flow_15min": 1.722
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-31",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -195,12 +205,12 @@
       "confidence": 85,
       "explanation": "Very low flow (9 m3/s) at Teddington \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
       "why_detail": "",
-      "live_flow_m3s": 4.12,
+      "live_flow_m3s": 5.6,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.06,
-        "rain_7d": 4.85,
-        "dry_days": 4,
+        "rain_48h": 0.02,
+        "rain_7d": 4.82,
+        "dry_days": 5,
         "season": "autumn",
         "flow_m3s": 8.898,
         "cso_active_48h": false,
@@ -215,15 +225,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.45,
-          "mole_flow_15min": 1.774
+          "wey_flow_15min": 4.438,
+          "mole_flow_15min": 1.722
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-31",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -232,12 +244,12 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 4.12,
+      "live_flow_m3s": 5.6,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.06,
-        "rain_7d": 4.85,
-        "dry_days": 4,
+        "rain_48h": 0.02,
+        "rain_7d": 4.82,
+        "dry_days": 5,
         "season": "autumn",
         "flow_m3s": 8.898,
         "cso_active_48h": false,
@@ -252,15 +264,17 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.45,
-          "mole_flow_15min": 1.774
+          "wey_flow_15min": 4.438,
+          "mole_flow_15min": 1.722
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-31",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     },
     {
@@ -269,12 +283,12 @@
       "confidence": 67,
       "explanation": "Autumn/winter \u2014 only 32% safe even when dry, test first",
       "why_detail": "",
-      "live_flow_m3s": 4.12,
+      "live_flow_m3s": 5.6,
       "flow_gauge": "kingston",
       "inputs": {
-        "rain_48h": 0.06,
-        "rain_7d": 4.85,
-        "dry_days": 4,
+        "rain_48h": 0.02,
+        "rain_7d": 4.82,
+        "dry_days": 5,
         "season": "autumn",
         "flow_m3s": 8.898,
         "cso_active_48h": false,
@@ -289,32 +303,30 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.45,
-          "mole_flow_15min": 1.774
+          "wey_flow_15min": 4.438,
+          "mole_flow_15min": 1.722
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
         "flow_data_date": "2026-10-31",
-        "data_lag_days": 1,
-        "warnings": []
+        "data_lag_days": 2,
+        "warnings": [
+          "flow data 2 day(s) behind assessment date"
+        ]
       }
     }
   ],
   "upstream_watch": {
-    "date": "2026-11-01",
+    "date": "2026-11-02",
     "headwater_lag": "1-3 days",
     "catchments": [
       {
         "catchment": "Wey",
         "joins": "the Thames at Weybridge, above Walton",
         "rain_gauge": "Cranleigh rain (Wey catchment)",
-        "rain_5d_mm": 0.3,
+        "rain_5d_mm": 0.2,
         "rain_recent": [
-          {
-            "date": "2026-10-28",
-            "mm": 0.12
-          },
           {
             "date": "2026-10-29",
             "mm": 0.0
@@ -333,7 +345,7 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.45,
+        "flow_m3s": 4.438,
         "flow_change_pct": -9,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -345,10 +357,6 @@
         "rain_gauge": "Burstow rain (Mole catchment)",
         "rain_5d_mm": 0.1,
         "rain_recent": [
-          {
-            "date": "2026-10-28",
-            "mm": 0.0
-          },
           {
             "date": "2026-10-29",
             "mm": 0.0
@@ -367,8 +375,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.774,
-        "flow_change_pct": -12,
+        "flow_m3s": 1.722,
+        "flow_change_pct": -13,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -379,10 +387,6 @@
         "rain_gauge": "Reading University rain (Thames upstream)",
         "rain_5d_mm": 0.2,
         "rain_recent": [
-          {
-            "date": "2026-10-28",
-            "mm": 0.0
-          },
           {
             "date": "2026-10-29",
             "mm": 0.0
@@ -401,8 +405,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 6.508,
-        "flow_change_pct": -16,
+        "flow_m3s": 6.334,
+        "flow_change_pct": -12,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
