@@ -14,11 +14,11 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-04** — updated 2026-11-04T15:02:17Z (model v3).
+Assessment for **2026-11-04** — updated 2026-11-04T18:02:30Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🟠 | **Walton Wharf** | AMBER | 10 m³/s | Autumn/winter — only 32% safe even when dry, test first |
+| 🟠 | **Walton Wharf** | AMBER | 9 m³/s | Autumn/winter — only 32% safe even when dry, test first |
 | 🟠 | **Chertsey** | AMBER | 6 m³/s | Autumn/winter — only 32% safe even when dry, test first |
 | 🟠 | **Kingston Albany Reach** | AMBER | 7 m³/s | Autumn/winter — only 32% safe even when dry, test first |
 | 🟠 | **Kingston HMT** | AMBER | 7 m³/s | Autumn/winter — only 32% safe even when dry, test first |
