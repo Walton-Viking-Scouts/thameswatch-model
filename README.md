@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-11** — updated 2026-11-11T12:04:06Z (model v3).
+Assessment for **2026-11-11** — updated 2026-11-11T15:03:24Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 11 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (6.9 m³/s) |
-| 🔴 | **Chertsey** | RED | 4 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 10 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (6.9 m³/s) |
-| 🔴 | **Kingston HMT** | RED | 10 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (6.9 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 10 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (6.9 m³/s) |
-| 🔴 | **Teddington** | RED | 10 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (6.9 m³/s) |
-| 🔴 | **Hogsmill confluence** | RED | 10 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (6.9 m³/s) |
-| 🔴 | **Minima Yacht Club** | RED | 10 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (6.9 m³/s) |
+| 🔴 | **Walton Wharf** | RED | 12 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (7.0 m³/s) |
+| 🔴 | **Chertsey** | RED | 3 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 4 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (7.0 m³/s) |
+| 🔴 | **Kingston HMT** | RED | 4 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (7.0 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (7.0 m³/s) |
+| 🔴 | **Teddington** | RED | 4 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (7.0 m³/s) |
+| 🔴 | **Hogsmill confluence** | RED | 4 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (7.0 m³/s) |
+| 🔴 | **Minima Yacht Club** | RED | 4 m³/s | Rained today (4mm/48h) — only 35% safe even without CSO<br>rain 4mm/48h · Wey flow rising (7.0 m³/s) |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
