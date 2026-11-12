@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T12:03:42Z",
+  "generated_at": "2026-11-12T15:02:27Z",
   "assessment_date": "2026-11-12",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 65,
       "explanation": "Rained today (7mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 7mm/48h",
-      "live_flow_m3s": 12.401,
+      "live_flow_m3s": 12.964,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 7.42,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.953,
-          "mole_flow_15min": 2.074
+          "wey_flow_15min": 6.56,
+          "mole_flow_15min": 2.107
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 65,
       "explanation": "Rained today (7mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 7mm/48h",
-      "live_flow_m3s": 3.435,
+      "live_flow_m3s": -3.482,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 7.42,
@@ -69,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.953,
-          "mole_flow_15min": 2.074
+          "wey_flow_15min": 6.56,
+          "mole_flow_15min": 2.107
         }
       },
       "data_quality": {
@@ -88,7 +88,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 4.137,
+      "live_flow_m3s": 5.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.42,
@@ -108,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.953,
-          "mole_flow_15min": 2.074
+          "wey_flow_15min": 6.56,
+          "mole_flow_15min": 2.107
         }
       },
       "data_quality": {
@@ -127,7 +127,7 @@
       "confidence": 65,
       "explanation": "Rained today (7mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 7mm/48h",
-      "live_flow_m3s": 4.137,
+      "live_flow_m3s": 5.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.42,
@@ -147,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.953,
-          "mole_flow_15min": 2.074
+          "wey_flow_15min": 6.56,
+          "mole_flow_15min": 2.107
         }
       },
       "data_quality": {
@@ -166,7 +166,7 @@
       "confidence": 65,
       "explanation": "Rained today (7mm/48h) \u2014 only 35% safe even without CSO",
       "why_detail": "rain 7mm/48h",
-      "live_flow_m3s": 4.137,
+      "live_flow_m3s": 5.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.42,
@@ -186,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.953,
-          "mole_flow_15min": 2.074
+          "wey_flow_15min": 6.56,
+          "mole_flow_15min": 2.107
         }
       },
       "data_quality": {
@@ -205,7 +205,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 4.137,
+      "live_flow_m3s": 5.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.42,
@@ -225,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.953,
-          "mole_flow_15min": 2.074
+          "wey_flow_15min": 6.56,
+          "mole_flow_15min": 2.107
         }
       },
       "data_quality": {
@@ -244,7 +244,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 4.137,
+      "live_flow_m3s": 5.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.42,
@@ -264,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.953,
-          "mole_flow_15min": 2.074
+          "wey_flow_15min": 6.56,
+          "mole_flow_15min": 2.107
         }
       },
       "data_quality": {
@@ -283,7 +283,7 @@
       "confidence": 89,
       "explanation": "Rain today + CSO discharging upstream \u2014 only 11% safe",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 7mm/48h",
-      "live_flow_m3s": 4.137,
+      "live_flow_m3s": 5.35,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 7.42,
@@ -303,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 6.953,
-          "mole_flow_15min": 2.074
+          "wey_flow_15min": 6.56,
+          "mole_flow_15min": 2.107
         }
       },
       "data_quality": {
@@ -349,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 6.943,
-        "flow_change_pct": 0,
+        "flow_m3s": 6.56,
+        "flow_change_pct": -9,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -383,8 +383,8 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.073,
-        "flow_change_pct": 18,
+        "flow_m3s": 2.107,
+        "flow_change_pct": 19,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"
@@ -417,8 +417,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 6.377,
-        "flow_change_pct": 13,
+        "flow_m3s": 6.215,
+        "flow_change_pct": 11,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "rising"

@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-12** — updated 2026-11-12T12:03:42Z (model v3).
+Assessment for **2026-11-12** — updated 2026-11-12T15:02:27Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 12 m³/s | Rained today (7mm/48h) — only 35% safe even without CSO<br>rain 7mm/48h |
-| 🔴 | **Chertsey** | RED | 3 m³/s | Rained today (7mm/48h) — only 35% safe even without CSO<br>rain 7mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 4 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Thames: Kingston Main 48.0h · rain 7mm/48h |
-| 🔴 | **Kingston HMT** | RED | 4 m³/s | Rained today (7mm/48h) — only 35% safe even without CSO<br>rain 7mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 4 m³/s | Rained today (7mm/48h) — only 35% safe even without CSO<br>rain 7mm/48h |
-| 🔴 | **Teddington** | RED | 4 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Thames: Kingston Main 48.0h · rain 7mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 4 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Thames: Kingston Main 48.0h · rain 7mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 4 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Thames: Kingston Main 48.0h · rain 7mm/48h |
+| 🔴 | **Walton Wharf** | RED | 13 m³/s | Rained today (7mm/48h) — only 35% safe even without CSO<br>rain 7mm/48h |
+| 🔴 | **Chertsey** | RED | -3 m³/s | Rained today (7mm/48h) — only 35% safe even without CSO<br>rain 7mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 5 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Thames: Kingston Main 48.0h · rain 7mm/48h |
+| 🔴 | **Kingston HMT** | RED | 5 m³/s | Rained today (7mm/48h) — only 35% safe even without CSO<br>rain 7mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 5 m³/s | Rained today (7mm/48h) — only 35% safe even without CSO<br>rain 7mm/48h |
+| 🔴 | **Teddington** | RED | 5 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Thames: Kingston Main 48.0h · rain 7mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 5 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Thames: Kingston Main 48.0h · rain 7mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 5 m³/s | Rain today + CSO discharging upstream — only 11% safe<br>Thames: Kingston Main 48.0h · rain 7mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
