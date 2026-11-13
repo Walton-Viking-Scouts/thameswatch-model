@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-13T15:02:36Z",
+  "generated_at": "2026-11-13T18:02:25Z",
   "assessment_date": "2026-11-13",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 13.233,
+      "live_flow_m3s": 11.473,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 3.61,
@@ -28,10 +28,10 @@
           "wey_pct": 58.44338065368109,
           "mole_pct": 15.590954110267417,
           "wey_rising": false,
-          "mole_rising": true,
+          "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.701,
-          "mole_flow_15min": 2.844
+          "wey_flow_15min": 5.439,
+          "mole_flow_15min": 2.687
         }
       },
       "data_quality": {
@@ -49,7 +49,7 @@
       "confidence": 55,
       "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
       "why_detail": "rain 4mm/48h",
-      "live_flow_m3s": 2.949,
+      "live_flow_m3s": -0.567,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 3.61,
@@ -67,10 +67,10 @@
           "wey_pct": 58.44338065368109,
           "mole_pct": 15.590954110267417,
           "wey_rising": false,
-          "mole_rising": true,
+          "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.701,
-          "mole_flow_15min": 2.844
+          "wey_flow_15min": 5.439,
+          "mole_flow_15min": 2.687
         }
       },
       "data_quality": {
@@ -87,8 +87,8 @@
       "level": "RED",
       "confidence": 84,
       "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 4mm/48h \u00b7 Mole flow rising (2.8 m\u00b3/s)",
-      "live_flow_m3s": 7.562,
+      "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 6.846,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.61,
@@ -106,10 +106,10 @@
           "wey_pct": 58.44338065368109,
           "mole_pct": 15.590954110267417,
           "wey_rising": false,
-          "mole_rising": true,
+          "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.701,
-          "mole_flow_15min": 2.844
+          "wey_flow_15min": 5.439,
+          "mole_flow_15min": 2.687
         }
       },
       "data_quality": {
@@ -126,8 +126,8 @@
       "level": "AMBER",
       "confidence": 55,
       "explanation": "Moderate rain (4mm/48h) \u2014 55% safe, test first",
-      "why_detail": "rain 4mm/48h \u00b7 Mole flow rising (2.8 m\u00b3/s)",
-      "live_flow_m3s": 7.562,
+      "why_detail": "rain 4mm/48h",
+      "live_flow_m3s": 6.846,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.61,
@@ -145,10 +145,10 @@
           "wey_pct": 58.44338065368109,
           "mole_pct": 15.590954110267417,
           "wey_rising": false,
-          "mole_rising": true,
+          "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.701,
-          "mole_flow_15min": 2.844
+          "wey_flow_15min": 5.439,
+          "mole_flow_15min": 2.687
         }
       },
       "data_quality": {
@@ -165,8 +165,8 @@
       "level": "RED",
       "confidence": 85,
       "explanation": "Very low flow (12 m3/s) at Ditton's Bend \u2014 only 25% safe below 15 m3/s, continuous upstream effluent not diluted",
-      "why_detail": "rain 4mm/48h \u00b7 Mole flow rising (2.8 m\u00b3/s)",
-      "live_flow_m3s": 7.562,
+      "why_detail": "rain 4mm/48h",
+      "live_flow_m3s": 6.846,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.61,
@@ -184,10 +184,10 @@
           "wey_pct": 58.44338065368109,
           "mole_pct": 15.590954110267417,
           "wey_rising": false,
-          "mole_rising": true,
+          "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.701,
-          "mole_flow_15min": 2.844
+          "wey_flow_15min": 5.439,
+          "mole_flow_15min": 2.687
         }
       },
       "data_quality": {
@@ -204,8 +204,8 @@
       "level": "RED",
       "confidence": 84,
       "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 4mm/48h \u00b7 Mole flow rising (2.8 m\u00b3/s)",
-      "live_flow_m3s": 7.562,
+      "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 6.846,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.61,
@@ -223,10 +223,10 @@
           "wey_pct": 58.44338065368109,
           "mole_pct": 15.590954110267417,
           "wey_rising": false,
-          "mole_rising": true,
+          "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.701,
-          "mole_flow_15min": 2.844
+          "wey_flow_15min": 5.439,
+          "mole_flow_15min": 2.687
         }
       },
       "data_quality": {
@@ -243,8 +243,8 @@
       "level": "RED",
       "confidence": 84,
       "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 4mm/48h \u00b7 Mole flow rising (2.8 m\u00b3/s)",
-      "live_flow_m3s": 7.562,
+      "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 6.846,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.61,
@@ -262,10 +262,10 @@
           "wey_pct": 58.44338065368109,
           "mole_pct": 15.590954110267417,
           "wey_rising": false,
-          "mole_rising": true,
+          "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.701,
-          "mole_flow_15min": 2.844
+          "wey_flow_15min": 5.439,
+          "mole_flow_15min": 2.687
         }
       },
       "data_quality": {
@@ -282,8 +282,8 @@
       "level": "RED",
       "confidence": 84,
       "explanation": "Moderate rain (4mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 4mm/48h \u00b7 Mole flow rising (2.8 m\u00b3/s)",
-      "live_flow_m3s": 7.562,
+      "why_detail": "Thames: Kingston Main 48.0h \u00b7 rain 4mm/48h",
+      "live_flow_m3s": 6.846,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.61,
@@ -301,10 +301,10 @@
           "wey_pct": 58.44338065368109,
           "mole_pct": 15.590954110267417,
           "wey_rising": false,
-          "mole_rising": true,
+          "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 5.701,
-          "mole_flow_15min": 2.844
+          "wey_flow_15min": 5.439,
+          "mole_flow_15min": 2.687
         }
       },
       "data_quality": {
@@ -349,7 +349,7 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 5.701,
+        "flow_m3s": 5.439,
         "flow_change_pct": -12,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -383,11 +383,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 2.844,
-        "flow_change_pct": 34,
+        "flow_m3s": 2.687,
+        "flow_change_pct": 18,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "surge"
+        "status": "rising"
       },
       {
         "catchment": "Thames",
@@ -417,8 +417,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 5.939,
-        "flow_change_pct": -6,
+        "flow_m3s": 6.08,
+        "flow_change_pct": -5,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
