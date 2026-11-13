@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-13** — updated 2026-11-13T18:02:25Z (model v3).
+Assessment for **2026-11-13** — updated 2026-11-13T21:02:25Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 11 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Chertsey** | AMBER | -1 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 7 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h |
-| 🟠 | **Kingston HMT** | AMBER | 7 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 7 m³/s | Very low flow (12 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 4mm/48h |
-| 🔴 | **Teddington** | RED | 7 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 7 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 7 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h |
+| 🟠 | **Chertsey** | AMBER | -5 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h |
+| 🟠 | **Kingston HMT** | AMBER | 8 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 8 m³/s | Very low flow (11 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 4mm/48h |
+| 🔴 | **Teddington** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h |
 
 **0 🟢 GREEN · 3 🟠 AMBER · 5 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole rising · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole flat · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
