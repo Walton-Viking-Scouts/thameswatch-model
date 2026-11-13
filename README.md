@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-13** — updated 2026-11-13T12:03:35Z (model v3).
+Assessment for **2026-11-13** — updated 2026-11-13T15:02:36Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
 | 🟠 | **Walton Wharf** | AMBER | 13 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🟠 | **Chertsey** | AMBER | 6 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h · Mole flow rising (3.0 m³/s) |
-| 🟠 | **Kingston HMT** | AMBER | 8 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (3.0 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 8 m³/s | Very low flow (12 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 4mm/48h · Mole flow rising (3.0 m³/s) |
-| 🔴 | **Teddington** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h · Mole flow rising (3.0 m³/s) |
-| 🔴 | **Hogsmill confluence** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h · Mole flow rising (3.0 m³/s) |
-| 🔴 | **Minima Yacht Club** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h · Mole flow rising (3.0 m³/s) |
+| 🟠 | **Chertsey** | AMBER | 3 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h · Mole flow rising (2.8 m³/s) |
+| 🟠 | **Kingston HMT** | AMBER | 8 m³/s | Moderate rain (4mm/48h) — 55% safe, test first<br>rain 4mm/48h · Mole flow rising (2.8 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 8 m³/s | Very low flow (12 m3/s) at Ditton's Bend — only 25% safe below 15 m3/s, continuous upstream effluent not diluted<br>rain 4mm/48h · Mole flow rising (2.8 m³/s) |
+| 🔴 | **Teddington** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h · Mole flow rising (2.8 m³/s) |
+| 🔴 | **Hogsmill confluence** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h · Mole flow rising (2.8 m³/s) |
+| 🔴 | **Minima Yacht Club** | RED | 8 m³/s | Moderate rain (4mm) + CSO active — only 16% safe<br>Thames: Kingston Main 48.0h · rain 4mm/48h · Mole flow rising (2.8 m³/s) |
 
 **0 🟢 GREEN · 3 🟠 AMBER · 5 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole surge · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole surge · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
