@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-18** — updated 2026-11-18T18:02:52Z (model v3).
+Assessment for **2026-11-18** — updated 2026-11-18T21:02:18Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 39 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h |
+| 🔴 | **Walton Wharf** | RED | 36 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h |
 | 🔴 | **Chertsey** | RED | 35 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 37 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (6.0 m³/s) |
-| 🔴 | **Kingston HMT** | RED | 37 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (6.0 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 37 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (6.0 m³/s) |
-| 🔴 | **Teddington** | RED | 37 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (6.0 m³/s) |
-| 🔴 | **Hogsmill confluence** | RED | 37 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (6.0 m³/s) |
-| 🔴 | **Minima Yacht Club** | RED | 37 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (6.0 m³/s) |
+| 🔴 | **Kingston Albany Reach** | RED | 34 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (7.4 m³/s) |
+| 🔴 | **Kingston HMT** | RED | 34 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (7.4 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 34 m³/s | Multiple river CSOs active (Mole, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (7.4 m³/s) |
+| 🔴 | **Teddington** | RED | 34 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (7.4 m³/s) |
+| 🔴 | **Hogsmill confluence** | RED | 34 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (7.4 m³/s) |
+| 🔴 | **Minima Yacht Club** | RED | 34 m³/s | Multiple river CSOs active (Mole, Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 7.2h · Mole: Leatherhead 16.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 12.5h · rain 9mm/48h · Mole flow rising (7.4 m³/s) |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
