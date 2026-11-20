@@ -14,12 +14,12 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-20** — updated 2026-11-20T06:04:36Z (model v3).
+Assessment for **2026-11-20** — updated 2026-11-20T09:03:13Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 46 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
-| 🔴 | **Chertsey** | RED | 42 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
+| 🔴 | **Walton Wharf** | RED | 45 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
+| 🔴 | **Chertsey** | RED | 39 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
 | 🔴 | **Kingston Albany Reach** | RED | 39 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
 | 🔴 | **Kingston HMT** | RED | 39 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
 | 🔴 | **Ditton's Bend** | RED | 39 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames rising._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole surge · Thames rising._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
