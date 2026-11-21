@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-20** — updated 2026-11-20T21:02:32Z (model v3).
+Assessment for **2026-11-21** — updated 2026-11-21T00:07:13Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 40 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
-| 🔴 | **Chertsey** | RED | 41 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 34 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h · Mole flow rising (7.2 m³/s) |
-| 🔴 | **Kingston HMT** | RED | 34 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h · Mole flow rising (7.2 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 34 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h · Mole flow rising (7.2 m³/s) |
-| 🔴 | **Teddington** | RED | 34 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h · Mole flow rising (7.2 m³/s) |
-| 🔴 | **Hogsmill confluence** | RED | 34 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h · Mole flow rising (7.2 m³/s) |
-| 🔴 | **Minima Yacht Club** | RED | 34 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 10.2h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 11.9h · rain 8mm/48h · Mole flow rising (7.2 m³/s) |
+| 🔴 | **Walton Wharf** | RED | — | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Chertsey** | RED | — | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | — | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Kingston HMT** | RED | — | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Ditton's Bend** | RED | — | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Teddington** | RED | — | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | — | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | — | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey rising · Mole surge · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole surge · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
