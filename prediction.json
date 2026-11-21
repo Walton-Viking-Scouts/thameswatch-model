@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T06:07:47Z",
+  "generated_at": "2026-11-21T09:02:33Z",
   "assessment_date": "2026-11-21",
   "model_version": "v3",
   "sites": [
@@ -9,8 +9,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 0.5h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 38.739,
+      "why_detail": "Wey: Ripley 0.5h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 37.633,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 3.2,
@@ -19,8 +19,8 @@
         "season": "autumn",
         "flow_m3s": 42.727,
         "cso_active_48h": true,
-        "cso_hours_48h": 48.5,
-        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Windsor(live)",
+        "cso_hours_48h": 97.1,
+        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Little Marlow(48.0h); Windsor(0.6h)",
         "upstream_ctx": {
           "walton_flow": 42.727,
           "wey_flow": 8.807,
@@ -30,8 +30,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 8.652,
-          "mole_flow_15min": 5.826
+          "wey_flow_15min": 8.508,
+          "mole_flow_15min": 5.527
         }
       },
       "data_quality": {
@@ -39,8 +39,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of mole failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
-          "top-up of cranleigh_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -48,10 +46,10 @@
     {
       "site": "Chertsey",
       "level": "RED",
-      "confidence": 84,
-      "explanation": "Moderate rain (3mm) + CSO active \u2014 only 16% safe",
-      "why_detail": "ThamesUpstream: Windsor (live) \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 37.385,
+      "confidence": 93,
+      "explanation": "2 CSO monitors discharging \u2014 only 7% safe historically",
+      "why_detail": "ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 36.58,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 3.2,
@@ -60,8 +58,8 @@
         "season": "autumn",
         "flow_m3s": 42.727,
         "cso_active_48h": true,
-        "cso_hours_48h": 48.5,
-        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Windsor(live)",
+        "cso_hours_48h": 97.1,
+        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Little Marlow(48.0h); Windsor(0.6h)",
         "upstream_ctx": {
           "walton_flow": 42.727,
           "wey_flow": 8.807,
@@ -71,8 +69,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 8.652,
-          "mole_flow_15min": 5.826
+          "wey_flow_15min": 8.508,
+          "mole_flow_15min": 5.527
         }
       },
       "data_quality": {
@@ -80,8 +78,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of mole failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
-          "top-up of cranleigh_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -91,8 +87,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 0.5h \u00b7 Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 34.661,
+      "why_detail": "Wey: Ripley 0.5h \u00b7 Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 32.753,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.2,
@@ -101,8 +97,8 @@
         "season": "autumn",
         "flow_m3s": 42.727,
         "cso_active_48h": true,
-        "cso_hours_48h": 48.5,
-        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Windsor(live)",
+        "cso_hours_48h": 97.1,
+        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Little Marlow(48.0h); Windsor(0.6h)",
         "upstream_ctx": {
           "walton_flow": 42.727,
           "wey_flow": 8.807,
@@ -112,8 +108,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 8.652,
-          "mole_flow_15min": 5.826
+          "wey_flow_15min": 8.508,
+          "mole_flow_15min": 5.527
         }
       },
       "data_quality": {
@@ -121,8 +117,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of mole failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
-          "top-up of cranleigh_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -132,8 +126,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 0.5h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 34.661,
+      "why_detail": "Wey: Ripley 0.5h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 32.753,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.2,
@@ -142,8 +136,8 @@
         "season": "autumn",
         "flow_m3s": 42.727,
         "cso_active_48h": true,
-        "cso_hours_48h": 48.5,
-        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Windsor(live)",
+        "cso_hours_48h": 97.1,
+        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Little Marlow(48.0h); Windsor(0.6h)",
         "upstream_ctx": {
           "walton_flow": 42.727,
           "wey_flow": 8.807,
@@ -153,8 +147,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 8.652,
-          "mole_flow_15min": 5.826
+          "wey_flow_15min": 8.508,
+          "mole_flow_15min": 5.527
         }
       },
       "data_quality": {
@@ -162,8 +156,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of mole failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
-          "top-up of cranleigh_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -173,8 +165,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 0.5h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 34.661,
+      "why_detail": "Wey: Ripley 0.5h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 32.753,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.2,
@@ -183,8 +175,8 @@
         "season": "autumn",
         "flow_m3s": 42.727,
         "cso_active_48h": true,
-        "cso_hours_48h": 48.5,
-        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Windsor(live)",
+        "cso_hours_48h": 97.1,
+        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Little Marlow(48.0h); Windsor(0.6h)",
         "upstream_ctx": {
           "walton_flow": 42.727,
           "wey_flow": 8.807,
@@ -194,8 +186,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 8.652,
-          "mole_flow_15min": 5.826
+          "wey_flow_15min": 8.508,
+          "mole_flow_15min": 5.527
         }
       },
       "data_quality": {
@@ -203,8 +195,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of mole failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
-          "top-up of cranleigh_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -214,8 +204,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 0.5h \u00b7 Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 34.661,
+      "why_detail": "Wey: Ripley 0.5h \u00b7 Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 32.753,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.2,
@@ -224,8 +214,8 @@
         "season": "autumn",
         "flow_m3s": 42.727,
         "cso_active_48h": true,
-        "cso_hours_48h": 48.5,
-        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Windsor(live)",
+        "cso_hours_48h": 97.1,
+        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Little Marlow(48.0h); Windsor(0.6h)",
         "upstream_ctx": {
           "walton_flow": 42.727,
           "wey_flow": 8.807,
@@ -235,8 +225,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 8.652,
-          "mole_flow_15min": 5.826
+          "wey_flow_15min": 8.508,
+          "mole_flow_15min": 5.527
         }
       },
       "data_quality": {
@@ -244,8 +234,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of mole failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
-          "top-up of cranleigh_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -255,8 +243,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 0.5h \u00b7 Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 34.661,
+      "why_detail": "Wey: Ripley 0.5h \u00b7 Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 32.753,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.2,
@@ -265,8 +253,8 @@
         "season": "autumn",
         "flow_m3s": 42.727,
         "cso_active_48h": true,
-        "cso_hours_48h": 48.5,
-        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Windsor(live)",
+        "cso_hours_48h": 97.1,
+        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Little Marlow(48.0h); Windsor(0.6h)",
         "upstream_ctx": {
           "walton_flow": 42.727,
           "wey_flow": 8.807,
@@ -276,8 +264,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 8.652,
-          "mole_flow_15min": 5.826
+          "wey_flow_15min": 8.508,
+          "mole_flow_15min": 5.527
         }
       },
       "data_quality": {
@@ -285,8 +273,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of mole failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
-          "top-up of cranleigh_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -296,8 +282,8 @@
       "level": "RED",
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream, Wey) \u2014 0% safe historically",
-      "why_detail": "Wey: Ripley 0.5h \u00b7 Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Windsor (live) \u00b7 rain 3mm/48h",
-      "live_flow_m3s": 34.661,
+      "why_detail": "Wey: Ripley 0.5h \u00b7 Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h \u00b7 rain 3mm/48h",
+      "live_flow_m3s": 32.753,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 3.2,
@@ -306,8 +292,8 @@
         "season": "autumn",
         "flow_m3s": 42.727,
         "cso_active_48h": true,
-        "cso_hours_48h": 48.5,
-        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Windsor(live)",
+        "cso_hours_48h": 97.1,
+        "cso_active_monitors": "Ripley(0.5h); Kingston Main(48.0h); Little Marlow(48.0h); Windsor(0.6h)",
         "upstream_ctx": {
           "walton_flow": 42.727,
           "wey_flow": 8.807,
@@ -317,8 +303,8 @@
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 8.652,
-          "mole_flow_15min": 5.826
+          "wey_flow_15min": 8.508,
+          "mole_flow_15min": 5.527
         }
       },
       "data_quality": {
@@ -326,8 +312,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 2,
         "warnings": [
-          "top-up of mole failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
-          "top-up of cranleigh_rain failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=60)",
           "flow data 2 day(s) behind assessment date"
         ]
       }
@@ -365,8 +349,8 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 8.652,
-        "flow_change_pct": 3,
+        "flow_m3s": 8.508,
+        "flow_change_pct": -1,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "flat"
@@ -399,11 +383,11 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 5.826,
-        "flow_change_pct": 10,
+        "flow_m3s": 5.527,
+        "flow_change_pct": -11,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "rising"
+        "status": "easing"
       },
       {
         "catchment": "Thames",
@@ -433,7 +417,7 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 35.008,
+        "flow_m3s": 34.414,
         "flow_change_pct": 3,
         "flow_window": "24h",
         "flow_source": "15min",

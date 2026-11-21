@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-21** — updated 2026-11-21T06:07:47Z (model v3).
+Assessment for **2026-11-21** — updated 2026-11-21T09:02:33Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 39 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Chertsey** | RED | 37 m³/s | Moderate rain (3mm) + CSO active — only 16% safe<br>ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 35 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Kingston HMT** | RED | 35 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 35 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Teddington** | RED | 35 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 35 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 35 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Windsor (live) · rain 3mm/48h |
+| 🔴 | **Walton Wharf** | RED | 38 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Chertsey** | RED | 37 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 33 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Kingston HMT** | RED | 33 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 33 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Teddington** | RED | 33 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 33 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 33 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey flat · Mole rising · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey flat · Mole easing · Thames flat._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
