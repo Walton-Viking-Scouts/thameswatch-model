@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-21** — updated 2026-11-21T18:02:41Z (model v3).
+Assessment for **2026-11-21** — updated 2026-11-21T21:02:15Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 18 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Chertsey** | RED | 17 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 15 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Kingston HMT** | RED | 15 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 15 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Teddington** | RED | 15 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 15 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 15 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Walton Wharf** | RED | 16 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Chertsey** | RED | 12 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Kingston Albany Reach** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Kingston HMT** | RED | 11 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Ditton's Bend** | RED | 11 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Teddington** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Hogsmill confluence** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Minima Yacht Club** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
