@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22T00:07:55Z",
+  "generated_at": "2026-11-22T03:03:14Z",
   "assessment_date": "2026-11-22",
   "model_version": "v3",
   "sites": [
@@ -10,7 +10,7 @@
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
       "why_detail": "ThamesUpstream: Little Marlow 48.0h \u00b7 rain 22mm/7d antecedent",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 10.358,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.02,
@@ -29,7 +29,9 @@
           "mole_pct": 12.778804971095562,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "daily"
+          "surge_source": "15min-live",
+          "wey_flow_15min": 4.216,
+          "mole_flow_15min": 3.59
         }
       },
       "data_quality": {
@@ -37,8 +39,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 3,
         "warnings": [
-          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 3 day(s) behind assessment date"
         ]
       }
@@ -49,7 +49,7 @@
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
       "why_detail": "ThamesUpstream: Little Marlow 48.0h \u00b7 rain 22mm/7d antecedent",
-      "live_flow_m3s": 13.304,
+      "live_flow_m3s": 20.479,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.02,
@@ -68,7 +68,9 @@
           "mole_pct": 12.778804971095562,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "daily"
+          "surge_source": "15min-live",
+          "wey_flow_15min": 4.216,
+          "mole_flow_15min": 3.59
         }
       },
       "data_quality": {
@@ -76,8 +78,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 3,
         "warnings": [
-          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 3 day(s) behind assessment date"
         ]
       }
@@ -88,7 +88,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 22mm/7d antecedent",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 6.979,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.02,
@@ -107,7 +107,9 @@
           "mole_pct": 12.778804971095562,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "daily"
+          "surge_source": "15min-live",
+          "wey_flow_15min": 4.216,
+          "mole_flow_15min": 3.59
         }
       },
       "data_quality": {
@@ -115,8 +117,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 3,
         "warnings": [
-          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 3 day(s) behind assessment date"
         ]
       }
@@ -127,7 +127,7 @@
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
       "why_detail": "ThamesUpstream: Little Marlow 48.0h \u00b7 rain 22mm/7d antecedent",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 6.979,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.02,
@@ -146,7 +146,9 @@
           "mole_pct": 12.778804971095562,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "daily"
+          "surge_source": "15min-live",
+          "wey_flow_15min": 4.216,
+          "mole_flow_15min": 3.59
         }
       },
       "data_quality": {
@@ -154,8 +156,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 3,
         "warnings": [
-          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 3 day(s) behind assessment date"
         ]
       }
@@ -166,7 +166,7 @@
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
       "why_detail": "ThamesUpstream: Little Marlow 48.0h \u00b7 rain 22mm/7d antecedent",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 6.979,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.02,
@@ -185,7 +185,9 @@
           "mole_pct": 12.778804971095562,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "daily"
+          "surge_source": "15min-live",
+          "wey_flow_15min": 4.216,
+          "mole_flow_15min": 3.59
         }
       },
       "data_quality": {
@@ -193,8 +195,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 3,
         "warnings": [
-          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 3 day(s) behind assessment date"
         ]
       }
@@ -205,7 +205,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 22mm/7d antecedent",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 6.979,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.02,
@@ -224,7 +224,9 @@
           "mole_pct": 12.778804971095562,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "daily"
+          "surge_source": "15min-live",
+          "wey_flow_15min": 4.216,
+          "mole_flow_15min": 3.59
         }
       },
       "data_quality": {
@@ -232,8 +234,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 3,
         "warnings": [
-          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 3 day(s) behind assessment date"
         ]
       }
@@ -244,7 +244,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 22mm/7d antecedent",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 6.979,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.02,
@@ -263,7 +263,9 @@
           "mole_pct": 12.778804971095562,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "daily"
+          "surge_source": "15min-live",
+          "wey_flow_15min": 4.216,
+          "mole_flow_15min": 3.59
         }
       },
       "data_quality": {
@@ -271,8 +273,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 3,
         "warnings": [
-          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 3 day(s) behind assessment date"
         ]
       }
@@ -283,7 +283,7 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h \u00b7 rain 22mm/7d antecedent",
-      "live_flow_m3s": null,
+      "live_flow_m3s": 6.979,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.02,
@@ -302,7 +302,9 @@
           "mole_pct": 12.778804971095562,
           "wey_rising": false,
           "mole_rising": false,
-          "surge_source": "daily"
+          "surge_source": "15min-live",
+          "wey_flow_15min": 4.216,
+          "mole_flow_15min": 3.59
         }
       },
       "data_quality": {
@@ -310,8 +312,6 @@
         "flow_data_date": "2026-11-19",
         "data_lag_days": 3,
         "warnings": [
-          "15-min wey surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
-          "15-min mole surge check failed: HTTPSConnectionPool(host='environment.data.gov.uk', port=443): Read timed out. (read timeout=30)",
           "flow data 3 day(s) behind assessment date"
         ]
       }
@@ -342,13 +342,17 @@
           {
             "date": "2026-11-21",
             "mm": 0.03
+          },
+          {
+            "date": "2026-11-22",
+            "mm": 0.0
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 8.807,
-        "flow_change_pct": -19,
+        "flow_m3s": 4.216,
+        "flow_change_pct": -51,
         "flow_window": "24h",
-        "flow_source": "daily",
+        "flow_source": "15min",
         "status": "easing"
       },
       {
@@ -372,11 +376,15 @@
           {
             "date": "2026-11-21",
             "mm": 0.0
+          },
+          {
+            "date": "2026-11-22",
+            "mm": 0.0
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 3.726,
-        "flow_change_pct": -46,
+        "flow_m3s": 3.59,
+        "flow_change_pct": -42,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
@@ -402,14 +410,18 @@
           {
             "date": "2026-11-21",
             "mm": 0.02
+          },
+          {
+            "date": "2026-11-22",
+            "mm": 0.0
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 34.121,
-        "flow_change_pct": 43,
+        "flow_m3s": 27.71,
+        "flow_change_pct": -21,
         "flow_window": "24h",
-        "flow_source": "daily",
-        "status": "surge"
+        "flow_source": "15min",
+        "status": "easing"
       }
     ]
   },
