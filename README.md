@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-22** — updated 2026-11-22T18:02:35Z (model v3).
+Assessment for **2026-11-22** — updated 2026-11-22T21:02:43Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 36 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
-| 🔴 | **Chertsey** | RED | 36 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
-| 🔴 | **Kingston Albany Reach** | RED | 30 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
-| 🔴 | **Kingston HMT** | RED | 30 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
-| 🔴 | **Ditton's Bend** | RED | 30 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
-| 🔴 | **Teddington** | RED | 30 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
-| 🔴 | **Hogsmill confluence** | RED | 30 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
-| 🔴 | **Minima Yacht Club** | RED | 30 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Walton Wharf** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Chertsey** | RED | 35 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Kingston Albany Reach** | RED | 32 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Kingston HMT** | RED | 32 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Ditton's Bend** | RED | 32 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Teddington** | RED | 32 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Hogsmill confluence** | RED | 32 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Minima Yacht Club** | RED | 32 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
