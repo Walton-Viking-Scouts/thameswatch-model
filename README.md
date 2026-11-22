@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-21** — updated 2026-11-21T21:02:15Z (model v3).
+Assessment for **2026-11-22** — updated 2026-11-22T00:07:55Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 16 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Chertsey** | RED | 12 m³/s | 2 CSO monitors discharging — only 7% safe historically<br>ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Kingston Albany Reach** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Kingston HMT** | RED | 11 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Ditton's Bend** | RED | 11 m³/s | Multiple river CSOs active (ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Teddington** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Hogsmill confluence** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
-| 🔴 | **Minima Yacht Club** | RED | 11 m³/s | Multiple river CSOs active (Thames, ThamesUpstream, Wey) — 0% safe historically<br>Wey: Ripley 0.5h · Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h, Windsor 0.6h · rain 3mm/48h |
+| 🔴 | **Walton Wharf** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Chertsey** | RED | 13 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Kingston Albany Reach** | RED | — | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Kingston HMT** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Ditton's Bend** | RED | — | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Teddington** | RED | — | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Hogsmill confluence** | RED | — | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
+| 🔴 | **Minima Yacht Club** | RED | — | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 22mm/7d antecedent |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames easing._
+_Upstream watch (tributary flow, last 24h): Wey easing · Mole easing · Thames surge._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
