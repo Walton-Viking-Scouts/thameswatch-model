@@ -14,18 +14,18 @@ It checks rainfall, river flow, and sewage-discharge conditions and returns a
 <!-- PREDICTION:START -->
 ## Current water-safety status
 
-Assessment for **2026-11-23** — updated 2026-11-23T03:03:29Z (model v3).
+Assessment for **2026-11-23** — updated 2026-11-23T06:04:33Z (model v3).
 
 | | Site | Status | Flow (live) | Why this colour |
 |---|---|---|---|---|
-| 🔴 | **Walton Wharf** | RED | 33 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (6.0 m³/s) |
-| 🔴 | **Chertsey** | RED | 29 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent |
-| 🔴 | **Kingston Albany Reach** | RED | 29 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (6.0 m³/s) |
-| 🔴 | **Kingston HMT** | RED | 29 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (6.0 m³/s) |
-| 🔴 | **Ditton's Bend** | RED | 29 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (6.0 m³/s) |
-| 🔴 | **Teddington** | RED | 29 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (6.0 m³/s) |
-| 🔴 | **Hogsmill confluence** | RED | 29 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (6.0 m³/s) |
-| 🔴 | **Minima Yacht Club** | RED | 29 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (6.0 m³/s) |
+| 🔴 | **Walton Wharf** | RED | 30 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (5.9 m³/s) |
+| 🔴 | **Chertsey** | RED | 26 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent |
+| 🔴 | **Kingston Albany Reach** | RED | 25 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (5.9 m³/s) |
+| 🔴 | **Kingston HMT** | RED | 25 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (5.9 m³/s) |
+| 🔴 | **Ditton's Bend** | RED | 25 m³/s | Autumn/winter + CSO active — only 10-14% safe<br>ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (5.9 m³/s) |
+| 🔴 | **Teddington** | RED | 25 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (5.9 m³/s) |
+| 🔴 | **Hogsmill confluence** | RED | 25 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (5.9 m³/s) |
+| 🔴 | **Minima Yacht Club** | RED | 25 m³/s | Multiple river CSOs active (Thames, ThamesUpstream) — 0% safe historically<br>Thames: Kingston Main 48.0h · ThamesUpstream: Little Marlow 48.0h · rain 17mm/7d antecedent · Wey flow rising (5.9 m³/s) |
 
 **0 🟢 GREEN · 0 🟠 AMBER · 8 🔴 RED**
 
@@ -33,7 +33,7 @@ _🔴 enhanced precautions · 🟠 increased precautions · 🟢 normal precauti
 
 _safe = EC ≤ 500 · unsafe = EC > 500 · dangerous = EC > 2000 (cfu/100ml)_
 
-_Upstream watch (tributary flow, last 24h): Wey surge · Mole easing · Thames flat._
+_Upstream watch (tributary flow, last 24h): Wey surge · Mole easing · Thames easing._
 
 _Full reasoning and data quality in [`prediction.json`](prediction.json); methodology in [`EXEC-SUMMARY.md`](EXEC-SUMMARY.md)._
 <!-- PREDICTION:END -->
