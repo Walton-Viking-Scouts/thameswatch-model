@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T18:02:56Z",
+  "generated_at": "2026-11-26T21:02:26Z",
   "assessment_date": "2026-11-26",
   "model_version": "v3",
   "sites": [
@@ -10,37 +10,35 @@
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
       "why_detail": "ThamesUpstream: Little Marlow 48.0h",
-      "live_flow_m3s": 9.623,
+      "live_flow_m3s": 9.544,
       "flow_gauge": "walton",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 3.2,
         "dry_days": 6,
         "season": "autumn",
-        "flow_m3s": 11.773,
+        "flow_m3s": 9.949,
         "cso_active_48h": true,
         "cso_hours_48h": 96.0,
         "cso_active_monitors": "Kingston Main(48.0h); Little Marlow(48.0h)",
         "upstream_ctx": {
-          "walton_flow": 11.773,
-          "wey_flow": 5.346,
-          "mole_flow": 2.276,
-          "wey_pct": 45.408986664401596,
-          "mole_pct": 19.332370678671534,
+          "walton_flow": 9.949,
+          "wey_flow": 5.108,
+          "mole_flow": 2.002,
+          "wey_pct": 51.341843401346864,
+          "mole_pct": 20.12262538948638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.906,
-          "mole_flow_15min": 1.854
+          "wey_flow_15min": 5.077,
+          "mole_flow_15min": 1.824
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-11-24",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-11-25",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -49,37 +47,35 @@
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
       "why_detail": "ThamesUpstream: Little Marlow 48.0h",
-      "live_flow_m3s": 8.752,
+      "live_flow_m3s": 7.091,
       "flow_gauge": "staines",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 3.2,
         "dry_days": 6,
         "season": "autumn",
-        "flow_m3s": 11.773,
+        "flow_m3s": 9.949,
         "cso_active_48h": true,
         "cso_hours_48h": 96.0,
         "cso_active_monitors": "Kingston Main(48.0h); Little Marlow(48.0h)",
         "upstream_ctx": {
-          "walton_flow": 11.773,
-          "wey_flow": 5.346,
-          "mole_flow": 2.276,
-          "wey_pct": 45.408986664401596,
-          "mole_pct": 19.332370678671534,
+          "walton_flow": 9.949,
+          "wey_flow": 5.108,
+          "mole_flow": 2.002,
+          "wey_pct": 51.341843401346864,
+          "mole_pct": 20.12262538948638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.906,
-          "mole_flow_15min": 1.854
+          "wey_flow_15min": 5.077,
+          "mole_flow_15min": 1.824
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-11-24",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-11-25",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -88,37 +84,35 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h",
-      "live_flow_m3s": 8.283,
+      "live_flow_m3s": 7.621,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 3.2,
         "dry_days": 6,
         "season": "autumn",
-        "flow_m3s": 11.773,
+        "flow_m3s": 9.949,
         "cso_active_48h": true,
         "cso_hours_48h": 96.0,
         "cso_active_monitors": "Kingston Main(48.0h); Little Marlow(48.0h)",
         "upstream_ctx": {
-          "walton_flow": 11.773,
-          "wey_flow": 5.346,
-          "mole_flow": 2.276,
-          "wey_pct": 45.408986664401596,
-          "mole_pct": 19.332370678671534,
+          "walton_flow": 9.949,
+          "wey_flow": 5.108,
+          "mole_flow": 2.002,
+          "wey_pct": 51.341843401346864,
+          "mole_pct": 20.12262538948638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.906,
-          "mole_flow_15min": 1.854
+          "wey_flow_15min": 5.077,
+          "mole_flow_15min": 1.824
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-11-24",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-11-25",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -127,37 +121,35 @@
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
       "why_detail": "ThamesUpstream: Little Marlow 48.0h",
-      "live_flow_m3s": 8.283,
+      "live_flow_m3s": 7.621,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 3.2,
         "dry_days": 6,
         "season": "autumn",
-        "flow_m3s": 11.773,
+        "flow_m3s": 9.949,
         "cso_active_48h": true,
         "cso_hours_48h": 96.0,
         "cso_active_monitors": "Kingston Main(48.0h); Little Marlow(48.0h)",
         "upstream_ctx": {
-          "walton_flow": 11.773,
-          "wey_flow": 5.346,
-          "mole_flow": 2.276,
-          "wey_pct": 45.408986664401596,
-          "mole_pct": 19.332370678671534,
+          "walton_flow": 9.949,
+          "wey_flow": 5.108,
+          "mole_flow": 2.002,
+          "wey_pct": 51.341843401346864,
+          "mole_pct": 20.12262538948638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.906,
-          "mole_flow_15min": 1.854
+          "wey_flow_15min": 5.077,
+          "mole_flow_15min": 1.824
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-11-24",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-11-25",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -166,37 +158,35 @@
       "confidence": 86,
       "explanation": "Autumn/winter + CSO active \u2014 only 10-14% safe",
       "why_detail": "ThamesUpstream: Little Marlow 48.0h",
-      "live_flow_m3s": 8.283,
+      "live_flow_m3s": 7.621,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 3.2,
         "dry_days": 6,
         "season": "autumn",
-        "flow_m3s": 11.773,
+        "flow_m3s": 9.949,
         "cso_active_48h": true,
         "cso_hours_48h": 96.0,
         "cso_active_monitors": "Kingston Main(48.0h); Little Marlow(48.0h)",
         "upstream_ctx": {
-          "walton_flow": 11.773,
-          "wey_flow": 5.346,
-          "mole_flow": 2.276,
-          "wey_pct": 45.408986664401596,
-          "mole_pct": 19.332370678671534,
+          "walton_flow": 9.949,
+          "wey_flow": 5.108,
+          "mole_flow": 2.002,
+          "wey_pct": 51.341843401346864,
+          "mole_pct": 20.12262538948638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.906,
-          "mole_flow_15min": 1.854
+          "wey_flow_15min": 5.077,
+          "mole_flow_15min": 1.824
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-11-24",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-11-25",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -205,37 +195,35 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h",
-      "live_flow_m3s": 8.283,
+      "live_flow_m3s": 7.621,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 3.2,
         "dry_days": 6,
         "season": "autumn",
-        "flow_m3s": 11.773,
+        "flow_m3s": 9.949,
         "cso_active_48h": true,
         "cso_hours_48h": 96.0,
         "cso_active_monitors": "Kingston Main(48.0h); Little Marlow(48.0h)",
         "upstream_ctx": {
-          "walton_flow": 11.773,
-          "wey_flow": 5.346,
-          "mole_flow": 2.276,
-          "wey_pct": 45.408986664401596,
-          "mole_pct": 19.332370678671534,
+          "walton_flow": 9.949,
+          "wey_flow": 5.108,
+          "mole_flow": 2.002,
+          "wey_pct": 51.341843401346864,
+          "mole_pct": 20.12262538948638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.906,
-          "mole_flow_15min": 1.854
+          "wey_flow_15min": 5.077,
+          "mole_flow_15min": 1.824
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-11-24",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-11-25",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -244,37 +232,35 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h",
-      "live_flow_m3s": 8.283,
+      "live_flow_m3s": 7.621,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 3.2,
         "dry_days": 6,
         "season": "autumn",
-        "flow_m3s": 11.773,
+        "flow_m3s": 9.949,
         "cso_active_48h": true,
         "cso_hours_48h": 96.0,
         "cso_active_monitors": "Kingston Main(48.0h); Little Marlow(48.0h)",
         "upstream_ctx": {
-          "walton_flow": 11.773,
-          "wey_flow": 5.346,
-          "mole_flow": 2.276,
-          "wey_pct": 45.408986664401596,
-          "mole_pct": 19.332370678671534,
+          "walton_flow": 9.949,
+          "wey_flow": 5.108,
+          "mole_flow": 2.002,
+          "wey_pct": 51.341843401346864,
+          "mole_pct": 20.12262538948638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.906,
-          "mole_flow_15min": 1.854
+          "wey_flow_15min": 5.077,
+          "mole_flow_15min": 1.824
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-11-24",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-11-25",
+        "data_lag_days": 1,
+        "warnings": []
       }
     },
     {
@@ -283,37 +269,35 @@
       "confidence": 100,
       "explanation": "Multiple river CSOs active (Thames, ThamesUpstream) \u2014 0% safe historically",
       "why_detail": "Thames: Kingston Main 48.0h \u00b7 ThamesUpstream: Little Marlow 48.0h",
-      "live_flow_m3s": 8.283,
+      "live_flow_m3s": 7.621,
       "flow_gauge": "kingston",
       "inputs": {
         "rain_48h": 0.0,
         "rain_7d": 3.2,
         "dry_days": 6,
         "season": "autumn",
-        "flow_m3s": 11.773,
+        "flow_m3s": 9.949,
         "cso_active_48h": true,
         "cso_hours_48h": 96.0,
         "cso_active_monitors": "Kingston Main(48.0h); Little Marlow(48.0h)",
         "upstream_ctx": {
-          "walton_flow": 11.773,
-          "wey_flow": 5.346,
-          "mole_flow": 2.276,
-          "wey_pct": 45.408986664401596,
-          "mole_pct": 19.332370678671534,
+          "walton_flow": 9.949,
+          "wey_flow": 5.108,
+          "mole_flow": 2.002,
+          "wey_pct": 51.341843401346864,
+          "mole_pct": 20.12262538948638,
           "wey_rising": false,
           "mole_rising": false,
           "surge_source": "15min-live",
-          "wey_flow_15min": 4.906,
-          "mole_flow_15min": 1.854
+          "wey_flow_15min": 5.077,
+          "mole_flow_15min": 1.824
         }
       },
       "data_quality": {
         "rain_station": "hogsmill_rain",
-        "flow_data_date": "2026-11-24",
-        "data_lag_days": 2,
-        "warnings": [
-          "flow data 2 day(s) behind assessment date"
-        ]
+        "flow_data_date": "2026-11-25",
+        "data_lag_days": 1,
+        "warnings": []
       }
     }
   ],
@@ -349,11 +333,11 @@
           }
         ],
         "flow_station": "Wey at Weybridge",
-        "flow_m3s": 4.906,
-        "flow_change_pct": 2,
+        "flow_m3s": 5.077,
+        "flow_change_pct": 12,
         "flow_window": "24h",
         "flow_source": "15min",
-        "status": "flat"
+        "status": "rising"
       },
       {
         "catchment": "Mole",
@@ -383,7 +367,7 @@
           }
         ],
         "flow_station": "Mole at Esher",
-        "flow_m3s": 1.854,
+        "flow_m3s": 1.824,
         "flow_change_pct": -7,
         "flow_window": "24h",
         "flow_source": "15min",
@@ -417,8 +401,8 @@
           }
         ],
         "flow_station": "Thames at Reading",
-        "flow_m3s": 9.632,
-        "flow_change_pct": -42,
+        "flow_m3s": 11.631,
+        "flow_change_pct": -24,
         "flow_window": "24h",
         "flow_source": "15min",
         "status": "easing"
